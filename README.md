@@ -1,2 +1,3 @@
 # marcgloor.github.io
-Website of Marc Gloor
+Website of Marc Gloor. 
+Space to publish personal projects.
