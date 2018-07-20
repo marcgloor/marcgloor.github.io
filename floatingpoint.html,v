@@ -1,0 +1,937 @@
+head	1.13;
+access;
+symbols;
+locks
+	gloor:1.13; strict;
+comment	@# @;
+
+
+1.13
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2005.08.05.21.34.25;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.03.16.22.16.57;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.02.15.10.39.13;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.22.17.30.17;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>Floating Point Operations per Second</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Supercomputing Benchmark for Linux (FLOP/S)</font></b>
+<br>
+by Marc Gloor <br>
+<hr width="100%">
+<p>Copyright (C) 1992 Al Aburto &lt;aburto@@nosc.mil&gt;<br>
+Copyright (C) 2000 Marc O. Gloor &lt;mgloor_at_fhzh_dot_ch&gt;<br>
+<br>
+Benchmark modified for linux by Marc O. Gloor<br>
+<br>
+<a href="data/flops-linux.tar.gz">Flops.c</a> is a 'c' program which
+attempts to estimate your systems floating-point 'MFLOPS' rating for
+the FADD, FSUB, FMUL, and FDIV operations based on specific
+'instruction mixes' (discussed below). The program provides an estimate
+of PEAK MFLOPS performance by making maximal use of register variables
+with minimal interaction with main memory. The execution loops are all
+small so that they will fit in any cache. Flops.c can be used along
+with Linpack and the Livermore kernels (which exersize memory much more
+extensively) to gain further insight into the limits of system
+performance. The flops.c execution modules also include various percent
+weightings of FDIV's (from 0% to 25% FDIV's) so that the range of
+performance can be obtained when using FDIV's. FDIV's, being
+computationally more intensive than FADD's or FMUL's, can impact
+performance considerably on some systems.<br>
+</p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.12 2005/08/05 21:34:25 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+Copyright (C) 2000 Marc O. Gloor &lt;mgloor@@fhzh.ch&gt;<br>
+d44 2
+a45 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.11 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d13 3
+a15 2
+<b><font size="+1">Supercomputing Benchmark f&uuml;r Linux (FLOP/S)</font></b> <br>
+von Marc Gloor <br>
+d17 20
+a36 207
+<p><b>Floating point operations per second (FLOP/S)</b> </p>
+<p>M&ouml;chte man die Leistungsdaten verschiedener Systeme
+vergleichen, ben&ouml;tigt man ein Chipset- und
+Architekturunabh&auml;ngiges Messverfahren. <br>
+Prozessorhersteller benutzen oft eigene auf Compiler optimierte
+Benchmarks um die Leistungsf&auml;higkeit Ihrer Prozessoren
+hervorzuheben.&nbsp; Der MIPS Faktor (million instructions per second),
+welcher die Leistung in Millionen ausgef&uuml;hrter Instruktionen pro
+Sekunde ausgibt, eignet sich&nbsp; nicht f&uuml;r den Vergleich
+verschiedener CPU-Typen. Die Geschwindigkeit ist stark vom verwendeten
+Befehlssatz abh&auml;ngig. Dieser Artikel behandelt keine PC-Magazin
+Anwender-Benchmarks die durch Ihren eigenverursachen Overhead das
+Resultat verf&auml;lschen und somit einen System- und
+Plattformunabh&auml;ngigen Vergleich verunm&ouml;glichen. Ein
+geeigneter Referenzwert um verschiedene Prozessoren miteinander zu
+vergleichen ist die Fliesskommaleistung pro Sekunde (FLOP/S). </p>
+<p>F&uuml;r den Benutzer eines Computersystems, der auf die L&ouml;sung
+einer konkreten Aufgabenstellung wartet, ist vor allem die daf&uuml;r
+erforderliche Zeit von Interesse, die von zwei Einlussgr&ouml;ssen -
+Arbeit und Leistung abh&auml;ngt: Zeit = Arbeit / Leistung. Die Zeit
+die der Computer f&uuml;r eine Aufgabe ben&ouml;tigt wird <i>response
+time</i> oder <i>elapsed time</i>, manchmal auch als <i>wallclock time</i>
+bezeichnet. <br>
+&nbsp; </p>
+<p><b>Peak performance</b><b></b> </p>
+<p>Die Maximalleistung eines Computers ist die <i>peak performance</i>,
+sie entspricht der theoretisch m&ouml;glichen Maximalanzahl von
+Gleitpunktoperationen die von diesem Computer pro Zeiteinheit (meistens
+pro Sekunde)&nbsp;abgearbeitet werden k&ouml;nnen. Trotz h&ouml;herer
+FLOP/S Werte kann ein Programm unter Umst&auml;nden l&auml;nger
+f&uuml;r die L&ouml;sung eines Problemes brauchen, wenn bei seiner
+Verwendung mehr Arbeit zu verrichten ist. Die Maximalleistung eines
+Computers kann als eine Art "Lichtgeschwindigkeit" des jeweiligen
+Systemes angesehen werden. <br>
+&nbsp;</p>
+<p><b>Supercomuting Benchmark LINPACK</b> </p>
+<p>Im Supercomputing Bereich (im Bereich massiver Parallelrechner also)
+hat sich eine Leistungsmessung etabliert, sie wird seit Jahrzehnten
+unver&auml;ndert in allen renommierten Rechenzentren der Welt
+eingesetzt - LINPACK. </p>
+<p>LINPACK wurde in den 70er Jahren von Jack J. Dongarra der University
+of Tennesse am Oak Ridge National Laboratory entwickelt. Dongarra,
+seines Zeichens International anerkannter Supercomputer-Experte, er war
+unter Anderem am <a href="cluster-event.html">Swiss Linux
+Supercomputer Event bei Compaq in Z&uuml;rich</a> als Gastreferent
+anwesend. </p>
+<p>Da der <a href="data/linpack.c">Quellcode</a> frei verf&uuml;gbar
+ist, wurde LINPACK auf jedes erdenkliche System portiert. LINPACK
+basiert auf einem einfachen Algorithmus; dem l&ouml;sen eines linearen
+Gleichungssystems mit dem Gausschen-Eliminationsverfahren und dem
+messen der daf&uuml;r ben&ouml;tigten Zeit die ein Prozessor
+hierf&uuml;r aufwendet. Anhand einer Formel errechnet LINPACK den
+Fliesskomma-Leistungsindex, oder ausgeschrieben floating point
+operations per second, dieser bedeutet soviel wie
+Fliesskomma-Operationen pro Sekunde. Die Leistungsdaten aller
+erdenklicher Systeme werden regelm&auml;ssig unter <a
+ href="http://performance.netlib.org">http://performance.netlib.org</a>
+ver&ouml;ffentlicht. </p>
+<p>Auf dem FTP-Server des Naval Ocean Systems Center (NOSC) in San
+Diego im public homedir von Alfred Aburto habe ich einen brauchbaren
+und portablen Quellcode zur Bestimmung der Fliesskommageschwindigkeit
+gefunden. Auf einer RS/6000 konnte der Source ohne &Auml;nderungen
+kompiliert werden, f&uuml;r Linux musste der Quellcode modifiziert
+werden, aus diesem Grund habe ich eine speziell f&uuml;r Linux
+optimierte <a href="data/flops-linux.tar.gz">distribution [.tgz, 20kb]</a>
+mit den entsprechenden Compiler-Schaltern im Makefile zusammengestellt. <br>
+&nbsp; </p>
+<p><b>Benchmark anwenden</b> </p>
+<p>Zur Bestimmung der Fliesskommaleistung ben&ouml;tigt die Software
+auf einem Intel PII 400Mhz rund 3 Minuten, die Standardausgabe gibt
+nach Berechnung der 8 Module folgendes aus: <br>
+&nbsp; </p>
+<p><tt>&nbsp;&nbsp; FLOPS C Program (Double Precision), V2.0 18 Dec 1992</tt> </p>
+<p><tt>&nbsp;&nbsp; Module&nbsp;&nbsp;&nbsp;&nbsp;
+Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RunTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MFLOPS</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(usec)</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp;
+-5.4001e-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.1615&nbsp;&nbsp;&nbsp;&nbsp; 86.6957</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.0961e-13&nbsp;&nbsp;&nbsp;&nbsp; 0.1145&nbsp;&nbsp;&nbsp;&nbsp;
+61.1187</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3.4528e-14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.1455&nbsp;&nbsp;&nbsp;
+116.8009</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3.6970e-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.1362&nbsp;&nbsp;&nbsp;
+110.0917</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp;
+-5.2180e-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.3011&nbsp;&nbsp;&nbsp;&nbsp; 96.3155</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+2.3925e-14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.2422&nbsp;&nbsp;&nbsp;
+119.7419</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp;
+-1.6502e-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.3060&nbsp;&nbsp;&nbsp;&nbsp; 39.2137</tt> <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+1.4633e-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.2737&nbsp;&nbsp;&nbsp;
+109.5890</tt> </p>
+<p><tt>&nbsp;&nbsp; Iterations&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;
+128000000</tt> <br>
+<tt>&nbsp;&nbsp; NullTime (usec) =&nbsp;&nbsp;&nbsp;&nbsp; 0.0144</tt> <br>
+<tt>&nbsp;&nbsp; MFLOPS(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=&nbsp;&nbsp;&nbsp; 72.4029</tt> <br>
+<tt>&nbsp;&nbsp; MFLOPS(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=&nbsp;&nbsp;&nbsp; 68.7588</tt> <br>
+<tt>&nbsp;&nbsp; MFLOPS(3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=&nbsp;&nbsp;&nbsp; 93.2116</tt> <br>
+<tt>&nbsp;&nbsp; MFLOPS(4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+=&nbsp;&nbsp; 114.0731</tt> <br>
+&nbsp; </p>
+<p>Die Ausgabe ist folgendermassen strukturiert: </p>
+<ul>
+  <li> Durchlaufen 8 eigenst&auml;ndiger unabh&auml;ngiger
+Laufzeitmodule verschiedener Parameter.</li>
+  <li> Ausgabe der Durchlaufzeit einer Iteration (loop) in Mikrosekunden
+(runtime).</li>
+  <li> Ausgabe numerischer Funktionen wie sin() bzw.
+Leistungsindikatoren (Error).</li>
+  <li> PEAK-Ausgabe der erreichten MEGAFLOPS (Bestwerte) einzelner
+Module (mflops).</li>
+  <li> Anzeige der Anzahl durchlaufener Schleifen bzw. Loops
+(iterations).</li>
+  <li> Ausgabe des Zeitaufwandes zum durchlaufen eines empty loops
+(nulltime).</li>
+  <li> Vier Summary MFLOP Ausgaben (MFLOPS(1)-(4)).</li>
+</ul>
+<p><br>
+Um nun einen Praxisbezogenen Leistungsindex in MFLOP zu erhalten ist
+etwas Verst&auml;ndnis der verwendeten Algorithmen notwendig. Die
+MFLOP-Ausgaben der acht Module und die vier MFLOP-Ausgaben im Summary
+sind sehr unterschiedlich. </p>
+<p>Gem&auml;ss Kommentar im Quellcode berechnet das Programm die MFLOPS
+unter Verwendung der vier CPU-Grundrechenoperationen FADD, FSUB, FMUL,
+und FDIV bzw. versucht diese Werte in den Modulen genaustm&ouml;glichst
+zu interpolieren. Diese vier Operationen sind typische
+Assembleranweisungen und stehen per Definition FDIV - fuer die Division
+zweier Realzahlen, FMUL - fuer die Multiplikation zweier Realzahlen,
+FSUB -&nbsp; fuer die Subtraktion zweier Realzahlen und FADD - fuer die
+Addition zweier Realzahlen. Die Errechnung des MFLOP Hoechstwertes
+(PEAK) erfolgt durch maximale Verwendung der Registervariablen des
+Hauptprozessors sowie durch minimale Interaktion mit dem <br>
+Hauptspeicher (was fuer Messungen dieser Natur von Relevanz ist). Die
+Messung speicherintensiver Transaktionen oder zeitraubender I/O Prozesse
+sind keine Leistungsmerkmale des Hauptprozessors. F&uuml;r den
+Benchmarklauf ist es deshalb von Vorteil wenn unbenutzte daemons und
+Jobs gestoppt werden, bestenfalls f&auml;hrt man die ganze Benchmark im
+singleuser runlevel. </p>
+<p>Fuer Prozessoren sind FDIV-Operationen, also Divisionen, aufwendiger
+abzuarbeiten und aussagekr&auml;ftiger als Additionen, Multiplikationen
+oder&uuml;Subtraktionen - die FDIV Operation ist also der massgebende
+Parameter im Leistungsvergleich unterschiedlicher CPU's. Die Anzahl
+m&ouml;glicher loops wurde von Aburto moeglichst klein gehalten damit
+die Module auch in den kleinsten vorstellbaren Cache passen. </p>
+<p>Wie bereits erw&auml;hnt durchl&auml;uft das Programm acht
+unabh&auml;ngige Module verschiedenster Algorithmen. Unter Verwendung
+mathematischer Funktionen wie sin(x), cos(x), atan() oder pi wird
+daraus die maximal erreichbare Fliesskommageschwindigkeit pro Sekunde
+errechnet. <br>
+&nbsp; </p>
+<p><b>MFLOPS(1)</b> </p>
+<p>Basiert auf Parametern von MFLOPS(2) und MFLOPS(3). Der errechnete
+Wert ist deshalb genauer und praxisbezogener als Werte in fr&uuml;heren
+Versionen des Quellcodes. <br>
+&nbsp; </p>
+<p><b>MFLOPS(2)</b> </p>
+<p>Bezieht sich auf die Schwierigkeit dass sich in Modul 2 die 's'
+Variable nicht vollkommen vektrorisieren liess. Das Problem umging
+Aburto mit einer minimal geringeren FDIV Auslastung von anstatt 9.6%
+nur 9.2%. Auf Skalaren Systemen wird sich der Wert von MFLOPS(1) und
+MFLOPS(2) kaum unterscheiden, auf Vektororientierten Systemen sind die
+Werte unterschiedlicher. <br>
+&nbsp; </p>
+<p><b>MFLOPS(3)</b> </p>
+<p>Die prozentuelle FDIV Auslastung von 9.6% und 9.2%, benutzt von
+MFLOPS(1) und MFLOPS(2), ist f&uuml;r viele Programme zu hoch. Aus
+diesem Grund wurde MFLOPS(3) nur mit 3.4% FDIV's berechnet. <br>
+&nbsp; </p>
+<p><b>MFLOPS(4)</b> </p>
+<p>Analog MFLOPS(3) ausser dass dieser Wert mit NULL FDIV's errechnet
+wurde (NO FDIV). <br>
+&nbsp; </p>
+<p><b>Der MFLOP Wert meines Systems?</b> </p>
+<p>Die gemessene Peakperformance wird anhand des h&ouml;chsten Wertes
+ersichtlich, das es sich, wie erw&auml;hnt bei der Fliesskommaleistung
+um eine Art "Lichtgeschwindigkeit" des Systemes handelt. <br>
+&nbsp; </p>
+<p><b>FLOPS benchmark Download</b> </p>
+<p>Die von mir assemblierte <a href="data/flops-linux.tar.gz">FLOPS
+distribution [.tgz, 20kb]</a> wurde f&uuml;r Linux optimiert (CLI
+Interface), basierend auf diesem Quellcode habe ich ein <a
+ href="flow.html">graphisches Frontend</a> (in C/Gtk+) geschrieben,
+welches wie anfangs erw&auml;hnt zwar selbst einen overhead verursacht,
+dieser aber durch einen Kommandoschalter kompensiert werden kann. </p>
+<p>-- <br>
+<i><font size="-1">MIPS = million Instructions per second</font></i> <br>
+<i><font size="-1">FLOPS = floating point operations per second</font></i> <br>
+<i><font size="-1">MFLOP = megaflop</font></i> <br>
+<i><font size="-1">GFLOP = gigaflop (1.073.741.824 flops)</font></i> <br>
+<i><font size="-1">TFLOP = terraflop</font></i> <br>
+<i><font size="-1">CPU = Zentraleinheit, Hauptprozessor (central
+processing unit)</font></i> <br>
+<i><font size="-1">FPU = Fliesskommaeinheit, Arithmetischer Coprozessor
+(floating point unit)</font></i> </p>
+d44 4
+a47 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+      <i> </i> <dt>
+@
+
+
+1.10
+log
+@..
+@
+text
+@d6 1
+a6 1
+  <meta name="Author" content="Marc O. Gloor">
+d229 4
+a232 3
+      <td width="90%" nosave=""> <dt> <i>$Id: floatingpoint.html,v 1.9
+2003/03/16 22:16:57 gloor Exp gloor $</i></dt>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+a237 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 6
+a9 4
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Marc O. Gloor">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <title>Floating Point Operations per Second</title>
+d11 21
+a31 20
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<b><font size=+1>Supercomputing Benchmark
+f&uuml;r Linux (FLOP/S)</font></b>
+<br>von Marc Gloor
+<br>
+<hr WIDTH="100%">
+<p><b>Floating point operations per second (FLOP/S)</b>
+<p>M&ouml;chte man die Leistungsdaten verschiedener Systeme vergleichen,
+ben&ouml;tigt man ein Chipset- und Architekturunabh&auml;ngiges Messverfahren.
+<br>Prozessorhersteller benutzen oft eigene auf Compiler optimierte Benchmarks
+um die Leistungsf&auml;higkeit Ihrer Prozessoren hervorzuheben.&nbsp; Der
+MIPS Faktor (million instructions per second), welcher die Leistung in
+Millionen ausgef&uuml;hrter Instruktionen pro Sekunde ausgibt, eignet sich&nbsp;
+nicht f&uuml;r den Vergleich verschiedener CPU-Typen. Die Geschwindigkeit
+ist stark vom verwendeten Befehlssatz abh&auml;ngig. Dieser Artikel behandelt
+keine PC-Magazin Anwender-Benchmarks die durch Ihren eigenverursachen Overhead
+das Resultat verf&auml;lschen und somit einen System- und Plattformunabh&auml;ngigen
+Vergleich verunm&ouml;glich. Ein geeigneter Referenzwert um verschiedene
+Prozessoren miteinander zu vergleichen ist die Fliesskommaleistung pro
+Sekunde (FLOP/S).
+d33 8
+a40 7
+einer konkreten Aufgabenstellung wartet, ist vor allem die daf&uuml;r erforderliche
+Zeit von Interesse, die von zwei Einlussgr&ouml;ssen - Arbeit und Leistung
+abh&auml;ngt: Zeit = Arbeit / Leistung. Die Zeit die der Computer f&uuml;r
+eine Aufgabe ben&ouml;tigt wird <i>response time</i> oder <i>elapsed time</i>,
+manchmal auch als <i>wallclock time</i> bezeichnet.
+<br>&nbsp;
+<p><b>Peak performance</b><b></b>
+d42 14
+a55 13
+sie entspricht der theoretisch m&ouml;glichen Maximalanzahl von Gleitpunktoperationen
+die von diesem Computer pro Zeiteinheit (meistens pro Sekunde)&nbsp;abgearbeitet
+werden k&ouml;nnen. Trotz h&ouml;herer FLOP/S Werte kann ein Programm unter
+Umst&auml;nden l&auml;nger f&uuml;r die L&ouml;sung eines Problemes brauchen,
+wenn bei seiner Verwendung mehr Arbeit zu verrichten ist. Die Maximalleistung
+eines Computers kann als eine Art "Lichtgeschwindigkeit" des jeweiligen
+Systemes angesehen werden.
+<br>&nbsp;
+<br><b></b>&nbsp;<b></b>
+<p><b>Supercomuting Benchmark LINPACK</b>
+<p>Im Supercomputing Bereich (im Bereich massiver Parallelrechner) hat
+sich eine Leistungsmessung etabliert, sie wird seit Jahrzehnten unver&auml;ndert
+in allen renommierten Rechenzentren der Welt eingesetzt - LINPACK.
+d57 74
+a130 61
+of Tennesse am Oak Ridge National Laboratory entwickelt. Dongarra, seines
+Zeichens International anerkannter Supercomputer-Experte, er war unter
+Anderem am <a href="cluster-event.html">Swiss Linux Supercomputer Event
+bei Compaq in Z&uuml;rich</a> als Gastreferent anwesend.
+<p>Da der <a href="data/linpack.c">Quellcode</a> frei verf&uuml;gbar ist,
+wurde LINPACK auf jedes erdenkliche System portiert. LINPACK basiert auf
+einem einfachen Algorithmus; dem l&ouml;sen eines linearen Gleichungssystems
+mit dem Gausschen-Eliminationsverfahren und dem messen der dafuer ben&ouml;tigten
+Zeit die ein Prozessor hierf&uuml;r aufwendet. Anhand einer Formel errechnet
+LINPACK den Fliesskomma-Leistungsindex, oder ausgeschrieben floating point
+operations per second, dieser bedeutet soviel wie Fliesskomma-Operationen
+pro Sekunde. Die Leistungsdaten aller erdenklicher Systeme werden regelm&auml;ssig
+unter <a href="http://performance.netlib.org">http://performance.netlib.org</a>
+ver&ouml;ffentlicht.
+<p>Auf dem FTP-Server des Naval Ocean Systems Center (NOSC) in San Diego
+im public homedir von Alfred Aburto habe ich einen brauchbaren und portablen
+Quellcode zur Bestimmung der Fliesskommageschwindigkeit gefunden. Auf einer
+RS/6000 konnte der Source ohne &Auml;nderungen kompiliert werden, f&uuml;r
+Linux musste der Quellcode modifiziert werden, aus diesem Grund habe ich
+eine speziell f&uuml;r Linux optimierte <a href="data/flops-linux.tar.gz">distribution
+[.tgz, 20kb]</a> mit den entsprechenden Compiler-Schaltern im Makefile
+zusammengestellt.
+<br>&nbsp;
+<p><b>Benchmark anwenden</b>
+<p>Zur Bestimmung der Fliesskommaleistung ben&ouml;tigt die Software auf
+einem Intel PII 400Mhz rund 3 Minuten, die Standardausgabe gibt nach Berechnung
+der 8 Module folgendes aus:
+<br>&nbsp;
+<p><tt>&nbsp;&nbsp; FLOPS C Program (Double Precision), V2.0 18 Dec 1992</tt>
+<p><tt>&nbsp;&nbsp; Module&nbsp;&nbsp;&nbsp;&nbsp; Error&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+RunTime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MFLOPS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+(usec)</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 1&nbsp;&nbsp;&nbsp;&nbsp; -5.4001e-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.1615&nbsp;&nbsp;&nbsp;&nbsp; 86.6957</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.0961e-13&nbsp;&nbsp;&nbsp;&nbsp;
+0.1145&nbsp;&nbsp;&nbsp;&nbsp; 61.1187</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.4528e-14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.1455&nbsp;&nbsp;&nbsp; 116.8009</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.6970e-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.1362&nbsp;&nbsp;&nbsp; 110.0917</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 5&nbsp;&nbsp;&nbsp;&nbsp; -5.2180e-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.3011&nbsp;&nbsp;&nbsp;&nbsp; 96.3155</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.3925e-14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.2422&nbsp;&nbsp;&nbsp; 119.7419</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 7&nbsp;&nbsp;&nbsp;&nbsp; -1.6502e-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.3060&nbsp;&nbsp;&nbsp;&nbsp; 39.2137</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp; 8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.4633e-13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+0.2737&nbsp;&nbsp;&nbsp; 109.5890</tt>
+<p><tt>&nbsp;&nbsp; Iterations&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp; 128000000</tt>
+<br><tt>&nbsp;&nbsp; NullTime (usec) =&nbsp;&nbsp;&nbsp;&nbsp; 0.0144</tt>
+<br><tt>&nbsp;&nbsp; MFLOPS(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;
+72.4029</tt>
+<br><tt>&nbsp;&nbsp; MFLOPS(2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;
+68.7588</tt>
+<br><tt>&nbsp;&nbsp; MFLOPS(3)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;&nbsp;
+93.2116</tt>
+<br><tt>&nbsp;&nbsp; MFLOPS(4)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =&nbsp;&nbsp;
+114.0731</tt>
+<br>&nbsp;
+<p>Die Ausgabe ist folgendermassen strukturiert:
+d132 13
+a144 21
+<li>
+Durchlaufen 8 eigenst&auml;ndiger unabh&auml;ngiger Laufzeitmodule verschiedener
+Parameter.</li>
+
+<li>
+Ausgabe der Durchlaufzeit einer Iteration (loop) in Mikrosekunden (runtime).</li>
+
+<li>
+Ausgabe numerischer Funktionen wie sin() bzw. Leistungsindikatoren (Error).</li>
+
+<li>
+PEAK-Ausgabe der erreichten MEGAFLOPS (Bestwerte) einzelner Module (mflops).</li>
+
+<li>
+Anzeige der Anzahl durchlaufener Schleifen bzw. Loops (iterations).</li>
+
+<li>
+Ausgabe des Zeitaufwandes zum durchlaufen eines empty loops (nulltime).</li>
+
+<li>
+Vier Summary MFLOP Ausgaben (MFLOPS(1)-(4)).</li>
+d146 5
+a150 4
+
+<p><br>Um nun einen Praxisbezogenen Leistungsindex in MFLOP zu erhalten
+ist etwas Verst&auml;ndnis der verwendeten Algorithmen notwendig. Die MFLOP-Ausgaben
+der acht Module und die vier MFLOP-Ausgaben im Summary sind sehr unterschiedlich.
+d154 8
+a161 7
+zu interpolieren. Diese vier Operationen sind typische Assembleranweisungen
+und stehen per Definition FDIV - fuer die Division zweier Realzahlen, FMUL
+- fuer die Multiplikation zweier Realzahlen, FSUB -&nbsp; fuer die Subtraktion
+zweier Realzahlen und FADD - fuer die Addition zweier Realzahlen. Die Errechnung
+des MFLOP Hoechstwertes (PEAK) erfolgt durch maximale Verwendung der Registervariablen
+des Hauptprozessors sowie durch minimale Interaktion mit dem
+<br>Hauptspeicher (was fuer Messungen dieser Natur von Relevanz ist). Die
+d163 4
+a166 3
+sind keine Leistungsmerkmale des Hauptprozessors. F&uuml;r den Benchmarklauf
+ist es deshalb von Vorteil wenn unbenutzte daemons und Jobs gestoppt werden,
+bestenfalls f&auml;hrt man die ganze Benchmark im singleuser runlevel.
+d169 75
+a243 74
+oder&uuml;Subtraktionen - die FDIV Operation ist also der massgebende Parameter
+im Leistungsvergleich unterschiedlicher CPU's. Die Anzahl m&ouml;glicher
+loops wurde von Aburto moeglichst klein gehalten damit die Module auch
+in den kleinsten vorstellbaren Cache passen.
+<p>Wie bereits erw&auml;hnt durchl&auml;uft das Programm acht unabh&auml;ngige
+Module verschiedenster Algorithmen. Unter Verwendung mathematischer Funktionen
+wie sin(x), cos(x), atan() oder pi wird daraus die maximal erreichbare
+Fliesskommageschwindigkeit pro Sekunde errechnet.
+<br>&nbsp;
+<p><b>MFLOPS(1)</b>
+<p>Basiert auf Parametern von MFLOPS(2) und MFLOPS(3). Der errechnete Wert
+ist deshalb genauer und praxisbezogener als Werte in fr&uuml;heren Versionen
+des Quellcodes.
+<br>&nbsp;
+<p><b>MFLOPS(2)</b>
+<p>Bezieht sich auf die Schwierigkeit dass sich in Modul 2 die 's' Variable
+nicht vollkommen vektrorisieren liess. Das Problem umging Aburto mit einer
+minimal geringeren FDIV Auslastung von anstatt 9.6% nur 9.2%. Auf Skalaren
+Systemen wird sich der Wert von MFLOPS(1) und MFLOPS(2) kaum unterscheiden,
+auf Vektororientierten Systemen sind die Werte unterschiedlicher.
+<br>&nbsp;
+<p><b>MFLOPS(3)</b>
+<p>Die prozentuelle FDIV Auslastung von 9.6% und 9.2%, benutzt von MFLOPS(1)
+und MFLOPS(2), ist f&uuml;r viele Programme zu hoch. Aus diesem Grund wurde
+MFLOPS(3) nur mit 3.4% FDIV's berechnet.
+<br>&nbsp;
+<p><b>MFLOPS(4)</b>
+<p>Analog MFLOPS(3) ausser dass dieser Wert mit NULL FDIV's errechnet wurde
+(NO FDIV).
+<br>&nbsp;
+<p><b>Der MFLOP Wert meines Systems?</b>
+<p>Die gemessene Peakperformance wird anhand des h&ouml;chsten Wertes ersichtlich,
+das es sich, wie erw&auml;hnt bei der Fliesskommaleistung um eine Art "Lichtgeschwindigkeit"
+des Systemes handelt.
+<br>&nbsp;
+<p><b>FLOPS benchmark Download</b>
+<p>Die von mir assemblierte <a href="data/flops-linux.tar.gz">FLOPS distribution
+[.tgz, 20kb]</a> wurde f&uuml;r Linux optimiert (CLI Interface), basierend
+auf diesem Quellcode habe ich ein <a href="flow.html">graphisches Frontend</a>
+(in C/Gtk+) geschrieben, welches wie anfangs erw&auml;hnt zwar selbst einen
+overhead verursacht, dieser aber durch einen Kommandoschalter kompensiert
+werden kann.
+<p>--
+<br><i><font size=-1>MIPS = million Instructions per second</font></i>
+<br><i><font size=-1>FLOPS = floating point operations per second</font></i>
+<br><i><font size=-1>MFLOP = megaflop</font></i>
+<br><i><font size=-1>GFLOP = gigaflop (1.073.741.824 flops)</font></i>
+<br><i><font size=-1>TFLOP = terraflop</font></i>
+<br><i><font size=-1>CPU = Zentraleinheit, Hauptprozessor (central processing
+unit)</font></i>
+<br><i><font size=-1>FPU = Fliesskommaeinheit, Arithmetischer Coprozessor
+(floating point unit)</font></i>
+<p>
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: floatingpoint.html,v 1.8 2003/02/20 18:02:00 gloor Exp gloor $</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+a244 1
+
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d10 2
+a11 2
+<b><font size=+1>TOP500.org Supercomputing
+Benchmark f&uuml;r Linux (FLOPS)</font></b>
+d15 1
+a15 1
+<p><b>Floating point operations per second (FLOPS)</b>
+d21 24
+a44 8
+Millionen ausgefuehrter Instruktionen pro Sekunde ausgibt, eignet sich&nbsp;
+nicht fuer den Vergleich verschiedener CPU-Typen. Die Geschwindigkeit ist
+stark vom verwendeten Befehlssatz abh&auml;ngig. Fast jede Computer Fachzeitschrift
+verwendet Ihre eigene Benchmark, aber die verwendeten Programme verursachen
+zum Teil selbst einen beachtlichen Overhead, dies verunmoeglicht einen
+System- und Plattformunabh&auml;ngigen Systemvergleich. Ein geeigneter
+Referenzwert um verschiedene Prozessoren miteinander zu vergleichen ist
+die Fliesskommaleistung (FLOPS).
+d46 1
+d48 3
+a50 3
+<p>Im Supercomputing Bereich (massive Parallelrechner) hat sich eine freie
+Benchmark etabliert und wird in allen renommierten Rechenzentren der Welt
+eingesetzt - LINPACK.
+d53 11
+a63 10
+Zeichens International anerkannter Supercomputer-Experte war auch als Referent
+am <a href="cluster-event.html">Swiss Linux Supercomputer Event bei Compaq
+in Z&uuml;rich</a> anwesend.
+<p>Da der FORTRAN Quellcode frei verfuegbar ist, wurde LINPACK auf jedes
+erdenkliche System portiert. LINPACK basiert auf einem einfachen Algorithmus;
+dem loesen eines linearen Gleichungssystems und dem messen der dafuer benoetigten
+Zeit die ein Prozessor hierfuer aufwendet. Anhand einer Formel errechnet
+LINPACK den Leistungsindex in FLOPS, oder ausgeschrieben floating point
+operations per second, diese bedeutet soviel wie Fliesskomma-Operationen
+pro Sekunde. Die Leistungsdaten unz&auml;hliger Systeme werden regelm&auml;ssig
+d66 8
+a73 8
+<p>Nach langer Suche habe ich vor ein paar Jahren auf dem FTP-Server des
+Naval Ocean Systems Center (NOSC) in San Diego im public homedir von Alfred
+Aburto, endlich einen brauchbaren und portablen Quellcode zur Bestimmung
+der Fliesskommageschwindigkeit gefunden. Auf einer RS/6000 konnte der Source
+ohne &Auml;nderungen kompiliert werden, f&uuml;r Linux musste der Quellcode
+modifiziert werden, aus diesem Grund habe ich eine speziell f&uuml;r Linux
+optimierte <a href="data/flops-linux.tar.gz">distribution [.tgz, 20kb]</a>
+assembliert.
+a139 2
+Zu leichtsinnig w&auml;re es nun einfach den h&ouml;chsten MFLOP Wert als
+Ausgabe zu verwenden.
+d141 6
+a146 6
+unter Verwendung der vier Grundrechenoperationen FADD, FSUB, FMUL, und
+FDIV bzw. versucht diese Werte in den Modulen genaustmoeglichst zu interpolieren.
+Diese vier Operationen sind typische Assembleranweisungen und stehen per
+Definition FDIV - fuer die Division zweier Realzahlen, FMUL - fuer die
+Multiplikation zweier Realzahlen, FSUB -&nbsp; fuer die Subtraktion zweier
+Realzahlen und FADD - fuer die Addition zweier Realzahlen. Die Errechnung
+d156 4
+a159 4
+oder Subtraktionen - die FDIV Operation ist also der massgebende Parameter
+im Leistungsvergleich unterschiedlicher CPU's. Die Anzahl moeglicher loops
+wurde von Aburto moeglichst klein gehalten damit die Module auch in den
+kleinsten vorstellbaren Cache passen.
+d179 1
+a179 1
+und MFLOPS(2), ist fuer viele Programme zu hoch. Aus diesem Grund wurde
+d187 3
+a189 4
+<p>Die gemessene System-Performance eines Systems wird am besten anhand
+der Ausgabe in MFLOPS(1) ersichtlich. Auf dem erw&auml;hnten <a href="http://performance.netlib.org">Performance
+Database Server</a> der schnellsten Parallelrechner der Welt wird deshalb
+genau dieser allgemeing&uuml;ltige Referenzwert ver&ouml;ffentlicht.
+d214 2
+a215 1
+<i>$Id$</i></dt>
+d218 2
+@
+
+
+1.7
+log
+@revised
+@
+text
+@d199 3
+a201 4
+<i>$Id: floatingpoint.html,v 1.6 2003/02/13 22:38:40 gloor Exp gloor $</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.6
+log
+@save of today's work
+@
+text
+@d199 1
+a199 1
+<i>$Id: floatingpoint.html,v 1.5 2002/09/22 17:30:17 gloor Exp gloor $</i></dt>
+d201 1
+a201 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.5
+log
+@site revised
+@
+text
+@d16 2
+a17 2
+<p>Moechte man die Leistungsdaten verschiedener Systeme vergleichen, ben&ouml;tigt
+man ein Chipset- und Architekturunabh&auml;ngiges Messverfahren.
+d30 1
+a30 1
+<p>S<b>upercomuting Benchmark LINPACK</b>
+d54 2
+a55 1
+optimierte <a href="data/flops-linux.tar.gz">distribution</a> assembliert.
+d58 3
+a60 3
+<p>Zur Bestimmung der Fliesskommaleistung ben&ouml;tigt das <a href="data/flops-linux.tar.gz">Programm</a>
+auf einem Intel PII 400Mhz rund 3 Minuten, die Standardausgabe gibt nach
+Berechnung der 8 Module folgendes aus:
+d177 6
+a182 5
+<p>Die von mir assemblierte FLOPS <a href="data/flops-linux.tar.gz">distribution</a>
+wurde f&uuml;r Linux optimiert (CLI Interface), basierend auf diesem Quellcode
+habe ich ein <a href="flow.html">graphisches Frontend</a> (in C/Gtk+) geschrieben,
+welches wie anfangs erw&auml;hnt zwar selbst einen overhead verursacht,
+dieser aber durch einen Kommandoschalter kompensiert werden kann.
+d199 1
+a199 1
+<i>$Id: floatingpoint.html,v 1.4 2002/09/08 18:32:06 gloor Exp $</i></dt>
+d201 1
+a201 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d10 2
+a11 2
+<b><font size=+1>FLOPS Benchmark f&uuml;r
+Linux</font></b>
+d15 1
+a15 1
+<p><b>Zeig mir Deine Benchmark und ich sag Dir wer Du bist</b>
+d19 5
+a23 5
+um die Leistungsfaehigkeit Ihrer Prozessoren hervorzuheben.&nbsp; Der MIPS
+Faktor (million instructions per second), welcher die Leistung in Millionen
+ausgefuehrter Instruktionen pro Sekunde ausgibt, eignet sich&nbsp; nicht
+fuer den Vergleich verschiedener CPU-Typen. Die Geschwindigkeit ist stark
+vom verwendeten Befehlssatz abhaengig. Fast jede Computer Fachzeitschrift
+d26 3
+a28 1
+System- und Plattformunabhaengigen Systemvergleich.
+d48 7
+a54 8
+<p>Nach fast Jahrelanger Suche habe ich auf dem FTP-Server des Naval Ocean
+Systems Center (NOSC) in San Diego im public homedir von Alfred Aburto,
+welcher Dongarra in keiner Weise nachsteht, endlich einen brauchbaren und
+portablen Quellcode zur Bestimmung der Fliesskommageschwindigkeit gefunden.
+Auf einer RS/6000 konnte der Source ohne &Auml;nderungen kompiliert werden,
+f&uuml;r Linux musste der Quellcode modifiziert werden, aus diesem Grund
+habe ich einen eigenen <a href="data/flops_bench.tar.gz">tarball</a> mit
+Makefile f&uuml;r Linux assembliert.
+d57 3
+a59 3
+<p>Zur Bestimmung der Fliesskommaleistung benoetigt das Programm auf einem
+Intel PII 400Mhz rund 3 Minuten, die Standardausgabe gibt nach Berechnung
+der 8 Module folgendes aus:
+d96 1
+a96 1
+Durchlaufen 8 eigenstaendiger unabhaengiger Laufzeitmodule verschiedener
+d119 7
+a125 8
+ist etwas Verstaendnis der verwendeten Algorithmen notwendig. Wie Du bemerkt
+hast, sind die MFLOP-Ausgaben der acht Module und die vier MFLOP-Ausgaben
+im Summary sehr unterschiedlich. Zu schoen aber auch zu leichtsinnig waere
+es, einfach den besten MFLOP Wert sein Eigen zu nennen (wir wollen doch
+bei der Wahrheit bleiben).
+<p>Gemaess Kommentar im Quellcode berechnet das Programm die MFLOPS unter
+Verwendung der vier Grundrechenoperationen FADD, FSUB, FMUL, und FDIV bzw.
+versucht diese Werte in den Modulen genaustmoeglichst zu interpolieren.
+d136 1
+a136 1
+bestenfalls f&auml;hrt man die Benchmark im singleuser runlevel.
+d138 3
+a140 3
+abzuarbeiten und aussagekraeftiger als Additionen, Multiplikationen oder
+Subtraktionen - die FDIV Operation ist also der massgebende Parameter im
+Leistungsvergleich unterschiedlicher CPU's. Die Anzahl moeglicher loops
+d143 2
+a144 2
+<p>Wie bereits erwaehnt durchlaeuft das Programm acht unabhaengige Module
+verschiedenster Algorithmen. Unter Verwendung mathematischer Funktionen
+d154 1
+a154 1
+<p>eBzieht sich auf die Schwierigkeit dass sich in Modul 2 die 's' Variable
+d164 1
+d171 10
+a180 8
+der Ausgabe in MFLOPS(1) ersichtlich. Auf dem erwaehnten <a href="http://performance.netlib.org">Performance
+Database Server</a> wird deshalb genau dieser allgemeing&uuml;ltige Referenzwert
+ver&ouml;ffentlicht.
+<br>&nbsp;
+<p><b>Download</b>
+<p>Der <a href="data/flops_bench.tar.gz">tarball</a> besteht aus einem
+einzigen Source- und Makefile f&uuml;r Linux.
+<br>&nbsp;
+d197 1
+a197 1
+<i>$Id$</i></dt>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d194 1
+a194 1
+$Id: floatingpoint.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+d196 1
+a196 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d199 1
+a199 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d201 6
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d52 2
+a53 2
+habe ich einen eigenen <a href="flops_bench.tar.gz">tarball</a> mit Makefile
+f&uuml;r Linux assembliert.
+d175 2
+a176 2
+<p>Der <a href="flops_bench.tar.gz">tarball</a> besteht aus einem einzigen
+Source- und Makefile f&uuml;r Linux.
+d192 5
+a196 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d199 1
+a199 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d192 1
+a192 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

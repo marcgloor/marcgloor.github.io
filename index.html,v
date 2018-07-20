@@ -1,0 +1,3640 @@
+head	1.111;
+access;
+symbols;
+locks
+	gloor:1.111; strict;
+comment	@# @;
+
+
+1.111
+date	2011.12.22.12.01.06;	author gloor;	state Exp;
+branches;
+next	1.110;
+
+1.110
+date	2010.05.18.12.20.15;	author gloor;	state Exp;
+branches;
+next	1.109;
+
+1.109
+date	2010.03.02.03.40.10;	author gloor;	state Exp;
+branches;
+next	1.108;
+
+1.108
+date	2010.03.02.03.39.47;	author gloor;	state Exp;
+branches;
+next	1.107;
+
+1.107
+date	2010.03.02.03.24.48;	author gloor;	state Exp;
+branches;
+next	1.106;
+
+1.106
+date	2010.03.02.03.23.00;	author gloor;	state Exp;
+branches;
+next	1.105;
+
+1.105
+date	2008.06.17.15.55.35;	author gloor;	state Exp;
+branches;
+next	1.104;
+
+1.104
+date	2006.08.17.22.29.33;	author gloor;	state Exp;
+branches;
+next	1.103;
+
+1.103
+date	2006.07.14.20.37.51;	author gloor;	state Exp;
+branches;
+next	1.102;
+
+1.102
+date	2006.06.04.10.40.28;	author gloor;	state Exp;
+branches;
+next	1.101;
+
+1.101
+date	2006.03.12.21.36.30;	author gloor;	state Exp;
+branches;
+next	1.100;
+
+1.100
+date	2006.01.18.16.41.03;	author gloor;	state Exp;
+branches;
+next	1.99;
+
+1.99
+date	2005.12.31.22.21.30;	author gloor;	state Exp;
+branches;
+next	1.98;
+
+1.98
+date	2005.11.12.11.28.36;	author gloor;	state Exp;
+branches;
+next	1.97;
+
+1.97
+date	2005.11.12.11.28.06;	author gloor;	state Exp;
+branches;
+next	1.96;
+
+1.96
+date	2005.11.10.20.02.43;	author gloor;	state Exp;
+branches;
+next	1.95;
+
+1.95
+date	2005.11.07.16.08.50;	author gloor;	state Exp;
+branches;
+next	1.94;
+
+1.94
+date	2005.11.07.16.01.25;	author gloor;	state Exp;
+branches;
+next	1.93;
+
+1.93
+date	2005.10.23.17.02.23;	author gloor;	state Exp;
+branches;
+next	1.92;
+
+1.92
+date	2005.09.29.17.27.01;	author gloor;	state Exp;
+branches;
+next	1.91;
+
+1.91
+date	2005.09.27.00.57.44;	author gloor;	state Exp;
+branches;
+next	1.90;
+
+1.90
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.89;
+
+1.89
+date	2005.09.17.07.22.20;	author gloor;	state Exp;
+branches;
+next	1.88;
+
+1.88
+date	2005.09.07.09.25.05;	author gloor;	state Exp;
+branches;
+next	1.87;
+
+1.87
+date	2005.09.01.23.07.25;	author gloor;	state Exp;
+branches;
+next	1.86;
+
+1.86
+date	2005.08.29.22.42.38;	author gloor;	state Exp;
+branches;
+next	1.85;
+
+1.85
+date	2005.08.20.17.22.58;	author gloor;	state Exp;
+branches;
+next	1.84;
+
+1.84
+date	2005.08.20.00.07.38;	author gloor;	state Exp;
+branches;
+next	1.83;
+
+1.83
+date	2005.08.14.16.15.09;	author gloor;	state Exp;
+branches;
+next	1.82;
+
+1.82
+date	2005.08.14.16.12.30;	author gloor;	state Exp;
+branches;
+next	1.81;
+
+1.81
+date	2005.08.14.10.27.44;	author gloor;	state Exp;
+branches;
+next	1.80;
+
+1.80
+date	2005.08.14.10.06.46;	author gloor;	state Exp;
+branches;
+next	1.79;
+
+1.79
+date	2005.08.14.08.49.19;	author gloor;	state Exp;
+branches;
+next	1.78;
+
+1.78
+date	2005.08.14.08.46.35;	author gloor;	state Exp;
+branches;
+next	1.77;
+
+1.77
+date	2005.08.07.10.48.54;	author gloor;	state Exp;
+branches;
+next	1.76;
+
+1.76
+date	2005.08.05.21.42.12;	author gloor;	state Exp;
+branches;
+next	1.75;
+
+1.75
+date	2005.08.05.21.35.30;	author gloor;	state Exp;
+branches;
+next	1.74;
+
+1.74
+date	2005.08.05.21.34.25;	author gloor;	state Exp;
+branches;
+next	1.73;
+
+1.73
+date	2005.08.05.21.04.38;	author gloor;	state Exp;
+branches;
+next	1.72;
+
+1.72
+date	2005.08.05.20.57.59;	author gloor;	state Exp;
+branches;
+next	1.71;
+
+1.71
+date	2005.03.19.21.23.25;	author gloor;	state Exp;
+branches;
+next	1.70;
+
+1.70
+date	2005.03.12.18.33.05;	author gloor;	state Exp;
+branches;
+next	1.69;
+
+1.69
+date	2005.02.07.20.33.12;	author gloor;	state Exp;
+branches;
+next	1.68;
+
+1.68
+date	2005.02.07.15.22.21;	author gloor;	state Exp;
+branches;
+next	1.67;
+
+1.67
+date	2005.01.19.22.02.07;	author gloor;	state Exp;
+branches;
+next	1.66;
+
+1.66
+date	2004.12.08.23.30.20;	author gloor;	state Exp;
+branches;
+next	1.65;
+
+1.65
+date	2004.11.27.13.27.44;	author gloor;	state Exp;
+branches;
+next	1.64;
+
+1.64
+date	2004.11.18.20.22.14;	author gloor;	state Exp;
+branches;
+next	1.63;
+
+1.63
+date	2004.10.06.19.24.41;	author gloor;	state Exp;
+branches;
+next	1.62;
+
+1.62
+date	2004.10.06.19.17.20;	author gloor;	state Exp;
+branches;
+next	1.61;
+
+1.61
+date	2004.09.07.07.18.56;	author gloor;	state Exp;
+branches;
+next	1.60;
+
+1.60
+date	2004.09.07.07.17.35;	author gloor;	state Exp;
+branches;
+next	1.59;
+
+1.59
+date	2004.09.03.11.22.05;	author gloor;	state Exp;
+branches;
+next	1.58;
+
+1.58
+date	2004.08.31.11.35.43;	author gloor;	state Exp;
+branches;
+next	1.57;
+
+1.57
+date	2004.08.31.11.23.44;	author gloor;	state Exp;
+branches;
+next	1.56;
+
+1.56
+date	2004.08.21.11.27.09;	author gloor;	state Exp;
+branches;
+next	1.55;
+
+1.55
+date	2004.04.22.13.08.02;	author gloor;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2004.04.21.18.11.16;	author gloor;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2004.04.13.20.58.48;	author gloor;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2003.07.19.17.57.01;	author gloor;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2003.03.23.23.30.01;	author gloor;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2003.03.20.23.13.03;	author gloor;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2003.03.20.22.57.38;	author gloor;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2003.03.08.18.22.57;	author gloor;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2003.03.02.17.35.39;	author gloor;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2003.03.01.00.14.48;	author gloor;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2003.02.22.11.29.58;	author gloor;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2003.02.19.23.03.04;	author gloor;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2003.02.15.18.05.52;	author gloor;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2003.02.15.10.40.18;	author gloor;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2003.02.15.10.39.13;	author gloor;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2003.02.15.10.00.08;	author gloor;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2003.02.14.19.49.56;	author gloor;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2003.02.13.22.45.04;	author gloor;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2003.01.31.22.59.57;	author gloor;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2003.01.23.23.24.19;	author gloor;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2003.01.22.05.18.08;	author gloor;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2003.01.21.13.29.05;	author gloor;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2002.11.10.17.08.31;	author gloor;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2002.11.06.22.19.30;	author gloor;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2002.11.03.08.37.03;	author gloor;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2002.11.03.08.33.51;	author gloor;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2002.10.06.21.20.24;	author gloor;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2002.10.06.19.51.06;	author gloor;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2002.10.06.19.42.51;	author gloor;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2002.10.06.13.48.30;	author gloor;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2002.09.29.16.12.52;	author gloor;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2002.09.22.19.07.08;	author gloor;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2002.09.22.13.07.48;	author gloor;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2002.09.21.07.18.26;	author gloor;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2002.09.09.21.44.11;	author gloor;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2002.09.09.21.28.56;	author gloor;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2002.09.08.18.25.49;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2002.09.08.18.25.30;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2002.09.08.18.24.28;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2002.09.08.18.23.45;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2002.09.07.07.01.15;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.09.07.06.56.07;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.09.02.18.50.18;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.09.02.04.37.14;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.09.02.03.53.29;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.09.01.13.48.52;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.01.11.28.28;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.11.28.00;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.111
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="keywords" content="Linux, Windows">
+  <title>alumni site</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#0000ef"
+ alink="#0000ef">
+<table border="0" cols="2" style="width: 100%;" nosave="">
+  <tbody>
+    <tr valign="top" nosave="">
+      <td nowrap="nowrap" nosave=""><b style="font-style: italic;"><font
+ color="#000000"><font size="+3"> </font></font></b><big
+ style="font-style: italic;"> </big><br>
+      <font color="#000000"><font size="+1">welcome to Marc's alumni page
+(computer science department)<br>
+      <span style="color: rgb(255, 0, 0);">website not updated
+anymore...</span><br>
+      </font></font></td>
+      <td style="text-align: right;"> <img
+ style="width: 240px; height: 60px;" alt="Fachhochschule Z&uuml;rich"
+ title="Fachhochschule Z&uuml;rich" src="data/zfh.jpg"><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<hr size="2"><br>
+<b><font color="#000000"><font size="+0">OpenSource projects,
+</font></font></b><b><font color="#000000"><font size="+0">contributions,
+publications, opinions</font></font></b>
+<p> </p>
+<b><font color="#000000"><font size="+0">
+</font></font></b>
+<ul>
+  <li><font color="#000000">industrial processing stock options
+performing my <a href="bsengine.html">derivative option pricing engine</a>
+(black/scholes model) [english]</font></li>
+  <li><font color="#000000">the blender <a href="mosix-blender.html">load
+balancing workload manager</a> for rendering sequences on a mosix
+cluster [english]</font></li>
+  <li><font color="#000000"><a href="hourmeter.html">hourmeter</a></font>
+displays the operating hours (or power-on hours) of
+your computer. [english]</li>
+  <li><font color="#000000">using the Gtk+ API, I wrote <a
+ href="xdict.html">xdict</a>, a scientific fuzzy logic algorithm
+implementation [english]</font></li>
+  <li><font color="#000000">administering screen(1) jobs easier using
+screenie, my <a href="screenie.html">screen-session handler</a> </font><font
+ color="#000000"> [english]</font></li>
+  <li><font color="#000000"><a href="buddy.html">buddy</a> is a
+hardcore debian package handler [english]<br>
+    </font></li>
+  <li> some<font color="#000000"> of my <a href="patch.html">patches
+and contributions</a>&nbsp; [english]</font></li>
+  <li> exclusively <font color="#000000">for RS/6000 and Sun
+Workstations, my <a href="xfce-everywhere.html">precompiled xfce
+binaries</a> [english]</font></li>
+  <li><font color="#000000">as a result of a boring afternoon, I made
+some <a href="animations.html">blender animations</a> [english]</font></li>
+  <li> <font color="#000000">animated <a href="xfce-animations.html">xfce
+logos</a> produced using blender
+[english]</font></li>
+  <li> <font color="#000000">my graphical <a href="xmon.html">xmon</a>
+performance monitor (xlib) is currently in beta status [english]</font></li>
+  <li><font color="#000000">a <a href="newton.html">stepwise newton
+iteration</a> written for the TI-89 calculator [english]</font></li>
+  <li><font color="#000000"><a href="floatingpoint.html">flops</a>
+is a </font>supercomputing <font color="#000000">system performance
+benchmark which I optimized for Linux</font><font color="#000000"> </font><font
+ color="#000000">[english]</font></li>
+  <li> <font color="#000000">using the <a href="casio-exilim.html">Casio
+Exilim</a> digital camera under Linux [english]</font></li>
+  <li><font color="#000000">using <a href="powerbook.html">Debian
+GNU/Linux on
+the Apple PowerBook</a> [english]</font></li>
+  <li><font color="#000000">setting up <a href="armada.html">GNU/Linux
+on a Compaq Armada 1700 Notebook</a> [english]</font></li>
+  <li> using the <a href="travan.html">HP-Colorado&nbsp; Travan</a>
+streamer for Linux <font color="#000000">[german]</font></li>
+  <li> <font color="#000000">some pictures from the Compaq <a
+ href="cluster-event.html">Linux supercomputing event 2000 in Zurich</a></font>
+[<font color="#000000">german]</font></li>
+  <li>impressions taken from the european <a href="linuxtag_2003.html">Linuxday
+2003 Karlsruhe/Germany</a> [english]</li>
+  <li><font color="#000000"><font size="+0">Die <a
+ href="dist-pfaffikersee.html">exakte Distanz</a> des Wanderweges um
+den Pf&auml;ffikersee (Kt. Z&uuml;rich/Schweiz) [german]</font></font><b><font
+ color="#000000"><font size="+0"><br>
+    </font></font></b><b><font color="#000000"><font size="+0"></font></font></b>
+  </li>
+</ul>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="80%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.110 2010/05/18 12:20:15 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="impressum.html">disclaimer</a> <a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.110
+log
+@*** empty log message ***
+@
+text
+@a75 1
+mySQL RDBMS </font><font color="#000000">[german]</font></li>
+d103 1
+a103 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.109 2010/03/02 03:40:10 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.109
+log
+@*** empty log message ***
+@
+text
+@a75 2
+  <li><font color="#000000">joglog is my <a href="joglog.html">jogging
+training analysis</a> based on a
+d104 1
+a104 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.108 2010/03/02 03:39:47 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.108
+log
+@*** empty log message ***
+@
+text
+@d105 2
+a106 2
+      <td width="70%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.107 2010/03/02 03:24:48 gloor Exp gloor $<br>Author:</i><i> <a
+d113 1
+a113 1
+      <div align="right"><i><a href="sitemap.html">sitemap</a> <a href="impressum.html">disclaimer</a> <a href="index.html">home</a></i></div>
+@
+
+
+1.107
+log
+@*** empty log message ***
+@
+text
+@d105 2
+a106 2
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.106 2010/03/02 03:23:00 gloor Exp gloor $<br>Author:</i><i> <a
+d113 1
+a113 2
+      <div align="right"><i><a href="impressum.html">disclaimer</a> <a
+ href="index.html">home</a></i></div>
+@
+
+
+1.106
+log
+@minor changes
+@
+text
+@d20 1
+a20 1
+      <font color="#000000"><font size="+1">welcome to my alumni page
+d106 1
+a106 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.105 2008/06/17 15:55:35 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.105
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+  <meta name="author" content="Marc Gloor">
+d10 1
+a10 1
+  <title>personal website of Marc O. Gloor</title>
+d18 1
+a18 1
+ color="#000000"><font size="+3">personal website of Marc O. Gloor</font></font></b><big
+a57 2
+  <li> <font color="#000000">the well known and legendary <a
+ href="linux-sticker.html">Linux sticker</a> for real geeks [english]</font></li>
+a78 7
+  <li>take a look on the handout of my short <a
+ href="data/linux_presentation.pdf">Linux presentation [.pdf, 634kb]</a>
+    <font color="#000000">at FHZH [english]</font></li>
+  <li>literature review of Homo Faber from Max Frisch [<a
+ href="data/homofaber.txt">.tex, 30kb</a>]<font color="#000000"> [<a
+ href="data/homofaber.ps">.ps, 317kb</a>] [<a href="data/homofaber.pdf">.pdf,
+222kb</a>] [german]</font></li>
+a85 4
+  <li><font color="#000000">my </font><font color="#000000"><a
+ href="glibc2.html">glibc
+crashcourse</a></font><font color="#000000"> for Linux beginners and
+newbies</font><font color="#000000"> [german]</font></li>
+a87 3
+  <li> my <a href="gnuch.html">usenet posting from late 1999</a>
+concerning my Debian Linux activities in switzerland [<font
+ color="#000000">german]</font></li>
+d106 1
+a106 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.104 2006/08/17 22:29:33 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.104
+log
+@*** empty log message ***
+@
+text
+@d22 2
+d32 2
+a33 27
+<hr size="2">
+<p><b>Scientific research interests</b> </p>
+<ul>
+  <li> neurocomputing / evolutionary computation (Neuroinformatik)</li>
+  <li> high performance computing (HPC) and supercomputing (clustering,
+    <a href="http://www.globus.org">grid computing</a>)<span
+ class="site-title"></span></li>
+  <li><span class="site-title">verification of the <a
+ href="http://www.zetagrid.net">Riemann Hypothesis</a> for which I
+spend
+some idle CPU cycles</span></li>
+  <li> parallel processing and distributed computing (distributed
+artificial intelligence)</li>
+  <li> investigating neural networks using the "Stuttgart neural
+network
+simulator SNNS"</li>
+  <li> scientific financial forecasting using neural networks</li>
+  <li> nanotechnologies and bioinformatics (the next generation of
+quantum computers)<br>
+  </li>
+  <li> personal privacy in ubiquitous computing</li>
+  <li> Unix derivates like OpenBSD, AIX, HP-UX, Irix, Solaris, Linux</li>
+  <li> using the Linux operating system in an enterprise solution<br>
+  </li>
+</ul>
+<hr width="100%">
+<p><b><font color="#000000"><font size="+0">OpenSource projects,
+d35 2
+a36 1
+publications, opinions</font></font></b> </p>
+d95 2
+a96 2
+  <li><font color="#000000">my </font><a href="debian.html"><font
+ color="#000000"></font></a><font color="#000000"><a href="glibc2.html">glibc
+d108 1
+a108 9
+2003 Karlsruhe/Germany</a> [english]<br>
+  </li>
+</ul>
+<hr width="100%">
+<p><span style="font-weight: bold;"><font color="#000000"><font
+ size="+0">Mi</font></font></span><font color="#000000"><font size="+0"><span
+ style="font-weight: bold;">sc</span><br>
+</font></font></p>
+<ul>
+d122 1
+a122 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.103 2006/07/14 20:37:51 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.103
+log
+@*** empty log message ***
+@
+text
+@d23 3
+a25 1
+      <td> <br>
+d152 1
+a152 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.102 2006/06/04 10:40:28 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.102
+log
+@*** empty log message ***
+@
+text
+@d23 1
+a23 3
+      <td>
+      <div align="right"><br>
+      </div>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.101 2006/03/12 21:36:30 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.101
+log
+@*** empty log message ***
+@
+text
+@d57 4
+a60 1
+educational sites</font></font></b> </p>
+a109 6
+</ul>
+<hr size="2">
+<p><b><font color="#000000"><font size="+0">Contributions,
+publications, opinions<br>
+</font></font></b></p>
+<ul>
+d134 13
+d152 1
+a152 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.100 2006/01/18 16:41:03 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.100
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+      <font color="#000000"><font size="+1">welcome to my alumni page 
+d133 2
+a134 11
+2003 Karlsruhe/Germany</a> [english]</li>
+</ul>
+<hr size="2">
+<p><b>About</b> </p>
+<ul>
+  <li> <font color="#000000"><a href="about.html">about me</a>
+[english]</font></li>
+  <li> my personal <a href="genealogialresearch.html">genealogical
+research</a> page<font color="#000000"> [german]<br>
+    <br>
+    </font></li>
+d142 1
+a142 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.99 2005/12/31 22:21:30 gloor Exp gloor $<br>Author:</i><i> <a
+d149 2
+a150 1
+      <div align="right"><i><a href="index.html">home</a></i></div>
+@
+
+
+1.99
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+      <font color="#000000"><font size="+1">welcome to my alumni site
+d151 1
+a151 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.98 2005/11/12 11:28:36 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.98
+log
+@*** empty log message ***
+@
+text
+@a80 2
+  <li> <font color="#000000">my official Linux package containing the <a
+ href="what.html">'what'-command</a> (derived from OpenBSD) [english]</font></li>
+d97 1
+a97 2
+  <li><font color="#000000">joglog is my <a
+ href="joglog.html">jogging
+d151 1
+a151 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.97 2005/11/12 11:28:06 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.97
+log
+@*** empty log message ***
+@
+text
+@d100 1
+a100 1
+ href="file:///home/gloor/data/secure/archive/www/website/joglog.html">jogging
+d154 1
+a154 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.96 2005/11/10 20:02:43 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.96
+log
+@*** empty log message ***
+@
+text
+@a78 4
+  <li><font color="#000000">my&nbsp; detailed <a href="joglog.html">jogging
+training analysis</a> is based on a
+mySQL database which I called joglog</font><font color="#000000">
+[german]</font></li>
+d99 4
+d154 1
+a154 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.95 2005/11/07 16:08:50 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.95
+log
+@alumni added
+@
+text
+@d83 2
+a84 2
+  <li> some<font color="#000000"> of my <a href="patch.html">contributed
+source patches and contributions</a>&nbsp; [english]</font></li>
+d90 2
+d93 1
+a93 1
+logos</a> produced during learning the blender rendering engine
+a98 3
+  <li> <font color="#000000">as a result of a boring afternoon, I made
+some <a href="linuxinside-animations.html">Linux-inside logo animations</a>
+for public use [english]</font></li>
+d154 1
+a154 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.94 2005/11/07 16:01:25 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.94
+log
+@alumni accnt changed
+@
+text
+@d20 2
+a21 2
+      <font color="#000000"><font size="+1">welcome to the
+homedir of alumni account (computer science dept.)<br>
+d155 1
+a155 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.93 2005/10/23 17:02:23 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.93
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 1
+homedir of my educational system account (computer science dept.)<br>
+d155 1
+a155 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.92 2005/09/29 17:27:01 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.92
+log
+@*** empty log message ***
+@
+text
+@d84 1
+a84 1
+source patches</a>&nbsp; [english]</font></li>
+d155 1
+a155 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.91 2005/09/27 00:57:44 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.91
+log
+@*** empty log message ***
+@
+text
+@d74 1
+a74 1
+  <li><font color="#000000"><a href="buddy.html">buddy</a> is my
+d155 1
+a155 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.90 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.90
+log
+@*** empty log message ***
+@
+text
+@d74 3
+d155 1
+a155 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.89 2005/09/17 07:22:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.89
+log
+@*** empty log message ***
+@
+text
+@d152 2
+a153 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.88 2005/09/07 09:25:05 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.88
+log
+@*** empty log message ***
+@
+text
+@d80 2
+a81 6
+  <li> <font color="#000000">collection of <a href="patch.html">contributed
+source patches</a> for various projects [english]</font></li>
+  <li><font color="#000000">encrypt your data repository using cfs with
+my highsecure <a href="cfs.html">cfs blowfish algorithm patch</a>
+[german]<br>
+    </font></li>
+d152 1
+a152 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.87 2005/09/01 23:07:25 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.87
+log
+@*** empty log message ***
+@
+text
+@d72 1
+a72 1
+the <a href="screenie.html">screen-session handler</a> </font><font
+d156 1
+a156 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.86 2005/08/29 22:42:38 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.86
+log
+@*** empty log message ***
+@
+text
+@d72 1
+a72 2
+my
+terminal <a href="screenie.html">screen-session handler</a> </font><font
+d156 1
+a156 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.85 2005/08/20 17:22:58 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.85
+log
+@*** empty log message ***
+@
+text
+@d71 4
+d157 1
+a157 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.84 2005/08/20 00:07:38 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.84
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+<table border="0" cols="2" width="100%" nosave="">
+d153 1
+a153 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.83 2005/08/14 16:15:09 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.83
+log
+@*** empty log message ***
+@
+text
+@d24 2
+a25 2
+      <div align="right"><img src="data/zfh_logo.gif" alt="fhzh"
+ nosave="" height="53" width="250"></div>
+d153 1
+a153 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.82 2005/08/14 16:12:30 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.82
+log
+@*** empty log message ***
+@
+text
+@d80 1
+a80 1
+my highsecure <a href="data/cfs.html">cfs blowfish algorithm patch</a>
+d153 1
+a153 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.81 2005/08/14 10:27:44 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.81
+log
+@*** empty log message ***
+@
+text
+@d65 1
+a65 2
+  <li><font color="#000000"><a
+ href="hourmeter.html">hourmeter</a></font>
+d79 4
+d153 1
+a153 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.80 2005/08/14 10:06:46 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.80
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+  <title>official website of Marc O. Gloor</title>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.79 2005/08/14 08:49:19 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.79
+log
+@fixes
+@
+text
+@d10 1
+a10 1
+  <title>official web repository of Marc O. Gloor</title>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.78 2005/08/14 08:46:35 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.78
+log
+@Seite neu organisiert / zwei Spalten
+@
+text
+@d66 1
+a66 1
+ href="file:///home/gloor/data/secure/archive/www/website/hourmeter.html">hourmeter</a></font>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.77 2005/08/07 10:48:54 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.77
+log
+@*** empty log message ***
+@
+text
+@d65 4
+a89 4
+  <li><font color="#000000"><a href="hourmeter.html">hourmeter</a></font>
+displays the operating hours (or power-on hours) of
+your computer. [english]<br>
+  </li>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.76 2005/08/05 21:42:12 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.76
+log
+@*** empty log message ***
+@
+text
+@d86 1
+a86 1
+  <li><font color="#000000"><a href="runtime.html">hourmeter</a></font>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.75 2005/08/05 21:35:30 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.75
+log
+@*** empty log message ***
+@
+text
+@d31 1
+a31 1
+<p><b>Scientific research interests:</b> </p>
+d57 1
+a57 1
+educational sites:</font></font></b> </p>
+d86 1
+a86 2
+  <li><font color="#000000"><a
+ href="runtime.html">hourmeter</a></font>
+d95 1
+a95 2
+  <li><font color="#000000"><a
+ href="floatingpoint.html">flops</a>
+d135 1
+a135 1
+<p><b>About:</b> </p>
+d150 1
+a150 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.74 2005/08/05 21:34:25 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.74
+log
+@*** empty log message ***
+@
+text
+@d87 1
+a87 1
+ href="file:///home/gloor/data/secure/archive/www/website/runtime.html">hourmeter</a></font>
+d97 1
+a97 1
+ href="file:///home/gloor/data/secure/archive/www/website/floatingpoint.html">flops</a>
+d152 1
+a152 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.73 2005/08/05 21:04:38 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.73
+log
+@*** empty log message ***
+@
+text
+@d86 5
+a90 4
+  <li>&nbsp;<font color="#000000"><span
+ style="text-decoration: underline;"></span>the <a href="runtime.html">hourmeter</a>
+command displays the system
+run-time since first poweron [english]</font></li>
+d96 5
+a100 5
+  <li> <font color="#000000">for measuring the system performance in a
+professional manner, here are both, <a href="floatingpoint.html">flops</a>
+and </font><font color="#000000"><a
+ href="flow.html">flow</a>
+    </font><font color="#000000">[german/english]</font></li>
+d152 1
+a152 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.72 2005/08/05 20:57:59 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.72
+log
+@*** empty log message ***
+@
+text
+@d98 1
+a98 1
+ href="file:///home/gloor/data/secure/archive/www/website/flow.html">flow</a>
+d151 1
+a151 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.71 2005/03/19 21:23:25 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.71
+log
+@*** empty log message ***
+@
+text
+@a139 3
+  <li><font color="#000000">my original <a href="duetto.html">Alfa
+Romeo Duetto roundtail classic oldtimer</a> (built 1968) [english]<br>
+    </font></li>
+d151 1
+a151 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.70 2005/03/12 18:33:05 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.70
+log
+@runtime change (hm)
+@
+text
+@d96 4
+a99 12
+professional manner, here's the <a href="floatingpoint.html">flops</a>
+application [german]</font></li>
+  <li> <font color="#000000"><a href="flow.html">flow</a> is an X11
+system performance benchmark which includes the flops kernel [english]</font></li>
+  <li><font color="#000000">definition of computer science [<a
+ href="data/informatik.ps">.ps, 73kb</a>] </font><font color="#000000">[<a
+ href="data/informatik.pdf">.pdf, 26kb</a>] </font><font
+ color="#000000"> [german]</font></li>
+  <li><font color="#000000">inofficial FHZH <a
+ href="latex-vorlage.html">LaTeX template</a>
+[german]<br>
+    </font></li>
+a125 5
+  <li>bad publicity for <a href="microsoft-skandal.html">Microsoft
+switzerland</a> in late of summer 1999 [<font color="#000000">english]</font></li>
+  <li>using <a href="security.html">strong military cryptography</a>
+on
+a Linux backend [<font color="#000000">german]</font></li>
+a128 4
+  <li> <font color="#000000">some of the largest <a
+ href="linux-supercomputer.html">Linux based supercomputing</a>
+projects
+on earth </font>[<font color="#000000">german]</font></li>
+d154 1
+a154 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.69 2005/02/07 20:33:12 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.69
+log
+@bugs gefixed
+@
+text
+@d86 4
+a89 2
+  <li> <font color="#000000">the <a href="runtime.html">runtime</a>
+command displays the system run-time since first poweron [english]</font></li>
+d171 1
+a171 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.68 2005/02/07 15:22:21 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.68
+log
+@*** empty log message ***
+@
+text
+@d70 2
+a71 8
+  <li><font color="#000000">for my regular jogging records I wrote
+joglog which is based on a mySQL RDBMS to <br>
+    </font></li>
+  <li><font color="#000000">for my personal jogging-journal JOGLOG is
+based on a mySQL database engine,&nbsp; professional training analysis
+[german]</font></li>
+  <li><font color="#000000">my regular and detailed <a
+ href="joglog.html">jogging training analysis</a> is based on a
+d169 1
+a169 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.67 2005/01/19 22:02:07 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.67
+log
+@*** empty log message ***
+@
+text
+@d70 10
+d175 1
+a175 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.66 2004/12/08 23:30:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.66
+log
+@*** empty log message ***
+@
+text
+@a93 2
+  <li> planned: www.anonsurf.ch - the project is planned to go live end
+of 2003 (RS/6000 using a mySQL RDBMS</li>
+d154 1
+a154 2
+  <li> my personal <a
+ href="genealogialresearch.html">genealogical
+d165 1
+a165 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.65 2004/11/27 13:27:44 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.65
+log
+@*** empty log message ***
+@
+text
+@d157 1
+a157 1
+ href="file:///home/gloor/data/secure/archive/www/website/genealogialresearch.html">genealogical
+d168 1
+a168 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.64 2004/11/18 20:22:14 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.64
+log
+@*** empty log message ***
+@
+text
+@d153 3
+d168 1
+a168 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.63 2004/10/06 19:24:41 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.63
+log
+@*** empty log message ***
+@
+text
+@d56 2
+a57 2
+<p><b><font color="#000000"><font size="+0">OpenSource contributions
+and projects:</font></font></b> </p>
+d95 1
+a95 5
+of 2003 (RS/6000 using a mySQL RDBMS)</li>
+</ul>
+<hr width="100%">
+<p><b>Educational area (FH):</b> </p>
+<ul>
+a106 3
+  <li> workshop<font color="#000000"> concerning <a
+ href="data/linsys.pdf">a linear system [.pdf, 59kb]</a></font> <font
+ color="#000000">[german]</font></li>
+a146 9
+  <li> my personal <a href="genealogialresearch.html">genealogical
+research</a> page<font color="#000000"> [german]</font></li>
+  <li> why <a href="debian-sparc.html">I
+prefer running Linux</a> on my Sun Sparc<font color="#000000"> Unix
+workstation [german]</font></li>
+  <li><font color="#000000">why I'm using <a href="debian.html">Unix
+derivates (Linux)</a> on my systems since years [german]</font></li>
+  <li> the reason why I prefer the <a href="shell.html">korn
+shell (ksh)</a> <font color="#000000">[german]</font></li>
+d153 5
+a157 2
+  <li> <font color="#000000"><a href="personal/personal.html">personal
+area</a> [pwd protected]</font></li>
+d165 1
+a165 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.62 2004/10/06 19:17:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.62
+log
+@*** empty log message ***
+@
+text
+@a99 2
+  <li><a href="studium/studium.html">2Ib</a> (Sommersemester 2004)<font
+ color="#000000"> [german]</font></li>
+d178 1
+a178 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.61 2004/09/07 07:18:56 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.61
+log
+@*** empty log message ***
+@
+text
+@a88 3
+  <li> <font color="#000000">for a Linux presentation, I created some <a
+ href="sprachsynthese.html">system voice messages</a> using the mbrola
+speech synthesis [english]</font></li>
+a109 2
+  <li>system access to the <a href="cluster_fhzh.html">Unix
+infrastructure</a> at FHZH<font color="#000000"> [german]</font></li>
+d180 1
+a180 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.60 2004/09/07 07:17:35 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.60
+log
+@*** empty log message ***
+@
+text
+@d122 3
+a124 3
+ href="data/homofaber.txt">.tex, 29kb</a>]<font color="#000000"> [<a
+ href="data/homofaber.ps">.ps, 284kb</a>] [<a href="data/homofaber.pdf">.pdf,
+209kb</a>] [german]</font></li>
+d185 1
+a185 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.59 2004/09/03 11:22:05 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.59
+log
+@*** empty log message ***
+@
+text
+@d17 3
+a19 3
+      <td nowrap="nowrap" nosave=""><small><b><font color="#000000"><font
+ size="+3"><small>personal website of Marc O. Gloor</small></font></font></b></small>
+      <br>
+d21 2
+a22 3
+homedirectory of my educational system account</font></font> <br>
+      <font color="#000000"><font size="+1">this site resides on the
+system cluster at FHZH (zentrale Rechendienste)</font></font></td>
+d105 4
+d110 1
+a110 1
+ href="latex-vorlage.html">thesis and diploma template</a> for LaTeX
+d121 4
+a124 4
+  <li>literature review of Homo Faber from Max Frisch <a
+ href="data/homofaber.txt">[.tex, 29kb]</a><font color="#000000"> <a
+ href="data/homofaber.ps">[.ps, 284kb]</a> <a href="data/homofaber.pdf">[.pdf,
+209kb]</a> [german]</font></li>
+d185 1
+a185 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.58 2004/08/31 11:35:43 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.58
+log
+@*** empty log message ***
+@
+text
+@d105 4
+a108 1
+ color="#000000"> [german]<span style="color: rgb(255, 0, 0);"></span><br>
+d182 1
+a182 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.57 2004/08/31 11:23:44 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.57
+log
+@*** empty log message ***
+@
+text
+@d116 1
+a116 1
+ href="data/homofaber.tex">[.tex, 29kb]</a><font color="#000000"> <a
+d179 1
+a179 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.56 2004/08/21 11:27:09 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.56
+log
+@*** empty log message ***
+@
+text
+@d117 1
+a117 1
+ href="data/homofaber.ps">[.ps,284kb]</a> <a href="data/homofaber.pdf">[.pdf,
+d179 1
+a179 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.55 2004/04/22 13:08:02 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.55
+log
+@*** empty log message ***
+@
+text
+@d49 2
+a50 1
+quantum computers)</li>
+d112 1
+a112 1
+  <li> <font color="#000000">group presentation concerning <a
+d115 4
+a118 2
+  <li>my personal notes about the <a href="hp49g.html">HP 49G
+Calculator</a> <font color="#000000">[german]</font></li>
+d179 1
+a179 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.54 2004/04/21 18:11:16 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.54
+log
+@*** empty log message ***
+@
+text
+@d103 1
+a103 1
+  <li><a href="studium/studium.html">1Ib</a> (Sommersemester 2004)<font
+d176 1
+a176 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.53 2004/04/13 20:58:48 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.53
+log
+@*** empty log message ***
+@
+text
+@d84 2
+d104 1
+a104 2
+ color="#000000"> [german]<span style="color: rgb(255, 0, 0);"> (site
+wird geupdated bis Beginn Sommersemester 2004)</span><br>
+d176 1
+a176 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.52 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.52
+log
+@*** empty log message ***
+@
+text
+@d101 4
+a104 2
+  <li><a href="studium/studium.html">1IbW03</a> (Wintersemester 2003/04)<font
+ color="#000000"> [german]</font></li>
+d114 1
+a114 2
+Calculator</a>
+    <font color="#000000">[german]</font></li>
+d175 4
+a178 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+      <i> </i> <dt>
+@
+
+
+1.51
+log
+@..
+@
+text
+@d6 1
+a6 1
+  <meta name="Author" content="Marc Gloor">
+d173 4
+a176 3
+      <td width="90%" nosave=""> <dt> <i>$Id: index.html,v 1.49
+2003/03/23 23:30:01 gloor Exp gloor $</i></dt>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+a181 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@
+
+
+1.50
+log
+@change.
+@
+text
+@d17 3
+a19 2
+      <td nowrap="nowrap" nosave=""><b><font color="#000000"><font
+ size="+3">W3 repository of Marc O. Gloor</font></font></b> <br>
+d35 7
+a41 2
+  <li> high performance computing (HPC) and supercomputing (clustering, <a
+ href="http://www.globus.org">grid computing</a>)</li>
+d44 2
+a45 1
+  <li> investigating neural networks using the "Stuttgart neural network
+d50 1
+a50 3
+  <li> personal privacy in ubiquitous computing (visit the site of my
+formerly neighbour <a href="http://www.inf.ethz.ch/personal/langhein/">Marc
+Langheinrich</a> at ETHZ)</li>
+d52 2
+a53 2
+  <li> using the Linux operating system as mission critical enterprise
+solution for productional environments</li>
+d59 4
+a62 1
+  <li> <font color="#000000">the blender <a href="mosix-blender.html">load
+d65 7
+a71 3
+  <li> <font color="#000000">the development of the black/scholes <a
+ href="bsengine.html">derivative option pricing engine</a> for Unix was
+a big effort [english]</font></li>
+a73 7
+  <li> <font color="#000000">collection of <a href="patch.html">contributed
+source patches</a> for various projects [english]</font></li>
+  <li> <font color="#000000">the well known and legendary <a
+ href="linux-sticker.html">Linux sticker</a> for real geeks [english]</font></li>
+  <li> <font color="#000000">using the Gtk+ API, I wrote <a
+ href="xdict.html">xdict</a>, a scientific fuzzy logic algorithm
+implementation [english]</font></li>
+d78 2
+a79 1
+logos</a> for public use [english]</font></li>
+d83 1
+a83 1
+shellscript counts your systems uptime since first poweron [english]</font></li>
+d89 1
+a89 1
+speech synthesis [german]</font></li>
+a96 2
+  <li> planned: analytical sampling inspection for measuring the
+performance of switzerlands ADSL provider</li>
+d99 1
+a99 1
+<p><b>Educational area (FHZH/2003/Zc):</b> </p>
+d101 3
+a103 1
+  <li> System access to the <a href="cluster_fhzh.html">Unix
+d105 1
+a105 1
+  <li> Take a look on the handout of my <a
+d107 3
+a109 11
+at Fachhochschule Zurich in February 2003<font color="#000000"> [english]</font></li>
+  <li> <font color="#000000">Group presentation concerning <a
+ href="data/linsys.pdf">a linear system [.pdf, 59kb]</a></font></li>
+  <li> My personal <a href="hp49g.html">HP 49G Calculator Area</a><font
+ color="#000000"> [german]</font></li>
+  <li> the <a href="data/sparc.pdf">advertisement of my Sun workstation</a>
+placed at the pinboard at FHZH <font color="#000000">[english]</font></li>
+  <li> pending: Scheme of Horner/Ruffini exclusively presented on my
+website from Prof. J&uuml;rg B&uuml;chi <font color="#000000">[german]</font></li>
+  <li> a link to the <a href="http://www.windows-world.ch">bluescreen-world</a>
+server on which my collegue uploaded some edu files <font
+d111 3
+d117 2
+a118 1
+documentations, reports</font></font></b> </p>
+d120 11
+a130 6
+  <li> read more about the <a href="microsoft-skandal.html">stupid
+scheming of Microsoft switzerland</a> in late summer 1999 [<font
+ color="#000000">german]</font></li>
+  <li> <font color="#000000"><a href="debian.html">my personal Linux
+story</a> or why I'm using Debian GNU/Linux on servers and desktops
+[german]</font></li>
+d133 5
+a137 2
+  <li> protecting your datastore using <a href="security.html">strong
+military cryptography</a> for saving your privacy [<font color="#000000">german]</font></li>
+d139 1
+a139 1
+concerning my activities about Debian Linux in switzerland [<font
+d141 4
+a144 9
+  <li> <font color="#000000">my <a href="glibc2.html">glibc crashcourse</a>
+for Linux users in hurry [german]</font></li>
+  <li> <font color="#000000">setting up <a href="armada.html">GNU/Linux
+on a Compaq Armada 1700 Notebook</a> [english]</font></li>
+  <li> <font color="#000000">using the <a href="casio-exilim.html">Casio
+Exilim</a> digital camera under Linux [english]</font></li>
+  <li> <font color="#000000">Linux as <a
+ href="linux-supercomputer.html">supercomputing</a> operating system</font>
+[<font color="#000000">german]</font></li>
+d148 2
+a149 15
+  <li> <font color="#000000">european Linuxday 2000 Stuttgart/Germany
+[n.a.]</font></li>
+  <li> <font color="#000000"><a href="linuxday03.html">impressions from
+the european Linuxday 2003 Karlsruhe/Germany</a> [english]<br>
+    </font></li>
+  <li> <font color="#000000">spreadsheet to <a href="din6935.html">compute
+(DIN6935) drawings</a> for sheet metal bending machine [german]</font></li>
+  <li> why <a href="debian-sparc.html">I prefer running Linux</a> on my
+Sun Sparc<font color="#000000"> [german]</font></li>
+  <li> the reason why I prefer the <a href="shell.html">korn shell (ksh)</a> <font
+ color="#000000">[german]</font></li>
+  <li> <a href="community.html">general knowledge</a> about the
+OpenSource community<font color="#000000"> [german]</font></li>
+  <li> some details about the <a href="fuerst.html">swiss spamer Martin
+F&uuml;rst</a><font color="#000000"> [german]</font></li>
+d152 7
+a158 2
+  <li> instruction manual for <a href="humidor.html">building a humidor</a><font
+ color="#000000"> [german]</font></li>
+d163 2
+a164 1
+  <li> <font color="#000000"><a href="about.html">about me</a> [english]</font></li>
+a166 5
+  <li> <font color="#000000"><a href="impressum.html">disclaimer</a>
+[german]</font></li>
+  <li> <font color="#000000"><a href="rcs_summary.html">rcs summary</a>
+[english]</font></li>
+  <li> <font color="#000000"><a href="sitemap.html">sitemap</a> [english]</font></li>
+@
+
+
+1.49
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 7
+a10 5
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Marc Gloor">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <meta name="keywords" content="Linux, Windows">
+   <title>official web repository of Marc O. Gloor </title>
+d12 17
+a28 14
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#0000EF" alink="#0000EF">
+<table BORDER=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr VALIGN=TOP NOSAVE>
+<td NOWRAP NOSAVE><b><font color="#000000"><font size=+3>W3 repository
+of Marc O. Gloor</font></font></b>
+<br><font color="#000000"><font size=+1>welcome to the homedirectory of
+my educational system account</font></font>
+<br><font color="#000000"><font size=+1>this site resides on the system
+cluster at FHZH (zentrale Rechendienste)</font></font></td>
+
+<td>
+<div align=right><img SRC="data/zfh_logo.gif" ALT="fhzh" NOSAVE height=53 width=250></div>
+</td>
+</tr>
+a29 1
+
+d31 1
+a31 1
+<p><b>Scientific research interests:</b>
+d33 47
+a79 68
+<li>
+neurocomputing / evolutionary computation (Neuroinformatik)</li>
+
+<li>
+high performance computing (HPC) and supercomputing (clustering, <a href="http://www.globus.org">grid
+computing</a>)</li>
+
+<li>
+parallel processing and distributed computing (distributed artificial intelligence)</li>
+
+<li>
+investigating neural networks using the "Stuttgart neural network simulator
+SNNS"</li>
+
+<li>
+scientific financial forecasting using neural networks</li>
+
+<li>
+nanotechnologies and bioinformatics (the next generation of quantum computers)</li>
+
+<li>
+personal privacy in ubiquitous computing (visit the site of my formerly
+neighbour <a href="http://www.inf.ethz.ch/personal/langhein/">Marc Langheinrich</a>
+at ETHZ)</li>
+
+<li>
+Unix derivates like OpenBSD, AIX, HP-UX, Irix, Solaris, Linux</li>
+
+<li>
+using the Linux operating system as mission critical enterprise solution
+for productional environments</li>
+</ul>
+
+<hr WIDTH="100%">
+<p><b><font color="#000000"><font size=+0>OpenSource contributions and
+projects:</font></font></b>
+<ul>
+<li>
+<font color="#000000">the blender <a href="mosix-blender.html">load balancing
+workload manager</a> for rendering sequences on a mosix cluster [english]</font></li>
+
+<li>
+<font color="#000000">the development of the black/scholes <a href="bsengine.html">derivative
+option pricing engine</a> for Unix was a big effort [english]</font></li>
+
+<li>
+<font color="#000000">my official Linux package containing the <a href="what.html">'what'-command</a>
+(derived from OpenBSD) [english]</font></li>
+
+<li>
+<font color="#000000">collection of <a href="patch.html">contributed source
+patches</a> for various projects [english]</font></li>
+
+<li>
+<font color="#000000">the well known and legendary <a href="linux-sticker.html">Linux
+sticker</a> for real geeks [english]</font></li>
+
+<li>
+<font color="#000000">using the Gtk+ API, I wrote <a href="xdict.html">xdict</a>,
+a scientific fuzzy logic algorithm implementation [english]</font></li>
+
+<li>
+exclusively <font color="#000000">for RS/6000 and Sun Workstations, my
+<a href="xfce-everywhere.html">precompiled
+xfce binaries</a> [english]</font></li>
+
+<li>
+<font color="#000000">animated <a href="xfce-animations.html">xfce logos</a>
+d81 32
+a112 32
+
+<li>
+<font color="#000000">my graphical <a href="xmon.html">xmon</a> performance
+monitor (xlib) is currently in beta status [english]</font></li>
+
+<li>
+<font color="#000000">the <a href="runtime.html">runtime</a> shellscript
+counts your systems uptime since first poweron [english]</font></li>
+
+<li>
+<font color="#000000">as a result of a boring afternoon, I made some <a href="linuxinside-animations.html">Linux-inside
+logo animations</a> for public use [english]</font></li>
+
+<li>
+<font color="#000000">for a Linux presentation, I created some <a href="sprachsynthese.html">system
+voice messages</a> using the mbrola speech synthesis [german]</font></li>
+
+<li>
+<font color="#000000">for measuring the system performance in a professional
+manner, here's the <a href="floatingpoint.html">flops</a> application [german]</font></li>
+
+<li>
+<font color="#000000"><a href="flow.html">flow</a> is an X11 system performance
+benchmark which includes the flops kernel [english]</font></li>
+
+<li>
+planned: www.anonsurf.ch - the project is planned to go live end of 2003
+(RS/6000 using a mySQL RDBMS)</li>
+
+<li>
+planned: analytical sampling inspection for measuring the performance of
+switzerlands ADSL provider</li>
+d114 3
+a116 3
+
+<hr WIDTH="100%">
+<p><b>Educational area (FHZH/2003/Zc):</b>
+d118 5
+a122 15
+<li>
+System access to the <a href="cluster_fhzh.html">Unix infrastructure</a>
+at FHZH<font color="#000000"> [german]</font></li>
+
+<li>
+Take a look on the handout of my <a href="data/linux_presentation.pdf">Linux
+presentation [.pdf, 634kb]</a> at Fachhochschule Zurich in February 2003<font color="#000000">
+[english]</font></li>
+
+<li>
+<font color="#000000">Group presentation concerning <a href="data/linsys.pdf">a
+linear system [.pdf, 59kb]</a></font></li>
+
+<li>
+My personal <a href="hp49g.html">HP 49G Calculator Area</a><font color="#000000">
+d124 38
+a161 12
+
+<li>
+the <a href="data/sparc.pdf">advertisement of my Sun workstation</a> placed
+at the pinboard at FHZH <font color="#000000">[english]</font></li>
+
+<li>
+pending: Scheme of Horner/Ruffini exclusively presented on my website from
+Prof. J&uuml;rg B&uuml;chi <font color="#000000">[german]</font></li>
+
+<li>
+a link to the <a href="http://www.windows-world.ch">bluescreen-world</a>
+server on which my collegue uploaded some edu files <font color="#000000">[german]</font></li>
+a162 1
+
+d164 1
+a164 2
+<p><b><font color="#000000"><font size=+0>Contributions, documentations,
+reports</font></font></b>
+d166 4
+a169 52
+<li>
+read more about the <a href="microsoft-skandal.html">stupid scheming of
+Microsoft switzerland</a> in late summer 1999 [<font color="#000000">german]</font></li>
+
+<li>
+<font color="#000000"><a href="debian.html">my personal Linux story</a>
+or why I'm using Debian GNU/Linux on servers and desktops [german]</font></li>
+
+<li>
+using the <a href="travan.html">HP-Colorado&nbsp; Travan</a> streamer for
+Linux <font color="#000000">[german]</font></li>
+
+<li>
+protecting your datastore using <a href="security.html">strong military
+cryptography</a> for saving your privacy [<font color="#000000">german]</font></li>
+
+<li>
+my <a href="gnuch.html">usenet posting from late 1999</a> concerning my
+activities about Debian Linux in switzerland [<font color="#000000">german]</font></li>
+
+<li>
+<font color="#000000">my <a href="glibc2.html">glibc crashcourse</a> for
+Linux users in hurry [german]</font></li>
+
+<li>
+<font color="#000000">setting up <a href="armada.html">GNU/Linux on a Compaq
+Armada 1700 Notebook</a> [english]</font></li>
+
+<li>
+<font color="#000000">using the <a href="casio-exilim.html">Casio Exilim</a>
+digital camera under Linux [english]</font></li>
+
+<li>
+<font color="#000000">Linux as <a href="linux-supercomputer.html">supercomputing</a>
+operating system</font> [<font color="#000000">german]</font></li>
+
+<li>
+<font color="#000000">some pictures from the Compaq <a href="cluster-event.html">Linux
+supercomputing event 2000 in Zurich</a></font> [<font color="#000000">german]</font></li>
+
+<li>
+<font color="#000000">european Linuxday 2000 Stuttgart/Germany [n.a.]</font></li>
+
+<li>
+<font color="#000000">european Linuxday 2001 Stuttgart/Germany [n.a.]</font></li>
+
+<li>
+<font color="#000000">spreadsheet to <a href="din6935.html">compute (DIN6935)
+drawings</a> for sheet metal bending machine [german]</font></li>
+
+<li>
+why <a href="debian-sparc.html">I prefer running Linux</a> on my Sun Sparc<font color="#000000">
+d171 3
+a173 53
+
+<li>
+the reason why I prefer the <a href="shell.html">korn shell (ksh)</a> <font color="#000000">[german]</font></li>
+
+<li>
+<a href="community.html">general knowledge</a> about the OpenSource community<font color="#000000">
+[german]</font></li>
+
+<li>
+some details about the <a href="fuerst.html">swiss spamer Martin F&uuml;rst</a><font color="#000000">
+[german]</font></li>
+
+<li>
+my personal <a href="genealogialresearch.html">genealogical research</a>
+page<font color="#000000"> [german]</font></li>
+
+<li>
+instruction manual for <a href="humidor.html">building a humidor</a><font color="#000000">
+[german]</font></li>
+</ul>
+
+<hr size="2">
+<p><b>Misc:</b>
+<ul>
+<li>
+Two articles published by Bill Joy and Ray Kurzweil about the <a href="data/ethik.pdf">ethics
+[.pdf, 108kb]</a> of neurocomputing, nanotechnologies and robotics [german]</li>
+</ul>
+
+<hr WIDTH="100%">
+<p><b>About:</b>
+<ul>
+<li>
+<font color="#000000"><a href="about.html">about me</a> [english]</font></li>
+
+<li>
+<font color="#000000"><a href="personal/personal.html">personal area</a>
+[pwd protected]</font></li>
+
+<li>
+<font color="#000000"><a href="image-archive.html">image archive</a> [english]</font></li>
+
+<li>
+<font color="#000000"><a href="impressum.html">site disclaimer</a> [german]</font></li>
+
+<li>
+<font color="#000000"><a href="rcs_summary.html">rcs summary</a> [english]</font></li>
+
+<li>
+<font color="#000000"><a href="checksum.html">checksum listing</a> [english]</font></li>
+
+<li>
+<font color="#000000"><a href="sitemap.html">sitemap</a> [english]</font></li>
+d175 20
+a194 22
+
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: index.html,v 1.48 2003/03/20 23:13:03 gloor Exp gloor $</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+a195 1
+
+@
+
+
+1.48
+log
+@*** empty log message ***
+@
+text
+@d145 4
+d282 1
+a282 1
+<i>$Id: index.html,v 1.47 2003/03/20 22:57:38 gloor Exp gloor $</i></dt>
+@
+
+
+1.47
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+   <meta name="keywords" content="Linux, Windows">  
+d13 1
+a13 1
+<td NOWRAP NOSAVE><b><font color="#000000"><font size=+3>Official web repository
+d117 1
+a117 2
+manner, here's the <a href="floatingpoint.html">flops</a> application
+[german]</font></li>
+d278 1
+a278 1
+<i>$Id: index.html,v 1.46 2003/03/08 18:22:57 gloor Exp gloor $</i></dt>
+@
+
+
+1.46
+log
+@*** empty log message ***
+@
+text
+@d117 1
+a117 1
+manner, I wrote the <a href="floatingpoint.html">flops</a> application
+d279 1
+a279 1
+<i>$Id: index.html,v 1.45 2003/03/02 17:35:39 gloor Exp gloor $</i></dt>
+@
+
+
+1.45
+log
+@*** empty log message ***
+@
+text
+@d7 1
+d279 1
+a279 1
+<i>$Id: index.html,v 1.44 2003/03/01 00:14:48 gloor Exp gloor $</i></dt>
+@
+
+
+1.44
+log
+@*** empty log message ***
+@
+text
+@d141 1
+a141 1
+presentation [.pdf, 982kb]</a> at Fachhochschule Zurich in February 2003<font color="#000000">
+d278 1
+a278 1
+<i>$Id: index.html,v 1.43 2003/02/22 11:29:58 gloor Exp gloor $</i></dt>
+@
+
+
+1.43
+log
+@misc.
+@
+text
+@d194 2
+a195 2
+<font color="#000000">using the <a href="casio-exilim.html">Casio
+Exilim</a> digital camera under Linux [english]</font></li>
+d254 5
+a258 2
+<font color="#000000"><a href="private/private.html">private area</a> [pwd
+protected]</font></li>
+d278 1
+a278 1
+<i>$Id: index.html,v 1.42 2003/02/20 18:02:00 gloor Exp $</i></dt>
+@
+
+
+1.42
+log
+@*** empty log message ***
+@
+text
+@d194 4
+d275 2
+a276 1
+<i>$Id$</i></dt>
+d279 2
+@
+
+
+1.41
+log
+@*** empty log message ***
+@
+text
+@d271 3
+a273 4
+<i>$Id: index.html,v 1.40 2003/02/15 18:05:52 gloor Exp gloor $</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+<div align=right><img SRC="data/zfh_logo.gif" NOSAVE height=53 width=250></div>
+d32 2
+a33 1
+high performance computing (HPC) and supercomputing (clustering, grid computing)</li>
+d141 1
+a141 1
+presentation</a> at Fachhochschule Zurich in February 2003<font color="#000000">
+d239 2
+a240 2
+Two articles published by Bill Joy and Ray Kurzweil about the <a href="data/ethik.pdf">ethics</a>
+of neurocomputing, nanotechnologies and robotics [german]</li>
+d271 1
+a271 1
+<i>$Id: index.html,v 1.39 2003/02/15 10:40:18 gloor Exp $</i></dt>
+@
+
+
+1.39
+log
+@*** empty log message ***
+@
+text
+@d222 2
+a223 2
+some interesting details about the <a href="fuerst.html">swiss spamer Martin
+F&uuml;rst</a><font color="#000000"> [german]</font></li>
+d270 1
+a270 1
+<i>$Id: index.html,v 1.38 2003/02/15 10:39:13 gloor Exp gloor $</i></dt>
+@
+
+
+1.38
+log
+@revised
+@
+text
+@a9 1
+&nbsp;
+d270 1
+a270 1
+<i>$Id: index.html,v 1.37 2003/02/15 10:00:08 gloor Exp gloor $</i></dt>
+@
+
+
+1.37
+log
+@misc
+@
+text
+@d10 1
+a110 4
+<font color="#000000">using the mbrola speech synthesis system, I needed
+some useful&nbsp; [german]</font></li>
+
+<li>
+d271 1
+a271 1
+<i>$Id: index.html,v 1.36 2003/02/14 19:49:56 gloor Exp gloor $</i></dt>
+d273 1
+a273 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.36
+log
+@today's changes...
+@
+text
+@a9 1
+&nbsp;
+d17 1
+a17 3
+cluster at FHZH (zentrale Rechendienste)</font></font>
+<br><font color="#000000"><font size=+1>University of Applied Sciences
+of Zurich</font></font></td>
+d29 1
+a29 1
+neurocomputing and evolutionary computation (Neuroinformatik)</li>
+d274 1
+a274 1
+<i>$Id: index.html,v 1.35 2003/02/13 22:45:04 gloor Exp gloor $</i></dt>
+@
+
+
+1.35
+log
+@misc
+@
+text
+@d10 1
+d48 1
+a48 1
+bioinformatics (the next generation of quantum computers)</li>
+d277 1
+a277 1
+<i>$Id: index.html,v 1.34 2003/02/13 22:38:40 gloor Exp gloor $</i></dt>
+@
+
+
+1.34
+log
+@save of today's work
+@
+text
+@a9 1
+&nbsp;
+d276 1
+a276 1
+<i>$Id: index.html,v 1.33 2003/01/31 22:59:57 gloor Exp gloor $</i></dt>
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d32 1
+a32 2
+neural network technologies (e.g. investigate neural networks using the
+Stuttgart neural network simulator SNNS)</li>
+d35 1
+a35 1
+neurocomputing (Neuroinformatik, evolution&auml;re Algorithmen)</li>
+d38 1
+a38 2
+distributed computing, artificial intelligence (verteilte k&uuml;nstliche
+Intelligenz, VKI)</li>
+d41 2
+a42 1
+financial forecasting using neural network algorithms</li>
+d45 4
+a48 2
+parallel processing algorithms and scalable supercomputer technologies
+(clustering, supercomputing)</li>
+d64 2
+a65 1
+<p><b>Projects:</b>
+d68 2
+a69 2
+my project <a href="http://www.anonsurf.ch">http://www.anonsurf.ch</a>
+is currently in development and planned to go live in summer 2003</li>
+d72 2
+a73 3
+analytical sampling inspection for measuring the performance of switzerlands
+ADSL provider (planned)</li>
+</ul>
+a74 4
+<hr size="2">
+<p><b><font color="#000000"><font size=+0>OpenSource contributions and
+projects:</font></font></b>
+<ul>
+d76 2
+a77 6
+<font color="#000000"><a href="bsengine.html">bsengine</a> - black/scholes
+derivative option pricing engine for Unix [english]</font></li>
+
+<li>
+<font color="#000000">blender <a href="mosix-blender.html">load balancing
+shellscript</a> for rendering sequences on a mosix cluster [english]</font></li>
+d84 2
+a85 6
+<font color="#000000">the legendary linux <a href="linux-sticker.html">sticker</a>
+for the frontpanel [english]</font></li>
+
+<li>
+<font color="#000000"><a href="xdict.html">xdict</a> - german/english translator
+software [english]</font></li>
+d88 2
+a89 2
+<font color="#000000">linux package containing the <a href="what.html">'what'-command</a>
+(derived from OpenBSD) [english]</font></li>
+d101 2
+a102 2
+<font color="#000000"><a href="xmon.html">xmon</a> performance monitor
+for the linux operating system [english]</font></li>
+d109 1
+a109 1
+<font color="#000000">as a result of a boring afternoon, I made some <a href="linuxinside-animations.html">linux-inside
+d114 5
+a118 1
+some useful <a href="sprachsynthese.html">system voice messages</a> [german]</font></li>
+d128 8
+d138 1
+a138 1
+<hr size="2">
+d143 1
+a143 1
+at FHZH</li>
+d146 3
+a148 2
+My HP49G Site - Quick-and-dirty summarisation of the "Trigonometry with
+the HP49G"-Guide for the HP 48/49G calculator</li>
+d151 2
+a152 2
+Scheme of Horner/Ruffini exclusively presented on my website from J&uuml;rg
+B&uuml;chi, Dipl. Math. ETH (Prof. FHZH)</li>
+d155 2
+a156 1
+Zulassungstudium 2003 - Formelsammlung / OpenOffice / PDF</li>
+d159 6
+a164 1
+Semesterplan Informatik</li>
+d172 6
+a177 2
+late summer 1999, read more about the <a href="microsoft-skandal.html">stupid
+scheming of Microsoft switzerland</a> [<font color="#000000">german]</font></li>
+d181 1
+a181 1
+linux <font color="#000000">[german]</font></li>
+d184 2
+a185 2
+my <a href="/C:/06/gnuch.html">usenet posting from late 1999</a> concerning
+my activities about Debian Linux in switzerland</li>
+d188 2
+a189 2
+<font color="#000000">my <a href="glibc2.html">glibc crashcourse</a> for
+Linux users in hurry <a href="/C:/06/floatingpoint.html">[german]</a></font></li>
+d192 2
+a193 2
+protecting your datastore against <a href="security.html">strong military
+cryptography</a> <font color="#000000">[german]</font></li>
+d196 1
+a196 1
+<font color="#000000">Setting up <a href="armada.html">GNU/Linux on a Compaq
+d200 2
+a201 6
+<font color="#000000">linux as <a href="linux-supercomputer.html">supercomputing</a>
+operating system</font></li>
+
+<li>
+<font color="#000000">some <a href="cluster-event.html">impressions</a>
+from the Compaq Linux supercomputer event 2000 in Zurich</font></li>
+d204 2
+a205 1
+<font color="#000000">european Linuxday 2000 Stuttgart/Germany [english]</font></li>
+d208 1
+a208 1
+<font color="#000000">european Linuxday 2001 Stuttgart/Germany [english]</font></li>
+d211 1
+a211 4
+<font color="#000000">Linuxworld Expo [english]</font></li>
+
+<li>
+<font color="#000000">Linux conference Zurich [english]</font></li>
+d215 1
+a215 1
+drawings</a> for for sheet metal bending machine DIN 6935 [german]</font></li>
+d218 2
+a219 2
+<font color="#000000">the reason why <a href="debian.html">I prefer using
+Debian GNU/Linux</a> on my servers</font></li>
+d222 1
+a222 5
+the reason why I deinstalled Solaris in favour of Linux on my <a href="debian-sparc.html">Sun
+Sparc</a></li>
+
+<li>
+the reason why I prefer the <a href="shell.html">korn shell</a> (ksh)</li>
+d226 1
+a226 5
+[english]</font></li>
+
+<li>
+<font color="#000000">pictures from <a href="mydesktop.html">my high efficient
+desktop</a> environment</font></li>
+d230 1
+a230 4
+F&uuml;rst</a></li>
+
+<li>
+accomplish the <a href="overflow.html">daily information overflow</a></li>
+d234 1
+a234 1
+page</li>
+d237 2
+a238 1
+instruction manual for <a href="humidor.html">building a humidor</a></li>
+d242 1
+a242 1
+<p><b>Ethics:</b>
+d245 2
+a246 4
+The Bill Joy Debate [german]</li>
+
+<li>
+The Torvalds/Tannenbau Debate [german}</li>
+d253 1
+a253 7
+<font color="#000000"><a href="about.html">about me...</a></font></li>
+
+<li>
+<font color="#000000"><a href="publickey.html">my pgp public key</a></font></li>
+
+<li>
+<font color="#000000">my ssh public hostkey</font></li>
+d256 2
+a257 2
+<font color="#000000"><a href="genealogialresearch.html">my genealogical
+gedcom fingerprint</a></font></li>
+d260 1
+a260 1
+<font color="#000000"><a href="geekcode.html">my geek public key code block</a></font></li>
+d263 1
+a263 1
+links to friends of me (peperoni, loup-culinaire)</li>
+d266 1
+a266 1
+<font color="#000000"><a href="impressum.html">site disclaimer</a></font></li>
+d269 1
+a269 1
+<font color="#000000"><a href="sitemap.html">sitemap</a></font></li>
+d277 1
+a277 1
+<i>$Id: index.html,v 1.32 2003/01/23 23:24:19 gloor Exp gloor $</i></dt>
+d279 1
+a279 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.32
+log
+@misc after changes at credit suisse
+@
+text
+@d9 1
+a9 1
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+d29 1
+a29 2
+<p><b>Wichtig: Rendering Blender Sequences</b>
+<br><b>Scientific research interests:</b>
+d32 9
+a40 2
+neural network technologies (e.g. investigate networks using the Stuttgart
+neural network simulator SNNS)</li>
+d46 2
+a47 1
+parallel processing algorithms and technologies (clustering, supercomputing)</li>
+d50 3
+a52 1
+pervasive computing</li>
+d55 1
+a55 1
+Unix (AIX, HP-UX, Irix, Solaris, Linux)</li>
+d62 12
+d80 1
+a80 1
+derivative option pricing engine [english]</font></li>
+d83 2
+a84 2
+<font color="#000000">fast blender <a href="mosix-blender.html">load balancing</a>
+for rendering sequences on a mosix cluster [english]</font></li>
+d88 1
+a88 1
+patches</a> [english]</font></li>
+d91 2
+a92 2
+<font color="#000000">linux <a href="linux-sticker.html">sticker</a> for
+the frontpanel [english]</font></li>
+d104 2
+a105 1
+<a href="/C:/06/xfce-everywhere.html">precompiled xfce binaries</a> [english]<a href="/C:/06/xfce-everywhere.html"></a></font></li>
+d120 1
+a120 2
+<font color="#000000">as a result of a boring afternoon, I made some</font>
+<font color="#000000"><a href="/C:/06/linuxinside-animations.html">linux-inside
+d125 1
+a125 2
+some useful <a href="/C:/06/sprachsynthese.html">system voice messages</a>
+[german]</font></li>
+d130 1
+a130 1
+<a href="floatingpoint.html">[german]</a></font></li>
+d137 1
+a137 1
+<hr size="2"><b></b>
+d141 2
+a142 2
+Quick-and-dirty summarisation of the "Trigonometry with the HP49G"-Guide
+for the HP 48/49G calculator</li>
+d145 2
+a146 2
+Zulassungstudium 2003 - Formelsammlung / OpenOffice / PDF</li>
+</ul>
+a147 3
+<hr size="2"><b></b>
+<p><b>Projects:</b>
+<ul>
+d149 2
+a150 1
+analytical study of the Swiss ADSL Provider performance service</li>
+d153 1
+a153 4
+<a href="http://dict.leo.org/?p=T8PXU.&search=extensive">extensive</a>
+<a href="http://dict.leo.org/?p=T8PXU.&search=inspection">inspection&nbsp;
+</a><a href="http://dict.leo.org/?p=TGGT..&search=eingehende">eingehende</a>
+<b><a href="http://dict.leo.org/?p=TGGT..&search=Untersuchung">Untersuchung</a></b></li>
+d156 1
+a156 1
+measuring</li>
+d164 2
+a165 2
+enjoy the scandal: <a href="microsoft-skandal.html">stupid scheming of
+Microsoft switzerland</a> in august 1999 <font color="#000000"><a href="/C:/06/floatingpoint.html">[german]</a></font></li>
+d168 2
+a169 2
+using the HP-Colorado 5GB/IDE <a href="travan.html">Travan streamer under
+Linux</a> <font color="#000000"><a href="/C:/06/floatingpoint.html">[german]</a></font></li>
+d181 1
+a181 1
+cryptography</a> <font color="#000000"><a href="/C:/06/floatingpoint.html">[german]</a></font></li>
+d188 2
+a189 2
+<font color="#000000"><a href="linux-supercomputer.html">supercomputing</a>
+und linux</font></li>
+d209 1
+a209 1
+drawings</a> for for sheet metal bending machine DIN 6935 <a href="/C:/06/floatingpoint.html">[german]</a></font></li>
+d216 2
+a217 2
+the reason why I installed Linux on my <a href="debian-sparc.html">Sun
+Sparc</a>, not Solaris</li>
+d242 8
+a249 1
+<font color="#000000"><a href="flightsite.html">fliegerei VFR (RAUSNEHMEN</a></font></li>
+d252 1
+a252 1
+instruction manual for <a href="humidor.html">building a humidor</a></li>
+d255 1
+a255 1
+<hr size="2">
+d259 1
+a259 1
+<font color="#000000"><a href="/C:/06/about.html">about me...</a></font></li>
+d262 1
+a262 1
+<font color="#000000"><a href="/C:/06/publickey.html">my pgp public key</a></font></li>
+d265 1
+a265 1
+<font color="#000000">my sshpublic hostkey</font></li>
+d268 1
+a268 1
+<font color="#000000"><a href="/C:/06/genealogialresearch.html">my genealogical
+d272 1
+a272 2
+<font color="#000000"><a href="/C:/06/geekcode.html">my geek public key
+code block</a></font></li>
+d278 1
+a278 1
+<font color="#000000"><a href="/C:/06/impressum.html">site disclaimer</a></font></li>
+d281 1
+a281 1
+<font color="#000000"><a href="/C:/06/sitemap.html">sitemap</a></font></li>
+d289 1
+a289 1
+<i>$Id: index.html,v 1.31 2003/01/22 05:18:08 gloor Exp gloor $</i></dt>
+@
+
+
+1.31
+log
+@misc
+@
+text
+@d10 46
+a55 7
+<b><font color="#000000"><font size=+2>official
+web repository of Marc O. Gloor</font></font></b>
+<br><font color="#000000"><font size=+1>home account at <i>zentrale Rechendienste</i>
+Fachhochschule Zurich (FHZH)</font></font>
+<br>
+<hr WIDTH="100%">
+<p><b><font color="#000000"><font size=+1>my OpenSource projects and contributions</font></font></b>
+d58 2
+a59 2
+<font color="#000000"><a href="bsengine.html">bsengine - black/scholes
+derivative option pricing engine</a></font></li>
+d62 2
+a63 2
+<font color="#000000"><a href="mosix-blender.html">blender load balancing
+on a mosix cluster</a></font></li>
+d66 2
+a67 2
+<font color="#000000"><a href="patch.html">collection of contributed source
+patches</a></font></li>
+d70 2
+a71 2
+<font color="#000000"><a href="linux-sticker.html">linux sticker for the
+frontpanel</a></font></li>
+d74 2
+a75 2
+<font color="#000000"><a href="xdict.html">xdict (german/english translator
+software)</a></font></li>
+d78 2
+a79 2
+<font color="#000000"><a href="what.html">linux package containing the
+'what'-command (derived from OpenBSD)</a></font></li>
+d82 2
+a83 2
+<font color="#000000"><a href="xfce-everywhere.html">xfce (for RS/6000
+and Sun Sparc)</a></font></li>
+d86 2
+a87 1
+<font color="#000000"><a href="xfce-animations.html">xfce animated logos</a></font></li>
+d90 2
+a91 1
+<font color="#000000"><a href="xmon.html">xmon (performance monitor)</a></font></li>
+d94 2
+a95 1
+<font color="#000000"><a href="runtime.html">runtime (systemcounter)</a></font></li>
+d98 3
+a100 2
+<font color="#000000"><a href="linuxinside-animations.html">linux-inside
+logo animations</a></font></li>
+d103 3
+a105 2
+<font color="#000000"><a href="sprachsynthese.html">german system voice
+messages (speech synthesis)</a></font></li>
+d108 3
+a110 2
+<font color="#000000"><a href="floatingpoint.html">flops system performance
+benchmark</a></font></li>
+d113 2
+a114 1
+<font color="#000000"><a href="flow.html">flow (mflop/gflop benchmark)</a></font></li>
+d117 2
+a118 1
+<p><br><b><font color="#000000"><font size=+1>manuals and documentations</font></font></b>
+d121 2
+a122 1
+<a href="travan.html">HP-Colorado 5GB/IDE Travan</a></li>
+d125 2
+a126 1
+<font color="#000000"><a href="glibc2.html">Linux glibc Crashkurs</a></font></li>
+d128 3
+d132 1
+a132 2
+<font color="#000000"><a href="security.html">Ein kryptographisch gesicherter
+Datastore mit CFS/TCFS und PGP</a></font></li>
+d135 4
+a138 2
+<font color="#000000"><a href="armada.html">GNU/Linux / Compaq Armada 1700
+/ Ericsson R320S</a></font></li>
+d141 18
+a158 2
+<font color="#000000"><a href="linux-supercomputer.html">Linux Supercomputer
+- die Zukunft</a></font></li>
+d161 2
+a162 2
+<font color="#000000"><a href="cluster-event.html">Compaq Linux-Supercomputer
+Event 2000 / Z&uuml;rich</a></font></li>
+d165 2
+a166 2
+<font color="#000000"><a href="din6935.html">CAD Abwicklungen nach DIN
+6935</a></font></li>
+d169 2
+a170 1
+<font color="#000000">European Linuxday 2000 Stuttgart (Bilder folgen)</font></li>
+d173 2
+a174 1
+<font color="#000000">European Linuxday 2001 Stuttgart (Bilder folgen)</font></li>
+d177 2
+a178 1
+<font color="#000000">Linuxworld Expo&nbsp; (Bilder folgen)</font></li>
+d181 1
+a181 1
+<font color="#000000">Linux Konferenz Z&uuml;rich (Bilder folgen)</font></li>
+d184 1
+a184 2
+<font color="#000000"><a href="debian.html">Weshalb ich ausschliesslich
+Debian GNU/Linux einsetze</a></font></li>
+d187 1
+a187 2
+<font color="#000000"><a href="debian-sparc.html">Weshalb ich auf einer
+Sun Sparc Linux und nicht Solaris installiere</a></font></li>
+d190 1
+a190 2
+<font color="#000000"><a href="shell.html">Weshalb ich unter Linux die
+Korn Shell (ksh) bevorzuge</a></font></li>
+d193 10
+a202 3
+<font color="#000000"><a href="community.html">Allgemeinwissen &uuml;ber
+die OpenSource Community</a></font></li>
+</ul>
+a203 2
+<p><br><b><font color="#000000"><font size=+1>miscellaneous</font></font></b>
+<ul>
+d205 1
+a205 2
+<font color="#000000"><a href="microsoft-skandal.html">Microsoft-Schweiz:
+Der Linux Skandal August 1999</a></font></li>
+d208 2
+a209 2
+<font color="#000000"><a href="mydesktop.html">Marc's high efficient desktop
+environment</a></font></li>
+d212 2
+a213 1
+<font color="#000000"><a href="gnuch.html">Vertrieb Debian Schweiz</a></font></li>
+d216 2
+a217 2
+<font color="#000000"><a href="fuerst.html">Hinweise &uuml;ber die bekennende
+Z&uuml;rcher Spam-Firma von Martin F&uuml;rst</a></font></li>
+d220 1
+a220 2
+<font color="#000000"><a href="overflow.html">Information Overflow im vernetzten
+Zeitalter</a></font></li>
+d223 2
+a224 1
+<font color="#000000"><a href="genealogialresearch.html">Genealogical Research</a></font></li>
+d227 1
+a227 1
+<font color="#000000"><a href="flightsite.html">Fliegerei VFR</a></font></li>
+d230 1
+a230 2
+<font color="#000000"><a href="humidor.html">Humidor Eigenbau f&uuml;r
+Zigarrenraucher</a></font></li>
+d233 2
+a234 1
+<p><br><b><font color="#000000"><font size=+1>about...</font></font></b>
+d237 4
+a240 1
+<font color="#000000"><a href="about.html">About me...</a></font></li>
+d243 1
+a243 1
+<font color="#000000"><a href="publickey.html">My PGP public key</a></font></li>
+d246 2
+a247 1
+<font color="#000000">My SSH public hostkey</font></li>
+d250 2
+a251 2
+<font color="#000000"><a href="genealogialresearch.html">My genealogical
+GEDCOM fingerprint</a></font></li>
+d254 1
+a254 1
+<font color="#000000"><a href="geekcode.html">Geek public key code block</a></font></li>
+d257 1
+a257 1
+<font color="#000000"><a href="impressum.html">Disclaimer / Impressum</a></font></li>
+d260 1
+a260 1
+<font color="#000000"><a href="sitemap.html">Sitemap</a></font></li>
+a262 1
+<p><br>
+d268 1
+a268 1
+<i>$Id: index.html,v 1.30 2003/01/21 13:29:05 gloor Exp gloor $</i></dt>
+@
+
+
+1.30
+log
+@misc
+@
+text
+@d7 1
+a7 1
+   <title>Marc O. Gloor's official W3 repository</title>
+d10 4
+a13 4
+<font color="#000000"><b><font size=+2>Marc
+O. Gloor's official W3 repository </font></b><font size=+1>@@</font><b><font size=+2>
+FHZH</font></b></font>
+<br><font color="#000000"><font size=-1>site is not mirrored</font></font>
+d16 1
+a16 1
+<p><b><font color="#000000"><font size=+1>Projects and contributions</font></font></b>
+d71 1
+a71 1
+<p><br><b><font color="#000000"><font size=+1>Manuals and documentations</font></font></b>
+d128 1
+a128 1
+<p><br><b><font color="#000000"><font size=+1>Miscellaneous</font></font></b>
+d160 1
+a160 1
+<p><br><b><font color="#000000"><font size=+1>About...</font></font></b>
+d179 1
+a179 1
+<font color="#000000"><a href="impressum.html">Disclaimer</a></font></li>
+d191 1
+a191 1
+<i>$Id: index.html,v 1.29 2002/11/10 17:08:31 gloor Exp gloor $</i></dt>
+@
+
+
+1.29
+log
+@misc
+@
+text
+@d10 4
+a13 2
+<b><font color="#000000"><font size=+2>Marc
+O. Gloor's official W3 repository</font></font></b>
+d191 1
+a191 1
+<i>$Id: index.html,v 1.28 2002/11/06 22:19:30 gloor Exp gloor $</i></dt>
+@
+
+
+1.28
+log
+@revised
+@
+text
+@d25 1
+a25 1
+<font color="#000000"><a href="patch.html">Collection of contributed source
+d189 1
+a189 1
+<i>$Id: index.html,v 1.27 2002/11/03 08:37:03 gloor Exp gloor $</i></dt>
+@
+
+
+1.27
+log
+@what.html link bug fixed
+@
+text
+@d140 4
+d189 1
+a189 1
+<i>$Id: index.html,v 1.26 2002/11/03 08:33:51 gloor Exp gloor $</i></dt>
+@
+
+
+1.26
+log
+@what.html link added
+@
+text
+@d37 2
+a38 2
+<font color="#000000"><a href="what.html">what package for Linux derived
+from OpenBSD</a></font></li>
+d185 1
+a185 1
+<i>$Id: index.html,v 1.25 2002/10/06 21:20:24 gloor Exp gloor $</i></dt>
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d37 4
+d185 1
+a185 1
+<i>$Id: index.html,v 1.24 2002/10/06 19:51:06 gloor Exp gloor $</i></dt>
+@
+
+
+1.24
+log
+@revised, bugs fixed
+@
+text
+@d25 2
+a26 2
+<font color="#000000"><a href="patchcollection.html">Collection of contributed
+source patches</a></font></li>
+d181 1
+a181 1
+<i>$Id: index.html,v 1.23 2002/10/06 19:42:51 gloor Exp $</i></dt>
+@
+
+
+1.23
+log
+@general website revision, several things added
+@
+text
+@d54 2
+a55 2
+<font color="#000000"><a href="sprachsynthese.html">voice system messages
+(Speech synthesis)</a></font></li>
+d181 1
+a181 1
+<i>$Id: index.html,v 1.22 2002/10/06 13:48:30 gloor Exp $</i></dt>
+@
+
+
+1.22
+log
+@patchcollection link added
+@
+text
+@d14 1
+a14 3
+<p><b><font color="#000000"><font size=+1>My <a href="http://www.opensource.org">OpenSource</a>
+&amp; <a href="http://www.opencontent.org">OpenContent</a> projects and
+contributions</font></font></b>
+d181 1
+a181 1
+<i>$Id: index.html,v 1.21 2002/09/29 16:12:52 gloor Exp gloor $</i></dt>
+@
+
+
+1.21
+log
+@bruce schneier and ron rivest added
+@
+text
+@d10 1
+a10 1
+<b><font color="#000000"><font size=+1>Marc
+d14 3
+a16 1
+<p><b><font color="#000000">My OpenSource projects and contributions</font></b>
+d19 12
+a45 4
+<font color="#000000"><a href="mosix-blender.html">blender load balancing
+on a mosix cluster</a></font></li>
+
+<li>
+a64 4
+
+<li>
+<font color="#000000"><a href="bsengine.html">bsengine - black/scholes
+derivative option pricing engine</a></font></li>
+d67 1
+a67 1
+<p><br><b><font color="#000000">Manuals and documentations</font></b>
+d124 1
+a124 1
+<p><br><b><font color="#000000">Miscellaneous</font></b>
+d152 1
+a152 1
+<p><br><b><font color="#000000">About...</font></b>
+d183 1
+a183 1
+<i>$Id: index.html,v 1.20 2002/09/22 19:07:08 gloor Exp gloor $</i></dt>
+@
+
+
+1.20
+log
+@site revised, bsengine part added
+@
+text
+@d115 1
+a115 1
+die Community</a></font></li>
+d177 1
+a177 1
+<i>$Id: index.html,v 1.19 2002/09/22 13:07:48 gloor Exp $</i></dt>
+@
+
+
+1.19
+log
+@site revised
+@
+text
+@d57 2
+a58 2
+<font color="#000000">bsengine - black/scholes derivative option pricing
+engine</font></li>
+d177 1
+a177 1
+<i>$Id: index.html,v 1.18 2002/09/21 07:18:26 gloor Exp $</i></dt>
+@
+
+
+1.18
+log
+@mydesktop.html added
+@
+text
+@a38 3
+<font color="#000000"><a href="flow.html">flow (mflop/gflop benchmark)</a></font></li>
+
+<li>
+d54 3
+d177 1
+a177 1
+<i>$Id: index.html,v 1.17 2002/09/09 21:44:11 gloor Exp gloor $</i></dt>
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d125 4
+d177 1
+a177 1
+<i>$Id: index.html,v 1.16 2002/09/09 21:28:56 gloor Exp gloor $</i></dt>
+@
+
+
+1.16
+log
+@misc
+@
+text
+@a77 3
+<font color="#000000"><a href="linuxvor.html">Linux Pr&auml;sentation</a></font></li>
+
+<li>
+d173 1
+a173 1
+<i>$Id: index.html,v 1.15 2002/09/08 18:25:49 gloor Exp gloor $</i></dt>
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 1
+   <title>Website of Marc O. Gloor</title>
+d10 2
+a11 2
+<b><font color="#000000"><font size=+1>Marc O.
+Gloor's official W3 repository</font></font></b>
+d165 3
+d176 1
+a176 1
+<i>$Id: index.html,v 1.13 2002/09/08 18:24:28 gloor Exp $</i></dt>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d96 1
+a96 1
+<font color="#000000">European Linuxday 2001 Stuttgart (Bilder f olgen)</font></li>
+@
+
+
+1.13
+log
+@bugfixes...
+@
+text
+@d96 1
+a96 1
+<font color="#000000">European Linuxday 2001 Stuttgart (Bilder folgen)</font></li>
+d173 1
+a173 1
+<i>$Id$</i></dt>
+@
+
+
+1.12
+log
+@bugfixes...
+@
+text
+@d173 1
+a173 1
+<i>$Id $</i></dt>
+@
+
+
+1.11
+log
+@verenglischt
+@
+text
+@d148 1
+a148 1
+<font color="#000000"><a href="about.html">about me...</a></font></li>
+d151 1
+a151 1
+<font color="#000000"><a href="publickey.html">my PGP public key</a></font></li>
+d154 4
+a157 1
+<font color="#000000"><a href="genealogialresearch.html">my genealogical
+d161 1
+a161 1
+<font color="#000000"><a href="geekcode.html">geek public code block</a></font></li>
+d164 1
+a164 1
+<font color="#000000"><a href="impressum.html">disclaimer</a></font></li>
+d173 1
+a173 1
+<i>$Id: index.html,v 1.10 2002/09/07 06:56:07 gloor Exp gloor $</i></dt>
+d175 1
+a175 3
+<dt>
+<i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></dt>
+</td>
+d178 1
+a178 1
+<div align=right><i><a href="http://www.unilec.org/mgloor/index.html">home</a></i></div>
+d180 6
+@
+
+
+1.10
+log
+@kosmetische veraenderung
+@
+text
+@d148 1
+a148 1
+<font color="#000000"><a href="about.html">About...</a></font></li>
+d151 1
+a151 1
+<font color="#000000"><a href="publickey.html">PGP Public Key</a></font></li>
+d154 2
+a155 1
+<font color="#000000"><a href="geekcode.html">Geek Public Code Block</a></font></li>
+d158 4
+a161 1
+<font color="#000000"><a href="impressum.html">Impressum</a></font></li>
+d170 1
+a170 1
+<i>$Id: index.html,v 1.9 2002/09/02 18:50:18 gloor Exp gloor $</i></dt>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d166 1
+a166 1
+<i>$Id: index.html,v 1.8 2002/09/02 04:37:14 gloor Exp gloor $</i></dt>
+d168 3
+a170 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d166 1
+a166 1
+$Id: index.html,v 1.7 2002/09/02 03:53:29 gloor Exp $</dt>
+d168 1
+a168 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d171 1
+a171 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+@
+
+
+1.7
+log
+@diverse aenderungen
+@
+text
+@d11 1
+a11 1
+Gloor's official W3 repository (html4)</font></font></b>
+d49 2
+a50 2
+<font color="#000000"><a href="sprachsynthese.html">System-Meldungen (Speech
+synthesis)</a></font></li>
+d53 2
+a54 2
+<font color="#000000"><a href="floatingpoint.html">FLOPS Systemmessung
+unter Linux (benchmark)</a></font></li>
+d166 1
+a166 1
+$Id: index.html,v 1.6 2002/09/01 13:48:52 gloor Exp gloor $</dt>
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+<p><b><font color="#000000">Eigene OpenSource Projekte und contributions</font></b>
+d17 2
+a18 2
+<font color="#000000"><a href="linux-sticker.html">Linux sticker f&uuml;r
+die Frontblende</a></font></li>
+d21 1
+a21 1
+<font color="#000000"><a href="xdict.html">Xdict (German/English translator
+d25 1
+a25 1
+<font color="#000000"><a href="xfce-everywhere.html">XFCE (for RS/6000
+d29 1
+a29 1
+<font color="#000000"><a href="xfce-animations.html">XFCE animated logos</a></font></li>
+d36 1
+a36 1
+<font color="#000000"><a href="xmon.html">Xmon (performance monitor)</a></font></li>
+d39 1
+a39 1
+<font color="#000000"><a href="flow.html">Flow (mflop/gflop benchmark)</a></font></li>
+d42 1
+a42 1
+<font color="#000000"><a href="runtime.html">Runtime (systemcounter)</a></font></li>
+d45 1
+a45 1
+<font color="#000000"><a href="linuxinside-animations.html">Linux-inside
+d49 2
+a50 1
+<font color="#000000"><a href="sprachsynthese.html">System-Meldungen (Sprachsynthese)</a></font></li>
+d55 4
+d61 1
+a61 2
+<p><br><b><font color="#000000">Manuals, Dokumentationen, Berichte und
+Meinungen</font></b>
+d166 1
+a166 1
+$Id: index.html,v 1.4 2002/09/01 11:28:28 gloor Exp gloor $</dt>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+Gloor's official html4 W3 repository</font></font></b>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d10 2
+a11 2
+<b><font color="#000000"><font size=+1>Marc Gloor's
+web repository</font></font></b>
+a59 3
+<a href="kleinweich.html">Mein statement zum Thema Windows</a></li>
+
+<li>
+a73 3
+<a href="soffice.html">StarOffice f&uuml;r Linux</a></li>
+
+<li>
+a88 4
+<font color="#000000"><a href="windows-oem.html">OEM-Windows auf einem
+Neurechner</a></font></li>
+
+<li>
+a112 10
+<font color="#000000"><a href="humidor.html">Eigenbau Humidor f&uuml;r
+Zigarrenraucher</a></font></li>
+</ul>
+
+<p><br><b><font color="#000000">Allgemeinwissen f&uuml;r Linuxer/innen</font></b>
+<ul TYPE=DISC>
+<li>
+<font color="#000000">Allgemeinwissen &uuml;ber den Kernel (Teil 1)</font></li>
+
+<li>
+d114 1
+a114 4
+die Community (Teil 2)</a></font></li>
+
+<li>
+<font color="#000000">Allgemeinwissen &uuml;ber den Cyberspace (Teil 3)</font></li>
+d117 1
+a117 2
+<p><br><b><font color="#000000">Fliegen / Flugvorbereitung (hosted services
+@@ unilec.org)</font></b>
+d120 2
+a121 2
+<font color="#000000"><a href="meteo.html">GAFOR, METAR, AIRMET, SIGMET,
+TAF, GAMET (swiss soaring weather forecast)</a></font></li>
+a122 4
+<br><font color="#000000">(Die hier regelm&auml;ssig reassemblierten Wetterdaten
+k&ouml;nnen zur Flugvorbereitung im unteren Luftraum verwendet werden,
+bitte sicherheitshalber das Datum crosschecken, keine Garantie &uuml;ber
+die publizierten Daten.)</font>
+d124 1
+a124 1
+<font color="#000000"><a href="masternode-status.html">System status masternode.kuoni.int</a></font></li>
+d127 2
+a128 2
+<font color="#000000"><a href="flightsite.html">FLIEGEN</a></font></li>
+</ul>
+a129 2
+<p><br><b><font color="#000000">News</font></b>
+<ul>
+d131 1
+a131 1
+<font color="#000000"><a href="news.html">Aktuelle News</a></font></li>
+d134 1
+a134 2
+<font color="#000000"><a href="microsoft-skandal.html">Microsoft-Schweiz:
+Der Linux Skandal August 1999</a></font></li>
+d137 2
+a138 5
+<font color="#000000"><a href="gnuch.html">Vertrieb Debian Schweiz</a></font></li>
+
+<li>
+<font color="#000000"><a href="http://setiathome.ssl.berkeley.edu/stats/country_75.html">Unser
+SETI-Produktions-Status "Admins spend CPU" (top100)</a></font></li>
+a140 7
+<p><br><b><font color="#000000">Misc</font></b>
+<ul><font color="#000000"><a href="overflow.html">Information Overflow
+im vernetzten Zeitalter</a></font>
+<br><font color="#000000"><a href="jaguar-xjs.html">Jaguar XJ-S</a></font>
+<br><font color="#000000"><a href="genealogialresearch.html">Genealogical
+Research</a></font></ul>
+
+d162 1
+a162 1
+$Id: index.html,v 1.3 2002/09/01 11:28:00 gloor Exp gloor $</dt>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+web repository No2.</font></font></b>
+d203 1
+a203 1
+$Id: index.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+web repository</font></font></b>
+d13 1
+a13 1
+<hr WIDTH="100%"><b><font color="#000000"></font></b>
+d201 5
+a205 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d208 1
+a208 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d201 1
+a201 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

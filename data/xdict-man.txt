@@ -1,0 +1,147 @@
+XDICT(1)                   Xdict 1.0.6                   XDICT(1)
+
+
+NAME
+       xdict - English/German translator for UNIX (X11)
+
+SYNOPSIS
+       xdict [--h help] [--v version] [--d database]
+
+OPTIONS
+       Xdict  is an X11 application, even so there are 3 command-
+       line arguments available.
+
+
+       --h help
+              show help
+
+       --v show version
+              show version (release and build)
+
+       --d database
+              location of xdict database (xdict.dat)
+
+DESCRIPTION
+       xdict is a graphical dictionary for Linux, written by Marc
+       O.  Gloor <mgloor@fhzh.ch> and distributed under the terms
+       of the GNU General Public License, Version 2.  This  soft-
+       ware  is  distributed 'as is', free of charge, no warranty
+       of suitability or reliability is offered; use this at your
+       own  risk.  The  author  assumes no responsibility for any
+       damages, direct or incidental, resulting from the  use  of
+       this  software.  See  file  'COPYING'.  Other distribution
+       terms may be available by explicit request.
+
+       The current release is 1.0.6. This is intended as a stable
+       release.
+
+       The latest version of xdict is available from the official
+       xdict website: http://pubwww.fhzh.ch/~mgloor/xdict.html
+
+       If you have any questions or comments, or if  you  find  a
+       bug, mail me to <mgloor@fhzh.ch>. Thanks to all the people
+       who wrote with  bug  reports,  suggestions,  comments  and
+       criticism.
+
+NOTES
+       Currently,  xdict  has  only a plaintext fuzzylogic search
+       engine,  a  faster  hash  table  based  builtin   berkeley
+       database engine is planned.
+
+       Xdict fuzzy logic engine:
+       Scientific  fuzzylogic  algorithms uses NGramms to compare
+       common letters in dependence among themselves.
+
+       Using fuzzylogic algorithms the requested  translation  of
+       the  misstyped  german  word "Dampfscif" will nevertheless
+       find the correct word "steamboat" from the database.   The
+       database  contains more than 130'000 conversions, they are
+       inside the plaintext database 'xdict.dat'.
+
+REQUIREMENTS
+       If you intend to run a stacically linked binary, you don't
+       need  to  install the Gtk+ libaries before, if you plan to
+       compile xdict from scratch, see below.
+
+MANUALLY INSTALLATION
+       1) Login as root
+       2) Create a new folder /usr/local/xdict
+       3) Move the xdict binary to /usr/local/bin
+       4) Move xdict.dat to /usr/local/xdict
+       5) Move all other files to /usr/local/xdict
+       6) Move xdict.1 to /usr/man/man1 (or read with man -l)
+       7) Logout (exit) from root, login as normal user
+       8) Run xdict: 'xdict -d /usr/local/xdict/xdict.dat'
+
+BUILDING XDICT
+       Compile source against the newest Gtk+ libraries available
+       from  http://www.gtk.org.  Type:  ./configure  followed by
+       make ; then su - root and a make install, please note that
+       xdict.dat  will  not  be  installed automatically.  If you
+       need a  statically  linked  binary,  make  sure  you  link
+       against  existing  object  files in your path. Anyway - do
+       with the source what you want you want under the terms  of
+       the general public license.
+
+ERRORS
+       Running  xdict  without  options will use xdict.dat in the
+       same directory where the binary  is,  otherwise  an  error
+       message occured.
+
+EXAMPLES
+       xdict --d /home/johnson/xdict.dat
+
+FILES
+        xdict        xdict runtime binary
+        xdict.dat    ASCII runtime database
+        COPYING      General Public License
+        README       xdict plaintext manpage
+        AUTHORS      authors of xdict
+        INSTALL      building instructions
+        xdict.c      xdict source (C/Gtk+)
+        xdict.h      xdict headerfile
+        xdict.gld    graphical user interface
+        xdict.1      xdict manpage
+
+HISTORY
+       Rel. 1.0.0, July 1999
+              Initial Release
+
+       Rel. 1.0.2, August 1999
+              GUI bugfixes, manpage added
+
+       Rel. 1.0.4, April 2001
+              lots of bugs fixed, automake features added
+
+       Rel. 1.0.6, Mai 2003
+              New  authors  addresses  added,  ok  button feature
+              added
+
+
+PACKAGE DISTRIBUTIONS
+       There are currently 4 packages available:
+       xdict-1.0.6_i386_elf_bin.tar.gz
+       xdict-1.0.4_sparc_elf_bin.tar.gz
+       xdict-1.0.2_ppc_elf_bin.tar.gz
+       xdict-1.0.6_src.tar.gz
+
+KNOWN BUGS
+       On some debian systems, X locale modifiers  are  not  sup-
+       ported.  This  is a problem with a missing local directory
+       from the current setup e.g.  debian  slink  aka  GNU/Linux
+       2.1.  The latest version of the xlib6g package solve this.
+
+TODO
+       -Contributions and cooperations are welcome
+       -build several statically linked binary distributions.
+       -create rpm and deb packages.
+       -and all what you suggest...
+
+AUTHOR
+       xdict  was  written  by  Marc  O.  Gloor  <mgloor@fhzh.ch>
+       (c)1999-2003.
+
+
+1.0.6                      Mar 8, 2003                          3
+
+

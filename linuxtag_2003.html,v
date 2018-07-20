@@ -1,0 +1,161 @@
+head	1.3;
+access;
+symbols;
+locks
+	gloor:1.3; strict;
+comment	@# @;
+
+
+1.3
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="author" content="Marc Gloor">
+  <title>Linuxtag 2003 in Karlsruhe/Germany</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Linuxtag 2003 in Karlsruhe/Germany</font></b><br>
+von Marc O. Gloor <br>
+<hr width="100%">
+<p> <a
+ href="data/53.jpg"><img
+ src="data/53.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a> <a
+ href="data/22.jpg"><img
+ src="data/22.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/24.jpg"><img
+ src="data/24.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/26.jpg"><img
+ src="data/26.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/28.jpg"><img
+ src="data/28.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a><br>
+<a
+ href="data/30.jpg"><img
+ src="data/30.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/33.jpg"><img
+ src="data/33.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/37.jpg"><img
+ src="data/37.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/38.jpg"><img
+ src="data/38.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/44.jpg"><img
+ src="data/44.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a><br>
+<a
+ href="data/48.jpg"><img
+ src="data/48.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a> <a
+ href="data/50.jpg"><img
+ src="data/50.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a> <a
+ href="data/51.jpg"><img
+ src="data/51.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a> <a
+ href="data/54.jpg"><img
+ src="data/54.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a> <a
+ href="data/59.jpg"><img
+ src="data/59.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a><br>
+<a
+ href="data/66.jpg"><img
+ src="data/66.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/67.jpg"><img
+ src="data/67.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;<a
+ href="data/71.jpg"><img
+ src="data/71.jpg"
+ alt="loading..." nosave="" border="0" height="100" width="133"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p> </p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: linuxtag_2003.html,v 1.2 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre><br>
+      <i> </i> <dt>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d82 1
+a82 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d8 1
+a8 1
+  <meta name="Author" content="Marc O. Gloor">
+d81 4
+a84 3
+      <td width="90%" nosave=""> <dt> <i>$Id: linuxtag_2003.html,v 1.0
+2003/02/26 22:27:19 gloor Exp gloor $</i></dt>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+a89 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@

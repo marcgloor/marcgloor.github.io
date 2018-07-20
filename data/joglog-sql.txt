@@ -1,0 +1,115 @@
+-- $Id: joglog.sql,v 1.3 2005/02/05 15:27:23 gloor Exp $
+-- mySQL database layout for a relational jogging-logbook database
+-- written by Marc O. Gloor <mgloor@fhzh.ch>
+-- 
+-- This program is free software; you can redistribute it and/or modify
+-- it under the terms of the GNU General Public License as published by
+-- the Free Software Foundation; either version 2 of the License, or
+-- (at your option) any later version.
+--
+-- This program is distributed in the hope that it will be useful,
+-- but WITHOUT ANY WARRANTY; without even the implied warranty of
+-- MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+-- GNU General Public License for more details.
+--
+-- You should have received a copy of the GNU General Public License
+-- along with this program; if not, write to the Free Software
+-- Foundation Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA
+
+CREATE DATABASE joglog;
+USE joglog;
+
+DROP TABLE IF EXISTS stammdaten;
+DROP TABLE IF EXISTS biodaten;
+DROP TABLE IF EXISTS konditionsdaten;
+DROP TABLE IF EXISTS schuhdaten;
+DROP TABLE IF EXISTS streckendaten;
+DROP TABLE IF EXISTS trainingsdaten;
+
+CREATE TABLE stammdaten (
+  stmid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  regdatum TIMESTAMP,
+  account VARCHAR(8) NOT NULL,
+  status ENUM('a','i') NOT NULL,
+  vorname TEXT NOT NULL,
+  name TEXT NOT NULL,
+  gebdatum DATE,
+  INDEX idx4 (stmid, account),
+  UNIQUE INDEX idx5 (account)
+);
+
+CREATE TABLE biodaten (
+  bioid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  stmid INT,  -- foreign key
+  regdatum TIMESTAMP,
+  messdatum DATE NOT NULL,
+  groesse INT(3) NOT NULL,
+  gewicht DECIMAL(3,1) NOT NULL,
+  hueftumfang INT(3),
+  koerperfett DECIMAL(3,1),
+  ruhepuls INT(3),
+  bemerkungen TEXT,
+  INDEX idx1 (bioid)
+);
+
+CREATE TABLE konditionsdaten (
+  condid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  stmid INT,  -- foreign key
+  regdatum TIMESTAMP,
+  condition INT(3) NOT NULL,
+  beschreibung TEXT,
+  symptom TEXT,
+  trainingsabbruch ENUM('n','y') NOT NULL,
+  bemerkungen TEXT,
+  INDEX idx2 (condid)
+);
+
+CREATE TABLE schuhdaten (
+  schid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  stmid INT,  -- foreign key
+  regdatum TIMESTAMP,
+  aktiviert ENUM('y','n') NOT NULL,
+  marke TEXT,
+  model TEXT,
+  gewicht DECIMAL(4,3),
+  kaufdatum DATE NOT NULL,
+  kaufpreis DECIMAL(5,2),
+  bemerkungen TEXT,
+  INDEX idx3 (schid)
+);
+
+CREATE TABLE streckendaten (
+  strid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  stmid INT,  -- foreign key
+  regdatum TIMESTAMP,
+  streckencode VARCHAR(5) NOT NULL,
+  streckenname TEXT NOT NULL,
+  bemerkungen TEXT,
+  ort TEXT NOT NULL,
+  start TEXT,
+  ziel TEXT,
+  distanz DECIMAL(5,2) NOT NULL,
+  lkm DECIMAL(3,2) NOT NULL,
+  steigung_pos INT(3),
+  steigung_neg INT(3),
+  INDEX idx6 (strid, streckencode),
+  UNIQUE INDEX idx7 (streckencode)
+);
+
+CREATE TABLE trainingsdaten (
+  traid INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  stmid INT,  -- foreign key
+  schid INT,  -- foreign key
+  strid INT,  -- foreign key
+  bioid INT,  -- foreign key
+  condid INT, -- foreign key
+  dt_run ENUM('d','t') NOT NULL,
+  regdatum TIMESTAMP,
+  trainingsdatum DATETIME,
+  trainingsdauer TIME NOT NULL,
+  gruppe ENUM('y','n') NOT NULL,
+  hrm ENUM('y','n') NOT NULL,
+  hr_avg INT(3),
+  bemerkungen TEXT,
+  INDEX idx8 (traid, strid, dt_run, gruppe)
+);

@@ -1,0 +1,1135 @@
+head	1.31;
+access;
+symbols;
+locks
+	gloor:1.31; strict;
+comment	@# @;
+
+
+1.31
+date	2006.01.17.18.00.36;	author gloor;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2006.01.13.22.36.49;	author gloor;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2005.12.12.15.12.51;	author gloor;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2005.12.11.17.51.46;	author gloor;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2005.08.20.00.07.38;	author gloor;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2005.08.07.11.06.25;	author gloor;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2005.08.06.17.15.59;	author gloor;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2005.08.06.17.13.29;	author gloor;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2005.02.08.20.36.54;	author gloor;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2005.02.07.21.42.02;	author gloor;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2005.02.07.21.38.13;	author gloor;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2005.02.07.21.33.42;	author gloor;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2005.02.07.21.24.27;	author gloor;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2005.02.07.21.06.23;	author gloor;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2005.02.02.19.26.32;	author gloor;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2005.02.02.19.23.30;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2005.02.02.19.20.38;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2004.02.20.10.51.29;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2004.02.20.10.46.04;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2004.02.20.10.29.58;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2004.02.19.14.04.48;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2004.02.19.14.04.20;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2004.02.19.13.43.16;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2004.02.19.13.42.51;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2004.02.19.13.33.42;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2004.02.19.13.30.35;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2004.02.19.13.30.09;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2004.02.19.13.29.18;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>Debian GNU/Linux on the Apple PowerBook 15" 1GHz (RISC)</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Debian GNU/Linux on the Apple PowerBook G4 15" 1GHz
+(Albook)</font></b><br>
+by Marc O. Gloor <br>
+<hr width="100%"><b><br>
+</b>
+<table cellpadding="2" cellspacing="2" border="0"
+ style="text-align: left; width: 100%;">
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;"><a
+ href="data/fvwm_bernina.jpg"><img title="my lovely PowerBook"
+ src="data/powerbook.jpg" alt="Powerbook"
+ style="border: 0px solid ; width: 400px; height: 300px;"></a><br>
+      </td>
+      <td style="text-align: left; vertical-align: top;">
+      <div style="text-align: left;"><b> Technical Specification</b><br>
+      <b> </b> </div>
+      <ul style="text-align: left;">
+        <li>Apple PowerBook G4, 15" Display (Aluminium aka Albook)</li>
+        <li>CPU: PowerPC G4, 1GHz RISC-architecture <br>
+        </li>
+        <li>60GB harddisk Ultra ATA/100</li>
+        <li>RAM: 256MB memory (DDR SDRAM)</li>
+        <li>167MHz bus system</li>
+        <li>512KB SRAM On-chip L2 chache</li>
+        <li>DVD-ROM/CD-RW (buitlin)<br>
+        </li>
+        <li>AirPort Extreme wireless (802.11g)</li>
+        <li>10/100/1000BASE-T Gigabit Ethernet (RJ45)</li>
+        <li>Modem 56K V.92 (RJ11)</li>
+        <li>Bluetooth, FireWire 400, Firewire 800</li>
+        <li>USB 2.0 (480MBit/sec)</li>
+        <li>PC Card slot (Type I, Type&nbsp; II)</li>
+        <li>preinstalled but uninstalled: Darwin Kernel, Mac OS X
+(Panther)</li>
+        <li>Operated by: Debian GNU/Linux (testing, sarge)<br>
+        </li>
+        <li>Tech-Spec Sheet <a href="data/pb15inch-techspech.pdf.gz">[.pdf.gz,
+51kb]</a></li>
+      </ul>
+      <a href="data/pb15inch-techspech.pdf.gz"></a></td>
+    </tr>
+  </tbody>
+</table>
+<b><br>
+<br>
+Why installing Linux on an Apple notebook and not OS X? <br>
+</b><br>
+I never used Apple hardware before but I was unhappy with that big
+amount of Wintel stuff around (bad performing CISC architecture, low
+quality, ugly design, preinstalled Microsoft operating system,&nbsp;
+licence agreements...) so I decided to buy my first Apple PowerBook in
+late 2003. Since then, I decided to prefer Apple hardware in future
+because I would never change my equipment anymore.<br>
+<b><br>
+</b>Some friends and Linux newbies regularly ask
+my the following question:<br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"Why do you prefer
+Linux on your Apple Powerbook? It doesn't make sense, because off..."</span><br>
+<b><br>
+</b>I only may repeat my answer again and again, <span
+ style="font-style: italic;">it's a matter of opinion:</span><br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"It's completely
+irrelevant for me which commercial operating system is delivered with
+the hardware I acquire. I'm Linux user and Linux will handle it."</span><br>
+<i style="color: rgb(0, 0, 0);"><br>
+</i>Certainly, CPU performance is an advantage, but for me not the most
+important reason to replace commercial Mac OS X
+with Linux. Due the fact that I
+installed Linux on several i386 (pentium) and Sparc (Sun workstation)
+systems (notebooks and servers) in the past, I prefered to install
+Linux on my PPC hardware again, in my case, an Apple Powerbook. Linux
+is stable and secure, <a
+ href="http://www.debian.org/intro/why_debian.en.html">Debian GNU/Linux</a>
+is a high quality OpenSource Linux distribution with a great packaging
+subsystem and many other feautures. The pretty nice design of the
+Powerbook
+and the fact, that there is a high performing RISC CPU inside (no Intel
+CISC arch.) was the decision to acquire a Powerbook performing Linux on
+it.<br>
+<br style="font-weight: bold;">
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">Collecting informations and
+prerequisites</span><br>
+<br>
+It took about a week setting up my powerbook and getting all devices
+fully working. The information you'll find around the www is quite
+confusing and often out of date but btw the only way to get more
+information about howto progress with the installation. Instead of
+describe a detailed step-by-step installation, I'll give you a brief
+overview about things that I installed which are different or
+additional to common descriptions of howto setup Linux on a
+PowerBook.<br>
+<span style="font-weight: bold;"><br>
+<br>
+Installation summary<br>
+</span>
+<p>I suppose that you plan to install Linux instead of a dualboot setup
+with Mac OS X. In this case, the only reason to boot Mac OS X is to be
+able to boot a Linux kernel. This initial setup <a
+ href="http://www.ppckernel.org">kernel</a> must support ATA100 disks,
+otherwise the kernel hangs with a root fs panic (an example of my
+kernel 2.6.x .config):<br>
+</p>
+<div style="margin-left: 40px;">&lt;*&gt;&nbsp;&nbsp;&nbsp;&nbsp;
+Include IDE/ATA-2 DISK support<br>
+[*]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ATA Work(s) In
+Progress (EXPERIMENTAL)<br>
+</div>
+<p>On my system, I didn't
+used a Debian CD-ROM installation set. After booting my first Linux
+kernel, I installed the further Debian base packages via&nbsp; FTP
+which works fine for me. After the base installation, I replaced the
+installation kernel with a kernel 2.6.0-test11 from the benh kernel
+tree and compiled a new one for my personal purposes, here is my
+2.6.0-test11 kernel <a href="data/config_2.6.0-test11.gz">.config</a>.
+Since
+official <a href="http://www.kernel.org">Linux kernel 2.6.3 vanilla</a>
+(Tue Feb 17 CET 2004), the kernel
+is fully PPC
+capable too, no more need for benh random devel snapshots. In fact the
+rsyncs will probably go away soon. Here's my current kernel 2.6.3
+kernel <a href="data/config-2.6.3.gz">.config</a>
+(use at your own risk).<br>
+</p>
+<p>Compiling
+kernels needs about 30min. After that, I installed my <a
+ href="hourmeter.html">hourmeter package</a> which displays the time
+operation hours. To get the Powerbook buttons working, I compiled and
+installed the newest pbbuttonsd rel. 0.5.7, after that, CD-ROM eject
+key, brightness and volume switch do a good job<span
+ style="color: rgb(51, 0, 51);">. I updated the system to Debian
+3.1 stable (sarge) in October 2005.</span><br>
+</p>
+<p>Setting up XFree86 was not trivial because of <a
+ href="http://bugs.xfree86.org/show_bug.cgi?id=798">some troubles with
+the Radeon 9600</a> video card, the solution for my problem was that I
+downloaded the newest <a href="http://www.xfree86.org/">XFree86</a>
+from CVS (XFree86 Version 4.3.99.901 - 4.4.0 RC 1) which took about 5
+hours to compile the new X11 environment on my 1GHz Powerbook, here is <a
+ href="data/XF86Config_powerbook.gz">my XF86Config [.gz, 1kb]</a>,
+use with care! If you plan to disable the trackpad/touchpad you just
+need to
+uncomment the related entry in my XF86Config, make sure that Kernel
+mouse support is disabled (example of my XF86Config):<br>
+</p>
+<p style="margin-left: 40px;">Section "InputDevice"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identifier&nbsp; "Mouse0"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Driver&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "mouse"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "CorePointer"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "ZAxisMapping"&nbsp;&nbsp;&nbsp;
+"4 5"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Protocol"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "IMPS/2"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Emulate3Buttons" "true"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Device"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"/dev/input/mice"&nbsp;&nbsp;&nbsp;&nbsp; # trackpad<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Device"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"/dev/input/mouse2"&nbsp;&nbsp; # the mouse<br>
+EndSection<br>
+</p>
+<p>After investigating some Sound and Video
+manuals, I was able to use sound finally and video with the prefered
+programs
+(xmms, ogle, bplay). The builtin Mathshita Non-SCSI writer must
+be mounted using the SCSI compatibility
+drivers from the Linux kernel, after that, cdrecord works fi<span
+ style="color: rgb(51, 0, 51);">ne. I updated X11 to XFree86
+Version 4.5.0 in October 2005.</span>
+</p>
+<b><br>
+Linux/PPC related login and welcome screens</b><br>
+<br>
+Because I don't like the default look-and-feel from the 'xdm' display
+login manager (XFree86) I patched <span style="font-style: italic;">Login.app-1.2.1.tar.gz</span>
+against my Linux/PPC <a href="data/Login.app_1.2.1-ppcpatch.gz">Login.app_1.2.1-ppc
+patch.gz [.gz, 1kb]</a> which leads to my Linux
+PPC/RISC login screen especially
+designed for Linux/PPC users. If you would like to
+have the same login screen as I have, download and extract Login.app
+1.2.1 (downloadable from the source of your choice),
+change into the Login.app directory and apply the patch using <span
+ style="font-style: italic;">'zcat Login.app_1.2.1-ppc patch.gz | patch
+-p1'</span>. Build and install Login.app as
+described in the documentation. My patched version of <a
+ href="data/Login.app_1.2.1-ppcpatch.tar.bz2">Login.app_1.2.1-ppcpatch.tar.bz2
+[.gz, 1kb]</a> is downloadable from my repository.&nbsp; My X11
+loginscreen and my fvwm welcome screen looks then as follows:<br>
+<br>
+<table
+ style="width: 90%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellspacing="2" cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><img
+ src="data/Login.app_ppc.png" alt="Login.app login screen"
+ style="border: 0px solid ; width: 462px; height: 260px;"></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="data/fvwm_bernina.jpg"><img
+ style="border: 0px solid ; width: 444px; height: 252px;"
+ alt="fvwm welcome screen" title="fvwm welcome screen"
+ src="data/fvwm-welcome.png"></a><br>
+      <a href="data/fvwm-welcome.xcf.gz">fvwm-welcome.xcf.gz [.gz, 22kb]</a><br>
+      <a href="data/fvwm-welcome.xpm.gz">fvwm-welcome.xpm.gz [.gz, 11kb]</a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+The fvwm login screen can be configured by adding the following lines
+to your .fvwm2rc:<br>
+<span style="font-style: italic;"><big><br>
+</big></span>
+<div style="margin-left: 40px;"><span style="font-family: monospace;">"I"
+Module FvwmBanner /full/path/to/your/fvwm-welcome.xpm</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">*FvwmBanner: NoDecor</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">*FvwmBanner: timeout 5</span><br>
+</div>
+<br>
+<br>
+<b>Open items / unsolved issues</b><br>
+<ul>
+  <li>Airport extreme Support (currently a work in progress)<br>
+  </li>
+  <li>Macromedia Flash Plugin for PPC (flash is not W3C compliant, I'll
+never support proprietary technologies)</li>
+</ul>
+<b><br>
+</b><b>Miscellaneous</b><br>
+<br>
+Special thanks to Thanks to Benjamin Herrenschmidt and other PPC&nbsp;
+contributors. If you have any question, send my an <a
+ href="mailto:mgloor_at_fhzh_dot_ch">e-mail</a> or talk with me under
+#debianppc at irc.debian.org (nick marculix). For additional
+information about UNIX software on mobile systems, check
+also <a href="http://TuxMobil.org">http://tuxmobil.org</a><br>
+<br>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.30 2006/01/13 22:36:49 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+  <title>Debian GNU/LInux on the Apple PowerBook 15" 1GHz (RISC)</title>
+d274 1
+a274 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.29 2005/12/12 15:12:51 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d263 3
+a265 1
+#debianppc at irc.debian.org (nick marculix)<br>
+d274 1
+a274 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.28 2005/12/11 17:51:46 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.28
+log
+@*** empty log message ***
+@
+text
+@d22 4
+a25 4
+      <td style="text-align: center; vertical-align: middle;"><img
+ title="my lovely PowerBook" src="data/powerbook.jpg" alt="Powerbook"
+ style="border: 0px solid ; width: 400px; height: 300px;"><br>
+      <a href="data/pb15inch-techspech.pdf.gz"></a><br>
+d225 5
+a229 3
+      <td style="vertical-align: top; text-align: right;"><img
+ style="width: 444px; height: 252px;" alt="fvwm welcome screen"
+ title="fvwm welcome screen" src="data/fvwm-welcome.png"><br>
+d272 1
+a272 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.27 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@d22 3
+a24 4
+      <td style="text-align: center; vertical-align: middle;"><a
+ href="data/pb15inch-techspech.pdf.gz"><img title="my lovely PowerBook"
+ src="data/powerbook.jpg" alt="Powerbook"
+ style="border: 0px solid ; width: 400px; height: 300px;"></a><br>
+d62 2
+a63 2
+amount of Wintel crap around (low performing CISC architecture, bad
+quality, ugly design, preinstalled Microsoft nonsense, stupid
+d65 1
+a65 1
+late 2003. Since then, I decided to ignore Wintel equipment in future
+d68 1
+a68 1
+</b>Some Apple veterans, OS-X friends and Linux newbies regularly ask
+d83 1
+a83 1
+the hardware I acquire. Linux will handle it."</span><br>
+d145 1
+a145 1
+kernels needs about 30min. After that, I installed the <a
+d149 3
+a151 3
+key, brightness and volume switch do a good job. <span
+ style="color: rgb(255, 0, 0);">Update: I updated the system to Debian
+3.1 stable (sarge).</span><br>
+d194 3
+a196 3
+drivers from the Linux kernel, after that, cdrecord works fine. <span
+ style="color: rgb(255, 0, 0);">Update: I updated X11 to XFree86
+Version 4.5.0 which works fine.</span>
+d199 1
+a199 1
+A Linux/PPC related login screen</b> <br>
+d202 3
+a204 5
+login manager (XFree86) I patched <a
+ href="http://largo.windowmaker.org/files/Login.app/Login.app-1.2.1.tar.gz">Login.app-1.2.1.tar.gz</a>
+against my Linux/PPC
+Login.app
+<a href="data/Linux.app_ppc_patch.gz">patch</a> which leads to my Linux
+d207 26
+a232 4
+have the same login screen as I have, download and extract Login.app,
+change into the Login.app directory and apply the patch using 'zcat
+Linux.app_ppc_patch.gz | patch -p1'. Build and install Login.app as
+described in the documentation. The login screen looks as follows:<br>
+d235 10
+a244 3
+<div style="text-align: center;"><a href="data/Login.app_ppc.png"><img
+ src="data/Login.app_ppc.png" title="" alt="Login.app"
+ style="border: 0px solid ; width: 462px; height: 260px;"></a><br>
+a247 1
+<br>
+d250 4
+a253 8
+  <li>Airport extreme Support (currently not supported)</li>
+  <li>DRI support for X (my current standard performance with glxgear
+is around
+80 frames/second)</li>
+  <li>I need J2SE 1.4.x - newest JRE available for Linux/PPC is '<span
+ style="font-style: italic;">build Blackdown-1.3.1-02c-FCS</span>'</li>
+  <li>Macromedia Flash Plugin for PPC (current fix to prevent flash
+errors: chmod 000 mozilla/plugins/libnullplugin.so)</li>
+d259 3
+a261 2
+contributors.<br>
+If you have any question, send my an <a href="mailto:mgloor_at_fhzh_dot_ch">e-mail</a>.<br>
+d270 1
+a270 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.26 2005/08/20 00:07:38 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d239 1
+a239 1
+If you have any question, send my an <a href="mailto:mgloor@@fhzh.ch">e-mail</a>.<br>
+d248 2
+a249 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.25 2005/08/07 11:06:25 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@a84 34
+<br>
+that means:<br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"...I like to run
+an architecture independent operating-system
+and
+the 2nd reason is - I prefer outperforming RISC architecture more then
+CISC."</span><span style="color: rgb(255, 0, 0); font-style: italic;"></span><br>
+<br>
+or more concrete:<br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"Linux is
+OpenSource, </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;"><span
+ style="color: rgb(255, 0, 0); font-style: italic;">Linux is
+architecture independent and portable,</span></span><span
+ style="color: rgb(255, 0, 0);"><span style="font-style: italic;"> no
+other operating system than Linux has reached that level."</span><br>
+</span><br>
+Additionally, Linux is faster than many other Unix derivates
+around. The former Sillicon Graphics expert and Linux kernel hacker
+Larry McVoy said:<br>
+<i style="color: rgb(0, 0, 0);"><br>
+</i>
+<div style="margin-left: 40px;"><i style="color: rgb(255, 0, 0);">&nbsp;&nbsp;&nbsp;
+"The
+main reason that Linux is
+faster than commercial Unices: the system call entry is a better
+design..." </i><br>
+</div>
+d147 1
+a147 1
+ href="hourmeter.html">hourmeter package</a> which displays the time 
+d150 3
+a152 1
+key, brightness and volume switch do a good job.<br>
+d195 3
+a197 1
+drivers from the Linux kernel, after that, cdrecord works fine. <br>
+a232 2
+  <li>...<br>
+  </li>
+d248 1
+a248 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.24 2005/08/06 17:15:59 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d181 2
+a182 2
+ href="runtime.html">runtime package</a> which displays the time since
+first poweron. To get the Powerbook buttons working, I compiled and
+d280 1
+a280 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.23 2005/08/06 17:13:29 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d47 1
+a47 1
+        <li>preinstalled but deinstalled: Darwin Kernel, Mac OS X
+d280 1
+a280 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.22 2005/02/08 20:36:54 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a13 1
+<b><font size="+1">Debian GNU/Linux on the Apple PowerBook 15" 1GHz
+d24 1
+a24 1
+ src="data/powerbook.png" alt="Powerbook"
+d280 1
+a280 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.21 2005/02/07 21:42:02 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d26 1
+a26 2
+      <a
+ href="data/pb15inch-techspech.pdf.gz"></a><br>
+d106 1
+a106 2
+other operating system than Linux has
+been ported reached that level."</span><br>
+d280 1
+a280 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.20 2005/02/07 21:38:13 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+ href="file:///home/gloor/data/secure/archive/www/website/data/pb15inch-techspech.pdf.gz"></a><br>
+d52 1
+a52 2
+        <li>Tech-Spec Sheet <a
+ href="file:///home/gloor/data/secure/archive/www/website/data/pb15inch-techspech.pdf.gz">[.pdf.gz,
+d282 1
+a282 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.19 2005/02/07 21:33:42 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.19
+log
+@bugfix.
+@
+text
+@d23 2
+a24 4
+ href="file:///home/gloor/data/secure/archive/www/website/data/pb15inch-techspech.pdf.gz"><img
+ title="my lovely PowerBook"
+ src="file:///home/gloor/data/secure/archive/www/website/data/powerbook.png"
+ alt="Powerbook"
+d283 1
+a283 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.18 2005/02/07 21:24:27 gloor Exp $<br>Author:</i><i> <a
+@
+
+
+1.18
+log
+@image changed with an own image
+@
+text
+@d82 1
+a82 1
+ style="font-style: italic;">IT'S A POINT OF VIEW:</span><br>
+d285 1
+a285 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.17 2005/02/07 21:06:23 gloor Exp $<br>Author:</i><i> <a
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d22 10
+a31 1
+      <td style="text-align: center; vertical-align: middle;">
+d36 1
+a36 1
+        <li>CPU: PowerPC G4, 1GHz RISC-architecture<br>
+d50 3
+a52 1
+        <li>preinstalled: Darwin Kernel, Mac OS X (aka Panther)<br>
+d54 3
+d58 1
+a58 8
+      </td>
+      <td style="text-align: center; vertical-align: middle;"> <a
+ href="data/pb15inch-techspech.pdf.gz"><img src="data/powerbook.png"
+ title="" alt="Powerbook"
+ style="border: 0px solid ; width: 330px; height: 230px;"></a><br>
+      <br>
+Tech-Spec Sheet <a href="data/pb15inch-techspech.pdf.gz">[.pdf.gz,
+51kb]</a></td>
+d68 1
+a68 1
+quality, stupid design, preinstalled Microsoft nonsense or stupid
+d285 1
+a285 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.16 2005/02/02 19:26:32 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d58 8
+a65 1
+<br>
+d72 1
+a72 2
+Linux on your Apple Powerbook? It doesn't make sense because OS X is
+better because off..."</span><br>
+d74 2
+a75 10
+</b>I only may repeat my answer again:<br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"The main reason: I
+prefer to run an architecture independent universal operating-system
+and
+the 2nd reason is, on the hardware I need."</span><br>
+<br>
+that means:<br>
+d83 10
+d95 10
+a104 5
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp; </span><span style="color: rgb(255, 0, 0);"><span
+ style="font-style: italic;">"No other operating system than Linux has
+reached that high quality of portability on such a number of target
+architectures."</span><br>
+d278 1
+a278 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.15 2005/02/02 19:23:30 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d90 1
+a90 1
+reached that high quality portability on such a number of target
+d265 1
+a265 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.14 2005/02/02 19:20:38 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.14
+log
+@Mac-Freak Poeblereien aus der Welt schaffen :-)
+@
+text
+@d73 2
+a74 1
+prefer to run a architecture independent universal operating-system and
+d90 2
+a91 1
+reached that high quality on such a number of target architectures."</span><br>
+d100 1
+a100 1
+main reasons that Linux is
+d102 1
+a102 1
+design." </i><br>
+d265 1
+a265 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.13 2004/02/20 10:51:29 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+        <li>CPU: PowerPC G4, 1GHz RISC (an Intel outperformer)<br>
+d57 1
+a57 1
+Why installing Linux on an Apple notebook?<br>
+d59 33
+a91 1
+</b>First of all, Linux is faster than many other Unix derivates
+d96 2
+a97 1
+<div style="margin-left: 40px;"><i style="color: rgb(0, 0, 0);">"The
+d103 3
+a105 2
+</i>For me, that's not the only reason to replace Darwin and Mac OS X
+with Linux, but certainly the most important. Due the fact that I
+d108 1
+a108 1
+Linux on my PPC hardware again, in my case, an Apple PowerBook. Linux
+d112 2
+a113 1
+subsystem and many other feautures. The amazing design of the Powerbook
+d115 2
+a116 1
+CISC) was the decision to buy a Powerbook and install Linux on it.<br>
+d263 1
+a263 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.12 2004/02/20 10:46:04 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d209 1
+a209 1
+errors: chmod 000 mozilla/plugins/libnullplugin.so )</li>
+d227 1
+a227 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.11 2004/02/20 10:29:58 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.11
+log
+@misc
+@
+text
+@d203 2
+a204 1
+  <li>DRI support for X (my current glxgear std. performance is around
+d208 2
+a209 1
+  <li>Macromedia Flash Plugin for PPC (currently not supported)</li>
+d213 2
+a214 2
+<br>
+<b>Miscellaneous</b><br>
+d227 1
+a227 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.10 2004/02/19 14:04:48 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d200 14
+d217 1
+d225 1
+a225 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.9 2004/02/19 14:04:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d38 1
+a38 1
+        <li>Bluetooth, Fire Wire 400, Firewire 800</li>
+d210 1
+a210 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.8 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d38 1
+a38 1
+        <li>Bluetooth, FireWire 400, Firewire 800</li>
+d210 4
+a213 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+      <i> </i> <dt>
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d210 2
+a211 3
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.6 2004/02/19 13:42:51 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+      <i> </i> <dt> <br>
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d40 1
+a40 1
+        <li>PC Card slot (Type I, Type II)</li>
+d210 3
+a212 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+      <i> </i> <dt>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+  <meta name="Author" content="Marc O. Gloor">
+d209 4
+a212 5
+      <td width="90%" nosave=""> <dt>
+        <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.4 2004/02/19 13:30:35 gloor Exp gloor $<br>Autohor:</i><i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></i></pre>
+        <i> </i></dt>
+      <dt><i> <i><a href="mailto:mgloor@@fhzh.ch"></a></i> </i></dt>
+a217 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d209 5
+a213 2
+      <td width="90%" nosave=""> <dt> <pre><i>$Id:$</pre>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d209 1
+a209 1
+      <td width="90%" nosave=""> <dt> <pre><i>$Id:</pre>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d209 1
+a209 2
+      <td width="90%" nosave=""> <dt> <i>$Id: powerbook.html,v 2.0
+2004/02/18 14:34:08 gloor Exp gloor $</i></dt>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d13 2
+a14 1
+<b><font size="+1">Debian GNU/Linux on the Apple PowerBook 15" 1GHz</font></b><br>
+d26 1
+a26 1
+        <li>Apple PowerBook G4, 15" Display (Aluminium)</li>
+d92 1
+a92 1
+additional to common descriptions of howto setup Linux on the a
+d102 9
+a110 1
+otherwise the kernel hangs with a root fs panic. On my system, I didn't
+d115 12
+a126 2
+tree and compiled a new one for my personal purposes, here is my <a
+ href="data/config_2.6.0-test11.gz">kernel-config</a>. Compiling
+d139 34
+a172 4
+ href="data/XF86Config-4-powerbook.gz">my XF86Config-4 [.gz, 1kb]</a>,
+use with care! Investigating some Sound and Video manuals and howtos,
+it was possible to use sound and video with the prefered programs
+(xmms, ogle, xine, bplay). The builtin Mathshita Non-SCSI writer must
+d176 2
+a177 2
+<br>
+<b>A Linux/PPC related login screen</b> <br>
+d193 1
+a193 2
+<div style="text-align: center;"><a
+ href="data/Login.app_ppc.png"><img
+d200 2
+a201 1
+I'm absolutely happy with my Apple PowerBook running Linux. Enjoy!<br>
+a202 1
+<br>
+d209 2
+a210 2
+      <td width="90%" nosave=""> <dt> <i>$Id: powerbook.html,v 1.8
+2003/02/20 18:02:00 gloor Exp gloor $</i></dt>
+@

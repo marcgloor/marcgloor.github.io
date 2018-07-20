@@ -1,0 +1,923 @@
+head	1.17;
+access;
+symbols;
+locks
+	gloor:1.17; strict;
+comment	@# @;
+
+
+1.17
+date	2008.02.02.10.03.06;	author gloor;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2007.01.24.12.13.07;	author gloor;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2005.08.06.17.08.40;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2005.08.06.17.00.04;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.03.08.18.22.57;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.02.23.11.28.11;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.02.15.10.39.26;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.10.06.19.51.06;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.01.14.00.56;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.17
+log
+@bild hinzgefügt
+@
+text
+@<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>xdict for Linux</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#55188a"
+ alink="#ff0000">
+<b><font size="+1">xdict - a scientific fuzzylogic algorithm
+implementation</font></b>
+<br>
+by Marc O. Gloor
+<br>
+<hr width="100%">
+<p><b>Abstract</b>
+</p>
+<p>xdict is a graphical english/german dictionary running on the Linux
+operating system, it was written using the Gtk+ API. For
+further
+informations read the <a href="data/xdict-man.txt">manpage</a>. <br>
+<a href="http://www.egglseder.de/software.html">Xdict-icd</a>
+is an interesting derivative package which was written by Thomas
+Egglseder,
+the program searches for medical ICD-10-Keys.&nbsp; <br>
+</p>
+<p>The german Magazine Linux-User has also presented the tool in 2005, <a
+ href="data/xdict2.jpg">click
+here</a> to see the article.<br>
+<br>
+<b>Screenshot</b>
+</p>
+<p><img style="width: 534px; height: 475px;" alt="loading..."
+ title="xdict screenshot" src="data/xdict.jpg"><br>
+&nbsp;
+</p>
+<p><b>Download xdict distributions</b>
+</p>
+<p>Distributions currently available for the PowerPC RISC Architecture
+(RS/6000, Macintosh), SUN Sparc Workstations and Intel/AMD architecture
+running the Linux operating system.
+</p>
+<ul>
+  <li> <a href="data/xdict-1.0.4_sparc_elf_bin.tar.gz">xdict-1.0.4_sparc_elf_bin.tar.gz
+[.tgz, 1205kb]</a></li>
+  <li> <a href="data/xdict-1.0.2_ppc_elf_bin.tar.gz">xdict-1.0.2_ppc_elf_bin.tar.gz
+[.tgz, 1304kb]</a></li>
+  <li> <a href="data/xdict-1.0.6_i386_elf_bin.tar.gz">xdict-1.0.6_i386_elf_bin.tar.gz
+[.tgz, 1203kb]</a></li>
+  <li> <a href="data/xdict-1.0.6_src.tar.gz">xdict-1.0.6_src.tar.gz
+[.tgz,
+1233kb]<br>
+    <br>
+    </a></li>
+</ul>
+<p>
+</p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+    </tr>
+  </tbody><tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.16 2007/01/24 12:13:07 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d30 1
+a30 1
+ href="http://www.linux-user.de/ausgabe/2005/10/022-software/index.html">click
+d69 1
+a69 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.15 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d27 5
+a31 1
+the program searches for medical ICD-10-Keys.
+d33 1
+a33 3
+&nbsp;
+</p>
+<p><b>Screenshot</b>
+d69 1
+a69 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.14 2005/08/06 17:08:40 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d67 2
+a68 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.13 2005/08/06 17:00:04 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 1
+operating system, it was my first attempt using the Gtk+ API. For
+d33 2
+a34 1
+<p><img src="data/xdict.png" nosave="" height="475" width="486"><br>
+d44 1
+a44 2
+  <li>
+    <a href="data/xdict-1.0.4_sparc_elf_bin.tar.gz">xdict-1.0.4_sparc_elf_bin.tar.gz
+d46 1
+a46 2
+  <li>
+    <a href="data/xdict-1.0.2_ppc_elf_bin.tar.gz">xdict-1.0.2_ppc_elf_bin.tar.gz
+d48 1
+a48 2
+  <li>
+    <a href="data/xdict-1.0.6_i386_elf_bin.tar.gz">xdict-1.0.6_i386_elf_bin.tar.gz
+d50 2
+a51 2
+  <li>
+    <a href="data/xdict-1.0.6_src.tar.gz">xdict-1.0.6_src.tar.gz [.tgz,
+d67 1
+a67 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.12 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 5
+a8 3
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <title>xdict for Linux</title>
+d10 3
+a12 2
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#55188A" alink="#FF0000">
+<b><font size=+1>xdict - a scientific fuzzylogic algorithm
+a13 1
+<br>by Marc O. Gloor
+d15 3
+a17 1
+<hr WIDTH="100%">
+d19 1
+d21 6
+a26 3
+operating system, it was my first attempt using the Gtk+ API. For further
+informations read the manpage below. <a href="http://www.egglseder.de/software.html">Xdict-icd</a>
+is an interesting derivative package which was written by Thomas Egglseder,
+d28 3
+a30 1
+<br>&nbsp;
+d32 4
+a35 2
+<p><img SRC="data/xdict.png" NOSAVE height=475 width=486>
+<br>&nbsp;
+d37 1
+d41 1
+d43 2
+a44 2
+<li>
+<a href="data/xdict-1.0.4_sparc_elf_bin.tar.gz">xdict-1.0.4_sparc_elf_bin.tar.gz
+d46 2
+a47 3
+
+<li>
+<a href="data/xdict-1.0.2_ppc_elf_bin.tar.gz">xdict-1.0.2_ppc_elf_bin.tar.gz
+d49 2
+a50 3
+
+<li>
+<a href="data/xdict-1.0.6_i386_elf_bin.tar.gz">xdict-1.0.6_i386_elf_bin.tar.gz
+d52 5
+a56 3
+
+<li>
+<a href="data/xdict-1.0.6_src.tar.gz">xdict-1.0.6_src.tar.gz [.tgz, 1233kb]</a></li>
+a57 192
+<b></b>
+<p><br><b>UNIX Manpage of xdict</b>
+<p><tt>XDICT(1)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Xdict 1.0.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+XDICT(1)</tt>
+<br><tt></tt>&nbsp;<tt></tt>
+<p><tt>NAME</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict - English/German translator
+for UNIX (X11)</tt><tt></tt>
+<p><tt>SYNOPSIS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict [--h help] [--v version]
+[--d database]</tt><tt></tt>
+<p><tt>OPTIONS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xdict&nbsp; is an X11 application,
+even so there are 3 command-</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line arguments available.</tt>
+<br><tt></tt>&nbsp;<tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --h help</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+show help</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --v show version</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+show version (release and build)</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; --d database</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+location of xdict database (xdict.dat)</tt><tt></tt>
+<p><tt>DESCRIPTION</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict is a graphical dictionary
+for Linux, written by Marc</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O.&nbsp; Gloor &lt;mgloor@@fhzh.ch>
+and distributed under the terms</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the GNU General Public
+License, Version 2.&nbsp; This&nbsp; soft-</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ware&nbsp; is&nbsp; distributed
+'as is', free of charge, no warranty</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of suitability or reliability
+is offered; use this at your</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; own&nbsp; risk.&nbsp; The&nbsp;
+author&nbsp; assumes no responsibility for any</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; damages, direct or incidental,
+resulting from the&nbsp; use&nbsp; of</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this&nbsp; software.&nbsp;
+See&nbsp; file&nbsp; 'COPYING'.&nbsp; Other distribution</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; terms may be available by
+explicit request.</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The current release is 1.0.6.
+This is intended as a stable</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; release.</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The latest version of xdict
+is available from the official</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict website: http://pubwww.fhzh.ch/~mgloor/xdict.html</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you have any questions or
+comments, or if&nbsp; you&nbsp; find&nbsp; a</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bug, mail me to &lt;mgloor@@fhzh.ch>.
+Thanks to all the people</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; who wrote with&nbsp; bug&nbsp;
+reports,&nbsp; suggestions,&nbsp; comments&nbsp; and</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; criticism.</tt><tt></tt>
+<p><tt>NOTES</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Currently,&nbsp; xdict&nbsp;
+has&nbsp; only a plaintext fuzzylogic search</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; engine,&nbsp; a&nbsp; faster&nbsp;
+hash&nbsp; table&nbsp; based&nbsp; builtin&nbsp;&nbsp; berkeley</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; database engine is planned.</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xdict fuzzy logic engine:</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scientific&nbsp; fuzzylogic&nbsp;
+algorithms uses NGramms to compare</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; common letters in dependence
+among themselves.</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using fuzzylogic algorithms
+the requested&nbsp; translation&nbsp; of</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the&nbsp; misstyped&nbsp;
+german&nbsp; word "Dampfscif" will nevertheless</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; find the correct word "steamboat"
+from the database.&nbsp;&nbsp; The</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; database&nbsp; contains more
+than 130'000 conversions, they are</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; inside the plaintext database
+'xdict.dat'.</tt><tt></tt>
+<p><tt>REQUIREMENTS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you intend to run a stacically
+linked binary, you don't</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; need&nbsp; to&nbsp; install
+the Gtk+ libaries before, if you plan to</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; compile xdict from scratch,
+see below.</tt><tt></tt>
+<p><tt>MANUALLY INSTALLATION</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1) Login as root</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2) Create a new folder /usr/local/xdict</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3) Move the xdict binary to
+/usr/local/bin</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4) Move xdict.dat to /usr/local/xdict</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 5) Move all other files to
+/usr/local/xdict</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 6) Move xdict.1 to /usr/man/man1
+(or read with man -l)</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7) Logout (exit) from root,
+login as normal user</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8) Run xdict: 'xdict -d /usr/local/xdict/xdict.dat'</tt><tt></tt>
+<p><tt>BUILDING XDICT</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Compile source against the
+newest Gtk+ libraries available</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from&nbsp; http://www.gtk.org.&nbsp;
+Type:&nbsp; ./configure&nbsp; followed by</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; make ; then su - root and
+a make install, please note that</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict.dat&nbsp; will&nbsp;
+not&nbsp; be&nbsp; installed automatically.&nbsp; If you</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; need a&nbsp; statically&nbsp;
+linked&nbsp; binary,&nbsp; make&nbsp; sure&nbsp; you&nbsp; link</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; against&nbsp; existing&nbsp;
+object&nbsp; files in your path. Anyway - do</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; with the source what you want
+you want under the terms&nbsp; of</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the general public license.</tt><tt></tt>
+<p><tt>ERRORS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Running&nbsp; xdict&nbsp;
+without&nbsp; options will use xdict.dat in the</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; same directory where the binary&nbsp;
+is,&nbsp; otherwise&nbsp; an&nbsp; error</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; message occured.</tt><tt></tt>
+<p><tt>EXAMPLES</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict --d /home/johnson/xdict.dat</tt><tt></tt>
+<p><tt>FILES</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xdict runtime binary</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict.dat&nbsp;&nbsp;&nbsp;
+ASCII runtime database</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; COPYING&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+General Public License</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; README&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xdict plaintext manpage</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; AUTHORS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+authors of xdict</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; INSTALL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+building instructions</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict.c&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xdict source (C/Gtk+)</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict.h&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xdict headerfile</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict.gld&nbsp;&nbsp;&nbsp;
+graphical user interface</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+xdict manpage</tt><tt></tt>
+<p><tt>HISTORY</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rel. 1.0.0, July 1999</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Initial Release</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rel. 1.0.2, August 1999</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+GUI bugfixes, manpage added</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rel. 1.0.4, April 2001</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+lots of bugs fixed, automake features added</tt><tt></tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rel. 1.0.6, Mai 2003</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+New&nbsp; authors&nbsp; addresses&nbsp; added,&nbsp; ok&nbsp; button feature</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+added</tt>
+<br><tt></tt>&nbsp;<tt></tt>
+<p><tt>PACKAGE DISTRIBUTIONS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; There are currently 4 packages
+available:</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict-1.0.6_i386_elf_bin.tar.gz</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict-1.0.4_sparc_elf_bin.tar.gz</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict-1.0.2_ppc_elf_bin.tar.gz</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict-1.0.6_src.tar.gz</tt><tt></tt>
+<p><tt>KNOWN BUGS</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On some debian systems, X
+locale modifiers&nbsp; are&nbsp; not&nbsp; sup-</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ported.&nbsp; This&nbsp; is
+a problem with a missing local directory</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from the current setup e.g.&nbsp;
+debian&nbsp; slink&nbsp; aka&nbsp; GNU/Linux</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.1.&nbsp; The latest version
+of the xlib6g package solve this.</tt><tt></tt>
+<p><tt>TODO</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -Contributions and cooperations
+are welcome</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -build several statically
+linked binary distributions.</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -create rpm and deb packages.</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -and all what you suggest...</tt><tt></tt>
+<p><tt>AUTHOR</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict&nbsp; was&nbsp; written&nbsp;
+by&nbsp; Marc&nbsp; O.&nbsp; Gloor&nbsp; &lt;mgloor@@fhzh.ch></tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c)1999-2003.</tt>
+<br><tt></tt>&nbsp;<tt></tt>
+<p><tt>1.0.6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Mar 8, 2003&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+3</tt>
+<br>&nbsp;
+d59 8
+a66 3
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>  <tbody>
+d69 4
+a72 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+      <i> </i> <dt>
+a80 1
+
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d239 12
+a250 19
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: xdict.html,v 1.10 2003/02/23 11:28:11 gloor Exp gloor $</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d25 3
+a27 3
+<p>Distributions currently available for the PowerPC Architecture (RS/6000,
+Macintosh), SUN Sparc Workstations and Intel/AMD Personal Computers running
+Linux.
+d38 1
+a38 1
+<a href="data/xdict-1.0.4_i386_elf_bin.tar.gz">xdict-1.0.4_i386_elf_bin.tar.gz
+d42 1
+a42 1
+<a href="data/xdict-1.0.4_src.tar.gz">xdict-1.0.4_src.tar.gz [.tgz, 1233kb]</a></li>
+d44 2
+a45 2
+
+<p><br><b>Manpage of xdict</b>
+d47 1
+a47 1
+Xdict 1.0.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+d49 1
+a49 1
+<br>&nbsp;
+d52 1
+a52 1
+for X11</tt>
+d55 1
+a55 1
+[--d database]</tt>
+d57 2
+a58 2
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xdict&nbsp; is&nbsp; running
+under X11, even so there are 3 command-</tt>
+d60 1
+a60 1
+<br>&nbsp;
+d63 1
+a63 1
+show help</tt>
+d66 1
+a66 1
+show version (release and build)</tt>
+d69 1
+a69 1
+location of xdict database (xdict.dat)</tt>
+d73 14
+a86 14
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O.&nbsp; Gloor&nbsp; &lt;mgloor@@fhzh.ch>&nbsp;
+and&nbsp; distributed under the</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; terms of the GNU General Public
+License, Version&nbsp; 2.&nbsp; This</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; software&nbsp; is&nbsp; distributed
+'as is', free of charge, no war-</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ranty of suitability or reliability
+is offered;&nbsp; use&nbsp; this</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; at your own risk. The author
+assumes no responsibility for</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; any damages, direct or incidental,
+resulting from the&nbsp; use</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of&nbsp; this software. See
+file 'COPYING'.&nbsp; Other distribution</tt>
+d88 2
+a89 3
+explicit request,&nbsp; mail&nbsp; me&nbsp; for</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; details.</tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The current release is 1.0.4.
+d91 1
+a91 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; release.</tt>
+d94 8
+a101 8
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Xdict Homepage: http://www.unilec.org/mgloor.</tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If&nbsp; you&nbsp; have&nbsp;
+any questions or comments, or if you find a</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bug, mail me to &lt;mgloor@@fhzh.ch>.&nbsp;
+Thanks&nbsp; to&nbsp; all&nbsp; the</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; people&nbsp; who&nbsp; wrote
+with bug reports, suggestions, comments</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; and criticism.</tt>
+d103 5
+a107 5
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Currently, xdict has only
+a&nbsp; plaintext&nbsp; fuzzylogic&nbsp; search</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; engine,&nbsp;&nbsp; a&nbsp;
+faster&nbsp; hash&nbsp; table&nbsp; based&nbsp; builtin&nbsp; berkeley</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; database engine is planned.</tt>
+d109 2
+a110 2
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Scientific fuzzylogic algorithms
+uses NGramms&nbsp; to&nbsp; compare</tt>
+d112 11
+a122 12
+among themselves.</tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For example if you are looking
+for the english translation</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of "Dampfschiff" and you misstype
+"Dampfscif",&nbsp; fuzzylogic</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; algorithms will find the correct
+Word "steamboat" for you.</tt>
+<p><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If you need the dictionary
+database - get it. The database</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; contains&nbsp; more&nbsp;
+than&nbsp; 130'000 conversions, they are inside</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 'xdict.dat'.</tt>
+d129 1
+a129 1
+see below.</tt>
+d142 1
+a142 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8) Run xdict: 'xdict -d /usr/local/xdict/xdict.dat'</tt>
+d158 1
+a158 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; the general public license.</tt>
+d164 1
+a164 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; message occured.</tt>
+d166 1
+a166 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict --d /home/johnson/xdict.dat</tt>
+d187 1
+a187 1
+xdict manpage</tt>
+d191 1
+a191 1
+Initial Release</tt>
+d194 1
+a194 1
+GUI bugfixes, manpage added</tt>
+d197 7
+a203 1
+lots of bugs fixed, automake features added</tt>
+d207 1
+a207 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict-1.0.4_i386_elf_bin.tar.gz</tt>
+d210 1
+a210 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; xdict-1.0.4_src.tar.gz</tt>
+d212 8
+a219 8
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On&nbsp; some&nbsp; debian&nbsp;
+systems, X locale modifiers are not sup-</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ported. This is a problem
+with a missing&nbsp; local&nbsp; directory</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; from&nbsp; the&nbsp; current&nbsp;
+setup e.g.&nbsp; debian slink aka GNU/Linux</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.1. The latest version of
+the xlib6g package solve&nbsp; this.</tt>
+d222 3
+a224 3
+are welcome!</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -build&nbsp; more statically
+linked binary ports/distributions.</tt>
+d226 1
+a226 6
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -and all what you suggest...</tt>
+<p><tt>ABOUT</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This software comes absolutely
+without any warranty,&nbsp; it's</tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a little effort to the linux
+community.</tt>
+d229 5
+a233 5
+by&nbsp; Marc O. Gloor &lt;mgloor@@fhzh.ch></tt>
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (c)1999, 2000, 2001.</tt>
+<br>&nbsp;
+<p><tt>1.0.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+April 25, 2001&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+d242 1
+a242 1
+<i>$Id: xdict.html,v 1.9 2003/02/20 18:02:00 gloor Exp $</i></dt>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d9 2
+a10 1
+<b><font size=+1>xdict - a fuzzylogic algorithm implementation</font></b>
+d14 1
+a14 1
+<p><b>Abstract</b><b></b>
+d16 5
+a20 3
+operating system. For further information about the software, read the
+manpage below.
+<br>&nbsp;<tt></tt>
+d243 2
+a244 1
+<i>$Id$</i></dt>
+d247 2
+@
+
+
+1.8
+log
+@reviesed
+@
+text
+@d240 3
+a242 4
+<i>$Id: xdict.html,v 1.7 2003/02/13 22:38:40 gloor Exp gloor $</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.7
+log
+@save of today's work
+@
+text
+@d240 1
+a240 1
+<i>$Id: xdict.html,v 1.6 2002/10/06 19:51:06 gloor Exp gloor $</i></dt>
+d242 1
+a242 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.6
+log
+@revised, bugs fixed
+@
+text
+@d9 1
+a9 2
+<img SRC="data/xhead.png" NOSAVE height=54 width=470>
+<br>A scientific fuzzylogic algorithm implementation
+d13 5
+a20 1
+<br>&nbsp;
+d27 2
+a28 2
+<a href="data/xdict-1.0.4_sparc_elf_bin.tar.gz">xdict-1.0.4_sparc_elf_bin.tar.gz</a><tt>
+(MD5:ba0f199948a16604830171b1612c756e)</tt></li>
+d31 2
+a32 2
+<a href="data/xdict-1.0.2_ppc_elf_bin.tar.gz">xdict-1.0.2_ppc_elf_bin.tar.gz</a><tt>
+(MD5:b2788dcdf5b7a4fb7b0b04b891661fb7)</tt></li>
+d35 2
+a36 2
+<a href="data/xdict-1.0.4_i386_elf_bin.tar.gz">xdict-1.0.4_i386_elf_bin.tar.gz</a><tt>
+(MD5:efcd213cc60a926a8f12004d12017f38)</tt></li>
+d39 1
+a39 1
+<a href="data/xdict-1.0.4_src.tar.gz">xdict-1.0.4_src.tar.gz</a><tt> (MD5:f23bc70ead1e701c3e0948d944abb5b7)</tt></li>
+d41 2
+a42 1
+<b>Manpage of xdict</b>
+d70 1
+a70 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; O.&nbsp; Gloor&nbsp; &lt;marc.gloor@@pobox.ch>&nbsp;
+d95 1
+a95 1
+<br><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; bug, mail me to &lt;marc.gloor@@pobox.ch>.&nbsp;
+d227 1
+a227 1
+by&nbsp; Marc O. Gloor &lt;marc.gloor@@pobox.ch></tt>
+d240 1
+a240 1
+<i>$Id: xdict.html,v 1.5 2002/09/08 18:32:06 gloor Exp $</i></dt>
+d242 1
+a242 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+<p>A scientific fuzzylogic algorithm implementation
+d236 1
+a236 1
+<i>$Id$</i></dt>
+@
+
+
+1.4
+log
+@..
+@
+text
+@d236 1
+a236 1
+$Id: xdict.html,v 1.3 2002/09/01 13:26:27 gloor Exp gloor $</dt>
+d238 1
+a238 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d241 1
+a241 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d243 6
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+<img SRC="xhead.png" height=54 width=470>
+d15 1
+a15 1
+<p><img SRC="xdict.png" height=475 width=486>
+d236 1
+a236 1
+$Id: xdict.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d24 1
+a24 1
+<a href="xdict-1.0.4_sparc_elf_bin.tar.gz">xdict-1.0.4_sparc_elf_bin.tar.gz</a><tt>
+d28 1
+a28 1
+<a href="xdict-1.0.2_ppc_elf_bin.tar.gz">xdict-1.0.2_ppc_elf_bin.tar.gz</a><tt>
+d32 1
+a32 1
+<a href="xdict-1.0.4_i386_elf_bin.tar.gz">xdict-1.0.4_i386_elf_bin.tar.gz</a><tt>
+d36 1
+a36 1
+<a href="xdict-1.0.4_src.tar.gz">xdict-1.0.4_src.tar.gz</a><tt> (MD5:f23bc70ead1e701c3e0948d944abb5b7)</tt></li>
+d234 5
+a238 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d241 1
+a241 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d234 1
+a234 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

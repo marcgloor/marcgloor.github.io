@@ -1,0 +1,969 @@
+head	1.27;
+access;
+symbols;
+locks
+	gloor:1.27; strict;
+comment	@# @;
+
+
+1.27
+date	2010.03.02.03.24.48;	author gloor;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2007.01.17.07.38.36;	author gloor;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2006.03.12.21.36.30;	author gloor;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2005.10.30.00.32.44;	author gloor;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2005.09.07.09.25.05;	author gloor;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2003.03.08.18.22.57;	author gloor;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2003.02.19.23.03.04;	author gloor;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.02.15.11.13.11;	author gloor;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.02.15.11.12.37;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.02.15.10.39.13;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.01.31.22.59.57;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.01.22.05.18.08;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2002.10.06.20.40.34;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2002.09.21.07.38.04;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2002.09.21.07.37.05;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.09.08.18.17.38;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.02.03.30.25;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.02.03.23.20;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.27
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>impressum</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Impressum / Disclaimer</font></b><br>
+<hr width="100%">
+<p><span style="font-weight: bold;"></span></p>
+<b>Haftung / Disclaimer</b>
+<p> </p>
+<p>F&uuml;r Links und deren Inhalt wird ausdr&uuml;cklich jede Haftung
+abgelehnt, alle Hyperlinks verweisen zum Publikationszeitpunkt auf
+legale
+Inhalte. Jegliche Angaben basieren auf eigenen Recherchen oder Angaben
+Dritter und sind ohne Gew&auml;hr. F&uuml;r Folgesch&auml;den die durch
+Fehlkonfiguration, Fehlmanipulation oder Falschauslegung der
+ver&ouml;ffentlichten Informationen entstehen wird jede Haftung
+abgelehnt. <br>
+</p>
+<b><br>
+Hosting log</b>
+<ul>
+</ul>
+<b>
+</b>
+<p> </p>
+<p>1995-96: compuserve.com - customer account (U.S.A.)<br>
+1996-97: geocities.com - freehosting account (U.S.A.)<br>
+1997-98: x8.net - customer account (CH)<br>
+1998-99: globacom.net - customer account (CH)<br>
+2000-02: peperoni.ch - customer second level domain (CH)<br>
+2002-10: fhzh.ch - educational system-account (CH) </p>
+<p><img src="data/w3chtml41.gif" alt="W3C HTML 4.01" nosave=""
+ border="0" height="31" width="88">&nbsp;&nbsp; <img
+ src="data/w3c1aa.gif" alt="W3C WAI-AA" nosave="" border="0" height="31"
+ width="88"> </p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.26 2007/01/17 07:38:36 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d39 1
+a39 1
+2002-05: fhzh.ch - educational system-account (CH) </p>
+d51 1
+a51 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.25 2006/03/12 21:36:30 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.25
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+legal
+d51 1
+a51 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.24 2005/10/30 00:32:44 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a13 1
+<b><font size="+1">Impressum / Nachwort</font></b><br>
+d25 1
+a25 10
+abgelehnt. Alle Informationen auf dieser Website unterliegen dem
+Urheberrecht. Die Site wurde unter der OpenContent License
+ver&ouml;ffentlicht. Linux is a registered trademark of Linus Torvalds.
+Adresse des Betreibers: Marc Gloor, Bolleystrasse 30, 8006 Z&uuml;rich,
+Zur Revisionskontrolle
+wird RCS verwendet (revision control system). Die Artikel wurden von
+mir pers&ouml;nlich verfasst oder sind mit Genehmigung der Autoren auf
+meiner Website mirrored. Korrekturvorschl&auml;ge willkommen. Die
+Website wurde ausschliesslich mit <a href="http://www.opensource.org">OpenSource</a>
+Erzeugnissen erstellt.<br>
+d28 1
+a28 1
+Hosting history</b>
+d51 1
+a51 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.23 2005/09/27 00:47:20 gloor Exp $<br>Author:</i><i> <a
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@a13 1
+EST. 1995
+d28 1
+d34 1
+a34 5
+Erzeugnissen erstellt. &nbsp; <br>
+</p>
+<p>Beim
+umfassenden redesign dieser Site im Januar 2001 wurden u.A.
+folgende &Auml;nderungen wirksam:
+d36 2
+a38 17
+  <li> Propriet&auml;re und kommerzielle Webtechnologien werden von mir
+nicht mehr unterst&uuml;tzt (nur <a href="http://www.opencontent.org">OpenContent</a>)<br>
+  </li>
+  <li>Konform f&uuml;r Browser-, Betriebssystem-, und
+Versionsunabh&auml;ngige Darstellung</li>
+  <li> Verzicht auf Frames, Javascript, blinking Animations,
+automatische Popups, ASP usw.</li>
+  <li> Zertifiziert nach <a href="http://www.w3.org">CERN W3C</a> HTML
+4.1 Standard</li>
+  <li> <a href="http://www.w3.org">CERN W3C</a> Double-A Rating <a
+ href="http://www.w3.org/WAI/WCAG1AA-Conformance.html.en">(WAI-AA/WCAG
+1.0)</a> nach Web Content Accessibility Guidelines</li>
+  <li>Die meisten GIF-Bilder wurden aus lizenzrechtlichen Gr&uuml;nden
+durch
+PNG-Bilder ersetzt (burn GIF campaign)</li>
+  <li> Website unter Revisionskontrollsystem RCS gestellt<br>
+  </li>
+d40 1
+a40 2
+<b><br>
+<br>
+d42 1
+a42 1
+<p><b>Hosting history</b> </p>
+d60 1
+a60 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.22 2005/09/07 09:25:05 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d80 2
+a81 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.21 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+EST. 1994
+d17 21
+a37 20
+Seit der Kommerzialisierung des World Wide Web Ende 90er Jahre
+versuchen einige Softwarehersteller (Kleinweich zbsp.) das auf
+OpenSource Technologie basierende Forschungsnetzwerk Internet auf
+Kosten der Datenhaltung, Zug&auml;nglichkeit und Verf&uuml;gbarkeit
+durch propriet&auml;re Standards zu kontrollieren, zudem sind die
+substanzlosen Internetpl&auml;ne vieler Spekulanten kollabiert.
+F&uuml;r jeden Zweck und jede soziale Schicht ist das Internet heute
+ein wichtiges Medium zum Informationsaustausch geworden, wer keinen
+Beitrag zur Selbstregulierung im Internet leistet, &uuml;berl&auml;sst
+die weitere Entwicklung den Firmen, Werbern, Spamern und anderen
+Idioten welche das&nbsp; Internet zu ihrem eigenen Absichten
+einzusetzen versuchen. Ergo: Die Verwendung offener Standards ist eine
+Selbstregulierungspflicht ohne die es ein Internet in der heutigen Form
+nicht geben w&uuml;rde. Verschwendet Eure Zeit nicht mit
+technologisch-kommerziellen Fehlschl&auml;gen wie zbsp. .NET, Active
+Server Pages, Active X, Windows usw., das einzige Ziel solcher
+Techologien ist der kommerzielle Erfolg. Es ist ein lohnenswertes
+Zeitinvestment sich mit wirklich relevanten informationstechnologischen
+Innovationen der elektronischen Datenverarbeitung zu befassen. Beim
+umfassenden redesign dieser Site im Januar 2001 wurden deshalb u.A.
+d39 1
+d53 2
+a54 1
+  <li>GIF-Bilder wurden aus lizenzrechtlichen Gr&uuml;nden durch
+d56 2
+a57 1
+  <li> <a href="rcs_summary.html">Revisionskontrollsystem</a> integriert</li>
+d59 10
+a68 26
+<p><b><br>
+Haftung / Disclaimer</b> </p>
+<p>F&uuml;r Links und deren Inhalt wird ausdr&uuml;cklich jede Haftung
+abgelehnt, alle Hyperlinks verweisen zum Publikationszeitpunkt auf legal
+Inhalte. Jegliche Angaben basieren auf eigenen Recherchen oder Angaben
+Dritter und sind ohne Gew&auml;hr. F&uuml;r Folgesch&auml;den die durch
+Fehlkonfiguration, Fehlmanipulation oder Falschauslegung der
+ver&ouml;ffentlichten Informationen entstehen wird jede Haftung
+abgelehnt. Alle Informationen auf dieser Website unterliegen dem
+Urheberrecht. Die Site wurde unter der OpenContent License
+ver&ouml;ffentlicht. Linux is a registered trademark of Linus Torvalds.
+Zur <a
+ href="rcs_summary.html">Revisionskontrolle</a>
+wird RCS verwendet (revision control system). Die Artikel wurden
+entweder von mir verfasst oder sind mit Genehmigung der Autoren auf
+meiner Website mirrored. Korrekturvorschl&auml;ge willkommen. Die
+Website wurde ausschliesslich mit <a href="http://www.opensource.org">OpenSource</a>
+Erzeugnissen erstellt. <br>
+&nbsp; </p>
+<p><b>Hosting</b> </p>
+<p>1994-95: compuserve.com - customer subaccount (U.S.A.)<br>
+1995-97: geocities.com - customer freehosting subaccount (U.S.A.)<br>
+1997-98: x8.net - customer subaccount (CH)<br>
+1998-99: globacom.net - customer subaccount  (CH)<br>
+2000-02: peperoni.ch - customer second level domain  (CH)<br>
+2002-06: fhzh.ch - educational account (CH) </p>
+d80 4
+a83 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+      <i> </i> <dt>
+@
+
+
+1.20
+log
+@..
+@
+text
+@d6 1
+a6 1
+  <meta name="Author" content="Marc O. Gloor">
+d91 4
+a94 3
+      <td width="90%" nosave=""> <dt> <i>$Id: impressum.html,v 1.19
+2003/03/08 18:22:57 gloor Exp gloor $</i></dt>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+a99 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 6
+a9 4
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Marc O. Gloor">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <title>impressum</title>
+d11 14
+a24 11
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<b><font size=+1>Impressum / Disclaimer</font></b>
+<br>von Marc O. Gloor
+<br>
+<hr WIDTH="100%">
+<p>Seit der Kommerzialisierung des World Wide Web Ende 90er Jahre versuchen
+einige Softwarehersteller (z.bsp. Kleinweich) das unter Unix entstandene
+Forschungsnetzwerk (Internet) auf Kosten der Datenhaltung, Zug&auml;nglichkeit
+und Verf&uuml;gbarkeit durch propriet&auml;re Standards zu kontrollieren,
+zudem sind die substanzlosen Internetpl&auml;ne vieler Spekulanten kollabiert.
+Das Internet ist ein wichtiges Medium zum Informationsaustausch. Wer keinen
+d26 11
+a36 8
+die weitere Entwicklung einiger Firmen welche das&nbsp; Internet zu ihrem
+eigenen Nutzen zu instrumentalisieren versuchen. Ergo: Die Verwendung offener
+Standards ist eine Selbstregulierungspflicht f&uuml;r jeden Nutzer ohne
+die es ein Internet in der heutigen Form nicht geben w&uuml;rde. Also,
+lasst die Finger von Active Server Pages, Frontpage und &auml;hnlichen
+Dau-Tools und kehrt zur&uuml;ck zu den wirklich relevanten informationstechnischen
+Innovationen. :-)
+<p>Beim umfassenden redesign dieser Site im Januar 2001 wurden deshalb
+d39 11
+a49 13
+<li>
+Propriet&auml;re und kommerzielle Webtechnologien werden von mir nicht
+mehr unterst&uuml;tzt</li>
+
+<li>
+Verzicht auf Frames, Javascript, blinking Animations, automatische Popups,
+ASP usw.</li>
+
+<li>
+Zertifiziert nach <a href="http://www.w3.org">CERN W3C</a> HTML 4.1 Standard</li>
+
+<li>
+<a href="http://www.w3.org">CERN W3C</a> Double-A Rating <a href="http://www.w3.org/WAI/WCAG1AA-Conformance.html.en">(WAI-AA/WCAG
+d51 1
+a51 7
+
+<li>
+Konform f&uuml;r Browser-, Betriebssystem-, und Versionsunabh&auml;ngige
+Darstellung</li>
+
+<li>
+Praktisch alle GIF-Bilder wurden aus lizenzrechtlichen Gr&uuml;nden durch
+d53 1
+a53 3
+
+<li>
+<a href="rcs_summary.html">Revisionskontrollsystem</a> integriert</li>
+d55 2
+a56 8
+Zur <a href="rcs_summary.html">Revisionskontrolle</a> wird RCS verwendet
+(revision control system), inhaltliche Ver&auml;nderungen werden automatisch
+mitprotokolliert. Die Artikel wurden entweder von mir verfasst oder mit
+freundlicher Genehmigung der Autoren auf meiner Website gemirrored. Korrekturvorschl&auml;ge
+sind willkommen. Die Website wurde ausschliesslich unter <a href="http://www.debian.org">GNU/Linux</a>
+erstellt.
+<br>&nbsp;
+<p><b>Haftung / Disclaimer</b>
+d61 45
+a105 37
+Fehlkonfiguration, Fehlmanipulation oder Falschauslegung der ver&ouml;ffentlichten
+Informationen entstehen wird jede Haftung abgelehnt. Alle Informationen
+auf dieser Website unterliegen dem Urheberrecht. Die Site wurde unter der
+OpenContent License ver&ouml;ffentlicht. Linux is a registered trademark
+of Linux Torvalds.
+<br>&nbsp;
+<p><b>Hosting</b>
+<p>1995: Compuserve U.S.A.,
+<br>1996: Geocities Freehosting U.S.A.,
+<br>1997: X8 Net Technopark Z&uuml;rich,
+<br>1998-99: Globacom Network Zug,
+<br>2000-02: Peperoni Hosting Z&uuml;rich
+<br>2003: zentrale Rechendienste, FHZH
+<p>(c) 1995-2003 by Marc O. Gloor, Alle Rechte vorbehalten
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88><img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+<p>
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: impressum.html,v 1.18 2003/02/20 18:02:00 gloor Exp gloor $</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+a106 1
+
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d43 1
+a43 1
+<a href="http://www.w3.org">CERN W3C</a> Double-A Rating <a href="http://www.w3.org/WAI/WCAG1AA-Conformance">(WAI-AA/WCAG
+d83 1
+a83 1
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88>&nbsp;&nbsp;<img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+d90 2
+a91 1
+<i>$Id$</i></dt>
+d94 2
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d90 3
+a92 4
+<i>$Id: impressum.html,v 1.16 2003/02/15 11:13:11 gloor Exp gloor $</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+<b><font size=+1>mpressum / Disclaimer</font></b>
+d57 1
+a57 1
+Zur <a href="rcs_summary.html">Revisionskontrolle</a> verwende ich RCS
+d59 4
+a62 4
+durch die RCS Fusszeilen mitprotokolliert. Die Artikel wurden entweder
+von mir verfasst oder mit freundlicher Genehmigung der Autoren auf meiner
+Website gespiegelt. Korrekturvorschl&auml;ge sind willkommen. Die Website
+wurde ausschliesslich unter Unix (AIX, Solaris, GNU/Linux) erstellt.
+d90 1
+a90 1
+<i>$Id: impressum.html,v 1.15 2003/02/15 11:12:37 gloor Exp gloor $</i></dt>
+@
+
+
+1.15
+log
+@misc
+@
+text
+@d83 1
+a83 1
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88><img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+d90 1
+a90 1
+<i>$Id: impressum.html,v 1.14 2003/02/15 10:39:13 gloor Exp gloor $</i></dt>
+@
+
+
+1.14
+log
+@revised
+@
+text
+@d26 2
+a27 2
+Dau-Tools und kehrt zur&uuml;ck zu den wirklich relevanten Innovationen
+der Informatik.
+d83 1
+a83 1
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88>&nbsp;&nbsp;<img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+d90 1
+a90 1
+<i>$Id: impressum.html,v 1.13 2003/02/13 22:38:40 gloor Exp gloor $</i></dt>
+@
+
+
+1.13
+log
+@save of today's work
+@
+text
+@d10 1
+a10 1
+<b><font size=+1>Impressum / Disclaimer</font></b>
+d83 1
+a83 1
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88>&nbsp;<img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+d90 1
+a90 1
+<i>$Id: impressum.html,v 1.12 2003/01/31 22:59:57 gloor Exp gloor $</i></dt>
+d92 1
+a92 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d90 1
+a90 1
+<i>$Id: impressum.html,v 1.11 2003/01/22 05:18:08 gloor Exp gloor $</i></dt>
+d92 1
+a92 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.11
+log
+@misc
+@
+text
+@a13 1
+<p><b>Selbstregulierungspflicht f&uuml;r Jedermann</b><b></b>
+d15 13
+a27 10
+einige Softwarehersteller (z.bsp. Kleinweich) das Internet auf Kosten der
+Datenhaltung, Zug&auml;nglichkeit und Verf&uuml;gbarkeit durch propriet&auml;re
+Standards zu kontrollieren, zudem sind die substanzlosen Internetpl&auml;ne
+vieler Spekulanten kollabiert. Das Internet ist ein wichtiges Medium zum
+Informationsaustausch. Wer keinen Beitrag zur Selbstregulierung im Internet
+leistet, &uuml;berl&auml;sst die weitere Entwicklung den Spekulanten und
+Firmen welche das k&uuml;nftige Intenet zu ihrem eigenen Nutzen zu instrumentalisieren
+versuchen. Ergo: Die Verwendung offener Standards ist eine Selbstregulierungspflicht
+f&uuml;r jeden Nutzer ohne die es ein Internet in der heutigen Form nicht
+geben w&uuml;rde.
+d32 8
+d51 2
+a52 9
+GIF-Bilder wurden aus rechtlichen Gr&uuml;nden durch PNG-Bilder ersetzt
+(burn GIF campaign)</li>
+
+<li>
+Verzicht auf Frames, Javascript, blinking Animations, automatische Popups,
+ASP usw.</li>
+
+<li>
+Propriet&auml;tre und kommerzielle Webtechnologien werden nicht mehr unterst&uuml;tzt</li>
+d90 1
+a90 1
+<i>$Id: impressum.html,v 1.10 2002/10/06 20:40:34 gloor Exp gloor $</i></dt>
+@
+
+
+1.10
+log
+@rcs_summary.html link added
+@
+text
+@d11 1
+a11 1
+<br>www.unilec.org
+d14 12
+a25 12
+<p><b>Selbstregulierungspflicht f&uuml;r Jedermann</b>
+<p>Das Internet ist ein sehr wichtiges und kostbares Medium zum internationalen
+Informationsaustausch. Mit der Kommerzialisierung des World Wide Web seit
+Ende 90er Jahre versuchen einige Softwarehersteller (z.bsp. Microsoft)
+das Internet auf Kosten der Datenhaltung, Zug&auml;nglichkeit und Verf&uuml;gbarkeit
+durch propriet&auml;re Standards zu kontrollieren, zudem sind die substanzlosen
+Internetpl&auml;ne vieler Spekulanten kollabiert. Wer keinen Beitrag zur
+Selbstregulierung im Internet leistet, &uuml;berl&auml;sst die weitere
+Entwicklung den Spekulanten und Firmen welche das k&uuml;nftige Intenet
+zu ihrem eigenen Nutzen zu instrumentalisieren versuchen. Ergo: Die Verwendung
+offener Standards ist eine Selbstregulierungspflicht f&uuml;r jeden Nutzer
+ohne die es ein Internet in der heutigen Form nicht geben w&uuml;rde.
+d54 6
+a59 6
+Zur <a href="rcs_summary.html">Revisionskontrolle</a> wird RCS (revision
+control system) verwendet, inhaltliche Ver&auml;nderungen werden automatisch
+durch die RCS Fusszeilen protokolliert. Die Artikel wurden entweder von
+mir verfasst oder mit freundlicher Genehmigung der Autoren auf meiner Website
+gespiegelt. Korrekturvorschl&auml;ge sind willkommen. Die Website wurde
+ausschliesslich unter Unix (AIX, Solaris, GNU/Linux) erstellt.
+d73 8
+a80 5
+<p>1995: Compuserve U.S.A., 1996: Geocities Freehosting U.S.A., 1997: X8
+Net Technopark Z&uuml;rich, 1998-99: Globacom Network Zug, 2000-01: Peperoni
+Hosting Z&uuml;rich
+<p>(c) 1995-2002 by Marc O. Gloor, Alle Rechte vorbehalten
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88><img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+d87 1
+a87 1
+<i>$Id: impressum.html,v 1.9 2002/09/21 07:38:04 gloor Exp gloor $</i></dt>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d52 1
+a52 1
+Revisionskontrollsystem integriert</li>
+d54 6
+a59 6
+Zur Revisionskontrolle wird RCS (revision control system) verwendet, inhaltliche
+Ver&auml;nderungen werden automatisch durch die RCS Fusszeilen protokolliert.
+Die Artikel wurden entweder von mir verfasst oder mit freundlicher Genehmigung
+der Autoren auf meiner Website gespiegelt. Korrekturvorschl&auml;ge sind
+willkommen. Die Website wurde ausschliesslich unter Unix (AIX, Solaris,
+GNU/Linux) erstellt.
+d84 1
+a84 1
+<i>$Id: impressum.html,v 1.8 2002/09/21 07:37:05 gloor Exp gloor $</i></dt>
+@
+
+
+1.8
+log
+@linux trademark
+@
+text
+@d49 1
+a49 1
+Propriet&auml;tre und kommerzielle Website-Elemente werden nicht mehr unterst&uuml;tzt</li>
+d84 1
+a84 1
+<i>$Id: impressum.html,v 1.7 2002/09/08 18:32:06 gloor Exp gloor $</i></dt>
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d69 2
+a70 1
+OpenContent License ver&ouml;ffentlicht.
+d77 1
+a77 1
+<p><img SRC="data/w3chtml41.gif" ALT="W3C HTML 4.01" NOSAVE BORDER=0 height=31 width=88>&nbsp;&nbsp;<img SRC="data/w3c1aa.gif" ALT="W3C WAI-AA" NOSAVE BORDER=0 height=31 width=88>
+d84 1
+a84 1
+<i>$Id$</i></dt>
+@
+
+
+1.6
+log
+@bugfixes...
+@
+text
+@d83 1
+a83 1
+<i>$Id: impressum.html,v 1.5 2002/09/02 03:30:25 gloor Exp gloor $</i></dt>
+d88 1
+a88 1
+<div align=right><i><a href="http://www.unilec.org/mgloor/index.html">home</a></i></div>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d14 46
+a59 21
+<p><b>Weniger ist mehr</b>
+<p>Beim umfassenden redesign dieser Site im Januar 2001 wurden folgende
+&Auml;nderungen wirksam: Alle Bilder im GIF-Format sind aus Lizenzrechtlichen
+Gr&uuml;nden durch das PNG- oder JPG-Format ersetzt worden, die Site ben&ouml;tigt
+nun endg&uuml;ltig keine Frames mehr und auf schwerf&auml;llige und &uuml;berfl&uuml;ssige
+Features wie Javascript oder blinkende Animationen wurde verzichtet.
+<p>Die Site kann &uuml;ber ein einheitliches Inhaltsverzeichnis abgerufen
+werden und entspricht den html-Spezifikationen welche ein Browser- und
+Hersteller unabh&auml;ngiges abrufen der Daten auch in Zukunft garantieren.
+Die daraus resultierende Performancesteigerung und die Tatsache dass der
+W3 Dienst vom CERN zum akademischen Informationsaustausch geschaffen wurde
+verlangt von jedem Dienstanbieter die Einsicht, dass eigenfinanzierte Infrastruktur
+(Backbonenetze, Router, Switches) und Bandbreite kostbares Gut sind. Offensichtliche
+Nachteile, verursacht durch propriet&auml;re und plattformbindende Erweiterungen
+bez&uuml;glich Datenhaltung und Zug&auml;nglichkeit, sind kaum anzustreben.
+<p>Auf jeder Subsite befindet sich eine RCS-Fusszeile (revision control
+system) welche jedes evolution&auml;re ein- und auschechecken neuer Versionen
+automatisch mitdokumentiert. Die Artikel wurden entweder von mir verfasst
+oder mit freundlicher Genehmigung der Autoren auf meiner Website gespiegelt.
+Korrekturvorschl&auml;ge sind willkommen. Die Website wurde ausschliesslich
+unter Unix (GNU/Linux) erstellt und weitgehend in HTML 4.0 realisiert.
+d72 5
+a76 7
+<p>1995: Compuserve U.S.A.
+<br>1996: Geocities Freehosting U.S.A.
+<br>1997: X8 Net Technopark Z&uuml;rich
+<br>1998-99: Globacom Network Zug
+<br>2000-01: Peperoni Hosting Z&uuml;rich
+<br>&nbsp;
+<p>(c) 1995-2001 by Marc O. Gloor, Alle Rechte vorbehalten
+d83 1
+a83 1
+$Id: impressum.html,v 1.4 2002/09/02 03:23:20 gloor Exp $</dt>
+d85 1
+a85 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d88 1
+a88 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d90 6
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d31 1
+a31 1
+automatisch dokumentiert. Die Artikel wurden entweder von mir verfasst
+d60 1
+a60 1
+$Id: impressum.html,v 1.3 2002/09/01 13:26:27 gloor Exp gloor $</dt>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d29 6
+a34 12
+<p>Die Artikel wurden entweder von mir verfasst oder mit freundlicher Genehmigung
+der Autoren auf meiner Website gespiegelt. Korrekturvorschl&auml;ge sind
+willkommen. Die Website wurde ausschliesslich unter Unix (GNU/Linux) erstellt
+und weitgehend in HTML 4.0 realisiert.
+<br>&nbsp;
+<p><b>Revisionskontrolle</b>
+<p>Damit der publizierte webcontent infolge Weiterentwicklung jederzeit
+r&uuml;ckverfolgbar bleibt und versionstechnische Zwischenschritte aus
+allenfalls rechtlichen Gr&uuml;nden einwandfrei dokumentiert werden k&ouml;nnen,
+wird ein Revisionskontrollsystem verwendet. Auf jeder Subsite befindet
+sich die RCS-Fusszeile (revision control system) durch welche das evolution&auml;re
+ein- und auschecken von Versionen automatisch dokumentiert wird.
+d60 1
+a60 1
+$Id: impressum.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d18 2
+a19 2
+nun endg&uuml;ltig keine Frames mehr und &uuml;berfl&uuml;ssige Features
+wie Javascript oder blinkende Animationen wurden entfernt.
+d24 5
+a28 6
+W3 Dienst vom CERN zum internationalen Informationsaustausch geschaffen
+wurde verlangt von jedem Dienstanbieter die Einsicht, dass eigenfinanzierte
+Infrastruktur (Backbonenetze, Router, Switches) und Bandbreite kostbares
+Gut sind. Offensichtliche Nachteile, verursacht durch propriet&auml;re
+und plattformbindende Erweiterungen bez&uuml;glich Datenhaltung und Zug&auml;nglichkeit,
+sind kaum anzustreben.
+d30 11
+a40 6
+der Autoren auf meiner Website gespiegelt. Bitte melden Sie mir allf&auml;llige
+Links die nicht mehr aktiv sind oder auf falsche URL's verweisen, Korrekturvorschl&auml;ge
+sind ebenfalls willkommen. Die Website wurde ausschliesslich unter GNU/Linux
+erstellt und weitm&ouml;glichst in HTML 4.0 realisiert. Unter Anderem wurde
+folgende Software verwendet; netscape, gimp, staroffice, sgml, vi, blender,
+scite u.v.m.
+d43 7
+a49 6
+<p>F&uuml;r Links und deren Inhalt &uuml;bernehme ich ausdr&uuml;cklich
+keine Haftung, zum Zeitpunkt der Ver&ouml;ffentlichung bewegten sich die
+Links in einem legalen Rahmen. Jegliche Angaben basieren auf eigenen Recherchen
+oder Angaben Dritter und sind ohne Gew&auml;hr. Ich &uuml;bernehme keine
+Haftung f&uuml;r Folgesch&auml;den die durch fehlkonfiguration, fehlmanipulation
+oder falschauslegen der Wegleitungen entstehen. Die Site wurde unter der
+d59 1
+a59 2
+<p>(c) 1995, 1996, 1997, 1998, 1999, 2000, 2001 by Marc O. Gloor, Alle
+Rechte vorbehalten
+d64 5
+a68 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d71 1
+a71 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d60 1
+a60 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

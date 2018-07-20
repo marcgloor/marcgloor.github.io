@@ -1,0 +1,527 @@
+head	1.10;
+access;
+symbols;
+locks
+	gloor:1.10; strict;
+comment	@# @;
+
+
+1.10
+date	2006.09.17.16.39.58;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2005.10.12.15.39.51;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2005.10.11.23.47.58;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2005.10.10.20.36.12;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2005.09.29.17.27.01;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2005.09.27.01.38.16;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2005.09.27.01.10.40;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2005.09.27.00.57.44;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2005.09.27.00.47.03;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2005.09.19.17.49.05;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>buddy - debian package manager</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<span style="font-weight: bold;"></span><b><font size="+1">bud/buddy -
+hardcore deb package handler (dpkg/apt wrapper)</font></b><br>
+tiny, fast, secure, clean and proper Debian package management<br>
+<hr width="100%">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><b>Abstract</b><br>
+      <p>Tired of a broken package system after upgrading using dselect
+or
+aptitude? Buddy is a hardcore Debian package handler which acts as a
+wrapper to apt-get and
+dpkg. Every command is shown before it is
+executed. Buddy has the ability to backup the package
+setup and simulate package manipulations (dry
+run) and it is not intended as replacement for the common Debian
+package manager.</p>
+      <p><b><br>
+Main features</b><br>
+      </p>
+      <ul>
+        <li>package maintenance (backup, diagnostic, audit, cleanup,
+renew, repair) <br>
+        </li>
+        <li>package information (find/search, details, status, list,
+count installed packages) <br>
+        </li>
+        <li>package manipulation (install, uninstall, remove, purge,
+configure)<br>
+        </li>
+      </ul>
+      <br>
+      <b>Advantages</b><br>
+      <ul>
+        <li><span style="color: rgb(255, 0, 0);">simulation mode</span>
+- able to simulate package manipulations (dry run)</li>
+        <li><span style="color: rgb(255, 0, 0);">more transparent</span>
+- every command is shown before it is executed</li>
+        <li><span style="color: rgb(255, 0, 0);">more secure</span> -
+backup your package-setup to be more reversible</li>
+        <li><span style="color: rgb(255, 0, 0);">audit compliant</span>
+- every package transaction is logged via syslog</li>
+        <li><span style="color: rgb(255, 0, 0);">completely shell based</span>
+- no curses or other libraries needed</li>
+        <li><span style="color: rgb(255, 0, 0);">faster</span> - no
+packagelist loading at startup</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <a
+ href="data/buddy-anim.gif"><img
+ style="border: 0px solid ; width: 611px; height: 376px;"
+ src="data/bud.jpg" title="buddy screenshot" alt="loading..."></a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<span style="font-weight: bold;">Demo of buddy in action</span><br>
+<br>
+To play this demo animation, run: <span style="font-style: italic;">ttyplay
+<a href="data/buddy-demo.tty">buddy-demo.tty</a></span> (apt-get
+install <a href="http://freshmeat.net/projects/ttyrec/">ttyrec</a>),
+this will show you:<br>
+<ul>
+  <li>a package search</li>
+  <li>a package status search (package installed or not?)</li>
+  <li>clean package cache</li>
+  <li>packge list renewal</li>
+  <li>a package-system health-check</li>
+  <li>a full package system backup</li>
+  <li>a simulated package system installation</li>
+</ul>
+There is also an animated <a href="data/buddy-anim.gif">screenshot of
+buddy</a> in action available.<br>
+<span style="font-weight: bold;"></span><br>
+<span style="font-style: italic;"></span><span
+ style="font-weight: bold;"><br>
+</span><b>Feedback</b>
+<p>Note that you can
+improve the quality of <span style="font-style: italic;">buddy</span>
+by:<br>
+<a href="mailto:mgloor_at_fhzh_dot_ch">sending me patches,
+comments,
+hints, ideas, bug-
+and testreports</a></p>
+<p><b><br>
+Download</b>
+</p>
+compressed tape archive (work in progress): <a
+ href="data/buddy-1.14_wip.tar.gz">buddy-1.14_wip.tar.gz [.tar.gz,
+2.5kb]</a><br>
+debian package: &lt;not yet released&gt;<br>
+<br>
+<span style="font-family: monospace;"></span>
+<p></p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+    </tr>
+  </tbody><tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.9 2005/10/12 15:39:51 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d32 2
+a33 1
+Features</b></p>
+d35 7
+a41 8
+        <li>package maintenance (backup, diagnostic, audit,
+cleanup,
+renew, repair)</li>
+        <li>package information (find/search, details, status,
+list,
+count)</li>
+        <li>package manipulation (install, uninstall, remove,
+purge,
+d45 2
+a46 2
+      <b><br>
+Advantages</b>
+d48 4
+a51 4
+        <li><span style="color: rgb(255, 0, 0);">failover safe</span> -
+simulate
+sensitive package manipulations (dry
+run)</li>
+d53 3
+a55 11
+backup
+your
+package-setup to be more reversible</li>
+        <li><span style="color: rgb(255, 0, 0);">faster</span> - no
+packagelist loading
+at startup</li>
+        <li><span style="color: rgb(255, 0, 0);">more transparent</span>
+-
+every
+command is shown
+before executed</li>
+d58 2
+d119 1
+a119 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.8 2005/10/11 23:47:58 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d22 9
+a30 6
+      <br>
+Tired of a broken package system after upgrading using dselect or
+aptitude? Buddy is a hardcore Debian package handler reduced to its
+essential
+functions. Buddy is not intended as replacement for the common Debian
+package manager.
+d125 1
+a125 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.7 2005/10/10 20:36:12 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d59 1
+a59 1
+command is <span style="text-decoration: underline;">shown</span>
+d122 1
+a122 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.6 2005/09/29 17:27:01 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+hardcore deb package manager (dpkg/apt wrapper)</font></b><br>
+d24 4
+a27 4
+aptitude? Buddy is a hardcore <br>
+Debian package manager, reduced to its essential
+functions. Buddy is not intended as replacement <br>
+for the common Debian package manager.
+d31 1
+a31 1
+        <li>package system maintenance (backup, diagnostic, audit,
+d34 1
+a34 1
+        <li>package system information (find/search, details, status,
+d37 1
+a37 1
+        <li>package system manipulation (install, uninstall, remove,
+d39 12
+a50 3
+configure)<span style="color: rgb(255, 0, 0);"><br>
+          </span></li>
+        <li><span style="color: rgb(255, 0, 0);">more secure - backup
+d52 6
+a57 17
+package-setup to make system
+manipulations more </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">reversible</span><span
+ style="color: rgb(255, 0, 0);"></span></li>
+        <li><span style="color: rgb(255, 0, 0);">failover safe - </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">simulate</span><span
+ style="color: rgb(255, 0, 0);">
+sensitive package manipulations (dry
+run)</span></li>
+        <li><span style="color: rgb(255, 0, 0);">faster - </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">no</span><span
+ style="color: rgb(255, 0, 0);">
+packagelist </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">loading</span><span
+ style="color: rgb(255, 0, 0);">
+at startup</span></li>
+        <li><span style="color: rgb(255, 0, 0);">more transparent -
+d59 4
+a62 9
+command is </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">shown</span><span
+ style="color: rgb(255, 0, 0);"> before executed</span></li>
+        <li><span style="color: rgb(255, 0, 0);">completely shell based
+- </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">no</span><span
+ style="color: rgb(255, 0, 0);"> curses or other </span><span
+ style="text-decoration: underline; color: rgb(255, 0, 0);">libraries</span><span
+ style="color: rgb(255, 0, 0);"> needed</span></li>
+d65 3
+a67 3
+      <td style="vertical-align: top; text-align: center;"><br>
+      <a href="data/buddy-anim.gif"><img
+ style="border: 0px solid ; width: 287px; height: 290px;"
+d122 1
+a122 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.5 2005/09/27 01:38:16 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+hardcore deb package manager (dpkg wrapper)</font></b><br>
+d16 7
+a22 3
+<hr width="100%"><span style="font-family: monospace;"></span><b><br>
+Abstract</b><br>
+<br>
+d27 6
+a32 6
+for the common Debian package manager.<br>
+<br>
+<p><b>Features</b></p>
+<p></p>
+<ul>
+  <li>package system maintenance (backup, diagnostic, audit, cleanup,
+d34 2
+a35 1
+  <li>package system information (find/search, details, status, list,
+d37 2
+a38 1
+  <li>package system manipulation (install, uninstall, remove, purge,
+d40 3
+a42 2
+    </span></li>
+  <li><span style="color: rgb(255, 0, 0);">more secure - backup your
+d45 3
+a47 3
+ style="text-decoration: underline; color: rgb(255, 0, 0);">reversible<br>
+    </span></li>
+  <li><span style="color: rgb(255, 0, 0);">more calculable - </span><span
+d52 1
+a52 1
+  <li><span style="color: rgb(255, 0, 0);">faster - </span><span
+d59 2
+a60 1
+  <li><span style="color: rgb(255, 0, 0);">more transparent - every
+d64 2
+a65 1
+  <li><span style="color: rgb(255, 0, 0);">completely shell based - </span><span
+d70 18
+a87 1
+</ul>
+d89 7
+d97 6
+a102 3
+<p></p>
+<p><b><br>
+Feedback</b></p>
+d129 1
+a129 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.4 2005/09/27 01:10:40 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d93 2
+a94 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.3 2005/09/27 00:57:44 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d68 1
+a68 1
+improve the quality of <span style="font-style: italic;">screenie</span>
+d93 1
+a93 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.2 2005/09/27 00:47:03 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a13 1
+<span style="font-weight: bold;"></span><b><font size="+1">bud, buddy -
+d25 1
+a25 2
+<p><b>Features:<br>
+</b></p>
+a26 1
+<p>main features:</p>
+d33 2
+a34 4
+configure)</li>
+</ul>
+<p>advantages:</p>
+<ul>
+d38 2
+a39 1
+ style="text-decoration: underline; color: rgb(255, 0, 0);">reversible</span></li>
+d65 3
+a67 1
+<p>Please note that you can
+d69 2
+a70 1
+by <a href="mailto:mgloor_at_fhzh_dot_ch">sending me patches,
+d77 3
+a80 2
+compressed tape archive: &lt;not yet released&gt;<br>
+shellscript (testing version): <br>
+d93 1
+a93 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.1 2005/09/19 17:49:05 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d13 3
+a15 3
+<span style="font-weight: bold;"></span><b><font size="+1">buddy -
+debian package manager (dpkg wrapper)</font></b><br>
+tiny, fast, secure, clean and proper package manipulation<br>
+d19 8
+a26 5
+Buddy is a hardcore Debian package manager, reduced to its essential
+functions.<br>
+It's a simple command wrapper for apt and dpkg.<br>
+<p><b><br>
+Features</b></p>
+d39 7
+a45 4
+  <li>more secure - packagelist backup to make package
+manipulations more <span style="text-decoration: underline;">reversible</span><br>
+  </li>
+  <li>more calculable - <span style="text-decoration: underline;">simulate</span>
+d47 19
+a65 12
+run)<br>
+  </li>
+  <li>faster - <span style="text-decoration: underline;">no</span>
+packagelist <span style="text-decoration: underline;">loading</span>
+at startup</li>
+  <li>more transparent - every command is <span
+ style="text-decoration: underline;">shown</span> before executed<br>
+  </li>
+  <li>completely shell based - <span
+ style="text-decoration: underline;">no</span> curses or other <span
+ style="text-decoration: underline;">libraries</span> needed<br>
+  </li>
+d68 6
+d77 3
+a79 2
+debian package:<br>
+compressed tape archive: <br>
+d92 1
+a92 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:  $<br>Author:</i><i> <a
+d94 1
+a94 2
+      <br>
+      <i> </i> <dt> <br>
+@

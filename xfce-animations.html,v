@@ -1,0 +1,480 @@
+head	1.15;
+access;
+symbols;
+locks
+	gloor:1.15; strict;
+comment	@# @;
+
+
+1.15
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.03.20.22.57.38;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.03.13.22.43.19;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.02.19.23.03.04;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.02.15.10.39.26;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.02.15.10.00.08;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.01.31.22.59.57;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.02.03.43.18;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <title>XFCE logo animations</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<b><font size=+1>XFCE logo animations</font></b>
+<br>by Marc O. Gloor
+<br>
+<hr WIDTH="100%">
+<p><b>A collection of rendered xfce animations for public use</b>
+<p>For the <a href="http://www.xfce.org">xfce community</a>, I produced
+various logo animations for their websites, just use these images with
+a link to xfce.org. Logo modelled in <a href="http://www.blender.org">blender</a>
+(using rotoscoping from an xfce font image) on a <a href="http://www.sun.com">Sun
+Sparc</a> running <a href="http://www.debian.org">Linux</a>. Sequence length
+is about 80 images, they were rendered on a 6 node <a href="http://www.mosix.org">mosix</a>
+loadbalancing cluster. Compiled to endless loop animated gifs using mogrify
+and convert, part of <a href="http://www.imagemagick.com">imagemagick</a>.
+The hardest work (base model) can be downloaded <a href="data/xfce-logo.tar.gz">here</a>.
+Published unter the <a href="http://www.opencontent.org">OpenContent License</a>.
+<br>&nbsp;
+<table BORDER=0 COLS=4 WIDTH="80%" NOSAVE >
+<tr NOSAVE>
+<td NOSAVE><a href="data/xfce1.gif">xfce1.gif [gif, 264kb]</a>
+<br><a href="data/xfce2.gif">xfce2.gif [gif, 264kb]</a>
+<br><a href="data/xfce3.gif">xfce3.gif [gif, 264kb]</a>
+<br><a href="data/xfce4.gif">xfce4.gif [gif, 264kb]</a>
+<br><a href="data/xfce5.gif">xfce5.gif [gif, 264kb]</a></td>
+
+<td NOSAVE><a href="data/xfce6.gif">xfce6.gif [gif, 264kb]</a>
+<br><a href="data/xfce7.gif">xfce7.gif [gif, 264kb]</a>
+<br><a href="data/xfce8.gif">xfce8.gif [gif, 264kb]</a>
+<br><a href="data/xfce9.gif">xfce9.gif [gif, 264kb]</a>
+<br><a href="data/xfce10.gif">xfce10.gif [gif, 264kb]</a></td>
+
+<td NOSAVE><a href="data/xfce11.gif">xfce11.gif [gif, 264kb]</a>
+<br><a href="data/xfce14.gif">xfce14.gif [gif, 264kb]</a>
+<br><a href="data/xfce15.gif">xfce15.gif [gif, 264kb]</a>
+<br><a href="data/xfce16.gif">xfce16.gif [gif, 264kb]</a>
+<br><a href="data/xfce17.gif">xfce17.gif [gif, 264kb]</a></td>
+
+<td ALIGN=LEFT VALIGN=TOP NOSAVE><a href="data/xfce18.gif">xfce18.gif [gif,
+131kb]</a>
+<br><a href="data/xfce19.gif">xfce19.gif [gif, 131kb]</a>
+<br><a href="data/xfce20.gif">xfce20.gif [gif, 131kb]</a></td>
+</tr>
+</table>
+
+<p>
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-animations.html,v 1.14 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre><br>
+      <i> </i> <dt>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d58 1
+a58 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d55 12
+a66 20
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: xfce-animations.html,v 1.11 2003/02/20 18:02:00 gloor Exp gloor
+$</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d16 1
+a16 1
+a link to xfce.org. Logo modelled in <a href="http://www.blender.nl">blender</a>
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 1
+and convert, part of <a href="http://net4tv.com/ImageMagick">imagemagick</a>.
+d58 3
+a60 1
+<i>$Id$</i></dt>
+d63 2
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d58 3
+a60 5
+<i>$Id: xfce-animations.html,v 1.5 2002/09/08 18:32:06 gloor Exp gloor
+$</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.9
+log
+@reviesed
+@
+text
+@d13 1
+a13 1
+<p><b>The collection of rendered xfce animations for public use</b>
+@
+
+
+1.8
+log
+@misc
+@
+text
+@d61 1
+a61 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.7
+log
+@save of today's work
+@
+text
+@d28 4
+a31 8
+<br><a href="data/xfce2.gif">xfce2.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce3.gif">xfce3.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce4.gif">xfce4.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce5.gif">xfce5.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a></td>
+d33 5
+a37 10
+<td NOSAVE><a href="data/xfce6.gif">xfce6.gif</a><a href="data/xfce1.gif">
+[gif, 264kb]</a>
+<br><a href="data/xfce7.gif">xfce7.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce8.gif">xfce8.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce9.gif">xfce9.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce10.gif">xfce10.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a></td>
+d39 5
+a43 10
+<td NOSAVE><a href="data/xfce11.gif">xfce11.gif</a><a href="data/xfce1.gif">
+[gif, 264kb]</a>
+<br><a href="data/xfce14.gif">xfce14.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce15.gif">xfce15.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce16.gif">xfce16.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a>
+<br><a href="data/xfce17.gif">xfce17.gif</a><a href="data/xfce1.gif"> [gif,
+264kb]</a></td>
+d45 1
+a45 1
+<td ALIGN=LEFT VALIGN=TOP NOSAVE><a href="data/xfce18.gif">xfce18.gif</a><a href="data/xfce1.gif">[gif,
+d47 2
+a48 4
+<br><a href="data/xfce19.gif">xfce19.gif</a><a href="data/xfce1.gif"> [gif,
+131kb]</a>
+<br><a href="data/xfce20.gif">xfce20.gif</a><a href="data/xfce1.gif"> [gif,
+131kb]</a></td>
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d13 1
+a22 1
+If you need another color combination for your website, send me an <a href="mailto:marc.gloor@@pobox.ch">email</a>.
+d24 2
+a25 2
+<p>1st collection:
+<table BORDER=0 COLS=3 WIDTH="50%" NOSAVE >
+d27 38
+a64 30
+<td NOSAVE><a href="data/xfce1.gif">xfce1.gif</a>
+<br><a href="data/xfce2.gif">xfce2.gif</a>
+<br><a href="data/xfce3.gif">xfce3.gif</a>
+<br><a href="data/xfce4.gif">xfce4.gif</a>
+<br><a href="data/xfce5.gif">xfce5.gif</a></td>
+
+<td><a href="data/xfce6.gif">xfce6.gif</a>
+<br><a href="data/xfce7.gif">xfce7.gif</a>
+<br><a href="data/xfce8.gif">xfce8.gif</a>
+<br><a href="data/xfce9.gif">xfce9.gif</a>
+<br><a href="data/xfce10.gif">xfce10.gif</a></td>
+
+<td><a href="data/xfce11.gif">xfce11.gif</a>
+<br><a href="data/xfce14.gif">xfce14.gif</a>
+<br><a href="data/xfce15.gif">xfce15.gif</a>
+<br><a href="data/xfce16.gif">xfce16.gif</a>
+<br><a href="data/xfce17.gif">xfce17.gif</a></td>
+</tr>
+</table>
+
+<p>2nd collection:
+<table COLS=3 WIDTH="80%" NOSAVE >
+<tr NOSAVE>
+<td NOSAVE><a href="data/xfce18.gif">xfce18.gif</a> (my favourite)
+<br><a href="data/xfce19.gif">xfce19.gif</a>
+<br><a href="data/xfce20.gif">xfce20.gif</a></td>
+
+<td></td>
+
+<td></td>
+d77 1
+a77 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+is about 80 images, they was rendered on a 6 node <a href="http://www.mosix.org">mosix</a>
+d66 2
+a67 1
+<i>$Id$</i></dt>
+@
+
+
+1.4
+log
+@schreibfehler korrigiert
+@
+text
+@d66 1
+a66 1
+$Id: xfce-animations.html,v 1.3 2002/09/01 13:26:27 gloor Exp $</dt>
+d68 1
+a68 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d71 1
+a71 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d73 6
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d10 1
+a10 1
+<br><font size=-1>b</font>y Marc O. Gloor
+d17 5
+a21 5
+Sparc</a> running <a href="http://www.debian.org">linux</a>. Sequence length
+is about 80 images, they are rendered on a 6 node <a href="http://www.mosix.org">mosix</a>
+cluster. Compiled to endless loop animated gifs using mogrify and convert,
+part of <a href="http://net4tv.com/ImageMagick">imagemagick</a>. The hardest
+work (base model) can be downloaded <a href="data/xfce-logo.tar.gz">here</a>.
+d66 1
+a66 1
+$Id: xfce-animations.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d21 1
+a21 1
+work (base model) can be downloaded <a href="xfce-logo.tar.gz">here</a>.
+d27 17
+a43 17
+<td NOSAVE><a href="xfce1.gif">xfce1.gif</a>
+<br><a href="xfce2.gif">xfce2.gif</a>
+<br><a href="xfce3.gif">xfce3.gif</a>
+<br><a href="xfce4.gif">xfce4.gif</a>
+<br><a href="xfce5.gif">xfce5.gif</a></td>
+
+<td><a href="xfce6.gif">xfce6.gif</a>
+<br><a href="xfce7.gif">xfce7.gif</a>
+<br><a href="xfce8.gif">xfce8.gif</a>
+<br><a href="xfce9.gif">xfce9.gif</a>
+<br><a href="xfce10.gif">xfce10.gif</a></td>
+
+<td><a href="xfce11.gif">xfce11.gif</a>
+<br><a href="xfce14.gif">xfce14.gif</a>
+<br><a href="xfce15.gif">xfce15.gif</a>
+<br><a href="xfce16.gif">xfce16.gif</a>
+<br><a href="xfce17.gif">xfce17.gif</a></td>
+d50 3
+a52 3
+<td NOSAVE><a href="xfce18.gif">xfce18.gif</a> (my favourite)
+<br><a href="xfce19.gif">xfce19.gif</a>
+<br><a href="xfce20.gif">xfce20.gif</a></td>
+d64 5
+a68 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d71 1
+a71 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d64 1
+a64 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

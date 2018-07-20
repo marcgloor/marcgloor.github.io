@@ -1,0 +1,666 @@
+head	1.16;
+access;
+symbols;
+locks
+	gloor:1.16; strict;
+comment	@# @;
+
+
+1.16
+date	2005.11.10.20.02.43;	author gloor;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.03.13.22.43.19;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.02.15.10.39.26;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.02.15.10.00.08;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.01.31.22.59.57;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.10.06.19.51.06;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.01.14.00.56;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="author" content="Marc Gloor">
+  <title>Precompiled xfce binaries for the Sun SPARC Architecture</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Precompiled XFCE Unix binaries for the RS/6000 and
+Sun SPARC Architecture</font></b> <br>
+by Marc O. Gloor <br>
+<hr width="100%"><br>
+<b><font color="#000000">The XFCE window manager</font></b><br>
+<br>
+Click here to <a href="data/xfce-sun-sparc2.jpg">see XFCE in action
+on my Sun Sparcstation</a>. <font color="#000000">XFCE is a
+lightweight
+desktop environment (similar to CDE) for various Unix supercomputers,
+midframe- and desktop environments. After successfully installing xfce
+on several i586 Linux boxes and on my multinode mosix cluster, I
+installed xfce also on our RS/6000 (running AIX) and on my Sun SPARC 5
+(running linux) because I needed a simple, light and efficient desktop
+for my Unix Systems (both, at work and at home). There are precompiled
+binary distributions available from this website (see below).</font> <br>
+&nbsp;
+<p><b><font color="#000000">SPARC Note</font></b> </p>
+<p><font color="#000000">The Sparc binaries are linked against glibc2.0
+(not glibc2.1), glib, gtk and/or libxpm and/or libungif.</font> <br>
+&nbsp; </p>
+<p><b><font color="#000000">AIX Note:</font></b> </p>
+<p><font color="#000000">Compiling xfce on RS/6000 AIX was a bit tricky
+because of a Gtk+ bug in release 1.2.8 an earlier versions. After
+successfully compiling glib, gtk and xfce on my AIX 4.3.3, the xfce
+binaries produce a "sigsegv caught" panic (debuger output: 0xd1815e50
+in gdk_set_locale () at gdkim.c:101). I found a solution about this:
+AIX shared library support doesn't permit unresolved symbols in a
+shared library. The problem here is that libgtk depends on libgdk, but
+it doesn't have -lgdk when it's built. I'm not sure what the right fix
+is, since it looks like gtk/Makefile.am and configure.in will need to
+be altered to support this quirk. However, here's what I did to get
+gtk+-1.2.8 to work well with gcc-2.95.2 on AIX 4.3.3:</font> </p>
+<blockquote><tt><font color="#000000">./configure --with-locale=C</font></tt>
+  <br>
+  <tt><font color="#000000">make</font></tt> <br>
+  <tt><font color="#000000">rm -f gdk/libgdk.la gtk/libgtk.la</font></tt>
+  <br>
+  <tt><font color="#000000"># Next add "-lgdk " before "-lgmodule" in
+libgtk_la_LDFLAGS defined in gtk/Makefile</font></tt> <br>
+  <tt><font color="#000000">make install</font></tt></blockquote>
+<font color="#000000">So it's important you compile Gtk+ the same way
+on your System (workaround). It's a good idea to deactivate "Show
+subprocess diagnostic dialog" after installing xfce on your RS/6000.
+Please report bugs to <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a>.
+Happy hacking.</font> <br>
+&nbsp;
+<p><b><font color="#000000">Download</font></b> </p>
+<p>Precompiled binaries for... </p>
+<ul>
+  <li> <font color="#000000">...AIX on IBM RS/6000 (2.5Mb):
+xfce-3.5.0-aix.rs6000.bin.tar.gz [lost tarball]</font></li>
+  <li> <font color="#000000">...Linux on Sun SPARC (2.5Mb): <a
+ href="data/xfce-3.6.3-linux.sparc.bin.tar.gz">xfce-3.6.3-linux.sparc.bin.tar.gz
+[.tgz, 2525kb]</a></font></li>
+</ul>
+<p><br>
+<b><font color="#000000">Related links</font></b> </p>
+<ul>
+  <li> <font color="#000000"><a href="xfce-animations.html">XFCE
+animations</a></font></li>
+  <li> <font color="#000000"><a href="http://www.xfce.org">XFCE
+Project
+Website</a></font></li>
+  <li> <font color="#000000"><a href="http://www.ibm.com">IBM-RS/6000-Website</a></font></li>
+  <li> <font color="#000000"><a href="http://www.debian.org">Debian-Sparc-Website</a></font></li>
+</ul>
+<p><br>
+<b><font color="#000000">Licence</font></b> </p>
+<p><font color="#000000">Precompiled binary distributions are licensed
+under the General Public License.</font> <br>
+&nbsp; </p>
+<p><b><font color="#000000">Thanks</font></b> </p>
+<p><font color="#000000">To Olivier Fourdan and the xfce community.</font>
+</p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-everywhere.html,v 1.15 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d16 6
+a21 13
+<hr width="100%">
+<p><b><font color="#000000">Installing XFCE on world fastest
+supercomputers (midrange and mainframe)</font></b> </p>
+<p><img src="data/rs6ksp.jpg" nosave="" height="190" width="534">&nbsp;&nbsp;<img
+ src="data/mysparcathome.jpg" nosave="" height="188" width="268"> <br>
+<font color="#000000"><font size="-1">1) ASCI WHITE RS/6000
+supercomputer at Lawrence Livermore National Laboratory U.S.A.</font></font> <br>
+<font color="#000000"><font size="-1">2) My former Sun Sparc 5 at home
+Linux 2.2.16</font></font> <br>
+&nbsp; </p>
+<p><b><font color="#000000">Keynote</font></b> </p>
+<p>Click here to <a href="data/xfce-sun-sparc2.jpg">see XFCE in action
+on my Sun Sparcstation</a>. <font color="#000000">XFCE is a lightweight
+d29 1
+a29 1
+&nbsp; </p>
+d46 2
+a47 1
+<blockquote><tt><font color="#000000">./configure --with-locale=C</font></tt> <br>
+d49 2
+a50 1
+  <tt><font color="#000000">rm -f gdk/libgdk.la gtk/libgtk.la</font></tt> <br>
+d74 2
+a75 1
+  <li> <font color="#000000"><a href="http://www.xfce.org">XFCE Project
+d86 2
+a87 1
+<p><font color="#000000">To Olivier Fourdan and the xfce community.</font> </p>
+d95 4
+a98 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-everywhere.html,v 1.14 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre><br>
+      <i> </i> <dt>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d62 1
+a62 1
+Please report bugs to <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a>.
+d98 1
+a98 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+@
+
+
+1.13
+log
+@..
+@
+text
+@d8 1
+a8 1
+  <meta name="Author" content="Marc Gloor">
+d97 4
+a100 3
+      <td width="90%" nosave=""> <dt> <i>$Id: xfce-everywhere.html,v
+1.11 2003/02/20 18:02:00 gloor Exp gloor $</i></dt>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+a105 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 6
+a9 4
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <meta name="Author" content="Marc Gloor">
+   <title>Precompiled xfce binaries for the Sun SPARC Architecture</title>
+d11 16
+a26 15
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<b><font size=+1>Precompiled
+XFCE Unix binaries for the RS/6000 and Sun SPARC Architecture</font></b>
+<br>by Marc O. Gloor
+<br>
+<hr WIDTH="100%">
+<p><b><font color="#000000">Installing XFCE on world fastest supercomputers
+(midrange and mainframe)</font></b>
+<p><img SRC="data/rs6ksp.jpg" NOSAVE height=190 width=534>&nbsp;&nbsp;<img SRC="data/mysparcathome.jpg" NOSAVE height=188 width=268>
+<br><font color="#000000"><font size=-1>1) ASCI WHITE RS/6000 supercomputer
+at Lawrence Livermore National Laboratory U.S.A.</font></font>
+<br><font color="#000000"><font size=-1>2) My former Sun Sparc 5 at home
+Linux 2.2.16</font></font>
+<br>&nbsp;
+<p><b><font color="#000000">Keynote</font></b>
+d29 9
+a37 9
+desktop environment (similar to CDE) for various Unix supercomputers, midframe-
+and desktop environments. After successfully installing xfce on several
+i586 Linux boxes and on my multinode mosix cluster, I installed xfce also
+on our RS/6000 (running AIX) and on my Sun SPARC 5 (running linux) because
+I need a simple, light and efficient desktop for my Unix Systems (both,
+at work and at home). There are precompiled binary distributions available
+from this website (see below).</font>
+<br>&nbsp;
+<p><b><font color="#000000">SPARC Note</font></b>
+d39 3
+a41 3
+(not glibc2.1), glib, gtk and/or libxpm and/or libungif.</font>
+<br>&nbsp;
+<p><b><font color="#000000">AIX Note:</font></b>
+d43 24
+a66 23
+because of a Gtk+ bug in release 1.2.8 an earlier versions. After successfully
+compiling glib, gtk and xfce on my AIX 4.3.3, the xfce binaries produce
+a "sigsegv caught" panic (debuger output: 0xd1815e50 in gdk_set_locale
+() at gdkim.c:101). I found a solution about this: AIX shared library support
+doesn't permit unresolved symbols in a shared library. The problem here
+is that libgtk depends on libgdk, but it doesn't have -lgdk when it's built.
+I'm not sure what the right fix is, since it looks like gtk/Makefile.am
+and configure.in will need to be altered to support this quirk. However,
+here's what I did to get gtk+-1.2.8 to work well with gcc-2.95.2 on AIX
+4.3.3:</font>
+<blockquote><tt><font color="#000000">./configure --with-locale=C</font></tt>
+<br><tt><font color="#000000">make</font></tt>
+<br><tt><font color="#000000">rm -f gdk/libgdk.la gtk/libgtk.la</font></tt>
+<br><tt><font color="#000000"># Next add "-lgdk " before "-lgmodule" in
+libgtk_la_LDFLAGS defined in gtk/Makefile</font></tt>
+<br><tt><font color="#000000">make install</font></tt></blockquote>
+<font color="#000000">So it's important you compile Gtk+ the same way on
+your System (workaround). It's a good idea to deactivate "Show subprocess
+diagnostic dialog" after installing xfce on your RS/6000. Please report
+bugs to <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a>. Happy hacking.</font>
+<br>&nbsp;
+<p><b><font color="#000000">Download</font></b>
+<p>Precompiled binaries for...
+d68 4
+a71 6
+<li>
+<font color="#000000">...AIX on IBM RS/6000 (2.5Mb): xfce-3.5.0-aix.rs6000.bin.tar.gz
+[lost tarball]</font></li>
+
+<li>
+<font color="#000000">...Linux on Sun SPARC (2.5Mb): <a href="data/xfce-3.6.3-linux.sparc.bin.tar.gz">xfce-3.6.3-linux.sparc.bin.tar.gz
+d74 2
+a75 2
+
+<p><br><b><font color="#000000">Related links</font></b>
+d77 6
+a82 11
+<li>
+<font color="#000000"><a href="xfce-animations.html">XFCE animations</a></font></li>
+
+<li>
+<font color="#000000"><a href="http://www.xfce.org">XFCE Project Website</a></font></li>
+
+<li>
+<font color="#000000"><a href="http://www.ibm.com">IBM-RS/6000-Website</a></font></li>
+
+<li>
+<font color="#000000"><a href="http://www.debian.org">Debian-Sparc-Website</a></font></li>
+d84 2
+a85 2
+
+<p><br><b><font color="#000000">Licence</font></b>
+d87 25
+a111 27
+under the General Public License.</font>
+<br>&nbsp;
+<p><b><font color="#000000">Thanks</font></b>
+<p><font color="#000000">To Olivier Fourdan and the xfce community.</font>
+<p>
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: xfce-everywhere.html,v 1.11 2003/02/20 18:02:00 gloor Exp gloor
+$</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+a112 1
+
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d82 1
+a82 1
+<font color="#000000"><a href="http://www.rs6000.ibm.com">IBM-RS/6000-Website</a></font></li>
+d100 3
+a102 1
+<i>$Id$</i></dt>
+d105 2
+@
+
+
+1.10
+log
+@reviesed
+@
+text
+@d100 3
+a102 5
+<i>$Id: xfce-everywhere.html,v 1.6 2002/10/06 19:51:06 gloor Exp gloor
+$</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.9
+log
+@misc
+@
+text
+@d103 1
+a103 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.8
+log
+@save of today's work
+@
+text
+@d17 1
+a17 1
+<p><img SRC="data/rs6ksp.jpg" NOSAVE height=190 width=534><img SRC="data/mysparcathome.jpg" NOSAVE height=188 width=268>
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d11 2
+a12 2
+XFCE binaries for the RS/6000 and Sun SPARC Architecture</font></b>
+<br>Current Release: XFCE 3.6.3, by Marc O. Gloor
+d20 2
+a21 10
+<br><font color="#000000"><font size=-1>2) My Sun Sparc 5 at home Linux
+2.2.16</font></font>
+<p><font color="#000000">ASCI White (currently the fastest supercomputer)
+is a 512-node RS/6000 SP, 1000 times more powerful than the "Deep Blue"
+supercomputer that defeated chess grand master Garry Kasparov in a celebrated
+1997 match, and capable of solving in one second what a human being with
+a calculator would need 10 million years to figure out. At a peak computational
+performance of 12.28 teraflops, or trillions of calculations per second,
+it could simultaneously process web transactions for every man, woman,
+and child on the planet in one minute.</font>
+d24 9
+a32 7
+<p><font color="#000000">XFCE is a lightweight desktop environment (similar
+to CDE) for various Unix supercomputers, midframe- and desktop environments.
+After successfully installing xfce on many i586 Linux boxes and on my multinode
+mosix cluster, I installed xfce also on our RS/6000 (running AIX) and on
+my Sun SPARC 5 (running linux) because I need a simple, light and efficient
+desktop for my Unix Systems (both, at work and at home). There are precompiled
+binary distributions available from this website (see below).</font>
+d59 1
+a59 1
+bugs to &lt;marc.gloor@@pobox.ch>. Happy hacking.</font>
+d61 2
+a62 1
+<p><b><font color="#000000">XFCE Screenshot</font></b>
+d65 2
+a66 12
+<font color="#000000"><a href="data/xfce-sun-sparc2.jpg">Sun SPARC (xfce
+&amp; fvwm)</a></font></li>
+</ul>
+
+<p><br><b><font color="#000000">Download</font></b>
+<p><font color="#000000">XFCE precompiled on IBM AIX Release 4.3.3 RS/6000
+(2.5Mb):</font>
+<ul>
+<li>
+<font color="#000000"><a href="data/xfce-3.5.0-aix.rs6000.bin.tar.gz">xfce-3.5.0-aix.rs6000.bin.tar.gz</a><tt>
+(MD5:a1e1b0a056c080241ef0ed809f8c7946)</tt></font></li>
+</ul>
+a67 2
+<p><br><font color="#000000">XFCE precompiled on Linux Sun SPARC (2.5Mb):</font>
+<ul>
+d69 2
+a70 2
+<font color="#000000"><a href="data/xfce-3.6.3-linux.sparc.bin.tar.gz">xfce-3.6.3-linux.sparc.bin.tar.gz</a><tt>
+(MD5:eda410e6992be00efe7eae80d5fbaddb)</tt></font></li>
+d90 1
+a90 1
+under the General Public License. No warranty.</font>
+d103 1
+a103 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.6
+log
+@revised, bugs fixed
+@
+text
+@d45 2
+a46 2
+<p><font color="#000000">Compiling xfce on AIX was a bit tricky because
+of a Gtk+ bug in release 1.2.8 an earlier versions. After successfully
+d117 2
+a118 1
+<i>$Id: xfce-everywhere.html,v 1.5 2002/09/08 18:32:06 gloor Exp $</i></dt>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d12 1
+a12 2
+<br>Current Release: XFCE 3.6.3
+<br>by Marc O. Gloor
+d17 1
+a17 1
+<p><img SRC="data/rs6ksp.jpg" NOSAVE height=190 width=534>&nbsp;<img SRC="data/mysparcathome.jpg" NOSAVE height=188 width=268>
+d117 1
+a117 1
+<i>$Id$</i></dt>
+@
+
+
+1.4
+log
+@..
+@
+text
+@d118 1
+a118 1
+$Id: xfce-everywhere.html,v 1.3 2002/09/01 13:26:27 gloor Exp gloor $</dt>
+d120 1
+a120 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d123 1
+a123 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d125 6
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+<p><img SRC="rs6ksp.jpg" height=190 width=534>&nbsp;<img SRC="mysparcathome.jpg" height=188 width=268>
+d118 1
+a118 1
+$Id: xfce-everywhere.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d5 1
+a5 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d18 1
+a18 1
+<p><img SRC="rs6ksp.jpg" height=190 width=534>&nbsp;&nbsp;<img SRC="mysparcathome.jpg" height=188 width=268>
+d71 2
+a72 2
+<font color="#000000"><a href="xfce-sun-sparc2.jpg">Sun SPARC (xfce &amp;
+fvwm)</a></font></li>
+d80 2
+a81 1
+<font color="#000000"><a href="xfce-3.5.0-aix.rs6000.bin.tar.gz">xfce-3.5.0-aix.rs6000.bin.tar.gz</a><tt>(MD5:a1e1b0a056c080241ef0ed809f8c7946)</tt></font></li>
+d87 2
+a88 19
+<font color="#000000"><a href="xfce-3.3.3-linux.sparc.bin.tar.gz">xfce-3.3.3-linux.sparc.bin.tar.gz</a><tt>(MD5:678b8e328424980157e690014096796d)</tt></font></li>
+
+<li>
+<font color="#000000"><a href="xfce-3.4.0-linux.sparc.bin.tar.gz">xfce-3.4.0-linux.sparc.bin.tar.gz</a><tt>(MD5:c9bdf34843b12013fd29dbf277931dde)</tt></font></li>
+
+<li>
+<font color="#000000"><a href="xfce-3.4.2-linux.sparc.bin.tar.gz">xfce-3.4.2-linux.sparc.bin.tar.gz</a><tt>(MD5:ff236f56d7cb77b49132cc24edfa7fbb)</tt></font></li>
+
+<li>
+<font color="#000000"><a href="xfce-3.4.3-linux.sparc.bin.tar.gz">xfce-3.4.3-linux.sparc.bin.tar.gz</a><tt>(MD5:fe7ca22c9927b5915fc5279a443251a5)</tt></font></li>
+
+<li>
+<font color="#000000"><a href="xfce-3.4.4-linux.sparc.bin.tar.gz">xfce-3.4.4-linux.sparc.bin.tar.gz</a><tt>(MD5:039c5fd5c080bb09491a55824d354062)</tt></font></li>
+
+<li>
+<font color="#000000"><a href="xfce-3.5.0-linux.sparc.bin.tar.gz">xfce-3.5.0-linux.sparc.bin.tar.gz</a><tt>(MD5:b38c07404008fb94ec929a69d19fee0b)</tt></font></li>
+
+<li>
+<font color="#000000"><a href="xfce-3.6.3-linux.sparc.bin.tar.gz">xfce-3.6.3-linux.sparc.bin.tar.gz</a><tt>(MD5:eda410e6992be00efe7eae80d5fbaddb)</tt></font></li>
+d116 5
+a120 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d123 1
+a123 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d132 1
+a132 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

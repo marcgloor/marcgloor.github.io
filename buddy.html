@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>buddy - debian package manager</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<span style="font-weight: bold;"></span><b><font size="+1">bud/buddy -
+hardcore deb package handler (dpkg/apt wrapper)</font></b><br>
+tiny, fast, secure, clean and proper Debian package management<br>
+<hr width="100%">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><b>Abstract</b><br>
+      <p>Tired of a broken package system after upgrading using dselect
+or
+aptitude? Buddy is a hardcore Debian package handler which acts as a
+wrapper to apt-get and
+dpkg. Every command is shown before it is
+executed. Buddy has the ability to backup the package
+setup and simulate package manipulations (dry
+run) and it is not intended as replacement for the common Debian
+package manager.</p>
+      <p><b><br>
+Main features</b><br>
+      </p>
+      <ul>
+        <li>package maintenance (backup, diagnostic, audit, cleanup,
+renew, repair) <br>
+        </li>
+        <li>package information (find/search, details, status, list,
+count installed packages) <br>
+        </li>
+        <li>package manipulation (install, uninstall, remove, purge,
+configure)<br>
+        </li>
+      </ul>
+      <br>
+      <b>Advantages</b><br>
+      <ul>
+        <li><span style="color: rgb(255, 0, 0);">simulation mode</span>
+- able to simulate package manipulations (dry run)</li>
+        <li><span style="color: rgb(255, 0, 0);">more transparent</span>
+- every command is shown before it is executed</li>
+        <li><span style="color: rgb(255, 0, 0);">more secure</span> -
+backup your package-setup to be more reversible</li>
+        <li><span style="color: rgb(255, 0, 0);">audit compliant</span>
+- every package transaction is logged via syslog</li>
+        <li><span style="color: rgb(255, 0, 0);">completely shell based</span>
+- no curses or other libraries needed</li>
+        <li><span style="color: rgb(255, 0, 0);">faster</span> - no
+packagelist loading at startup</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; text-align: center;"> <a
+ href="data/buddy-anim.gif"><img
+ style="border: 0px solid ; width: 611px; height: 376px;"
+ src="data/bud.jpg" title="buddy screenshot" alt="loading..."></a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<span style="font-weight: bold;">Demo of buddy in action</span><br>
+<br>
+To play this demo animation, run: <span style="font-style: italic;">ttyplay
+<a href="data/buddy-demo.tty">buddy-demo.tty</a></span> (apt-get
+install <a href="http://freshmeat.net/projects/ttyrec/">ttyrec</a>),
+this will show you:<br>
+<ul>
+  <li>a package search</li>
+  <li>a package status search (package installed or not?)</li>
+  <li>clean package cache</li>
+  <li>packge list renewal</li>
+  <li>a package-system health-check</li>
+  <li>a full package system backup</li>
+  <li>a simulated package system installation</li>
+</ul>
+There is also an animated <a href="data/buddy-anim.gif">screenshot of
+buddy</a> in action available.<br>
+<span style="font-weight: bold;"></span><br>
+<span style="font-style: italic;"></span><span
+ style="font-weight: bold;"><br>
+</span><b>Feedback</b>
+<p>Note that you can
+improve the quality of <span style="font-style: italic;">buddy</span>
+by:<br>
+<a href="mailto:mgloor_at_fhzh_dot_ch">sending me patches,
+comments,
+hints, ideas, bug-
+and testreports</a></p>
+<p><b><br>
+Download</b>
+</p>
+compressed tape archive (work in progress): <a
+ href="data/buddy-1.14_wip.tar.gz">buddy-1.14_wip.tar.gz [.tar.gz,
+2.5kb]</a><br>
+debian package: &lt;not yet released&gt;<br>
+<br>
+<span style="font-family: monospace;"></span>
+<p></p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+    </tr>
+  </tbody><tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.10 2006/09/17 16:39:58 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

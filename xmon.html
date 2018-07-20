@@ -1,0 +1,67 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="author" content="Marc Gloor">
+  <title>xmon for Linux</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#55188a"
+ alink="#ff0000">
+<b><font size="+1">xmon - graphical system performance monitor</font></b>
+<br>
+by Marc O. Gloor <br>
+<hr width="100%">
+<p><b>Abstract</b> </p>
+<p>Xmon is a graphical system performance monitor for linux, written
+from scratch using C/Xlib by myself. Xmon displays the current system
+load, used memory and cpu time based on the output of the linux process
+filesystem which must be mounted before. Current <a
+ href="data/xmon-0.0.1.tar.gz">release 0.0.1 [.tgz, 12kb]</a> doesn't
+support command line options, all features are hardcoded. Xmon is self
+explaining, therefore no manpage is available. Further development has
+been terminated. </p>
+<p>Xmon is just the result of a one day training learning xlib (first
+steps). It means that the algorithm is quite unfinished, untested,
+buggy and beta. Memory overflow workaround is implemented. The beta
+0.0.1b release is not portable to other Unix derivates (Solaris,
+AIX...) but it runs on all platforms (Sun, RS6k) which support and run
+linux. </p>
+<p>I published the source code in the hope that someone would spend
+some time to expand the software because I currently don't have the
+time. However, the code is published under the terms of the GNU GPL. </p>
+<p>UMEM: used memory <br>
+LOAD: system load average <br>
+CPUU: central parallel unit usage <br>
+&nbsp; </p>
+<p><b>Screenshot</b> </p>
+<p><a href="data/xmon.jpg"><img alt="xmon on i386" title="xmon on i386"
+ src="data/xmon.jpg" nosave=""
+ style="border: 0px solid ; width: 310px; height: 134px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="data/xmon2.png"><img title="xmon on PPC"
+ style="border: 0px solid ; width: 314px; height: 138px;"
+ alt="xmon on PPC" src="data/xmon2.png"></a><br>
+</p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.17 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

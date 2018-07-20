@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="author" content="Marc Gloor">
+  <title>blender loadbalancing on a mosix cluster</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Blender load balancing
+workload manager</font></b>
+<br>
+by Marc O. Gloor
+<br>
+<hr width="100%">
+<p><b>Abstract</b>
+</p>
+<p>The <i>render.sh</i> command is a simple shellscript which
+automatically divides
+a blender sequence into a subset of single jobs to turn it over to the
+mosix load balancing workload manager (also known as mosix job
+scheduler).
+<br>
+&nbsp;
+</p>
+<p><b>Rendering blender sequences on a mosix cluster</b>
+</p>
+<p>If you have access to a full featured <a href="http://www.mosix.org">mosix
+cluster</a> for running your jobs on a fast cluster in parallel,
+together
+with blender, there is no reason to install some other render daemons
+to
+use the capabilities of your cluster environment. A <a
+ href="http://www.blender.org">blender</a>
+model scene (also called a sequence) is divisible into several parts,
+e.g.
+a sequence containing 1000 images is divisible into two parts of 500
+images
+(1-500 and 501-1000). Therefore, after a short process migration delay,
+these packages can be rendered by blender on different nodes about 90%
+faster. The speed advantage is dependent of the used hardware
+components
+and network technology.
+</p>
+<p>Starting these two jobs manually from the commandline on a 2-node
+cluster:
+</p>
+<blockquote><tt>root@masternode# blender -b scene.blend -s 0 -e 500 -a
+&amp;</tt>
+  <br>
+  <tt>root@masternode# blender -b scene.blend -s 501 -e 1000 -a &amp;</tt></blockquote>
+<p><br>
+...or the easy way, by a shellscript which produce some different
+rendering commands without manually dividing the no. of pictures in
+relation
+to nodes. On a two node cluster this is a simple task but it becomes
+more
+difficult on systems using more than 2 nodes.
+<br>
+&nbsp;
+</p>
+<p><b>The <i>render</i> command itself</b>
+</p>
+<p>This render-script example below will render 1000 images from
+scene.blend
+on 2 nodes:
+</p>
+<blockquote><tt>root@masternode# render.sh scene.blend 0 1000 2</tt></blockquote>
+<p><br>
+Next example will render 800 images from scene.blend beginning from
+image 200 on 4 nodes:
+</p>
+<blockquote><tt>root@masternode# render scene.blend 200 1000 4</tt></blockquote>
+<p><br>
+Next example will render 5000 images from scene.blend on 16 nodes:
+</p>
+<blockquote><tt>root@masternode# render.sh scene.blend 0 5000 16</tt></blockquote>
+<p><br>
+Last example will also render 5000 images from scene.blend on 16
+nodes (2jobs/node):
+</p>
+<blockquote><tt>root@masternode# render.sh scene.blend 0 5000 32</tt></blockquote>
+<p><br>
+After starting a <i>render</i> job without a following ampersand
+(&amp;) on a cluster, it appears the following output:
+</p>
+<blockquote><tt>Rendering 1000 images from scene.blend on 16 nodes.</tt>
+  <br>
+  <tt>Tasks forked, network rendering in progress.</tt>
+  <br>
+  <tt>Job started at: 16-01-01 23:12:06</tt>
+  <br>
+  <tt>Please wait while rendering...</tt>
+  <br>
+  <tt>Rendering successfully finished.</tt>
+  <br>
+  <tt>Job ended at: 16-01-01 23:16:15</tt></blockquote>
+<p><br>
+You may start your <i>render </i>job in the background using an
+ampersand, redirecting the standard output to a file. So after a while,
+you can check the status from the job (finished or running) which was
+written
+to /<tt>tmp/scene.blend.status</tt>:
+</p>
+<blockquote><tt>root@masternode# render.sh scene.blend 0 5000 32 &gt;
+/tmp/scene.blend.status
+&amp;</tt></blockquote>
+<p><br>
+Another idea is an notification by e-mail if the job was finished
+successfully, like example below:
+</p>
+<blockquote><tt>root@masternode# render.sh scene.blend 0 5000 32 | mail
+-s
+"render status" you@host &amp;</tt></blockquote>
+<p><br>
+If you would like to know how many images are finished while rendering,
+a simple <tt>'ls -l | wc -l' will display the no. of images currently
+rendered.
+</tt>In
+my case, the render command works fine rendering blender scenes on my
+mosix
+cluster. Note that on scenes containing less than 50 images, it makes
+no
+sense using the <i>render </i>command except the calculation of an
+image
+takes a while.
+<br>
+&nbsp;
+</p>
+<p><b>Requirements</b>
+</p>
+<ul>
+  <li>
+a running mosix cluster</li>
+  <li>
+on the main-system an installed <i>render</i> command</li>
+  <li>
+tested with the bourne again shell (other shells untested)</li>
+</ul>
+<p><br>
+<b>License</b>
+</p>
+<p>The distribution is licensed under the GNU General Public License.
+<br>
+&nbsp;
+</p>
+<p><b>Installation</b>
+</p>
+<p>Download render.sh, set permission to 755 (chmod 755 render.sh or
+chmod +x render.sh)
+and run this command using your blender scene.<br>
+&nbsp;
+</p>
+<p><b>Download</b>
+</p>
+<blockquote><a href="data/render.sh">render.sh [.sh, 2kb]</a></blockquote>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+    </tr>
+  </tbody><tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: mosix-blender.html,v 1.15 2006/03/07 19:32:56 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

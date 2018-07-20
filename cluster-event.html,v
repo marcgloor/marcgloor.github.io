@@ -1,0 +1,491 @@
+head	1.15;
+access;
+symbols;
+locks
+	gloor:1.15; strict;
+comment	@# @;
+
+
+1.15
+date	2006.03.15.08.57.21;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.02.23.10.36.21;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.02.20.03.31.50;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.02.20.03.28.16;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.02.15.10.39.13;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2002.09.22.17.54.14;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.01.14.00.56;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>Compaq Schweiz baut Linux Supercomputer</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Compaq Schweiz
+baut Supercomputer mit Linux</font></b>
+<br>
+Bilder vom Compaq Supercomputer Event 2000
+<br>
+von Marc O. Gloor
+<hr width="100%">
+<p><b>Compaq ohne Innovationen?</b>
+</p>
+<p>Sogar Compaq hat nun bewiesen, dass Linux im Unternehmen einen
+festen
+Platz hat und zumindest unterst&uuml;tzt wird. Jack Dongharra, eine
+Supercomputing
+Kapazit&auml;t aus den USA (er gilt als einer der V&auml;ter des
+Supercomputing)
+hat die M&ouml;glichkeiten und vielversprechenden Erfolgschancen von
+Linux
+im Supercomputingbereich einleuchtend
+erl&auml;utert, weitere Pers&ouml;nlichkeiten aus dem Supercomputing
+Umfeld,
+darunter Parallelrechner- und Clustering Spezialisten der
+ETH-Z&uuml;rich
+waren ebenfalls als Referenten anwesend. Hauptorganisator des
+Compaq-Events
+und sein Sohn (er ist &uuml;brigens MCSE was im Saal f&uuml;r
+einhelliges
+Lachen gesorgt hat) haben anschliessend den Alpha-Cluster
+eindr&uuml;cklich
+vordemonstriert. Compaq hat f&uuml;r den Event einen beachtlichen
+Aufwand
+getrieben.
+</p>
+<p><img src="data/clust_1.jpg" nosave="" height="192" width="256">&nbsp;&nbsp;<img
+ src="data/clust_2.jpg" nosave="" height="192" width="256">
+<br>
+Das Interesse war erstaunlich gross, die Stehpl&auml;tze ausgebucht...
+<br>
+&nbsp;
+</p>
+<p><img src="data/clust_3.jpg" nosave="" height="256" width="192">&nbsp;&nbsp;<img
+ src="data/clust_4.jpg" nosave="" height="256" width="192">&nbsp;&nbsp;<img
+ src="data/clust_6.jpg" nosave="" height="256" width="192">
+<br>
+Der Alpha-Cluster von vorne und die Steuerkonsole...
+<br>
+&nbsp;
+</p>
+<p><img src="data/clust_5.jpg" nosave="" height="192" width="256"><br>
+100Mbit Spaghettigconnection...
+<br>
+&nbsp;
+</p>
+<p></p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+    </tr>
+  </tbody><tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.14 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 6
+a9 4
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="author" content="Marc Gloor">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <title>Compaq Schweiz baut Linux Supercomputer</title>
+d11 3
+a13 2
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<b><font size=+1>Compaq Schweiz
+d15 5
+a19 3
+<br>Bilder vom Compaq Supercomputer Event 2000
+<br>von Marc O. Gloor
+<hr WIDTH="100%">
+d21 22
+a42 11
+<p>Sogar Compaq hat nun bewiesen, dass Linux im Unternehmen einen festen
+Platz hat und zumindest unterst&uuml;tzt wird. Jack Dongharra, eine Supercomputing
+Kapazit&auml;t aus den USA (er gilt als einer der V&auml;ter des Supercomputing)
+hat die M&ouml;glichkeiten und vielversprechenden Erfolgschancen von Linux
+im <a href="linux-supercomputer.html">Supercomputerbereich</a> einleuchtend
+erl&auml;utert, weitere Pers&ouml;nlichkeiten aus dem Supercomputing Umfeld,
+darunter Parallelrechner- und Clustering Spezialisten der ETH-Z&uuml;rich
+waren ebenfalls als Referenten anwesend. Hauptorganisator des Compaq-Events
+und sein Sohn (er ist &uuml;brigens MCSE was im Saal f&uuml;r einhelliges
+Lachen gesorgt hat) haben anschliessend den Alpha-Cluster eindr&uuml;cklich
+vordemonstriert. Compaq hat f&uuml;r den Event einen beachtlichen Aufwand
+d44 29
+a72 15
+<p>Weitere Informationen von Compaq betreffend Linux unter <a href="http://www.supercomputer.ch">http://ww.supercomputer.ch</a>
+<br>&nbsp;
+<p><img SRC="data/clust_1.jpg" NOSAVE height=192 width=256>&nbsp;&nbsp;<img SRC="data/clust_2.jpg" NOSAVE height=192 width=256>
+<br>Das Interesse war erstaunlich gross, die Stehpl&auml;tze ausgebucht...
+<br>&nbsp;
+<p><img SRC="data/clust_3.jpg" NOSAVE height=256 width=192>&nbsp;&nbsp;<img SRC="data/clust_4.jpg" NOSAVE height=256 width=192>&nbsp;&nbsp;<img SRC="data/clust_6.jpg" NOSAVE height=256 width=192>
+<br>Der Alpha-Cluster von vorne und die Steuerkonsole...
+<br>&nbsp;
+<p><img SRC="data/clust_5.jpg" NOSAVE height=192 width=256>
+<br>100Mbit Spaghettigconnection...
+<br>&nbsp;
+<p>
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>  <tbody>
+d75 4
+a78 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.13 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre><br>
+      <i> </i> <dt>
+a86 1
+
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d45 1
+a45 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+@
+
+
+1.12
+log
+@fixes
+@
+text
+@d5 1
+a5 1
+   <meta name="Author" content="Marc O. Gloor">
+d42 12
+a53 19
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: cluster-event.html,v 1.11 2003/02/20 18:02:00 gloor Exp gloor $</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 1
+getrieben. 
+d30 1
+a30 1
+<p><img SRC="data/clust_1.jpg" NOSAVE height=192 width=256><img SRC="data/clust_2.jpg" NOSAVE height=192 width=256>
+d33 1
+a33 1
+<p><img SRC="data/clust_3.jpg" NOSAVE height=256 width=192><img SRC="data/clust_4.jpg" NOSAVE height=256 width=192><img SRC="data/clust_6.jpg" NOSAVE height=256 width=192>
+d45 2
+a46 1
+<i>$Id$</i></dt>
+d49 2
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d45 3
+a47 4
+<i>$Id: cluster-event.html,v 1.9 2003/02/20 03:28:16 gloor Exp gloor $</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d27 1
+a27 2
+getrieben. Einen weiterf&uuml;hrenden Artikel diesbez&uuml;glich gibt es
+<a href="linux-supercomputer.html">hier</a>.
+d45 1
+a45 1
+<i>$Id: cluster-event.html,v 1.8 2003/02/15 10:39:13 gloor Exp $</i></dt>
+@
+
+
+1.8
+log
+@revised
+@
+text
+@d16 7
+a22 10
+<p>Im Zusammenhang mit Compaq assoziert der erfahrende Unix-Administrator
+diese innovationslose Hardware-Assemblierer Firma mit dem Ziel m&ouml;glichst
+viele NT-Dinger an den Mann zu bringen. Nun hat Compaq aber bewiesen, dass
+Linux im Unternehmen einen festen Platz hat und zumindest unterst&uuml;tzt
+wird.
+<p>Jack Dongharra, eine Supercomputing Kapazit&auml;t aus den USA (er gilt
+als einer der V&auml;ter des Supercomputing) hat die M&ouml;glichkeiten
+und vielversprechenden Erfolgschancen von Linux im Supercomputerbereich
+einleuchtend erl&auml;utert, weitere Pers&ouml;nlichkeiten aus dem Supercomputing
+Umfeld, darunter Parallelrechner- und Clustering Spezialisten der ETH-Z&uuml;rich
+d29 1
+a29 1
+<p>Weitere Informationen dazu unter <a href="http://www.supercomputer.ch">http://ww.supercomputer.ch</a>
+d46 1
+a46 1
+<i>$Id: cluster-event.html,v 1.7 2003/02/13 22:38:40 gloor Exp gloor $</i></dt>
+@
+
+
+1.7
+log
+@save of today's work
+@
+text
+@d49 1
+a49 1
+<i>$Id: cluster-event.html,v 1.6 2002/09/22 17:54:14 gloor Exp gloor $</i></dt>
+d51 1
+a51 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.6
+log
+@site revised
+@
+text
+@d13 1
+d17 4
+a20 3
+diese NT-Dinger die aufgrund des "falschen" Betriebssystemes doch so oft
+Schiffbruch erleiden. Nun hat Compaq aber bewiesen, dass Linux im Unternehmen
+einen festen Platz hat und zumindest unterst&uuml;tzt wird.
+d32 1
+a32 1
+<p>Weitere Informationen dazu unter <a href="http://www.supercomputer.ch">www.supercomputer.ch</a>
+d49 1
+a49 1
+<i>$Id: cluster-event.html,v 1.5 2002/09/08 18:32:06 gloor Exp $</i></dt>
+d51 1
+a51 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@a12 1
+<br>von Marc O. Gloor
+d14 1
+a14 1
+<p><b>Der Wandel bei Compaq?</b>
+d32 1
+a32 1
+<p><img SRC="data/clust_1.jpg" NOSAVE height=192 width=256>&nbsp;<img SRC="data/clust_2.jpg" NOSAVE height=192 width=256>
+d35 1
+a35 1
+<p><img SRC="data/clust_3.jpg" NOSAVE height=256 width=192>&nbsp;<img SRC="data/clust_4.jpg" NOSAVE height=256 width=192>&nbsp;<img SRC="data/clust_6.jpg" NOSAVE height=256 width=192>
+d47 1
+a47 1
+<i>$Id$</i></dt>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d48 1
+a48 1
+$Id: cluster-event.html,v 1.3 2002/09/01 13:26:27 gloor Exp gloor $</dt>
+d50 1
+a50 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d53 1
+a53 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d55 6
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d33 1
+a33 1
+<p><img SRC="clust_1.jpg" height=192 width=256><img SRC="clust_2.jpg" height=192 width=256>
+d36 1
+a36 1
+<p><img SRC="clust_3.jpg" height=256 width=192>&nbsp;<img SRC="clust_4.jpg" height=256 width=192>&nbsp;<img SRC="clust_6.jpg" height=256 width=192>
+d39 1
+a39 1
+<p><img SRC="clust_5.jpg" height=192 width=256>
+d48 1
+a48 1
+$Id: cluster-event.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d46 5
+a50 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d53 1
+a53 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d46 1
+a46 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

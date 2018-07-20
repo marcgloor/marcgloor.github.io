@@ -1,0 +1,859 @@
+head	1.23;
+access;
+symbols;
+locks
+	gloor:1.23; strict;
+comment	@# @;
+
+
+1.23
+date	2007.04.18.07.31.41;	author gloor;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2005.11.12.11.28.06;	author gloor;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2005.08.13.17.50.04;	author gloor;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2004.05.05.19.25.47;	author gloor;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2004.02.19.13.57.47;	author gloor;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2004.01.11.17.25.49;	author gloor;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2003.03.01.00.14.48;	author gloor;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2003.02.26.22.27.19;	author gloor;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2003.02.23.14.54.02;	author gloor;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2003.02.23.14.32.47;	author gloor;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2003.02.22.11.29.58;	author gloor;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2003.02.20.18.02.00;	author gloor;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2003.02.20.03.14.02;	author gloor;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2003.02.20.03.11.59;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2003.02.19.23.03.04;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2003.02.15.10.39.26;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2003.02.13.22.38.40;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2002.09.08.18.32.06;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2002.09.01.14.00.56;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2002.09.01.13.26.27;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2002.09.01.11.26.53;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2002.09.01.09.59.15;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.23
+log
+@layout update
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>Linux Sticker for the frontpanel</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<font style="font-weight: bold;" size="+1">Linux Sticker for your
+computer's frontpanel <span style="color: rgb(255, 0, 0);">(sold out,
+do not order anymore)</span></font><span
+ style="color: rgb(255, 0, 0); font-weight: bold;"></span><br>
+by Marc O. Gloor <br>
+<hr width="100%">
+<p><b>Here it is - the well known Linux sticker</b> </p>
+<p>Initially for me, my friends and the linux community in switzerland,
+I produced a personal <a href="data/linux_sticker.png">Linuxsticker
+[.png, 8kb]</a> which was first announced in the newsgroup <i>comp.os.linux.announce</i>
+in april 1999. Since then, I sent out the sticker to geeks around the
+world (it seems to me they like the sticker). If you need the original
+GIMP Layout, <a href="data/linux-sticker-v1999.tar.gz">download here
+[.tar.gz, 17kb ]</a>.<br>
+&nbsp; </p>
+<center>
+<div style="text-align: center;"></div>
+<table border="1" cols="2" width="50%" nosave="">
+  <tbody>
+    <tr align="left" valign="CENTER" nosave="">
+      <td align="left" valign="top" width="20%" nosave="">
+      <div style="text-align: center;">
+      <center><a href="data/linux_sticker.png"><img
+ src="data/sticker.png" alt="linux sticker" nosave=""
+ style="border: 0px solid ; width: 132px; height: 134px;" align="middle"></a>&nbsp;&nbsp;
+      <a href="data/lstckr2.jpg"><img align="middle"
+ src="data/lstckr2.jpg" title="Linux sticker on an Apple Powerbook"
+ alt="Linux sticker on an Apple Powerbook"
+ style="border: 0px solid ; width: 60%; height: 60%;"></a><br>
+      <font size="-1">(click on images)<br>
+      </font></center>
+      </div>
+      </td>
+      <td align="left" valign="top" nosave=""><font size="-1">Design:
+by Marc O. Gloor</font> <br>
+      <font size="-1">Edition: october 1998</font>
+      <p><font size="-1">Material: PVC (plastic)</font> <br>
+      <font size="-1">Dimensions: 20 x 17 x 0.3mm</font> <br>
+      <font size="-1">Colors: white / magenta</font> <br>
+      <font size="-1">Price: 10 Dollar/Euro for 20 stickers<br>
+      <br>
+      </font></p>
+      </td>
+    </tr>
+    <tr nosave="">
+      <td>
+      <center><img src="data/lstckr.jpg" alt="linux stickers" nosave=""
+ height="242" width="376"><br>
+      <br>
+      <br>
+      </center>
+      </td>
+      <td valign="top" nosave=""> <br>
+&nbsp;
+      <p><img src="data/linxde.jpg" alt="www.linux.de reference"
+ nosave="" height="162" width="326"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</center>
+<b></b>
+<p><b>I'm pleased to announce a small Linux sticker for your computer's
+frontpanel, see pictures above:</b> </p>
+<p>These stickers can be ordered for original costs, anyhow, this offer
+is noncommercial. Its design is colored in white/magenta (Sun look) and
+it can be used on frontpanels, monitors or notebooks (removable). Show
+all your friends that your system is running a real "high performance
+operating system". If you need to have thousands of stickers, send me
+an e-mail (quantity discount).&nbsp; <span
+ style="color: rgb(255, 0, 0);">(UPDATE: DO NOT ORDER ANYMORE)</span><br>
+&nbsp; </p>
+<p><b>Note about the missing copyrights and trademarks on the sticker</b>
+</p>
+<p>After publishing the sticker on a web newsboard in early 2003 (not
+in usenet) an anonymous protectionist flamed me first about the <i>loveless</i>
+and <i>bad design </i>from my stickers and secondly that I waived to
+include the copyright &copy; and (tm) of <a
+ href="http://www.opengroup.org">OpenGroup Unix</a> and <a
+ href="http://www.cs.helsinki.fi/u/torvalds/">Torvalds' Linux</a>
+trademarks. In addition to our short webboard <a
+ href="data/sticker_debate.txt">debate</a>, he flamed also against the <i>fanciless
+</i><a href="http://www.samba.org">Samba project</a> and the <i><a
+ href="http://www.openresources.com/documents/cathedral-bazaar/">Bazaar</a></i>
+(citation: Tauschb&ouml;rsenfreaks) of the <a
+ href="http://www.opensource.org">OpenSource community</a>. I answered
+that the sticker was intended for Linux users who likes to show their
+friends that they run a fast Unix derivate on their box. My statement
+was that the sticker was primary designed for users which like their
+operating system considering Unix as a <i>high performance operating
+system</i>. Thanks to the <i>anonymous contributor</i> with his <i>flame</i>
+for helping me optimize my sticker offer. <br>
+&nbsp; </p>
+<p><b>International shipping / Unlimited Offer:</b> </p>
+<ul>
+  <li>&nbsp;<span style="color: rgb(255, 0, 0);">sold out (do not order
+anymore)</span><br>
+  </li>
+</ul>
+<br>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-sticker.html,v 1.22 2005/11/12 11:28:06 gloor Exp $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d24 3
+a26 1
+world (it seems to me they like the sticker). <br>
+d29 1
+d34 1
+d36 9
+a44 2
+ src="data/sticker.png" alt="linux sticker" nosave="" border="0"
+ height="134" width="132" align="texttop"></a></center>
+d52 3
+a54 1
+      <font size="-1">Price: 10 Dollar/Euro for 20 stickers</font></p>
+d60 4
+a63 1
+ height="242" width="376"></center>
+d83 2
+a84 1
+an email (quantity discount). <br>
+d120 1
+a120 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-sticker.html,v 1.21 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d14 2
+a15 1
+computer's frontpanel <span style="color: rgb(255, 0, 0);">(sold out)</span></font><span
+d92 2
+a93 1
+  <li>&nbsp;<span style="color: rgb(255, 0, 0);">sold out (do not order)</span><br>
+d103 1
+a103 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-sticker.html,v 1.20 2005/08/13 17:50:04 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.20
+log
+@sold out added
+@
+text
+@d101 2
+a102 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-sticker.html,v 1.19 2004/05/05 19:25:47 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.19
+log
+@*** empty log message ***
+@
+text
+@d13 3
+a15 1
+<b><font size="+1">Linux Sticker for your computer's frontpanel</font></b> <br>
+a35 1
+      <font size="-1">Printed: in switzerland</font> <br>
+d56 1
+d68 2
+a69 1
+<p><b>Note about the missing copyrights and trademarks on the sticker</b> </p>
+d77 2
+a78 2
+ href="data/sticker_debate.txt">debate</a>, he flamed also against the <i>fanciless </i><a
+ href="http://www.samba.org">Samba project</a> and the <i><a
+d91 2
+a92 6
+  <li> Send me an e-mail and receive an answer to be sure that I'm
+living and real.</li>
+  <li> Send me your order by mail (not e-mail) and put the money in an
+enveloppe.</li>
+  <li> Send this to the address below.</li>
+  <li> I'll send you the stickers within 14 business days.</li>
+d94 1
+a94 6
+<p><br>
+<b>Ordering address:</b> </p>
+<blockquote>Marc O. Gloor <br>
+Bolleystrasse 30 <br>
+CH-8006 Zurich <br>
+Switzerland/Europe</blockquote>
+d101 4
+a104 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-sticker.html,v 1.18 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+      <i> </i> <dt>
+@
+
+
+1.18
+log
+@*** empty log message ***
+@
+text
+@d74 1
+a74 1
+ href="data/sticker_debate.txt">debate</a>, he flamed also against the <i>fanciless</i><a
+d107 1
+a107 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id:$<br>Author:</i><i> <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre><br>
+@
+
+
+1.17
+log
+@..
+@
+text
+@d6 1
+a6 1
+  <meta name="Author" content="Marc O. Gloor">
+d106 4
+a109 3
+      <td width="90%" nosave=""> <dt> <i>$Id: linux-sticker.html,v 1.16
+2003/03/01 00:14:48 gloor Exp gloor $</i></dt>
+      <dt> <i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+a114 6
+    <tr>
+      <td><br>
+      </td>
+      <td><br>
+      </td>
+    </tr>
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d1 1
+a1 1
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+d4 6
+a9 4
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Marc O. Gloor">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+   <title>Linux Sticker for the frontpanel</title>
+d11 6
+a16 7
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EF" vlink="#51188E" alink="#FF0000">
+<b><font size=+1>Linux Sticker for your
+computer's frontpanel</font></b>
+<br>by Marc O. Gloor
+<br>
+<hr WIDTH="100%">
+<p><b>Here it is - the well known Linux sticker</b>
+d18 38
+a55 30
+I produced a personal <a href="data/linux_sticker.png">Linuxsticker [.png,
+8kb]</a> which was first announced in the newsgroup <i>comp.os.linux.announce</i>
+in april 1999. Since then, I sent out the sticker to geeks around the world
+(it seems to me they like the sticker).
+<br>&nbsp;
+<center><table BORDER COLS=2 WIDTH="50%" NOSAVE >
+<tr ALIGN=LEFT VALIGN=CENTER NOSAVE>
+<td ALIGN=LEFT VALIGN=TOP WIDTH="20%" NOSAVE>
+<center><a href="data/linux_sticker.png"><img SRC="data/sticker.png" ALT="linux sticker" NOSAVE BORDER=0 height=134 width=132 align=TEXTTOP></a></center>
+</td>
+
+<td ALIGN=LEFT VALIGN=TOP NOSAVE><font size=-1>Design: by Marc O. Gloor</font>
+<br><font size=-1>Printed: in switzerland</font>
+<br><font size=-1>Edition: october 1998</font>
+<p><font size=-1>Material: PVC (plastic)</font>
+<br><font size=-1>Dimensions: 20 x 17 x 0.3mm</font>
+<br><font size=-1>Colors: white / magenta</font>
+<br><font size=-1>Price: 10 Dollar/Euro for 20 stickers</font></td>
+</tr>
+
+<tr NOSAVE>
+<td>
+<center><img SRC="data/lstckr.jpg" ALT="linux stickers" NOSAVE height=242 width=376></center>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<br>&nbsp;
+<p><img SRC="data/linxde.jpg" ALT="www.linux.de reference" NOSAVE height=162 width=326></td>
+</tr>
+</table></center>
+d58 1
+a58 1
+frontpanel, see pictures above:</b>
+d62 21
+a82 19
+all your friends that your system is running a real "high performance operating
+system". If you need to have thousands of stickers, send me an email (quantity
+discount).
+<br>&nbsp;
+<p><b>Note about the missing copyrights and trademarks on the sticker</b>
+<p>After publishing the sticker on a web newsboard in early 2003 (not in
+usenet) an anonymous protectionist flamed me first about the <i>loveless</i>
+and <i>bad design </i>from my stickers and secondly that I waived to include
+the copyright &copy; and (tm) of <a href="http://www.opengroup.org">OpenGroup
+Unix</a> and <a href="http://www.cs.helsinki.fi/u/torvalds/">Torvalds'
+Linux</a> trademarks. In addition to our short webboard <a href="data/sticker_debate.txt">debate</a>,
+he flamed also against the
+<i>fanciless </i><a href="http://www.samba.org">Samba
+project</a> and the <i><a href="http://www.openresources.com/documents/cathedral-bazaar/">Bazaar</a></i>
+(citation: Tauschb&ouml;rsenfreaks) of the <a href="http://www.opensource.org">OpenSource
+community</a>. The sticker was intended for Linux users who likes to show
+their friends that they run a fast Unix derivate on their box. My public
+statement was that the sticker was primary designed for users which like
+their operating system considering Unix as a <i>high performance operating
+d84 3
+a86 3
+for helping me optimize my sticker offer.
+<br>&nbsp;
+<p><b>International shipping / Unlimited Offer:</b>
+d88 6
+a93 12
+<li>
+Send me an e-mail and receive an answer to be sure that I'm living and
+real.</li>
+
+<li>
+Send me your order by mail (not e-mail) and put the money in an enveloppe.</li>
+
+<li>
+Send this to the address below.</li>
+
+<li>
+I'll send you the stickers within 14 business days.</li>
+d95 26
+a120 28
+
+<p><br><b>Ordering address:</b>
+<blockquote>Marc O. Gloor
+<br>Bolleystrasse 30
+<br>CH-8006 Zurich
+<br>Switzerland/Europe</blockquote>
+
+<hr WIDTH="100%">
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 COLS=2 WIDTH="100%" NOSAVE >
+<tr NOSAVE>
+<td WIDTH="90%" NOSAVE>
+<dt>
+<i>$Id: linux-sticker.html,v 1.15 2003/02/26 22:27:19 gloor Exp gloor $</i></dt>
+
+<dt>
+<i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></dt>
+</td>
+
+<td VALIGN=TOP NOSAVE>
+<div align=right><i><a href="index.html">home</a></i></div>
+</td>
+</tr>
+
+<tr>
+<td></td>
+
+<td></td>
+</tr>
+a121 1
+
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d19 2
+a20 2
+in april 1999. Since then, I sent out the sticker to geeks around the world.
+It seems to me that a lot of geeks out there like my sticker.
+d47 1
+a47 1
+
+d102 1
+a102 1
+<i>$Id: linux-sticker.html,v 1.14 2003/02/23 14:54:02 gloor Exp gloor $</i></dt>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d58 7
+a64 7
+<p>After publishing the sticker on a <a href="data/sticker_debate.txt">web
+newsboard</a> in early 2003 (not in usenet) an anonymous protectionist
+flamed me first about the <i>loveless</i> and <i>bad design </i>from my
+stickers and secondly that I waived to include the copyright &copy; and
+(tm) of <a href="http://www.opengroup.org">OpenGroup Unix</a> and <a href="http://www.cs.helsinki.fi/u/torvalds/">Torvalds'
+Linux</a> trademarks. In addition to our short webboard debate, he flamed
+also against the
+d73 1
+a73 1
+for helping me optimize my sticker offer to the Linux community.
+d102 1
+a102 1
+<i>$Id: linux-sticker.html,v 1.13 2003/02/23 14:32:47 gloor Exp $</i></dt>
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d58 5
+a62 5
+<p>After publishing the sticker on a web newsboard in early 2003 (not in
+usenet) an anonymous protectionist flamed me first about the <i>loveless</i>
+and <i>bad design </i>from my stickers and secondly that I waived to include
+the copyright &copy; and (tm) of <a href="http://www.opengroup.org">OpenGroup
+Unix</a> and <a href="http://www.cs.helsinki.fi/u/torvalds/">Torvalds'
+d102 1
+a102 1
+<i>$Id: linux-sticker.html,v 1.12 2003/02/22 11:29:58 gloor Exp gloor $</i></dt>
+@
+
+
+1.12
+log
+@misc.
+@
+text
+@d16 3
+a18 2
+<p>Initially for me, my friends and the linux community in switzerland, I produced a personal <a href="data/linux_sticker.png">Linuxsticker [.png, 8kb]</a>
+which was first announced in the newsgroup <i>comp.os.linux.announce</i>
+d57 18
+d102 2
+a103 1
+<i>$Id: linux-sticker.html,v 1.11 2003/02/20 18:02:00 gloor Exp $</i></dt>
+d106 2
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d16 1
+a16 2
+<p>Initially for me, my friends and the linux community in switzerland, I produced an 
+"official" <a href="data/sticker.eps.gz">Linuxsticker [.eps/.gz, 27kb]</a> 
+d19 1
+a19 1
+It seems to me that a lot of geeks out there like my sticker. Lucky me!
+d24 1
+a24 1
+<center><a href="data/sticker.eps.gz"><img SRC="data/sticker.png" ALT="linux sticker" NOSAVE BORDER=0 height=134 width=132 align=TEXTTOP></a></center>
+d83 1
+a83 1
+<i>$Id$</i></dt>
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d16 3
+a18 4
+<p>In late 1998, for the members of the <a href="http://www.lugs.ch">Linux
+User Group switzerland</a> and others, I produced an "official" <a href="data/sticker.eps.gz">Linux
+sticker [.eps/.gz, 27kb]</a> which was first announced in the newsgroup
+<i>comp.os.linux.announce</i>
+d20 1
+d29 2
+a30 2
+<br><font size=-1>Layout: Powered by the gimp</font>
+<br><font size=-1>Edition: October 1998</font>
+d84 3
+a86 4
+<i>$Id: linux-sticker.html,v 1.9 2003/02/20 03:11:59 gloor Exp gloor $</i></dt>
+
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></td>
+
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d20 1
+a20 1
+in late 1998. Since then, I sent out the sticker to geeks around the world.
+d84 1
+a84 1
+<i>$Id: linux-sticker.html,v 1.8 2003/02/19 23:03:04 gloor Exp $</i></dt>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d16 5
+a20 3
+<p>I first announced the <a href="data/sticker.eps.gz">linux sticker [.eps/.gz,
+27kb]</a> in the newgroup <i>comp.os.linux.announce</i> in late 1998, since
+then, I sent out the sticker to geeks around the world.
+d25 1
+a25 1
+<center><img SRC="data/sticker.png" ALT="linux sticker" NOSAVE height=134 width=132 align=TEXTTOP></center>
+d84 1
+a84 1
+<i>$Id: linux-sticker.html,v 1.7 2003/02/15 10:39:26 gloor Exp gloor $</i></dt>
+@
+
+
+1.7
+log
+@reviesed
+@
+text
+@d16 3
+a18 2
+<p>I first announced the linux sticker in the newgroup <i>comp.os.linux.announce</i>
+in late 1998, since then, I sent out the sticker to geeks around the world.
+d82 1
+a82 1
+<i>$Id: linux-sticker.html,v 1.6 2003/02/13 22:38:40 gloor Exp gloor $</i></dt>
+@
+
+
+1.6
+log
+@save of today's work
+@
+text
+@d81 1
+a81 1
+<i>$Id: linux-sticker.html,v 1.5 2002/09/08 18:32:06 gloor Exp gloor $</i></dt>
+d83 1
+a83 1
+<br><i>Author: <a href="mailto:mgloor@@fhzh.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d15 27
+a41 10
+<center><table BORDER=0 COLS=2 WIDTH="100%" >
+<tr>
+<td WIDTH="20%">
+<br><img SRC="data/sticker.png" NOSAVE height=134 width=132 align=TEXTTOP></td>
+
+<td ALIGN=LEFT VALIGN=CENTER>Edition: 2000 pcs.
+<br>Material: PVC (plastic)
+<br>Dimensions: 20 x 17 x 0.3mm
+<br>Colors: white / magenta
+<br>Price: 20 Stickers / US$10 (includes shipping costs)</td>
+a44 4
+<p><img SRC="data/lstckr.jpg" NOSAVE height=242 width=376>
+<br>&nbsp;
+<p><img SRC="data/linxde.jpg" NOSAVE height=162 width=326>
+<br>&nbsp;
+d47 3
+a49 4
+<p>This offer was announced in comp.os.linux.announce in early 1999 and
+April 2000. These stickers can be ordered for original costs, anyhow, this
+offer is noncommercial. Its design is inked in two colors, white and magenta
+and it can be used on frontpanels, monitors or notebooks (removable). Show
+d51 2
+a52 2
+system". If you need to have more than 36 stickers at a time, send me an
+email (quantity discount).
+d57 2
+a58 5
+Specify the Sticker number of pieces, your Address and your E-Mail-Address.</li>
+
+<li>
+Put US$10 for 20 stickers inside an enveloppe an send this ordering (by
+registered mail?) to the address below.</li>
+d61 1
+a61 8
+You'll receive a short confirmaton by mail and your stickers within 14
+days to your address.</li>
+</ul>
+
+<p><br><b>Shipping in Switzerland:</b>
+<ul>
+<li>
+Specify the Sticker number of pieces, your Address and your E-Mail-Address.</li>
+d64 1
+a64 2
+Put CHF 10 for 20 Stickers inside an enveloppe an send this ordering (by
+registered mail?) to the address below.</li>
+d67 1
+a67 2
+You'll receive a short confirmaton by mail and your stickers within 14
+days to your address.</li>
+d73 2
+a74 2
+<br>8006 Zuerich
+<br>Switzerland</blockquote>
+d81 1
+a81 1
+<i>$Id$</i></dt>
+d83 1
+a83 1
+<br><i>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></i></td>
+@
+
+
+1.4
+log
+@..
+@
+text
+@d81 1
+a81 1
+$Id: linux-sticker.html,v 1.3 2002/09/01 13:26:27 gloor Exp gloor $</dt>
+d83 1
+a83 1
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td>
+d86 1
+a86 1
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div>
+d88 6
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+<br><img SRC="sticker.png" height=134 width=132 align=TEXTTOP></td>
+d28 1
+a28 1
+<p><img SRC="lstckr.jpg" height=242 width=376>
+d30 1
+a30 1
+<p><img SRC="linxde.jpg" height=162 width=326>
+d81 1
+a81 1
+$Id: linux-sticker.html,v 1.2 2002/09/01 11:26:53 gloor Exp gloor $</dt>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d6 1
+a6 1
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (X11; U; Linux 2.2.16 i686) [Netscape]">
+d79 5
+a83 3
+<td WIDTH="90%" NOSAVE><dt>$Id$</dt>
+<br>Author: <a href="mailto:mgloor_removespam@@freesurf.ch">Marc O. Gloor</a></td
+>
+d86 1
+a86 2
+<div align=right><a href="http://www.unilec.org/mgloor/index.html">home</a></div
+>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d79 1
+a79 1
+<td WIDTH="90%" NOSAVE>$Id$ (RCS)
+@

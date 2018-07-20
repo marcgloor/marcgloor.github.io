@@ -1,0 +1,398 @@
+head	1.9;
+access;
+symbols;
+locks
+	gloor:1.9; strict;
+comment	@# @;
+
+
+1.9
+date	2005.09.27.00.47.20;	author gloor;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2005.09.11.12.31.35;	author gloor;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2005.09.11.12.18.10;	author gloor;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2005.08.14.08.49.19;	author gloor;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2005.08.14.08.46.35;	author gloor;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2005.08.08.18.02.51;	author gloor;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2005.08.07.18.47.23;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2005.08.07.11.06.25;	author gloor;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2005.08.07.10.48.54;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="author" content="Marc O. Gloor">
+  <title>hourmeter for Linux</title>
+  <meta
+ content="Monitoring the system operating hours (or power-on hours) with hourmeter"
+ name="description">
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#55188a"
+ alink="#ff0000">
+<b><font size="+1">Monitoring the system operating hours (or power-on
+hours) with hourmeter</font></b><br>
+by Marc O. Gloor <br>
+<hr width="100%">
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><b>Abstract</b>
+      <p style="text-align: left;">The command 'hm' displays the
+operating
+hours (or power-on hours) of
+your hardware. <br>
+For further information
+about the command read the (included) <a href="data/hmman.txt">manpage</a>.
+      <br>
+      </p>
+      <p style="text-align: left;"><span style="font-weight: bold;"></span>Please
+note that hourmeter is
+NOT uptime:</p>
+      <table style="text-align: left; width: 416px; height: 110px;"
+ border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr>
+            <td
+ style="vertical-align: top; text-align: left; background-color: rgb(204, 204, 255);">UPTIME(1)</td>
+            <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255);">Tell
+how long the system has been running since LAST REBOOT.</td>
+          </tr>
+          <tr>
+            <td
+ style="vertical-align: top; text-align: left; background-color: rgb(204, 204, 255);">HOURMETER(1)
+            <br>
+            </td>
+            <td
+ style="vertical-align: top; background-color: rgb(204, 204, 255);">Tell
+the total amount of operating-hours the hardware has been running since
+first INSTALLATION.</td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td style="vertical-align: top;">
+      <p><b>Screenshots of 'hm' command output<br>
+      </b></p>
+      <table style="text-align: left; width: 456px; height: 193px;"
+ border="0" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr>
+            <td style="vertical-align: top;">'hm' output in xterm:<br>
+            <br>
+            <img title="hm output in xterm"
+ style="border: 0px solid ; width: 244px; height: 140px;"
+ alt="hm output in xterm" src="data/hm1.jpg"><br>
+            </td>
+            <td style="vertical-align: top;">'hm' output under X11:<br>
+            <br>
+            <br>
+            <img align="top" title="hm output under xmessage (X11)"
+ style="border: 0px solid ; width: 145px; height: 79px;"
+ alt="hm output under xmessage (X11)" src="data/hm2.jpg"><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><br>
+<span style="font-weight: bold;">Download</span><br>
+<span style="font-weight: bold;"><br>
+</span>Source package (extract using <span style="font-style: italic;">tar
+xzvf hourmeter-1.0.3.tar.gz</span>, run <span
+ style="font-style: italic;">./install.sh</span>): <a
+ href="data/hourmeter-1.0.3.tar.gz">hourmeter-1.0.3.tar.gz [.tar.gz,
+10kb]</a><br>
+Debian package (install using <span style="font-style: italic;">dpkg
+-i hourmeter_1.0.3-1_all.deb</span>): <a
+ href="data/hourmeter_1.0.3-1_all.deb">hourmeter_1.0.3-1_all.deb [.deb,
+5.2kb]</a> <br>
+<span style="color: rgb(255, 255, 255);">betriebsstunden
+betriebstunden betriebstundenz&auml;hler betriebsstundenz&auml;hler
+linux </span><br>
+</p>
+<p> </p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.8 2005/09/11 12:31:35 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d110 2
+a111 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.7 2005/09/11 12:18:10 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor@@fhzh.ch">mgloor@@fhzh.ch</a></i></pre>
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d90 1
+a90 1
+xzvf hourmeter-1.0.2.tar.gz</span>, run <span
+d95 1
+a95 1
+-i hourmeter_1.0.2-1_all.deb</span>): <a
+d110 1
+a110 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.6 2005/08/14 08:49:19 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.6
+log
+@fixes
+@
+text
+@d30 1
+a30 2
+about the command read the (included) <a
+ href="data/hmman.txt">manpage</a>.
+d70 1
+a70 2
+ alt="hm output in xterm"
+ src="data/hm1.jpg"><br>
+d77 1
+a77 2
+ alt="hm output under xmessage (X11)"
+ src="data/hm2.jpg"><br>
+d92 1
+a92 1
+ href="data/hourmeter-1.0.2.tar.gz">hourmeter-1.0.2.tar.gz [.tar.gz,
+d96 1
+a96 1
+ href="data/hourmeter_1.0.2-1_all.deb">hourmeter_1.0.2-1_all.deb [.deb,
+d110 1
+a110 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.5 2005/08/14 08:46:35 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.5
+log
+@Seite neu organisiert / zwei Spalten
+@
+text
+@d31 1
+a31 1
+ href="file:///home/gloor/data/secure/archive/www/website/data/hmman.txt">manpage</a>.
+d72 1
+a72 1
+ src="file:///home/gloor/data/secure/archive/www/website/data/hm1.jpg"><br>
+d80 1
+a80 1
+ src="file:///home/gloor/data/secure/archive/www/website/data/hm2.jpg"><br>
+d113 1
+a113 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.4 2005/08/08 18:02:51 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d20 7
+a26 2
+<p><b>Abstract</b> </p>
+<p style="text-align: left;">The command 'hm' displays the operating
+d28 7
+a34 5
+your hardware. For further information
+about the command read the (included) <a href="data/hmman.txt">manpage</a>.
+<br>
+</p>
+<p style="text-align: left;"><span style="font-weight: bold;"></span>Please
+d37 5
+a41 5
+<table style="text-align: left; width: 416px; height: 110px;" border="0"
+ cellspacing="2" cellpadding="2">
+  <tbody>
+    <tr>
+      <td
+d43 1
+a43 1
+      <td
+d46 3
+a48 3
+    </tr>
+    <tr>
+      <td
+d50 3
+a52 3
+      <br>
+      </td>
+      <td
+d56 14
+a69 13
+    </tr>
+  </tbody>
+</table>
+<br>
+<p><b>Screenshots of 'hm' command output<br>
+</b></p>
+<table style="text-align: left; width: 456px; height: 193px;" border="0"
+ cellspacing="2" cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">'hm' output in xterm:<br>
+      <br>
+      <a href="data/hmman.txt"><img title="hm output in xterm"
+d71 7
+a77 7
+ alt="hm output in xterm" src="data/hm1.jpg"></a><br>
+      </td>
+      <td style="vertical-align: top;">'hm' output under X11:<br>
+      <br>
+      <br>
+      <a href="data/hmman.txt"><img align="top"
+ title="hm output under xmessage (X11)"
+d79 6
+a84 1
+ alt="hm output under xmessage (X11)" src="data/hm2.jpg"></a><br>
+d89 3
+a91 3
+<br>
+<p><span style="font-weight: bold;">Download<br>
+<br>
+d113 1
+a113 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.3 2005/08/07 18:47:23 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d21 3
+a23 2
+<p>The command 'hm' displays the operating hours (or power-on hours) of
+your computer. For further information
+d25 1
+d27 27
+a53 2
+<p><b><br>
+Screenshots of 'hm' command output<br>
+d100 1
+a100 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.2 2005/08/07 11:06:25 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d55 6
+a60 3
+ href="data/hourmeter-1.0.2.tar.gz">hourmeter-1.0.2.tar.gz</a><br>
+Debian package (install using dpkg -i hourmeter_1.0.2-1_all.deb): <a
+ href="data/hourmeter_1.0.2-1_all.deb">hourmeter_1.0.2-1_all.deb</a> <br>
+d73 1
+a73 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.1 2005/08/07 10:48:54 gloor Exp gloor $<br>Author:</i><i> <a
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d23 4
+a26 3
+about the command read the (included) <a href="data/hmman.txt">manpage</a>.<br>
+<b><br>
+Screenshot of the hm command in a X-terminal<br>
+d28 23
+a50 5
+<p><img style="width: 734px; height: 391px;" alt="runtime screenshot"
+ src="data/runtime.png"><br>
+<span style="font-weight: bold;"></span></p>
+<p><span style="font-weight: bold;"><br>
+Download<br>
+d70 1
+a70 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: runtime.html,v 1.18 2005/08/06 19:59:14 gloor Exp gloor $<br>Author:</i><i> <a
+@
