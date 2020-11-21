@@ -1,10 +1,14 @@
-head	1.112;
+head	1.113;
 access;
 symbols;
-locks
-	gloor:1.112; strict;
+locks; strict;
 comment	@# @;
 
+
+1.113
+date	2020.11.21.21.25.03;	author gloor;	state Exp;
+branches;
+next	1.112;
 
 1.112
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -571,7 +575,7 @@ desc
 @@
 
 
-1.112
+1.113
 log
 @*** empty log message ***
 @
@@ -672,7 +676,7 @@ on
         [english]</li>
       <li><font color="#000000"><font size="+0">Die <a
               href="dist-pfaffikersee.html">exakte Distanz</a> des
-            Wanderweges um den Pfäffikersee (Kt. Zürich/Schweiz)
+            Wanderweges um den Pfaeffikersee (Kt. Zurich/Schweiz)
             [german]</font></font><b><font color="#000000"><font
               size="+0"><br>
             </font></font></b><b><font color="#000000"><font size="+0"></font></font></b>
@@ -684,7 +688,7 @@ on
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.111 2011/12/22 12:01:06 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.112 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -698,6 +702,20 @@ on
     </table>
   </body>
 </html>
+@
+
+
+1.112
+log
+@*** empty log message ***
+@
+text
+@d97 1
+a97 1
+            Wanderweges um den Pfäffikersee (Kt. Zürich/Schweiz)
+d109 1
+a109 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.111 2011/12/22 12:01:06 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 

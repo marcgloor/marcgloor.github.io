@@ -1,10 +1,14 @@
-head	1.29;
+head	1.30;
 access;
 symbols;
-locks
-	gloor:1.29; strict;
+locks; strict;
 comment	@# @;
 
+
+1.30
+date	2020.11.21.21.25.03;	author gloor;	state Exp;
+branches;
+next	1.29;
 
 1.29
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -156,7 +160,7 @@ desc
 @@
 
 
-1.29
+1.30
 log
 @*** empty log message ***
 @
@@ -178,14 +182,14 @@ text
     <p><span style="font-weight: bold;"></span></p>
     <b>Haftung / Disclaimer</b>
     <p> </p>
-    <p>Für Links und deren Inhalt wird ausdrücklich jede Haftung
+    <p>Fuer Links und deren Inhalt wird ausdruecklich jede Haftung
       abgelehnt, alle Hyperlinks verweisen zum Publikationszeitpunkt auf
       legale
       Inhalte. Jegliche Angaben basieren auf eigenen Recherchen oder
       Angaben
-      Dritter und sind ohne Gewähr. Für Folgeschäden die durch
+      Dritter und sind ohne Gewaehr. Fuer Folgeschaeden die durch
       Fehlkonfiguration, Fehlmanipulation oder Falschauslegung der
-      veröffentlichten Informationen entstehen wird jede Haftung
+      veroeffentlichten Informationen entstehen wird jede Haftung
       abgelehnt. <br>
     </p>
     <b><br>
@@ -216,7 +220,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.28 2018/07/20 08:28:39 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.29 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -229,6 +233,26 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+    <p>Für Links und deren Inhalt wird ausdrücklich jede Haftung
+d23 1
+a23 1
+      Dritter und sind ohne Gewähr. Für Folgeschäden die durch
+d25 1
+a25 1
+      veröffentlichten Informationen entstehen wird jede Haftung
+d56 1
+a56 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.28 2018/07/20 08:28:39 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
