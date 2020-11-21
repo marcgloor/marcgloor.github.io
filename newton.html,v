@@ -1,10 +1,14 @@
-head	1.7;
+head	1.8;
 access;
 symbols;
-locks
-	gloor:1.7; strict;
+locks; strict;
 comment	@# @;
 
+
+1.8
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.7;
 
 1.7
 date	2006.08.13.23.42.36;	author gloor;	state Exp;
@@ -46,7 +50,7 @@ desc
 @@
 
 
-1.7
+1.8
 log
 @*** empty log message ***
 @
@@ -179,8 +183,8 @@ table entries above:<br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: newton.html,v 1.6 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: newton.html,v 1.7 2006/08/13 23:42:36 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -194,6 +198,18 @@ table entries above:<br>
 </table>
 </body>
 </html>
+@
+
+
+1.7
+log
+@*** empty log message ***
+@
+text
+@d129 2
+a130 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: newton.html,v 1.6 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

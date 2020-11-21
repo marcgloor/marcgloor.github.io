@@ -1,10 +1,14 @@
-head	1.17;
+head	1.18;
 access;
 symbols;
-locks
-	gloor:1.17; strict;
+locks; strict;
 comment	@# @;
 
+
+1.18
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.17;
 
 1.17
 date	2005.09.27.00.47.20;	author gloor;	state Exp;
@@ -96,7 +100,7 @@ desc
 @@
 
 
-1.17
+1.18
 log
 @*** empty log message ***
 @
@@ -154,8 +158,8 @@ CPUU: central parallel unit usage <br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.16 2005/02/08 20:27:49 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.17 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -168,6 +172,18 @@ CPUU: central parallel unit usage <br>
 </table>
 </body>
 </html>
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d54 2
+a55 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.16 2005/02/08 20:27:49 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

@@ -1,10 +1,14 @@
-head	1.15;
+head	1.16;
 access;
 symbols;
-locks
-	gloor:1.15; strict;
+locks; strict;
 comment	@# @;
 
+
+1.16
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.15;
 
 1.15
 date	2006.03.15.08.57.21;	author gloor;	state Exp;
@@ -86,7 +90,7 @@ desc
 @@
 
 
-1.15
+1.16
 log
 @*** empty log message ***
 @
@@ -165,8 +169,8 @@ Der Alpha-Cluster von vorne und die Steuerkonsole...
   </tbody><tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.14 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.15 2006/03/15 08:57:21 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -179,6 +183,18 @@ Der Alpha-Cluster von vorne und die Steuerkonsole...
 </table>
 </body>
 </html>
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d75 2
+a76 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.14 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

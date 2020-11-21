@@ -1,10 +1,14 @@
-head	1.13;
+head	1.14;
 access;
 symbols;
-locks
-	gloor:1.13; strict;
+locks; strict;
 comment	@# @;
 
+
+1.14
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.13;
 
 1.13
 date	2005.09.27.00.47.20;	author gloor;	state Exp;
@@ -76,7 +80,7 @@ desc
 @@
 
 
-1.13
+1.14
 log
 @*** empty log message ***
 @
@@ -98,7 +102,7 @@ text
 by Marc Gloor <br>
 <hr width="100%">
 <p>Copyright (C) 1992 Al Aburto &lt;aburto@@nosc.mil&gt;<br>
-Copyright (C) 2000 Marc O. Gloor &lt;mgloor_at_fhzh_dot_ch&gt;<br>
+Copyright (C) 2000 Marc O. Gloor &lt;marc_dot_gloor_at_u_dot_nus_dot_edu&gt;<br>
 <br>
 Benchmark modified for linux by Marc O. Gloor<br>
 <br>
@@ -124,8 +128,8 @@ performance considerably on some systems.<br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.12 2005/08/05 21:34:25 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.13 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -138,6 +142,21 @@ performance considerably on some systems.<br>
 </table>
 </body>
 </html>
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+Copyright (C) 2000 Marc O. Gloor &lt;mgloor_at_fhzh_dot_ch&gt;<br>
+d44 2
+a45 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.12 2005/08/05 21:34:25 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

@@ -1,10 +1,14 @@
-head	1.10;
+head	1.11;
 access;
 symbols;
-locks
-	gloor:1.10; strict;
+locks; strict;
 comment	@# @;
 
+
+1.11
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.10;
 
 1.10
 date	2006.09.17.16.39.58;	author gloor;	state Exp;
@@ -61,7 +65,7 @@ desc
 @@
 
 
-1.10
+1.11
 log
 @*** empty log message ***
 @
@@ -161,7 +165,7 @@ buddy</a> in action available.<br>
 <p>Note that you can
 improve the quality of <span style="font-style: italic;">buddy</span>
 by:<br>
-<a href="mailto:mgloor_at_fhzh_dot_ch">sending me patches,
+<a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">sending me patches,
 comments,
 hints, ideas, bug-
 and testreports</a></p>
@@ -184,8 +188,8 @@ debian package: &lt;not yet released&gt;<br>
   </tbody><tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.9 2005/10/12 15:39:51 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.10 2006/09/17 16:39:58 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <dt> <br>
       </dt>
       </td>
@@ -197,6 +201,21 @@ debian package: &lt;not yet released&gt;<br>
 </table>
 </body>
 </html>
+@
+
+
+1.10
+log
+@*** empty log message ***
+@
+text
+@d96 1
+a96 1
+<a href="mailto:mgloor_at_fhzh_dot_ch">sending me patches,
+d119 2
+a120 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.9 2005/10/12 15:39:51 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

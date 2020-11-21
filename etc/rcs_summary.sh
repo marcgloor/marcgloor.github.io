@@ -1,7 +1,7 @@
 #!/bin/sh
 # generate rcs_summary, written by Marc O. Gloor
 
-TME=$(date --utc '+%d/%m/%Y %H:%M:%S')
+TME=$(date -u '+%d/%m/%Y %H:%M:%S')
 SM="rcs_summary.html"
 cd ..
 

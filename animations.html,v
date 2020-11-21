@@ -1,10 +1,14 @@
-head	1.15;
+head	1.16;
 access;
 symbols;
-locks
-	gloor:1.15; strict;
+locks; strict;
 comment	@# @;
 
+
+1.16
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.15;
 
 1.15
 date	2005.11.10.20.07.30;	author gloor;	state Exp;
@@ -86,7 +90,7 @@ desc
 @@
 
 
-1.15
+1.16
 log
 @*** empty log message ***
 @
@@ -116,7 +120,7 @@ cluster. Compiled to endless loop animated gifs using mogrify and
 convert which are part of the <a href="http://net4tv.com/ImageMagick">imagemagick</a>
 package. The base model can be downloaded <a href="data/li.blend.gz">here</a>.
 If you need another color combination for your website, send me an <a
- href="mailto:mgloor_at_fhzh_dot_ch">email</a>. Published unter the <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">email</a>. Published unter the <a
  href="http://www.opencontent.org">OpenContent License</a>. The <a
  href="data/linuxine-forte.jpg">linuxine image</a> was also modelled
 and rendered in blender.<br>
@@ -133,8 +137,8 @@ and rendered in blender.<br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: animations.html,v 1.14 2005/11/10 20:02:43 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: animations.html,v 1.15 2005/11/10 20:07:30 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -147,6 +151,21 @@ and rendered in blender.<br>
 </table>
 </body>
 </html>
+@
+
+
+1.15
+log
+@*** empty log message ***
+@
+text
+@d26 1
+a26 1
+ href="mailto:mgloor_at_fhzh_dot_ch">email</a>. Published unter the <a
+d43 2
+a44 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: animations.html,v 1.14 2005/11/10 20:02:43 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

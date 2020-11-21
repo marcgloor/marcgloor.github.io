@@ -1,10 +1,14 @@
-head	1.9;
+head	1.10;
 access;
 symbols;
-locks
-	gloor:1.9; strict;
+locks; strict;
 comment	@# @;
 
+
+1.10
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.9;
 
 1.9
 date	2005.09.27.00.47.20;	author gloor;	state Exp;
@@ -56,7 +60,7 @@ desc
 @@
 
 
-1.9
+1.10
 log
 @*** empty log message ***
 @
@@ -211,7 +215,7 @@ Viel Erfolg!
 <tr NOSAVE>  <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: travan.html,v 1.8 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre><br>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: travan.html,v 1.9 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre><br>
       <i> </i> <dt>
       </dt>
       </td>
@@ -224,6 +228,17 @@ Viel Erfolg!
 
 </body>
 </html>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d151 1
+a151 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: travan.html,v 1.8 2004/02/19 13:57:47 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre><br>
 @
 
 

@@ -1,10 +1,14 @@
-head	1.9;
+head	1.10;
 access;
 symbols;
-locks
-	gloor:1.9; strict;
+locks; strict;
 comment	@# @;
 
+
+1.10
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.9;
 
 1.9
 date	2005.09.27.00.47.20;	author gloor;	state Exp;
@@ -56,7 +60,7 @@ desc
 @@
 
 
-1.9
+1.10
 log
 @*** empty log message ***
 @
@@ -170,8 +174,8 @@ linux </span><br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.8 2005/09/11 12:31:35 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.9 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -184,6 +188,18 @@ linux </span><br>
 </table>
 </body>
 </html>
+@
+
+
+1.9
+log
+@*** empty log message ***
+@
+text
+@d110 2
+a111 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.8 2005/09/11 12:31:35 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 

@@ -1,10 +1,14 @@
-head	1.13;
+head	1.14;
 access;
 symbols;
-locks
-	gloor:1.13; strict;
+locks; strict;
 comment	@# @;
 
+
+1.14
+date	2020.11.21.11.13.30;	author gloor;	state Exp;
+branches;
+next	1.13;
 
 1.13
 date	2006.01.13.22.36.49;	author gloor;	state Exp;
@@ -76,7 +80,7 @@ desc
 @@
 
 
-1.13
+1.14
 log
 @*** empty log message ***
 @
@@ -269,8 +273,8 @@ also <a href="http://TuxMobil.org">http://tuxmobil.org</a><a
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: armada.html,v 1.12 2006/01/13 22:31:40 gloor Exp gloor $<br>Author:</i><i> <a
- href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: armada.html,v 1.13 2006/01/13 22:36:49 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
       </dt>
@@ -283,6 +287,18 @@ also <a href="http://TuxMobil.org">http://tuxmobil.org</a><a
 </table>
 </body>
 </html>
+@
+
+
+1.13
+log
+@*** empty log message ***
+@
+text
+@d189 2
+a190 2
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: armada.html,v 1.12 2006/01/13 22:31:40 gloor Exp gloor $<br>Author:</i><i> <a
+ href="mailto:mgloor_at_fhzh_dot_ch">mgloor_at_fhzh_dot_ch</a></i></pre>
 @
 
 
