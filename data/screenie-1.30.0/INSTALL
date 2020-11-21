@@ -1,0 +1,20 @@
+REQUIREMENTS
+============
+
+-UNIX operating system (Linux, BSD, AIX, Solaris, OSX are whatever you want)
+-POSIX compliant shell (e.g. ksh, bash, posh)
+-GNU screen (tested with 'Screen version 4.00.02 (FAU) 5-Dec-03')
+-GNU awk (tested with 'GNU Awk 3.1.3')
+-GNU sort (tested with 'sort (coreutils) 5.2.1')
+
+Note that NON-GNU versions of the above commands could lead to
+troubles running screenie (e.g. on AIX).
+
+
+INSTALLATION
+============
+
+Change permission 'chmod +x screenie' or 'chmod 0755 screenie' and move
+screenie to /usr/bin or wherever you prefer to save your commands. Copy
+the manpage screenie.1 to /usr/share/man/man1 or wherever your manpages
+are installed. Then run 'screenie' at the command prompt.

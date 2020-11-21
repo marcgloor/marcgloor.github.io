@@ -1,0 +1,27 @@
+.TH SCREENIE 1 "Marc 28, 1996" "SCREENIE" "Utility Commands"
+.SH NAME
+screenie - terminal screen(1) session handler
+.SH SYNOPSIS
+.B screenie 
+[-v] [-j "<jobname>" "<job>"]
+.SH OPTIONS
+-j  run screen jobs given by commandline
+.br
+-v  display version
+.SH DESCRIPTION
+
+Screenie is a small and lightweight screen(1) frontend that is designed 
+to be a session handler that simplifies the process of administrating
+detached jobs by providing an interactive menu.
+
+Please note that you can improve the quality of screenie by sending patches,
+comments, hints, ideas, bug- and testreports to the author.
+.br
+.SH EXAMPLE
+screenie (interactive mode)
+.br
+screenie -j "System stat" "top"
+.SH ABOUT
+screenie was written by Marc O. Gloor <mgloor@fhzh.ch>
+.SH SEE ALSO
+SCREEN(1)
