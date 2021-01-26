@@ -1,9 +1,14 @@
-head	1.113;
+head	1.114;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.114
+date	2021.01.26.11.18.04;	author gloor;	state Exp;
+branches;
+next	1.113;
 
 1.113
 date	2020.11.21.21.25.03;	author gloor;	state Exp;
@@ -575,9 +580,9 @@ desc
 @@
 
 
-1.113
+1.114
 log
-@*** empty log message ***
+@pic rem
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -604,8 +609,7 @@ text
                 <span style="color: rgb(255, 0, 0);">website not current
                   any longer... update follows in 2021</span><br>
               </font></font></td>
-          <td style="text-align: right;"> <img src="data/nus.jpg"
-              alt="NUS logo" width="127" height="57"><br>
+              <br>
           </td>
         </tr>
       </tbody>
@@ -688,7 +692,7 @@ on
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.112 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.113 2020/11/21 21:25:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -702,6 +706,21 @@ on
     </table>
   </body>
 </html>
+@
+
+
+1.113
+log
+@*** empty log message ***
+@
+text
+@d25 1
+a25 2
+          <td style="text-align: right;"> <img src="data/nus.jpg"
+              alt="NUS logo" width="127" height="57"><br>
+d108 1
+a108 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.112 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
