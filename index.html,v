@@ -1,9 +1,14 @@
-head	1.117;
+head	1.118;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.118
+date	2023.05.14.15.14.32;	author gloor;	state Exp;
+branches;
+next	1.117;
 
 1.117
 date	2023.05.14.15.01.35;	author gloor;	state Exp;
@@ -595,9 +600,9 @@ desc
 @@
 
 
-1.117
+1.118
 log
-@pulsechain github link added
+@*** empty log message ***
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -619,10 +624,8 @@ text
           <td nosave="" nowrap="nowrap"><b style="font-style: italic;"><font
                 color="#000000"><font size="+3"> </font></font></b><big
               style="font-style: italic;"> </big><font color="#000000"><font
-                size="+1">welcome to Marc's alumni page (computer
-                science department)<br>
-                <span style="color: rgb(255, 0, 0);">legacy website not updated 
-                  any longer (archived)</span><br>
+                size="+1">welcome to Marc's alumni page (computer science department)<br>
+                <span style="color: rgb(255, 0, 0);">legacy website</span><br>
               </font></font></td>
               <br>
           </td>
@@ -710,7 +713,7 @@ on
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.116 2022/01/19 18:02:46 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.117 2023/05/14 15:01:35 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -724,6 +727,23 @@ on
     </table>
   </body>
 </html>
+@
+
+
+1.117
+log
+@pulsechain github link added
+@
+text
+@d20 2
+a21 4
+                size="+1">welcome to Marc's alumni page (computer
+                science department)<br>
+                <span style="color: rgb(255, 0, 0);">legacy website not updated 
+                  any longer (archived)</span><br>
+d109 1
+a109 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.116 2022/01/19 18:02:46 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
