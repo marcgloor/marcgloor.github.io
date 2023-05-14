@@ -1,9 +1,24 @@
-head	1.114;
+head	1.117;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.117
+date	2023.05.14.15.01.35;	author gloor;	state Exp;
+branches;
+next	1.116;
+
+1.116
+date	2022.01.19.18.02.46;	author gloor;	state Exp;
+branches;
+next	1.115;
+
+1.115
+date	2022.01.19.17.51.59;	author gloor;	state Exp;
+branches;
+next	1.114;
 
 1.114
 date	2021.01.26.11.18.04;	author gloor;	state Exp;
@@ -580,9 +595,9 @@ desc
 @@
 
 
-1.114
+1.117
 log
-@pic rem
+@pulsechain github link added
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -606,8 +621,8 @@ text
               style="font-style: italic;"> </big><font color="#000000"><font
                 size="+1">welcome to Marc's alumni page (computer
                 science department)<br>
-                <span style="color: rgb(255, 0, 0);">website not current
-                  any longer... update follows in 2021</span><br>
+                <span style="color: rgb(255, 0, 0);">legacy website not updated 
+                  any longer (archived)</span><br>
               </font></font></td>
               <br>
           </td>
@@ -621,6 +636,9 @@ text
     <p> </p>
     <b><font color="#000000"><font size="+0"> </font></font></b>
     <ul>
+      <li><font color="#000000">Pulsechain validator node tweaks
+          in my <a href="https://github.com/marcgloor/pulsechain">Pulsechain Validator Github repository</a> 
+          [english/redirect]</font></li>
       <li><font color="#000000">industrial processing stock options
           performing my <a href="bsengine.html">derivative option
             pricing engine</a> (black/scholes model) [english]</font></li>
@@ -692,7 +710,7 @@ on
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.113 2020/11/21 21:25:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.116 2022/01/19 18:02:46 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -706,6 +724,48 @@ on
     </table>
   </body>
 </html>
+@
+
+
+1.116
+log
+@*** empty log message ***
+@
+text
+@d37 3
+d111 1
+a111 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.115 2022/01/19 17:51:59 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+@
+
+
+1.115
+log
+@*** empty log message ***
+@
+text
+@d22 2
+a23 2
+                <span style="color: rgb(255, 0, 0);">legacy website archive not updated 
+                  any longer.</span><br>
+d108 1
+a108 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.114 2021/01/26 11:18:04 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+@
+
+
+1.114
+log
+@pic rem
+@
+text
+@d22 2
+a23 2
+                <span style="color: rgb(255, 0, 0);">website not current
+                  any longer... update follows in 2021</span><br>
+d108 1
+a108 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.113 2020/11/21 21:25:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
