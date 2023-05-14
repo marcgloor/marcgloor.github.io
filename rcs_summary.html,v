@@ -1,4 +1,26 @@
-<html>
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2023.05.14.15.10.24;	author gloor;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@<html>
 <head>
  <title>Revision Control Summary</title>
 </head>
@@ -38,9 +60,9 @@
 <tr NOSAVE>
 <td WIDTH=90% NOSAVE>
 <dt>
-<i>$Id: rcs_summary.html,v 1.1 2023/05/14 15:10:24 gloor Exp $ </i></dt>
+<i>$Id$ </i></dt>
 <dt>
-<i>Author: <a href=mailto:mgloor@fhzh.ch>mgloor@fhzh.ch</a></i></dt>
+<i>Author: <a href=mailto:mgloor@@fhzh.ch>mgloor@@fhzh.ch</a></i></dt>
 <td VALIGN=TOP NOSAVE>
 <div align=right><i><a href=index.html>home</a></i></div>
 </td>
@@ -52,3 +74,4 @@
 </table>
 </body>
 </html>
+@
