@@ -1,9 +1,14 @@
-head	1.119;
+head	1.120;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.120
+date	2023.05.15.22.15.20;	author gloor;	state Exp;
+branches;
+next	1.119;
 
 1.119
 date	2023.05.15.22.03.37;	author gloor;	state Exp;
@@ -605,7 +610,7 @@ desc
 @@
 
 
-1.119
+1.120
 log
 @*** empty log message ***
 @
@@ -628,9 +633,10 @@ text
         <tr nosave="" valign="top">
           <td nosave="" nowrap="nowrap"><b style="font-style: italic;"><font
                 color="#000000"><font size="+3"> </font></font></b><big
-              style="font-style: italic;"> </big><font color="#000000"><b><font
-                size="+1">Welcome to Marc's alumni page (computer science department)<br>
-                <span style="color: rgb(255, 0, 0);">legacy website</span></b><br>
+              style="font-style: italic;"> </big><font color="#000000"><font
+                size="+1">Welcome to Marc Gloor's alumni page (computerscience department)<br>
+                <span style="color: rgb(255, 0, 0);">legacy website
+                  </span><br>
               </font></font></td>
               <br>
           </td>
@@ -718,7 +724,7 @@ on
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.118 2023/05/14 15:14:32 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.119 2023/05/15 22:03:37 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -732,6 +738,22 @@ on
     </table>
   </body>
 </html>
+@
+
+
+1.119
+log
+@*** empty log message ***
+@
+text
+@d19 4
+a22 3
+              style="font-style: italic;"> </big><font color="#000000"><b><font
+                size="+1">Welcome to Marc's alumni page (computer science department)<br>
+                <span style="color: rgb(255, 0, 0);">legacy website</span></b><br>
+d110 1
+a110 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.118 2023/05/14 15:14:32 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
