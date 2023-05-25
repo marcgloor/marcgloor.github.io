@@ -1,9 +1,14 @@
-head	1.3;
+head	1.4;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.4
+date	2023.05.25.13.59.13;	author gloor;	state Exp;
+branches;
+next	1.3;
 
 1.3
 date	2023.05.25.13.34.05;	author gloor;	state Exp;
@@ -26,7 +31,7 @@ desc
 @
 
 
-1.3
+1.4
 log
 @*** empty log message ***
 @
@@ -100,20 +105,34 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.2 2023/05/25 13:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.3 2023/05/25 13:34:05 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
           </td>
           <td nosave="" valign="top">
-            <div align="right"><i><a
-                  href="file:///home/gloor/data/www/a_eigene/a_Website-current/index.html">home</a></i></div>
+            <div align="right"><i><a href="index.html">home</a></i></div>
           </td>
         </tr>
       </tbody>
     </table>
   </body>
 </html>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d70 1
+a70 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.2 2023/05/25 13:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+d76 1
+a76 2
+            <div align="right"><i><a
+                  href="file:///home/gloor/data/www/a_eigene/a_Website-current/index.html">home</a></i></div>
 @
 
 
