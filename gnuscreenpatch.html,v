@@ -1,9 +1,14 @@
-head	1.2;
+head	1.3;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.3
+date	2023.05.25.13.34.05;	author gloor;	state Exp;
+branches;
+next	1.2;
 
 1.2
 date	2023.05.25.13.26.08;	author gloor;	state Exp;
@@ -21,7 +26,7 @@ desc
 @
 
 
-1.2
+1.3
 log
 @*** empty log message ***
 @
@@ -71,6 +76,54 @@ text
       patch to re-enable the ability to disable passwords when
       re-attaching sessions.</p>
     <p><b>Installation<br>
+      </b><code>mkdir /tmp/screen.d &amp;&amp; cd /tmp/screen.d</code><code><br>
+      </code><code>wget </code><code><a
+          href="data/screen-git-nopasswd-patch.tar.gz">screen-git-nopasswd-patch.tar.gz<br>
+        </a></code><code>tar xzf screen-git-nopasswd-patch.tar.gz</code><code><br>
+      </code><code>git clone https://git.savannah.gnu.org/git/screen.git</code><code><br>
+      </code><code>cd screen/src</code><code><br>
+      </code><code>zcat
+        ../../screen-git-nopasswd-patch/screen-git-nopassword.patch.gz |
+        patch -p1 (file to patch: socket.c)</code><code><br>
+      </code><code>./autogen.sh</code><code><br>
+      </code><code>./configure</code><code><br>
+      </code><code>make</code><code><br>
+      </code><code>make install</code><code><br>
+      </code><code>eventually create a symlink: ln -s
+        /usr/local/bin/screen /bin/screen</code><br>
+      <br>
+    </p>
+    <p> </p>
+    <hr width="100%">
+    <table cols="2" nosave="" cellspacing="0" cellpadding="0" border="0"
+      width="100%">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" width="90%">
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.2 2023/05/25 13:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+          </td>
+          <td nosave="" valign="top">
+            <div align="right"><i><a
+                  href="file:///home/gloor/data/www/a_eigene/a_Website-current/index.html">home</a></i></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d46 15
+a60 17
       </b><font size="+1"><code>mkdir /tmp/screen.d &amp;&amp; cd
           /tmp/screen.d</code><code><br>
         </code><code>wget </code><code><a
@@ -88,29 +141,9 @@ text
         </code><code>make install</code><code><br>
         </code><code>eventually create a symlink: ln -s
           /usr/local/bin/screen /bin/screen</code></font><br>
-      <br>
-    </p>
-    <p> </p>
-    <hr width="100%">
-    <table cols="2" nosave="" cellspacing="0" cellpadding="0" border="0"
-      width="100%">
-      <tbody>
-        <tr nosave="">
-          <td nosave="" width="90%">
+d70 1
+a70 1
             <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.14 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
-            <br>
-            <i> </i> <dt> <br>
-            </dt>
-          </td>
-          <td nosave="" valign="top">
-            <div align="right"><i><a
-                  href="file:///home/gloor/data/www/a_eigene/a_Website-current/index.html">home</a></i></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
 @
 
 
