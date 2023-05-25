@@ -1,10 +1,14 @@
-head	1.121;
+head	1.122;
 access;
 symbols;
-locks
-	gloor:1.121; strict;
+locks; strict;
 comment	@# @;
 
+
+1.122
+date	2023.05.25.17.27.07;	author gloor;	state Exp;
+branches;
+next	1.121;
 
 1.121
 date	2023.05.25.13.16.01;	author gloor;	state Exp;
@@ -616,9 +620,9 @@ desc
 @@
 
 
-1.121
+1.122
 log
-@updates
+@*** empty log message ***
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -626,11 +630,11 @@ text
   <head>
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
-    <meta name="author" content="">
+    <meta name="author" content="Marc Gloor">
     <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux
       2.2.17 i686) [Netscape]">
     <meta name="keywords" content="Linux, Windows">
-    <title>alumni site</title>
+    <title>Alumni Site of Marc Gloor</title>
   </head>
   <body link="#0000ef" alink="#0000ef" bgcolor="#ffffff" text="#000000"
     vlink="#0000ef">
@@ -640,10 +644,10 @@ text
           <td nosave="" nowrap="nowrap"><font color="#000000"><font
                 size="+1"><b>Welcome to Marc Gloor's alumni page
                   (National University of Singapore)</b></font></font> <br>
-            <font color="#ff0000">legacy website&nbsp;
-            </font><br>
-            <hr width="100%">
-          </td>
+            <font color="#ff0000"><font color="#000000">Online est.
+                1995&nbsp;
+              </font> </font><br>
+            <hr width="100%"> </td>
         </tr>
       </tbody>
     </table>
@@ -684,6 +688,7 @@ and
 
 
 
+
             contributions</a>&nbsp; [english]</font></li>
       <li> exclusively <font color="#000000">for RS/6000 and Sun
           Workstations, my <a href="xfce-everywhere.html">precompiled
@@ -709,11 +714,13 @@ and
 
 
 
+
             Exilim</a> digital camera under Linux [english]</font></li>
       <li><font color="#000000">using <a href="powerbook.html">Debian
             GNU/Linux on the Apple PowerBook</a> [english]</font></li>
       <li><font color="#000000">setting up <a href="armada.html">GNU/Linux
 on
+
 
 
 
@@ -741,7 +748,7 @@ on
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.120 2023/05/15 22:15:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.121 2023/05/25 13:16:01 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -755,6 +762,32 @@ on
     </table>
   </body>
 </html>
+@
+
+
+1.121
+log
+@updates
+@
+text
+@d6 1
+a6 1
+    <meta name="author" content="">
+d10 1
+a10 1
+    <title>alumni site</title>
+d20 4
+a23 4
+            <font color="#ff0000">legacy website&nbsp;
+            </font><br>
+            <hr width="100%">
+          </td>
+d64 1
+d90 1
+d101 1
+d124 1
+a124 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.120 2023/05/15 22:15:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
