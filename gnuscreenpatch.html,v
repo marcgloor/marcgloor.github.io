@@ -1,9 +1,15 @@
-head	1.6;
+head	1.7;
 access;
 symbols;
-locks; strict;
+locks
+	gloor:1.7; strict;
 comment	@# @;
 
+
+1.7
+date	2023.05.26.01.53.02;	author gloor;	state Exp;
+branches;
+next	1.6;
 
 1.6
 date	2023.05.26.01.48.46;	author gloor;	state Exp;
@@ -41,7 +47,7 @@ desc
 @
 
 
-1.6
+1.7
 log
 @*** empty log message ***
 @
@@ -122,9 +128,8 @@ text
       it was the only root-cause I could determine and foundation to the
       problem resolution of my issue. This page provides you with an
       unofficial <a href="https://savannah.gnu.org/git/?group=screen">GNU
-        Screen</a>
-      <a
-href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/screen-git-nopasswd-patch.tar.gz">
+
+        Screen</a> <a href="data/screen-git-nopasswd-patch.tar.gz">
         patch</a> that removes the forced password feature when
       re-attaching sessions. Note, that the password functionality in
       GNU screen <u>should</u> be generally available, so that screen
@@ -143,7 +148,7 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/screen-git-nop
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.5 2023/05/26 00:51:09 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.6 2023/05/26 01:48:46 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -156,6 +161,22 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/screen-git-nop
     </table>
   </body>
 </html>
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d77 2
+a78 3
+        Screen</a>
+      <a
+href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/screen-git-nopasswd-patch.tar.gz">
+d97 1
+a97 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.5 2023/05/26 00:51:09 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
