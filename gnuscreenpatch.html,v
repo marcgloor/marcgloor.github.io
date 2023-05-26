@@ -1,9 +1,14 @@
-head	1.5;
+head	1.6;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.6
+date	2023.05.26.01.48.46;	author gloor;	state Exp;
+branches;
+next	1.5;
 
 1.5
 date	2023.05.26.00.51.09;	author gloor;	state Exp;
@@ -36,7 +41,7 @@ desc
 @
 
 
-1.5
+1.6
 log
 @*** empty log message ***
 @
@@ -66,25 +71,35 @@ text
       forced to use passwords e.g. in a passwordless intranet or test
       environment.<b><br>
         <br>
+        My issue with current GNU screen versions shipped with most
+        linux distributions</b><br>
+      I had to use the most recent screen version from github due to the
+      fact that this was the only way that <a
+        href="https://github.com/aristocratos/bashtop">bashtop</a> was
+      displayed properly within a screen session. A rotating monitoring
+      script that I wrote autonomously switches between 4 detached
+      screen sessions in a 5 sec (re-attaching) interval. After
+      investigating a while, I couldn't figure out a way using the docs
+      to disable GNU screen's password prompt when re-attaching a
+      detached session. My rotation script's intention was spoiled with
+      this screen 'force password' feature so I decided to take action
+      against it to workaround my issue.<br>
+      <b><br>
       </b><b>The issue with latest GNU Screen 4.99</b><br>
-      In <a href="https://savannah.gnu.org/git/?group=screen">GNU
-        Screen</a> 4.99, the ability to disable passwords was removed,
-      and there is no straightforward configuration option to achieve
-      this. Password authentication is now enforced by default in GNU
-      Screen 4.99 and later versions. If you require a passwordless
-      screen session, one possible workaround is to downgrade to an
-      earlier version of GNU Screen that still supports disabling
-      passwords. However, keep in mind that downgrading software
-      versions may have other implications and could introduce potential
-      security vulnerabilities. Alternatively, you may consider
-      exploring alternative terminal multiplexer options that provide
-      passwordless session management, such as tmux.<br>
-    </p>
-    <p><b>The workaround<br>
-      </b>This page provides you with an inofficial <a
+      From ChatGPT I learnt, that in <a
         href="https://savannah.gnu.org/git/?group=screen">GNU Screen</a>
-      patch to re-enable the ability to disable passwords when
-      re-attaching sessions.</p>
+      4.99, the ability to disable passwords was removed, and there is
+      no straightforward configuration option to achieve this. Password
+      authentication is now enforced by default in GNU Screen 4.99 and
+      later versions. If you require a passwordless screen session, one
+      possible workaround is to downgrade to an earlier version of GNU
+      Screen that still supports disabling passwords. However, keep in
+      mind that downgrading software versions may have other
+      implications and could introduce potential security
+      vulnerabilities. Alternatively, you may consider exploring
+      alternative terminal multiplexer options that provide passwordless
+      session management, such as tmux.<br>
+    </p>
     <p><b>Installation<br>
       </b><code>mkdir /tmp/screen.d &amp;&amp; cd /tmp/screen.d</code><code><br>
       </code><code>wget </code><code>https://marcgloor.github.io/data/<a
@@ -100,7 +115,25 @@ text
       </code><code>make</code><code><br>
       </code><code>make install</code><code><br>
       </code><code>eventually create a symlink: ln -s
-        /usr/local/bin/screen /bin/screen</code><br>
+        /usr/local/bin/screen /bin/screen<br>
+        <br>
+      </code><b>Note<br>
+      </b>Not sure ChatGPT's proplem analysis was trustworthy. For me,
+      it was the only root-cause I could determine and foundation to the
+      problem resolution of my issue. This page provides you with an
+      unofficial <a href="https://savannah.gnu.org/git/?group=screen">GNU
+        Screen</a>
+      <a
+href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/screen-git-nopasswd-patch.tar.gz">
+        patch</a> that removes the forced password feature when
+      re-attaching sessions. Note, that the password functionality in
+      GNU screen <u>should</u> be generally available, so that screen
+      sessions can be locked when away from the screen for a while.
+      Entirely killing this security feature is <u>not</u> the correct
+      way to handle this. My patch is a temporary workaround. I
+      initially contacted the maintainers/developers on 24th of May 2023
+      about this in order to verify that this is intended behaviour. <font
+        color="#ff0000">Update follows.</font><br>
       <br>
     </p>
     <p> </p>
@@ -110,7 +143,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.4 2023/05/25 13:59:13 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.5 2023/05/26 00:51:09 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -123,6 +156,41 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d26 14
+d41 13
+a53 12
+      In <a href="https://savannah.gnu.org/git/?group=screen">GNU
+        Screen</a> 4.99, the ability to disable passwords was removed,
+      and there is no straightforward configuration option to achieve
+      this. Password authentication is now enforced by default in GNU
+      Screen 4.99 and later versions. If you require a passwordless
+      screen session, one possible workaround is to downgrade to an
+      earlier version of GNU Screen that still supports disabling
+      passwords. However, keep in mind that downgrading software
+      versions may have other implications and could introduce potential
+      security vulnerabilities. Alternatively, you may consider
+      exploring alternative terminal multiplexer options that provide
+      passwordless session management, such as tmux.<br>
+a54 5
+    <p><b>The workaround<br>
+      </b>This page provides you with an inofficial <a
+        href="https://savannah.gnu.org/git/?group=screen">GNU Screen</a>
+      patch to re-enable the ability to disable passwords when
+      re-attaching sessions.</p>
+d70 19
+a88 1
+        /usr/local/bin/screen /bin/screen</code><br>
+d98 1
+a98 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.4 2023/05/25 13:59:13 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
