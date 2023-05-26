@@ -1,8 +1,7 @@
 head	1.24;
 access;
 symbols;
-locks
-	gloor:1.24; strict;
+locks; strict;
 comment	@# @;
 
 

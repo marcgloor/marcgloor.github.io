@@ -1,10 +1,14 @@
-head	1.4;
+head	1.5;
 access;
 symbols;
-locks
-	gloor:1.4; strict;
+locks; strict;
 comment	@# @;
 
+
+1.5
+date	2023.05.26.00.51.09;	author gloor;	state Exp;
+branches;
+next	1.4;
 
 1.4
 date	2023.05.25.13.59.13;	author gloor;	state Exp;
@@ -32,7 +36,7 @@ desc
 @
 
 
-1.4
+1.5
 log
 @*** empty log message ***
 @
@@ -83,7 +87,7 @@ text
       re-attaching sessions.</p>
     <p><b>Installation<br>
       </b><code>mkdir /tmp/screen.d &amp;&amp; cd /tmp/screen.d</code><code><br>
-      </code><code>wget </code><code><a
+      </code><code>wget </code><code>https://marcgloor.github.io/data/<a
           href="data/screen-git-nopasswd-patch.tar.gz">screen-git-nopasswd-patch.tar.gz<br>
         </a></code><code>tar xzf screen-git-nopasswd-patch.tar.gz</code><code><br>
       </code><code>git clone https://git.savannah.gnu.org/git/screen.git</code><code><br>
@@ -106,7 +110,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.3 2023/05/25 13:34:05 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.4 2023/05/25 13:59:13 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -119,6 +123,20 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d47 1
+a47 1
+      </code><code>wget </code><code><a
+d70 1
+a70 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.3 2023/05/25 13:34:05 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
