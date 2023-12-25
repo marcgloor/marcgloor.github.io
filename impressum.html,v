@@ -1,9 +1,14 @@
-head	1.30;
+head	1.31;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.31
+date	2023.12.25.15.14.51;	author gloor;	state Exp;
+branches;
+next	1.30;
 
 1.30
 date	2020.11.21.21.25.03;	author gloor;	state Exp;
@@ -160,7 +165,7 @@ desc
 @@
 
 
-1.30
+1.31
 log
 @*** empty log message ***
 @
@@ -175,11 +180,93 @@ text
       2.2.17 i686) [Netscape]">
     <title>impressum</title>
   </head>
-  <body bgcolor="#ffffff" vlink="#51188e" text="#000000" link="#0000ef"
+  <body vlink="#51188e" text="#000000" link="#0000ef" bgcolor="#ffffff"
     alink="#ff0000">
-    <b><font size="+1">Impressum / Disclaimer</font></b><br>
+    <b><font size="+1">Disclaimer</font></b><br>
     <hr width="100%">
     <p><span style="font-weight: bold;"></span></p>
+    <b>Disclaimer<br>
+    </b><br>
+    The information contained in this website is for general information
+    purposes only. The information is provided by the author &amp; owner
+    and while we endeavour to keep the information up to date and
+    correct, we make no representations or warranties of any kind,
+    express or implied, about the completeness, accuracy, reliability,
+    suitability or availability with respect to the website or the
+    information, products, services, or related graphics contained on
+    the website for any purpose. Any reliance you place on such
+    information is therefore strictly at your own risk.
+    <div class="clearfix text-formatted field field--name-field-content
+      field--type-text-long field--label-hidden field__item">
+      <p>In no event will we be liable for any loss or damage including
+        without limitation, indirect or consequential loss or damage, or
+        any loss or damage whatsoever arising from loss of data or
+        profits arising out of, or in connection with, the use of this
+        website.</p>
+      <p>Through this website you are able to link to other websites
+        which are not under the control of the owner of this website. We
+        have no control over the nature, content and availability of
+        those sites. The inclusion of any links does not necessarily
+        imply a recommendation or endorse the views expressed within
+        them.</p>
+      <p>Every effort is made to keep the website up and running
+        smoothly. However, the website owner takes no responsibility
+        for, and will not be liable for, the website being temporarily
+        unavailable due to technical issues beyond our control.<br>
+        <br>
+      </p>
+    </div>
+    <b> Hosting log<br>
+    </b><br>
+    2018-now: Github&nbsp; - developer platform (U.S.)<br>
+    2007-18: Offline<br>
+    2002-07: fhzh.ch - educational system-account (CH)<br>
+    2000-02: peperoni.ch - customer second level domain (CH)<br>
+    1998-99: globacom.net - customer account (CH)<br>
+    1997-98: x8.net - customer account (CH)<br>
+    1996-97: geocities.com - freehosting account (U.S.)<br>
+    1995-96: compuserve.com - customer account (U.S.)<br>
+    <br>
+    <p><img src="data/w3chtml41.gif" alt="W3C HTML 4.01" nosave=""
+        width="88" border="0" height="31">&nbsp;&nbsp; <img
+        src="data/w3c1aa.gif" alt="W3C WAI-AA" nosave="" width="88"
+        border="0" height="31"> </p>
+    <p> </p>
+    <hr width="100%">
+    <table cols="2" nosave="" width="100%" cellspacing="0"
+      cellpadding="0" border="0">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" width="90%">
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.30 2020/11/21 21:25:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+          </td>
+          <td nosave="" valign="top">
+            <div align="right"><i><a href="index.html">home</a></i></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d11 1
+a11 1
+  <body bgcolor="#ffffff" vlink="#51188e" text="#000000" link="#0000ef"
+d13 1
+a13 1
+    <b><font size="+1">Impressum / Disclaimer</font></b><br>
+d16 42
+a57 29
     <b>Haftung / Disclaimer</b>
     <p> </p>
     <p>Fuer Links und deren Inhalt wird ausdruecklich jede Haftung
@@ -209,30 +296,18 @@ text
       1996-97: geocities.com - freehosting account (U.S.A.)<br>
       1995-96: compuserve.com - customer account (U.S.A.)<br>
     </p>
-    <p><img src="data/w3chtml41.gif" alt="W3C HTML 4.01" nosave=""
+d59 3
+a61 3
         border="0" width="88" height="31">&nbsp;&nbsp; <img
         src="data/w3c1aa.gif" alt="W3C WAI-AA" nosave="" border="0"
         width="88" height="31"> </p>
-    <p> </p>
-    <hr width="100%">
+d64 2
+a65 2
     <table cols="2" nosave="" cellspacing="0" cellpadding="0" border="0"
       width="100%">
-      <tbody>
-        <tr nosave="">
-          <td nosave="" width="90%">
+d69 1
+a69 1
             <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.29 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
-            <br>
-            <i> </i> <dt> <br>
-            </dt>
-          </td>
-          <td nosave="" valign="top">
-            <div align="right"><i><a href="index.html">home</a></i></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
 @
 
 

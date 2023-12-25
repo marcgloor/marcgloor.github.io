@@ -1,9 +1,14 @@
-head	1.124;
+head	1.125;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.125
+date	2023.12.25.15.14.51;	author gloor;	state Exp;
+branches;
+next	1.124;
 
 1.124
 date	2023.12.25.12.11.10;	author gloor;	state Exp;
@@ -630,7 +635,7 @@ desc
 @@
 
 
-1.124
+1.125
 log
 @*** empty log message ***
 @
@@ -675,9 +680,9 @@ text
             href="screenie.html">screen-session handler</a> </font><font
           color="#000000"> [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><a
-            href="buddy.html">buddy</a> is a hardcore debian package
-          handler for the advanced sys-admin, works deb pkg based
-          distributions [english]<br>
+            href="buddy.html">buddy</a> is a debian package handler for
+          advanced sys-admin, works with deb pkg based distributions
+          [english]<br>
         </font></li>
       <li style="margin-bottom: 6px"><font color="#000000">pulsechain
           validator node tweaks in my <a
@@ -685,6 +690,11 @@ text
             Validator Github repository</a> [english/redirect]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">GNU Screen
           4.99+ password deactivation <a href="gnuscreenpatch.html">sourcecode
+
+
+
+
+
 
             patch</a> </font><font color="#000000"><font
             color="#000000">[english]</font></font></li>
@@ -703,11 +713,21 @@ text
           [english]</font></li>
       <li style="margin-bottom: 6px"> exclusively <font color="#000000">for
 
+
+
+
+
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
+
+
+
+
 
             animations</a> [english]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">animated <a
@@ -735,6 +755,8 @@ text
             Notebook</a> [english]</font></li>
       <li style="margin-bottom: 6px"> using the <a href="travan.html">HP-Colorado&nbsp;
 
+
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -744,9 +766,14 @@ text
         <a href="linuxtag_2003.html">Linuxday 2003 Karlsruhe/Germany</a>
         [english]</li>
       <li style="margin-bottom: 6px"><font color="#000000"><font
-            size="+0">Die <a href="dist-pfaffikersee.html">exakte
+            size="+0">die <a href="dist-pfaffikersee.html">exakte
               Distanz</a> des Wanderweges um den Pfaeffikersee (Kt.
             Zurich/Schweiz) [german]</font></font><b><font
+            color="#000000"><font size="+0"><br>
+            </font></font></b> </li>
+      <li style="margin-bottom: 6px"><font color="#000000"><font
+            size="+0">my Debian Switzerland <a href="gnuch.html">Usenet
+              post</a> from late 1999 [german]</font></font><b><font
             color="#000000"><font size="+0"><br>
               <br>
             </font></font></b> </li>
@@ -757,7 +784,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.123 2023/12/25 10:19:43 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.124 2023/12/25 12:11:10 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -771,6 +798,30 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.124
+log
+@*** empty log message ***
+@
+text
+@d41 3
+a43 3
+            href="buddy.html">buddy</a> is a hardcore debian package
+          handler for the advanced sys-admin, works deb pkg based
+          distributions [english]<br>
+d52 5
+d74 5
+d85 5
+d116 2
+d127 1
+a127 1
+            size="+0">Die <a href="dist-pfaffikersee.html">exakte
+d131 5
+d145 1
+a145 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.123 2023/12/25 10:19:43 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 

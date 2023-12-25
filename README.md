@@ -1,2 +1,2 @@
-Website of Marc Gloor. Space to publish personal projects.
+Website of Marc Gloor.
 https://marcgloor.github.io/
