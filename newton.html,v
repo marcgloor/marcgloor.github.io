@@ -1,9 +1,14 @@
-head	1.8;
+head	1.9;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.9
+date	2023.12.25.15.27.29;	author gloor;	state Exp;
+branches;
+next	1.8;
 
 1.8
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -50,7 +55,7 @@ desc
 @@
 
 
-1.8
+1.9
 log
 @*** empty log message ***
 @
@@ -183,7 +188,7 @@ table entries above:<br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: newton.html,v 1.7 2006/08/13 23:42:36 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: newton.html,v 1.8 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -191,13 +196,27 @@ table entries above:<br>
       </td>
       <td valign="top" nosave="">
       <div align="right"><i><a
- href="http://pubwww.fhzh.ch/%7Emgloor/index.html">home</a></i></div>
+ href="index.html">home</a></i></div>
       </td>
     </tr>
   </tbody>
 </table>
 </body>
 </html>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d129 1
+a129 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: newton.html,v 1.7 2006/08/13 23:42:36 gloor Exp gloor $<br>Author:</i><i> <a
+d137 1
+a137 1
+ href="http://pubwww.fhzh.ch/%7Emgloor/index.html">home</a></i></div>
 @
 
 

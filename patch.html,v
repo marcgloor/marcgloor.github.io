@@ -1,9 +1,14 @@
-head	1.36;
+head	1.37;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.37
+date	2023.12.25.15.27.29;	author gloor;	state Exp;
+branches;
+next	1.36;
 
 1.36
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -191,7 +196,7 @@ desc
 @
 
 
-1.36
+1.37
 log
 @*** empty log message ***
 @
@@ -243,7 +248,7 @@ warranty or support: <br>
 1. Download original CFS 1.4.1 from Matt Blaze's website:&nbsp;wget <a
  href="http://www.crypto.com/software/cfs-1.4.1.tar.gz">http://www.crypto.com/software/cfs-1.4.1.tar.gz</a><br>
 2. Download my CFS 1.4.1 Linux backpatch: wget <a
- href="data/cfs-1.4.1-mgloor_branch.diff.gz">http://pubwww.fhzh.ch/~mgloor/data/cfs-1.4.1-mgloor_branch.diff.gz</a><br>
+ href="data/cfs-1.4.1-mgloor_branch.diff.gz">data/cfs-1.4.1-mgloor_branch.diff.gz</a><br>
 3. Untar the file:&nbsp;tar xzvf cfs-1.4.1.tar.gz<br>
 4. Move into the extracted CFS source dir:&nbsp;cd cfs-1.4.1<br>
 5. Apply the patch against original CFS 1.4.1:&nbsp;zcat <a
@@ -381,7 +386,7 @@ http://dms-cl-011.skypro-media.net/radio24-hi).<span
   <tbody>
     <tr nosave="">
       <td nosave="" width="90%">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: patch.html,v 1.35 2011/05/15 17:55:37 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: patch.html,v 1.36 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -395,6 +400,20 @@ http://dms-cl-011.skypro-media.net/radio24-hi).<span
 </table>
 </body>
 </html>
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d48 1
+a48 1
+ href="data/cfs-1.4.1-mgloor_branch.diff.gz">http://pubwww.fhzh.ch/~mgloor/data/cfs-1.4.1-mgloor_branch.diff.gz</a><br>
+d186 1
+a186 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: patch.html,v 1.35 2011/05/15 17:55:37 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 
