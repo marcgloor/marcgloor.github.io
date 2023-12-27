@@ -1,9 +1,14 @@
-head	1.125;
+head	1.126;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.126
+date	2023.12.27.04.19.55;	author gloor;	state Exp;
+branches;
+next	1.125;
 
 1.125
 date	2023.12.25.15.14.51;	author gloor;	state Exp;
@@ -635,7 +640,7 @@ desc
 @@
 
 
-1.125
+1.126
 log
 @*** empty log message ***
 @
@@ -674,7 +679,7 @@ text
     <ul margin-bottom="10px">
       <li style="margin-bottom: 6px"><font color="#000000"><a
             href="hourmeter.html">hourmeter</a> </font> displays the
-        operating hours (or power-on hours) of your computer. [english]</li>
+        operating hours (or power-on hours) of your computer [english]</li>
       <li style="margin-bottom: 6px"><font color="#000000">administering
           screen(1) jobs easier using screenie, my <a
             href="screenie.html">screen-session handler</a> </font><font
@@ -684,15 +689,15 @@ text
           advanced sys-admin, works with deb pkg based distributions
           [english]<br>
         </font></li>
+      <li style="margin-bottom: 6px"><font color="#000000"><a
+            href="xdict.html">xdict</a>, a fuzzy logic algorithm Gtk+
+          dictionary implementation [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">pulsechain
           validator node tweaks in my <a
             href="https://github.com/marcgloor/pulsechain">Pulsechain
             Validator Github repository</a> [english/redirect]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">GNU Screen
           4.99+ password deactivation <a href="gnuscreenpatch.html">sourcecode
-
-
-
 
 
 
@@ -705,16 +710,10 @@ text
       <li style="margin-bottom: 6px"><font color="#000000">the blender <a
             href="mosix-blender.html">load balancing workload manager</a>
           for rendering sequences on a mosix cluster [english]</font></li>
-      <li style="margin-bottom: 6px"><font color="#000000">using the
-          Gtk+ API, I wrote <a href="xdict.html">xdict</a>, a
-          scientific fuzzy logic algorithm implementation [english]</font></li>
       <li style="margin-bottom: 6px"> some<font color="#000000"> of my <a
             href="patch.html">patches and contributions</a>&nbsp;
           [english]</font></li>
       <li style="margin-bottom: 6px"> exclusively <font color="#000000">for
-
-
-
 
 
 
@@ -723,9 +722,6 @@ text
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
-
-
-
 
 
 
@@ -757,6 +753,11 @@ text
 
 
 
+
+
+
+
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -784,7 +785,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.124 2023/12/25 12:11:10 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.125 2023/12/25 15:14:51 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -798,6 +799,38 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.125
+log
+@*** empty log message ***
+@
+text
+@d35 1
+a35 1
+        operating hours (or power-on hours) of your computer. [english]</li>
+d45 3
+a56 3
+
+
+
+a65 3
+      <li style="margin-bottom: 6px"><font color="#000000">using the
+          Gtk+ API, I wrote <a href="xdict.html">xdict</a>, a
+          scientific fuzzy logic algorithm implementation [english]</font></li>
+a72 3
+
+
+
+a80 3
+
+
+
+d109 5
+d141 1
+a141 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.124 2023/12/25 12:11:10 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
