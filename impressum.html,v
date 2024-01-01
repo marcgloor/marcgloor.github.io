@@ -1,9 +1,14 @@
-head	1.31;
+head	1.32;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.32
+date	2024.01.01.07.10.59;	author gloor;	state Exp;
+branches;
+next	1.31;
 
 1.31
 date	2023.12.25.15.14.51;	author gloor;	state Exp;
@@ -165,7 +170,7 @@ desc
 @@
 
 
-1.31
+1.32
 log
 @*** empty log message ***
 @
@@ -180,13 +185,169 @@ text
       2.2.17 i686) [Netscape]">
     <title>impressum</title>
   </head>
-  <body vlink="#51188e" text="#000000" link="#0000ef" bgcolor="#ffffff"
-    alink="#ff0000">
+  <body vlink="#51188e" text="#000000" link="#0000ef" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">Disclaimer</font></b><br>
     <hr width="100%">
     <p><span style="font-weight: bold;"></span></p>
     <b>Disclaimer<br>
     </b><br>
+    <i>NOT GENERAL ADVICE / DO YOUR OWN RESEARCH<br>
+    </i>Please read the Disclaimer carefully before you start to use the
+    website. By using the website or by clicking to accept or agree to
+    the Terms of Use when this option is made available to you, you
+    accept and agree to be bound and abide by the Disclaimer. If you do
+    not want to agree to the Privacy Policy, you must not access or use
+    the website. The information contained in this website is for
+    academic and general information purposes only. The information is
+    provided by the author &amp; owner and while I endeavour to keep the
+    information up to date and correct, I make no representations or
+    warranties of any kind, express or implied, about the completeness,
+    accuracy, reliability, suitability or availability with respect to
+    the website or the information, products, services, or related
+    graphics contained on the website for any purpose. Any reliance you
+    place on such information is therefore strictly at your own risk. In
+    no event will I be liable for any loss or damage including without
+    limitation, indirect or consequential loss or damage, or any loss or
+    damage whatsoever arising from loss of data or profits arising out
+    of, or in connection with, the use of this website. Through this
+    website you are able to link to other websites which are not under
+    the control of the owner of this website. I have no control over the
+    nature, content and availability of those sites. The inclusion of
+    any links does not necessarily imply a recommendation or endorse the
+    views expressed within them. Every effort is made to keep this
+    website up and running smoothly. However, the website owner takes no
+    responsibility for, and will not be liable for, the website being
+    temporarily unavailable due to technical issues beyond my control.<br>
+    <br>
+    <i>FOR EDUCATIONAL AND INFORMATIONAL PURPOSES ONLY</i><br>
+    The information contained on this website and the resources
+    available for download through this website are for educational and
+    informational purposes only.<br>
+    <br>
+    <i>NOT LEGAL ADVICE</i><br>
+    The information contained on this website and the resources
+    available for download through this website is not intended as, and
+    shall not be understood or construed as, legal advice. While I
+    provide some supplemental and occasional trainings on legal topics
+    taught by attorneys or legal professionals, the information
+    contained on this Website is not a substitute for legal advice from
+    a licensed attorney who is aware of the facts and circumstances of
+    your individual situation. I have done my best to ensure that the
+    information provided on this website and the resources available for
+    download are accurate and provide valuable information. Regardless
+    of anything to the contrary, nothing available on or through this
+    website should be understood as a recommendation that you should not
+    consult with an attorney to address your particular information. The
+    Company expressly recommends that you seek advice from an attorney
+    prior to taking any actions. Neither the Company nor any of its
+    attorneys shall be held liable or responsible for any errors or
+    omissions on this website or for any damage you may suffer as a
+    result of failing to seek competent legal advice from a licensed
+    attorney who is familiar with your situation.<br>
+    <br>
+    <i>NOT FINANCIAL ADVICE</i><br>
+    The information contained on this website and the resources
+    available for download through this website is not intended as, and
+    shall not be understood or construed as, financial advice. I am not
+    an attorney, accountant or financial advisor, nor am I holding
+    myself out to be, and the information contained on this website is
+    not a substitute for financial advice from a professional who is
+    aware of the facts and circumstances of your individual situation. I
+    have done my best to ensure that the information provided on this
+    website and the resources available for download are accurate and
+    provide valuable information. Regardless of anything to the
+    contrary, nothing available on or through this website should be
+    understood as a recommendation that you should not consult with a
+    financial professional to address your particular information. The
+    Company expressly recommends that you seek advice from a
+    professional. Neither the owner nor any of its associates shall be
+    held liable or responsible for any errors or omissions on this
+    website or for any damage you may suffer as a result of failing to
+    seek competent financial advice from a professional who is familiar
+    with your situation.<br>
+    <br>
+    <b> <br>
+      Hosting log<br>
+    </b><br>
+    2018-now: Github - developer platform (U.S.)<br>
+    2011-18: Temporarily Offline<br>
+    2009-11: National University of Singapore associated (Singapore)<br>
+    2008-09: Temporarily Offline<br>
+    2002-07: fhzh.ch - educational system-account (CH)<br>
+    2000-02: peperoni.ch - customer second level domain (CH)<br>
+    1998-99: globacom.net - customer account (CH)<br>
+    1997-98: x8.net - customer account (CH)<br>
+    1996-97: geocities.com - freehosting account (U.S.)<br>
+    1995-96: compuserve.com - customer account (U.S.)<br>
+    <br>
+    <br>
+    <b>Contact me<br>
+    </b><br>
+    <table width="20%" cellspacing="2" cellpadding="2" border="0">
+      <tbody>
+        <tr>
+          <td valign="top" bgcolor="#ffffff">E-Mail </td>
+          <td valign="top" bgcolor="#ffffff"><a moz-do-not-send="true"
+              href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#ffffff">Github </td>
+          <td valign="top" bgcolor="#ffffff"><a moz-do-not-send="true"
+              href="https://marcgloor.github.io">https://marcgloor.github.io</a></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#ffffff">Twitter </td>
+          <td valign="top"><a moz-do-not-send="true"
+              href="https://twitter.com/go_marculix">https://twitter.com/go_marculix</a></td>
+        </tr>
+        <tr>
+          <td valign="top" bgcolor="#ffffff">Telegram</td>
+          <td valign="top" bgcolor="#ffffff"><a moz-do-not-send="true"
+              href="https://t.me/marculix">https://t.me/marculix</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <br>
+    <img src="data/w3chtml41.gif" alt="W3C HTML 4.01" nosave=""
+      width="88" height="31" border="0">&nbsp;&nbsp; <img
+      src="data/w3c1aa.gif" alt="W3C WAI-AA" nosave="" width="88"
+      height="31" border="0">
+    <p> </p>
+    <hr width="100%">
+    <table cols="2" nosave="" width="100%" cellspacing="0"
+      cellpadding="0" border="0">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" width="90%">
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.31 2023/12/25 15:14:51 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+          </td>
+          <td nosave="" valign="top">
+            <div align="right"><i><a href="index.html">home</a></i></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+@
+
+
+1.31
+log
+@*** empty log message ***
+@
+text
+@d11 2
+a12 2
+  <body vlink="#51188e" text="#000000" link="#0000ef" bgcolor="#ffffff"
+    alink="#ff0000">
+d18 77
+a94 30
     The information contained in this website is for general information
     purposes only. The information is provided by the author &amp; owner
     and while we endeavour to keep the information up to date and
@@ -217,40 +378,19 @@ text
       </p>
     </div>
     <b> Hosting log<br>
-    </b><br>
+d96 4
+a99 2
     2018-now: Github&nbsp; - developer platform (U.S.)<br>
     2007-18: Offline<br>
-    2002-07: fhzh.ch - educational system-account (CH)<br>
-    2000-02: peperoni.ch - customer second level domain (CH)<br>
-    1998-99: globacom.net - customer account (CH)<br>
-    1997-98: x8.net - customer account (CH)<br>
-    1996-97: geocities.com - freehosting account (U.S.)<br>
-    1995-96: compuserve.com - customer account (U.S.)<br>
-    <br>
+d107 33
+a139 4
     <p><img src="data/w3chtml41.gif" alt="W3C HTML 4.01" nosave=""
         width="88" border="0" height="31">&nbsp;&nbsp; <img
         src="data/w3c1aa.gif" alt="W3C WAI-AA" nosave="" width="88"
         border="0" height="31"> </p>
-    <p> </p>
-    <hr width="100%">
-    <table cols="2" nosave="" width="100%" cellspacing="0"
-      cellpadding="0" border="0">
-      <tbody>
-        <tr nosave="">
-          <td nosave="" width="90%">
+d147 1
+a147 1
             <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.30 2020/11/21 21:25:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
-            <br>
-            <i> </i> <dt> <br>
-            </dt>
-          </td>
-          <td nosave="" valign="top">
-            <div align="right"><i><a href="index.html">home</a></i></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
 @
 
 

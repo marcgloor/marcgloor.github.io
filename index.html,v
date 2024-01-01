@@ -1,9 +1,14 @@
-head	1.127;
+head	1.128;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.128
+date	2024.01.01.07.10.59;	author gloor;	state Exp;
+branches;
+next	1.127;
 
 1.127
 date	2023.12.27.15.10.09;	author gloor;	state Exp;
@@ -645,7 +650,7 @@ desc
 @@
 
 
-1.127
+1.128
 log
 @*** empty log message ***
 @
@@ -661,8 +666,8 @@ text
     <meta name="keywords" content="Linux, Windows">
     <title>Alumni Site of Marc Gloor</title>
   </head>
-  <body vlink="#0000ef" text="#000000" link="#0000ef" bgcolor="#ffffff"
-    alink="#0000ef">
+  <body vlink="#0000ef" text="#000000" link="#0000ef" alink="#0000ef"
+    bgcolor="#ffffff">
     <table cols="2" style="width: 100%;" nosave="" border="0">
       <tbody>
         <tr nosave="" valign="top">
@@ -706,6 +711,10 @@ text
 
 
 
+
+
+
+
             patch</a> </font><font color="#000000"><font
             color="#000000">[english]</font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000">industrial
@@ -723,11 +732,19 @@ text
 
 
 
+
+
+
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
+
+
+
 
 
 
@@ -766,6 +783,10 @@ text
 
 
 
+
+
+
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -793,20 +814,42 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.126 2023/12/27 04:19:55 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
-            <br>
-            <i> </i> <dt> <br>
-            </dt>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.127 2023/12/27 15:10:09 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
-                <a href="index.html">home</a></i></div>
+                &nbsp; <a href="index.html">home</a></i></div>
           </td>
         </tr>
       </tbody>
     </table>
   </body>
 </html>
+@
+
+
+1.127
+log
+@*** empty log message ***
+@
+text
+@d12 2
+a13 2
+  <body vlink="#0000ef" text="#000000" link="#0000ef" bgcolor="#ffffff"
+    alink="#0000ef">
+d57 4
+d78 4
+d91 4
+d129 4
+d160 1
+a160 4
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.126 2023/12/27 04:19:55 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+d164 1
+a164 1
+                <a href="index.html">home</a></i></div>
 @
 
 
