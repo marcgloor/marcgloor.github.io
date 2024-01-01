@@ -1,9 +1,14 @@
-head	1.128;
+head	1.129;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.129
+date	2024.01.01.11.01.58;	author gloor;	state Exp;
+branches;
+next	1.128;
 
 1.128
 date	2024.01.01.07.10.59;	author gloor;	state Exp;
@@ -650,7 +655,7 @@ desc
 @@
 
 
-1.128
+1.129
 log
 @*** empty log message ***
 @
@@ -666,8 +671,8 @@ text
     <meta name="keywords" content="Linux, Windows">
     <title>Alumni Site of Marc Gloor</title>
   </head>
-  <body vlink="#0000ef" text="#000000" link="#0000ef" alink="#0000ef"
-    bgcolor="#ffffff">
+  <body vlink="#0000ef" text="#000000" link="#0000ef" bgcolor="#ffffff"
+    alink="#0000ef">
     <table cols="2" style="width: 100%;" nosave="" border="0">
       <tbody>
         <tr nosave="" valign="top">
@@ -687,6 +692,9 @@ text
     <p> </p>
     <b><font color="#000000"><font size="+0"> </font></font></b>
     <ul margin-bottom="10px">
+      <li style="margin-bottom: 6px"><font color="#000000">My public <a
+            href="https://github.com/marcgloor/pulsechain">Pulsechain
+            Validator</a> Github repository [english/redirect]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><a
             href="hourmeter.html">hourmeter</a> </font> displays the
         operating hours (or power-on hours) of your computer [english]</li>
@@ -702,11 +710,10 @@ text
       <li style="margin-bottom: 6px"><font color="#000000"><a
             href="xdict.html">xdict</a>, a fuzzy logic algorithm Gtk+
           dictionary implementation [english]</font></li>
-      <li style="margin-bottom: 6px"><font color="#000000">My public <a
-            href="https://github.com/marcgloor/pulsechain">Pulsechain
-            Validator</a> Github repository [english/redirect]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">GNU Screen
           4.99+ password deactivation <a href="gnuscreenpatch.html">sourcecode
+
+
 
 
 
@@ -736,11 +743,15 @@ text
 
 
 
+
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
+
 
 
 
@@ -787,6 +798,8 @@ text
 
 
 
+
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -814,7 +827,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.127 2023/12/27 15:10:09 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.128 2024/01/01 07:10:59 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -825,6 +838,30 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.128
+log
+@*** empty log message ***
+@
+text
+@d12 2
+a13 2
+  <body vlink="#0000ef" text="#000000" link="#0000ef" alink="#0000ef"
+    bgcolor="#ffffff">
+d33 3
+a50 3
+      <li style="margin-bottom: 6px"><font color="#000000">My public <a
+            href="https://github.com/marcgloor/pulsechain">Pulsechain
+            Validator</a> Github repository [english/redirect]</font></li>
+d61 2
+d84 2
+d99 2
+d139 2
+d168 1
+a168 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.127 2023/12/27 15:10:09 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
