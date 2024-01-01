@@ -1,9 +1,14 @@
-head	1.32;
+head	1.33;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.33
+date	2024.01.01.07.22.48;	author gloor;	state Exp;
+branches;
+next	1.32;
 
 1.32
 date	2024.01.01.07.10.59;	author gloor;	state Exp;
@@ -170,7 +175,7 @@ desc
 @@
 
 
-1.32
+1.33
 log
 @*** empty log message ***
 @
@@ -185,8 +190,8 @@ text
       2.2.17 i686) [Netscape]">
     <title>impressum</title>
   </head>
-  <body vlink="#51188e" text="#000000" link="#0000ef" alink="#ff0000"
-    bgcolor="#ffffff">
+  <body vlink="#51188e" text="#000000" link="#0000ef" bgcolor="#ffffff"
+    alink="#ff0000">
     <b><font size="+1">Disclaimer</font></b><br>
     <hr width="100%">
     <p><span style="font-weight: bold;"></span></p>
@@ -271,9 +276,9 @@ text
       Hosting log<br>
     </b><br>
     2018-now: Github - developer platform (U.S.)<br>
-    2011-18: Temporarily Offline<br>
+    2011-18: Temporarily offline<br>
     2009-11: National University of Singapore associated (Singapore)<br>
-    2008-09: Temporarily Offline<br>
+    2008-09: Temporarily offline<br>
     2002-07: fhzh.ch - educational system-account (CH)<br>
     2000-02: peperoni.ch - customer second level domain (CH)<br>
     1998-99: globacom.net - customer account (CH)<br>
@@ -311,9 +316,9 @@ text
     <br>
     <br>
     <img src="data/w3chtml41.gif" alt="W3C HTML 4.01" nosave=""
-      width="88" height="31" border="0">&nbsp;&nbsp; <img
+      width="88" border="0" height="31">&nbsp;&nbsp; <img
       src="data/w3c1aa.gif" alt="W3C WAI-AA" nosave="" width="88"
-      height="31" border="0">
+      border="0" height="31">
     <p> </p>
     <hr width="100%">
     <table cols="2" nosave="" width="100%" cellspacing="0"
@@ -321,7 +326,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.31 2023/12/25 15:14:51 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.32 2024/01/01 07:10:59 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -334,6 +339,33 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d11 2
+a12 2
+  <body vlink="#51188e" text="#000000" link="#0000ef" alink="#ff0000"
+    bgcolor="#ffffff">
+d97 1
+a97 1
+    2011-18: Temporarily Offline<br>
+d99 1
+a99 1
+    2008-09: Temporarily Offline<br>
+d137 1
+a137 1
+      width="88" height="31" border="0">&nbsp;&nbsp; <img
+d139 1
+a139 1
+      height="31" border="0">
+d147 1
+a147 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.31 2023/12/25 15:14:51 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
