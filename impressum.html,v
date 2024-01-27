@@ -1,9 +1,14 @@
-head	1.33;
+head	1.34;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.34
+date	2024.01.27.05.50.29;	author gloor;	state Exp;
+branches;
+next	1.33;
 
 1.33
 date	2024.01.01.07.22.48;	author gloor;	state Exp;
@@ -175,7 +180,7 @@ desc
 @@
 
 
-1.33
+1.34
 log
 @*** empty log message ***
 @
@@ -275,11 +280,11 @@ text
     <b> <br>
       Hosting log<br>
     </b><br>
-    2018-now: Github - developer platform (U.S.)<br>
+    2018-now: Github - dev platform (U.S.)<br>
     2011-18: Temporarily offline<br>
     2009-11: National University of Singapore associated (Singapore)<br>
     2008-09: Temporarily offline<br>
-    2002-07: fhzh.ch - educational system-account (CH)<br>
+    2002-07: fhzh.ch - edu system-account (CH)<br>
     2000-02: peperoni.ch - customer second level domain (CH)<br>
     1998-99: globacom.net - customer account (CH)<br>
     1997-98: x8.net - customer account (CH)<br>
@@ -326,7 +331,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.32 2024/01/01 07:10:59 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.33 2024/01/01 07:22:48 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -339,6 +344,23 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.33
+log
+@*** empty log message ***
+@
+text
+@d96 1
+a96 1
+    2018-now: Github - developer platform (U.S.)<br>
+d100 1
+a100 1
+    2002-07: fhzh.ch - educational system-account (CH)<br>
+d147 1
+a147 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.32 2024/01/01 07:10:59 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
