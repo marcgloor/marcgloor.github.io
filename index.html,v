@@ -1,9 +1,14 @@
-head	1.132;
+head	1.133;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.133
+date	2024.01.28.20.22.33;	author gloor;	state Exp;
+branches;
+next	1.132;
 
 1.132
 date	2024.01.28.20.18.20;	author gloor;	state Exp;
@@ -670,7 +675,7 @@ desc
 @@
 
 
-1.132
+1.133
 log
 @*** empty log message ***
 @
@@ -713,10 +718,9 @@ text
             Validator</a> Github repository [english/redirect]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><font
             color="#000000"><font color="#000000"><a
-href="file:///home/gloor/data/www/a_eigene/a_Website-current/bsengine.html"
-                moz-do-not-send="true">Derivatives pricing backend</a>
-              written in C is a high frequency trading valuation engine
-              used in Banking [english]</font></font></font></li>
+                href="bsengine.html" moz-do-not-send="true">Derivatives
+                pricing backend</a> written in C is a high frequency
+              trading valuation engine used in Banking [english]</font></font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><a
             href="hourmeter.html">hourmeter</a> </font> displays the
         operating hours (or power-on hours) of your computer [english]</li>
@@ -757,11 +761,13 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/bsengine.html"
 
 
 
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
 
 
 
@@ -820,6 +826,7 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/bsengine.html"
 
 
 
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -849,7 +856,7 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/bsengine.html"
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.131 2024/01/27 09:13:28 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.132 2024/01/28 20:18:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -860,6 +867,26 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/bsengine.html"
     </table>
   </body>
 </html>
+@
+
+
+1.132
+log
+@*** empty log message ***
+@
+text
+@d39 3
+a41 4
+href="file:///home/gloor/data/www/a_eigene/a_Website-current/bsengine.html"
+                moz-do-not-send="true">Derivatives pricing backend</a>
+              written in C is a high frequency trading valuation engine
+              used in Banking [english]</font></font></font></li>
+d82 1
+d102 1
+d147 1
+d177 1
+a177 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.131 2024/01/27 09:13:28 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
