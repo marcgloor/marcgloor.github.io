@@ -1,9 +1,14 @@
-head	1.133;
+head	1.134;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.134
+date	2024.03.17.03.44.34;	author gloor;	state Exp;
+branches;
+next	1.133;
 
 1.133
 date	2024.01.28.20.22.33;	author gloor;	state Exp;
@@ -675,9 +680,9 @@ desc
 @@
 
 
-1.133
+1.134
 log
-@*** empty log message ***
+@pulsechain wp added
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -716,6 +721,11 @@ text
       <li style="margin-bottom: 6px"><font color="#000000">my public <a
             href="https://github.com/marcgloor/pulsechain">Pulsechain
             Validator</a> Github repository [english/redirect]</font></li>
+      <li style="margin-bottom: 6px"><font color="#000000">my <a
+            moz-do-not-send="true"
+            href="https://en.wikipedia.org/wiki/Pulsechain">Pulsechain
+            Wikipedia article</a> </font><font color="#000000"><font
+            color="#000000">needs your contribution [english/redirect]</font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><font
             color="#000000"><font color="#000000"><a
                 href="bsengine.html" moz-do-not-send="true">Derivatives
@@ -762,11 +772,13 @@ text
 
 
 
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
 
 
 
@@ -827,6 +839,7 @@ text
 
 
 
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -856,7 +869,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.132 2024/01/28 20:18:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.133 2024/01/28 20:22:33 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -867,6 +880,21 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.133
+log
+@*** empty log message ***
+@
+text
+@d37 5
+d88 1
+d109 1
+d155 1
+d185 1
+a185 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.132 2024/01/28 20:18:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
