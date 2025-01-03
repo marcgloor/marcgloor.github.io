@@ -1,9 +1,14 @@
-head	1.134;
+head	1.135;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.135
+date	2025.01.03.07.48.36;	author gloor;	state Exp;
+branches;
+next	1.134;
 
 1.134
 date	2024.03.17.03.44.34;	author gloor;	state Exp;
@@ -680,9 +685,9 @@ desc
 @@
 
 
-1.134
+1.135
 log
-@pulsechain wp added
+@font fixed
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -696,22 +701,13 @@ text
     <meta name="keywords" content="Linux, Windows">
     <title>Alumni Site of Marc Gloor</title>
   </head>
-  <body vlink="#0000ef" text="#000000" link="#0000ef" bgcolor="#ffffff"
-    alink="#0000ef">
-    <table cols="2" style="width: 100%;" nosave="" border="0">
-      <tbody>
-        <tr nosave="" valign="top">
-          <td nosave="" nowrap="nowrap"><font color="#000000"><font
-                size="+1"><b>Welcome to Marc Gloor's Alumni Page
-                  (National University of Singapore)</b></font></font> <br>
-            <font color="#ff0000"><font color="#000000"><a
-                  moz-do-not-send="true" href="impressum.html">Online
-                  est. 1995</a>&nbsp; </font> </font><br>
-            <hr width="100%"> </td>
-        </tr>
-      </tbody>
-    </table>
-    <b><font color="#000000"><font size="+0"><br>
+  <body vlink="#55188a" text="#000000" link="#0000ef" alink="#ff0000"
+    bgcolor="#ffffff">
+    <b><font size="+1">Welcome to Marc Gloor's Alumni Page (National
+        University of Singapore)</font></b> <br>
+    <a moz-do-not-send="true" href="impressum.html">Online est. 1995</a>
+    <br>
+    <hr width="100%"> <b><font color="#000000"><font size="+0"><br>
           OpenSource Projects / C</font></font></b><b><font
         color="#000000"><font size="+0">ontributions / Publications /
           Resources</font></font></b>
@@ -746,10 +742,10 @@ text
       <li style="margin-bottom: 6px"><font color="#000000"><a
             href="xdict.html">xdict</a>, a fuzzy logic algorithm Gtk+
           dictionary implementation [english]</font></li>
-      <li style="margin-bottom: 6px"><font color="#000000"><font
-            color="#000000"></font>GNU Screen 4.99+ password
-          deactivation <a href="gnuscreenpatch.html">sourcecode patch</a>
-        </font><font color="#000000"><font color="#000000">[english]</font></font></li>
+      <li style="margin-bottom: 6px"><font color="#000000">GNU Screen
+          4.99+ password deactivation <a href="gnuscreenpatch.html">sourcecode
+            patch</a> </font><font color="#000000"><font
+            color="#000000">[english]</font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000">the blender <a
             href="mosix-blender.html">load balancing workload manager</a>
           for rendering sequences on a mosix cluster [english]</font></li>
@@ -773,11 +769,17 @@ text
 
 
 
+
+
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
+
+
 
 
 
@@ -840,6 +842,9 @@ text
 
 
 
+
+
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -869,7 +874,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.133 2024/01/28 20:22:33 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.134 2024/03/17 03:44:34 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -880,6 +885,44 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.134
+log
+@pulsechain wp added
+@
+text
+@d12 7
+a18 16
+  <body vlink="#0000ef" text="#000000" link="#0000ef" bgcolor="#ffffff"
+    alink="#0000ef">
+    <table cols="2" style="width: 100%;" nosave="" border="0">
+      <tbody>
+        <tr nosave="" valign="top">
+          <td nosave="" nowrap="nowrap"><font color="#000000"><font
+                size="+1"><b>Welcome to Marc Gloor's Alumni Page
+                  (National University of Singapore)</b></font></font> <br>
+            <font color="#ff0000"><font color="#000000"><a
+                  moz-do-not-send="true" href="impressum.html">Online
+                  est. 1995</a>&nbsp; </font> </font><br>
+            <hr width="100%"> </td>
+        </tr>
+      </tbody>
+    </table>
+    <b><font color="#000000"><font size="+0"><br>
+d53 4
+a56 4
+      <li style="margin-bottom: 6px"><font color="#000000"><font
+            color="#000000"></font>GNU Screen 4.99+ password
+          deactivation <a href="gnuscreenpatch.html">sourcecode patch</a>
+        </font><font color="#000000"><font color="#000000">[english]</font></font></li>
+d80 3
+d104 3
+d153 3
+d185 1
+a185 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.133 2024/01/28 20:22:33 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
