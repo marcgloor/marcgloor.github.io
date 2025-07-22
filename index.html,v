@@ -1,9 +1,14 @@
-head	1.138;
+head	1.139;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.139
+date	2025.07.22.10.07.26;	author gloor;	state Exp;
+branches;
+next	1.138;
 
 1.138
 date	2025.07.17.17.30.35;	author gloor;	state Exp;
@@ -700,9 +705,9 @@ desc
 @@
 
 
-1.138
+1.139
 log
-@Open Access Memo external page link switched
+@update
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -734,12 +739,14 @@ text
             Validator</a> Github repository [english/redirect]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">my <a
             moz-do-not-send="true"
-            href="https://en.wikipedia.org/wiki/Pulsechain">Pulsechain
+            href="https://en.wikipedia.org/wiki/Draft:Pulsechain">Pulsechain
+
             Wikipedia article</a> </font><font color="#000000"><font
             color="#000000">needs your contribution [english/redirect]</font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000">my <a
             moz-do-not-send="true"
             href="https://en.wikipedia.org/wiki/Draft:Pdai_(cryptocurrency)">pDAI
+
 
             Wikipedia article</a> </font><font color="#000000"><font
             color="#000000">needs your contribution [english/redirect]</font></font></li>
@@ -769,6 +776,7 @@ text
           dictionary implementation [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">GNU Screen
           4.99+ password deactivation <a href="gnuscreenpatch.html">sourcecode
+
 
 
 
@@ -809,11 +817,13 @@ text
 
 
 
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
 
 
 
@@ -894,6 +904,7 @@ text
 
 
 
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -923,7 +934,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.137 2025/07/16 05:02:10 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.138 2025/07/17 17:30:35 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -934,6 +945,25 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.138
+log
+@Open Access Memo external page link switched
+@
+text
+@d30 2
+a31 1
+            href="https://en.wikipedia.org/wiki/Pulsechain">Pulsechain
+d38 1
+d73 1
+d108 1
+d139 1
+d195 1
+d225 1
+a225 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.137 2025/07/16 05:02:10 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
