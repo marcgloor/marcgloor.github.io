@@ -1,9 +1,14 @@
-head	1.139;
+head	1.140;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.140
+date	2026.02.15.09.35.40;	author gloor;	state Exp;
+branches;
+next	1.139;
 
 1.139
 date	2025.07.22.10.07.26;	author gloor;	state Exp;
@@ -705,9 +710,9 @@ desc
 @@
 
 
-1.139
+1.140
 log
-@update
+@misc
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -721,12 +726,21 @@ text
     <meta name="keywords" content="Linux, Windows">
     <title>Alumni Site of Marc Gloor</title>
   </head>
-  <body bgcolor="#ffffff" link="#0000ef" vlink="#55188a" text="#000000"
-    alink="#ff0000">
+  <body link="#0000ef" vlink="#55188a" text="#000000" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">Welcome to Marc Gloor's Alumni Page (National
-        University of Singapore)</font></b> <br>
-    <a moz-do-not-send="true" href="impressum.html">Online est. 1995</a>
-    <br>
+        University of Singapore)<br>
+      </font></b>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    Born as HTML markup in texteditor in 1995. <br>
+    Reborn as LLM friendly markdown in 2025.
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    <p>
+      <meta http-equiv="content-type" content="text/html;
+        charset=windows-1252">
+    </p>
     <hr width="100%"> <b><font color="#000000"><font size="+0"><br>
           OpenSource Projects / C</font></font></b><b><font
         color="#000000"><font size="+0">ontributions / Publications /
@@ -741,11 +755,13 @@ text
             moz-do-not-send="true"
             href="https://en.wikipedia.org/wiki/Draft:Pulsechain">Pulsechain
 
+
             Wikipedia article</a> </font><font color="#000000"><font
             color="#000000">needs your contribution [english/redirect]</font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000">my <a
             moz-do-not-send="true"
             href="https://en.wikipedia.org/wiki/Draft:Pdai_(cryptocurrency)">pDAI
+
 
 
             Wikipedia article</a> </font><font color="#000000"><font
@@ -776,6 +792,7 @@ text
           dictionary implementation [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">GNU Screen
           4.99+ password deactivation <a href="gnuscreenpatch.html">sourcecode
+
 
 
 
@@ -818,11 +835,13 @@ text
 
 
 
+
           RS/6000 and Sun Workstations, my <a
             href="xfce-everywhere.html">precompiled xfce binaries</a>
           [english]</font></li>
       <li style="margin-bottom: 6px"><font color="#000000">as a result
           of a boring afternoon, I made some <a href="animations.html">blender
+
 
 
 
@@ -905,6 +924,7 @@ text
 
 
 
+
           Travan</a> streamer for Linux <font color="#000000">[german]</font></li>
       <li style="margin-bottom: 6px"> <font color="#000000">some
           pictures from the Compaq <a href="cluster-event.html">Linux
@@ -929,12 +949,12 @@ text
             </font></font></b> </li>
     </ul>
     <hr width="100%">
-    <table cols="2" nosave="" border="0" width="100%" cellspacing="0"
-      cellpadding="0">
+    <table cols="2" nosave="" width="100%" cellspacing="0"
+      cellpadding="0" border="0">
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.138 2025/07/17 17:30:35 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.139 2025/07/22 10:07:26 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -945,6 +965,36 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.139
+log
+@update
+@
+text
+@d12 2
+a13 2
+  <body bgcolor="#ffffff" link="#0000ef" vlink="#55188a" text="#000000"
+    alink="#ff0000">
+d15 12
+a26 3
+        University of Singapore)</font></b> <br>
+    <a moz-do-not-send="true" href="impressum.html">Online est. 1995</a>
+    <br>
+d41 1
+d49 1
+d85 1
+d121 1
+d153 1
+d210 1
+d235 2
+a236 2
+    <table cols="2" nosave="" border="0" width="100%" cellspacing="0"
+      cellpadding="0">
+d240 1
+a240 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.138 2025/07/17 17:30:35 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
