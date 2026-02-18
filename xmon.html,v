@@ -1,9 +1,14 @@
-head	1.19;
+head	1.20;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.20
+date	2026.02.18.21.22.32;	author gloor;	state Exp;
+branches;
+next	1.19;
 
 1.19
 date	2026.02.18.21.13.50;	author gloor;	state Exp;
@@ -105,9 +110,9 @@ desc
 @@
 
 
-1.19
+1.20
 log
-@updated
+@*** empty log message ***
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -172,14 +177,13 @@ text
     choice.<br>
     <br>
     <p><b>Screenshots</b> </p>
-    <p><a href="data/xmon.jpg"><img alt="xmon on i386" title="xmon on
-          i386" src="data/xmon.jpg" nosave="" style="border: 0px solid ;
-          width: 310px; height: 134px;"></a> &nbsp;&nbsp; <a
-        href="data/xmon2.png"><img title="xmon on PPC" style="border:
-          0px solid ; width: 314px; height: 138px;" alt="xmon on PPC"
-          src="data/xmon2.png"></a><a href="data/xmon2.png">&nbsp;
-        &nbsp; <img src="data/xmon3.png" alt="xmon on i386" title="xmon
-          on i386" width="310" height="141" border="0"></a><br>
+    <p><img alt="xmon on i386" title="xmon on i386" src="data/xmon.jpg"
+        nosave="" width="310" height="134" border="0"> &nbsp;&nbsp; <img
+        title="xmon on PPC" style="border: 0px solid ; width: 314px;
+        height: 138px;" alt="xmon on PPC" src="data/xmon2.png"><a
+        href="data/xmon2.png">&nbsp; &nbsp; </a><img
+        src="data/xmon3.png" alt="xmon on i386" title="xmon on i386"
+        width="310" height="141" border="0"><br>
     </p>
     <p> </p>
     <hr width="100%">
@@ -188,7 +192,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.18 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.19 2026/02/18 21:13:50 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -201,6 +205,27 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.19
+log
+@updated
+@
+text
+@d63 7
+a69 8
+    <p><a href="data/xmon.jpg"><img alt="xmon on i386" title="xmon on
+          i386" src="data/xmon.jpg" nosave="" style="border: 0px solid ;
+          width: 310px; height: 134px;"></a> &nbsp;&nbsp; <a
+        href="data/xmon2.png"><img title="xmon on PPC" style="border:
+          0px solid ; width: 314px; height: 138px;" alt="xmon on PPC"
+          src="data/xmon2.png"></a><a href="data/xmon2.png">&nbsp;
+        &nbsp; <img src="data/xmon3.png" alt="xmon on i386" title="xmon
+          on i386" width="310" height="141" border="0"></a><br>
+d78 1
+a78 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.18 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
