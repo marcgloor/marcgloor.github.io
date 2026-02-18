@@ -1,67 +1,91 @@
 <!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
 <html>
-<head>
-  <meta http-equiv="Content-Type"
- content="text/html; charset=iso-8859-1">
-  <meta name="GENERATOR"
- content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
-  <meta name="author" content="Marc Gloor">
-  <title>xmon for Linux</title>
-</head>
-<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#55188a"
- alink="#ff0000">
-<b><font size="+1">xmon - graphical system performance monitor</font></b>
-<br>
-by Marc O. Gloor <br>
-<hr width="100%">
-<p><b>Abstract</b> </p>
-<p>Xmon is a graphical system performance monitor for linux, written
-from scratch using C/Xlib by myself. Xmon displays the current system
-load, used memory and cpu time based on the output of the linux process
-filesystem which must be mounted before. Current <a
- href="data/xmon-0.0.1.tar.gz">release 0.0.1 [.tgz, 12kb]</a> doesn't
-support command line options, all features are hardcoded. Xmon is self
-explaining, therefore no manpage is available. Further development has
-been terminated. </p>
-<p>Xmon is just the result of a one day training learning xlib (first
-steps). It means that the algorithm is quite unfinished, untested,
-buggy and beta. Memory overflow workaround is implemented. The beta
-0.0.1b release is not portable to other Unix derivates (Solaris,
-AIX...) but it runs on all platforms (Sun, RS6k) which support and run
-linux. </p>
-<p>I published the source code in the hope that someone would spend
-some time to expand the software because I currently don't have the
-time. However, the code is published under the terms of the GNU GPL. </p>
-<p>UMEM: used memory <br>
-LOAD: system load average <br>
-CPUU: central parallel unit usage <br>
-&nbsp; </p>
-<p><b>Screenshot</b> </p>
-<p><a href="data/xmon.jpg"><img alt="xmon on i386" title="xmon on i386"
- src="data/xmon.jpg" nosave=""
- style="border: 0px solid ; width: 310px; height: 134px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="data/xmon2.png"><img title="xmon on PPC"
- style="border: 0px solid ; width: 314px; height: 138px;"
- alt="xmon on PPC" src="data/xmon2.png"></a><br>
-</p>
-<p> </p>
-<hr width="100%">
-<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
- nosave="">
-  <tbody>
-    <tr nosave="">
-      <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.18 2020/11/21 11:13:30 gloor Exp $<br>Author:</i><i> <a
- href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux
+      2.2.17 i686) [Netscape]">
+    <meta name="author" content="Marc Gloor">
+    <title>xmon for Linux</title>
+  </head>
+  <body vlink="#55188a" link="#0000ef" alink="#ff0000" bgcolor="#ffffff"
+    text="#000000">
+    <b><font size="+1">xmon - minimalistic lightweight system
+        performance monitor</font></b> <br>
+    by Marc O. Gloor <br>
+    <hr width="100%">
+    <p><b>Abstract</b> </p>
+    <p data-path-to-node="4">Xmon is a minimalistic lightweight system
+      performance monitor for Linux. It visualizes real-time system
+      load, memory usage, and CPU activity. The tool operates by reading
+      data directly from the Linux process filesystem (/proc), which
+      must be mounted for the application to function.<br>
       <br>
-      <i> </i> <dt> <br>
-      </dt>
-      </td>
-      <td valign="top" nosave="">
-      <div align="right"><i><a href="index.html">home</a></i></div>
-      </td>
-    </tr>
-  </tbody>
-</table>
-</body>
+      &nbsp; * CPU Usage [CPUU]: Total processor utilization (central
+      parallel unit usage)<br>
+      &nbsp; * Memory [UMEM]: Current RAM consumption (used memory)<br>
+      &nbsp; * System Load [LOAD]: Standard Linux load average (load
+      average)<br>
+      <br>
+      As of Feb 2026 with release 0.0.2b, a major vibe code
+      modernization has been applied to work with any modern Linux
+      kernels and X11 environments, tested using most recent Debian SID
+      (Feb 26). All features are hardcoded, command-line options are not
+      supported. While the interface is designed to be self-explanatory,
+      obviating the need for a manpage, please note that active
+      development has concluded. Xmon was the result of a single-day
+      Xlib API deep dive in 1998 when I was a student, consequently, the
+      codebase is in a beta state, largely unoptimized, and may contain
+      bugs. A workaround for memory overflows has been included.</p>
+    <p data-path-to-node="5">While not portable to other Unix
+      derivatives like Solaris or AIX, it is compatible with any
+      hardware (such as Sun or RS/6000) running a Linux environment. I
+      am releasing the source code under the GNU GPL in the hope that
+      it's useful for the community.<br>
+      <br>
+    </p>
+    <p>
+      <meta http-equiv="content-type" content="text/html;
+        charset=windows-1252">
+    </p>
+    <b>Installation<br>
+    </b><br>
+    Download and unpack the source distribution of <a
+      href="data/xmon-0.0.2.tar.gz">xmon-0.0.2.tar.gz</a> and follow the
+    README instruction to compile and install xmon on your system. If
+    you prefer a precompiled Linux x86-64 ELF binary distribution that
+    runs out of the box, download <a
+      href="data/xmon-0.0.2-i386-statbin.tar.gz">xmon-0.0.2-i386-statbin.tar.gz</a>,
+    unpack and install the xmon binary into the bin directory of your
+    choice.<br>
+    <br>
+    <p><b>Screenshots</b> </p>
+    <p><a href="data/xmon.jpg"><img alt="xmon on i386" title="xmon on
+          i386" src="data/xmon.jpg" nosave="" style="border: 0px solid ;
+          width: 310px; height: 134px;"></a> &nbsp;&nbsp; <a
+        href="data/xmon2.png"><img title="xmon on PPC" style="border:
+          0px solid ; width: 314px; height: 138px;" alt="xmon on PPC"
+          src="data/xmon2.png"></a><a href="data/xmon2.png">&nbsp;
+        &nbsp; <img src="data/xmon3.png" alt="xmon on i386" title="xmon
+          on i386" width="310" height="141" border="0"></a><br>
+    </p>
+    <p> </p>
+    <hr width="100%">
+    <table cols="2" nosave="" width="100%" cellspacing="0"
+      cellpadding="0" border="0">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" width="90%">
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.19 2026/02/18 21:13:50 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+          </td>
+          <td nosave="" valign="top">
+            <div align="right"><i><a href="index.html">home</a></i></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
