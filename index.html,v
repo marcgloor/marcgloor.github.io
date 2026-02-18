@@ -1,9 +1,14 @@
-head	1.144;
+head	1.145;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.145
+date	2026.02.18.21.26.23;	author gloor;	state Exp;
+branches;
+next	1.144;
 
 1.144
 date	2026.02.18.21.24.38;	author gloor;	state Exp;
@@ -730,7 +735,7 @@ desc
 @@
 
 
-1.144
+1.145
 log
 @*** empty log message ***
 @
@@ -798,7 +803,7 @@ text
           color="#000000"><font color="#000000">[english, pdf]</font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><font
             color="#000000"><font color="#000000"><font color="#000000"><a
-href="data/xmon.html">xmon</a>
+href="xmon.html">xmon</a>
                 is a minimalistic lightweight system p</font>erformance
               monitor for Linux [english]</font></font></font></li>
       <li style="margin-bottom: 6px"><font color="#000000"><font
@@ -994,7 +999,7 @@ href="data/xmon.html">xmon</a>
       <tbody>
         <tr nosave="">
           <td nosave="" width="80%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.143 2026/02/18 21:22:32 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.144 2026/02/18 21:24:38 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
           </td>
           <td nosave="" valign="top">
             <div align="right"><i><a href="impressum.html">disclaimer</a>
@@ -1005,6 +1010,20 @@ href="data/xmon.html">xmon</a>
     </table>
   </body>
 </html>
+@
+
+
+1.144
+log
+@*** empty log message ***
+@
+text
+@d64 1
+a64 1
+href="data/xmon.html">xmon</a>
+d260 1
+a260 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: index.html,v 1.143 2026/02/18 21:22:32 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
