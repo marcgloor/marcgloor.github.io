@@ -1,0 +1,287 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>Debian GNU/Linux on the Apple PowerBook 15" 1GHz (RISC)</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Debian GNU/Linux on the Apple PowerBook G4 15" 1GHz
+(Albook)</font></b><br>
+by Marc O. Gloor <br>
+<hr width="100%"><b><br>
+</b>
+<table cellpadding="2" cellspacing="2" border="0"
+ style="text-align: left; width: 100%;">
+  <tbody>
+    <tr>
+      <td style="text-align: center; vertical-align: middle;"><a
+ href="data/fvwm_bernina.jpg"><img title="my lovely PowerBook"
+ src="data/powerbook.jpg" alt="Powerbook"
+ style="border: 0px solid ; width: 400px; height: 300px;"></a><br>
+      </td>
+      <td style="text-align: left; vertical-align: top;">
+      <div style="text-align: left;"><b> Technical Specification</b><br>
+      <b> </b> </div>
+      <ul style="text-align: left;">
+        <li>Apple PowerBook G4, 15" Display (Aluminium aka Albook)</li>
+        <li>CPU: PowerPC G4, 1GHz RISC-architecture <br>
+        </li>
+        <li>60GB harddisk Ultra ATA/100</li>
+        <li>RAM: 256MB memory (DDR SDRAM)</li>
+        <li>167MHz bus system</li>
+        <li>512KB SRAM On-chip L2 chache</li>
+        <li>DVD-ROM/CD-RW (buitlin)<br>
+        </li>
+        <li>AirPort Extreme wireless (802.11g)</li>
+        <li>10/100/1000BASE-T Gigabit Ethernet (RJ45)</li>
+        <li>Modem 56K V.92 (RJ11)</li>
+        <li>Bluetooth, FireWire 400, Firewire 800</li>
+        <li>USB 2.0 (480MBit/sec)</li>
+        <li>PC Card slot (Type I, Type&nbsp; II)</li>
+        <li>preinstalled but uninstalled: Darwin Kernel, Mac OS X
+(Panther)</li>
+        <li>Operated by: Debian GNU/Linux (testing, sarge)<br>
+        </li>
+        <li>Tech-Spec Sheet <a href="data/pb15inch-techspech.pdf.gz">[.pdf.gz,
+51kb]</a></li>
+      </ul>
+      <a href="data/pb15inch-techspech.pdf.gz"></a></td>
+    </tr>
+  </tbody>
+</table>
+<b><br>
+<br>
+Why installing Linux on an Apple notebook and not OS X? <br>
+</b><br>
+I never used Apple hardware before but I was unhappy with that big
+amount of Wintel stuff around (bad performing CISC architecture, low
+quality, ugly design, preinstalled Microsoft operating system,&nbsp;
+licence agreements...) so I decided to buy my first Apple PowerBook in
+late 2003. Since then, I decided to prefer Apple hardware in future
+because I would never change my equipment anymore.<br>
+<b><br>
+</b>Some friends and Linux newbies regularly ask
+my the following question:<br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"Why do you prefer
+Linux on your Apple Powerbook? It doesn't make sense, because off..."</span><br>
+<b><br>
+</b>I only may repeat my answer again and again, <span
+ style="font-style: italic;">it's a matter of opinion:</span><br>
+<br>
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; </span><span
+ style="color: rgb(255, 0, 0); font-style: italic;">"It's completely
+irrelevant for me which commercial operating system is delivered with
+the hardware I acquire. I'm Linux user and Linux will handle it."</span><br>
+<i style="color: rgb(0, 0, 0);"><br>
+</i>Certainly, CPU performance is an advantage, but for me not the most
+important reason to replace commercial Mac OS X
+with Linux. Due the fact that I
+installed Linux on several i386 (pentium) and Sparc (Sun workstation)
+systems (notebooks and servers) in the past, I prefered to install
+Linux on my PPC hardware again, in my case, an Apple Powerbook. Linux
+is stable and secure, <a
+ href="http://www.debian.org/intro/why_debian.en.html">Debian GNU/Linux</a>
+is a high quality OpenSource Linux distribution with a great packaging
+subsystem and many other feautures. The pretty nice design of the
+Powerbook
+and the fact, that there is a high performing RISC CPU inside (no Intel
+CISC arch.) was the decision to acquire a Powerbook performing Linux on
+it.<br>
+<br style="font-weight: bold;">
+<br style="font-weight: bold;">
+<span style="font-weight: bold;">Collecting informations and
+prerequisites</span><br>
+<br>
+It took about a week setting up my powerbook and getting all devices
+fully working. The information you'll find around the www is quite
+confusing and often out of date but btw the only way to get more
+information about howto progress with the installation. Instead of
+describe a detailed step-by-step installation, I'll give you a brief
+overview about things that I installed which are different or
+additional to common descriptions of howto setup Linux on a
+PowerBook.<br>
+<span style="font-weight: bold;"><br>
+<br>
+Installation summary<br>
+</span>
+<p>I suppose that you plan to install Linux instead of a dualboot setup
+with Mac OS X. In this case, the only reason to boot Mac OS X is to be
+able to boot a Linux kernel. This initial setup <a
+ href="http://www.ppckernel.org">kernel</a> must support ATA100 disks,
+otherwise the kernel hangs with a root fs panic (an example of my
+kernel 2.6.x .config):<br>
+</p>
+<div style="margin-left: 40px;">&lt;*&gt;&nbsp;&nbsp;&nbsp;&nbsp;
+Include IDE/ATA-2 DISK support<br>
+[*]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ATA Work(s) In
+Progress (EXPERIMENTAL)<br>
+</div>
+<p>On my system, I didn't
+used a Debian CD-ROM installation set. After booting my first Linux
+kernel, I installed the further Debian base packages via&nbsp; FTP
+which works fine for me. After the base installation, I replaced the
+installation kernel with a kernel 2.6.0-test11 from the benh kernel
+tree and compiled a new one for my personal purposes, here is my
+2.6.0-test11 kernel <a href="data/config_2.6.0-test11.gz">.config</a>.
+Since
+official <a href="http://www.kernel.org">Linux kernel 2.6.3 vanilla</a>
+(Tue Feb 17 CET 2004), the kernel
+is fully PPC
+capable too, no more need for benh random devel snapshots. In fact the
+rsyncs will probably go away soon. Here's my current kernel 2.6.3
+kernel <a href="data/config-2.6.3.gz">.config</a>
+(use at your own risk).<br>
+</p>
+<p>Compiling
+kernels needs about 30min. After that, I installed my <a
+ href="hourmeter.html">hourmeter package</a> which displays the time
+operation hours. To get the Powerbook buttons working, I compiled and
+installed the newest pbbuttonsd rel. 0.5.7, after that, CD-ROM eject
+key, brightness and volume switch do a good job<span
+ style="color: rgb(51, 0, 51);">. I updated the system to Debian
+3.1 stable (sarge) in October 2005.</span><br>
+</p>
+<p>Setting up XFree86 was not trivial because of <a
+ href="http://bugs.xfree86.org/show_bug.cgi?id=798">some troubles with
+the Radeon 9600</a> video card, the solution for my problem was that I
+downloaded the newest <a href="http://www.xfree86.org/">XFree86</a>
+from CVS (XFree86 Version 4.3.99.901 - 4.4.0 RC 1) which took about 5
+hours to compile the new X11 environment on my 1GHz Powerbook, here is <a
+ href="data/XF86Config_powerbook.gz">my XF86Config [.gz, 1kb]</a>,
+use with care! If you plan to disable the trackpad/touchpad you just
+need to
+uncomment the related entry in my XF86Config, make sure that Kernel
+mouse support is disabled (example of my XF86Config):<br>
+</p>
+<p style="margin-left: 40px;">Section "InputDevice"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Identifier&nbsp; "Mouse0"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Driver&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "mouse"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "CorePointer"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "ZAxisMapping"&nbsp;&nbsp;&nbsp;
+"4 5"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Protocol"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "IMPS/2"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "Emulate3Buttons" "true"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+#Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Device"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"/dev/input/mice"&nbsp;&nbsp;&nbsp;&nbsp; # trackpad<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Option&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"Device"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+"/dev/input/mouse2"&nbsp;&nbsp; # the mouse<br>
+EndSection<br>
+</p>
+<p>After investigating some Sound and Video
+manuals, I was able to use sound finally and video with the prefered
+programs
+(xmms, ogle, bplay). The builtin Mathshita Non-SCSI writer must
+be mounted using the SCSI compatibility
+drivers from the Linux kernel, after that, cdrecord works fi<span
+ style="color: rgb(51, 0, 51);">ne. I updated X11 to XFree86
+Version 4.5.0 in October 2005.</span>
+</p>
+<b><br>
+Linux/PPC related login and welcome screens</b><br>
+<br>
+Because I don't like the default look-and-feel from the 'xdm' display
+login manager (XFree86) I patched <span style="font-style: italic;">Login.app-1.2.1.tar.gz</span>
+against my Linux/PPC <a href="data/Login.app_1.2.1-ppcpatch.gz">Login.app_1.2.1-ppc
+patch.gz [.gz, 1kb]</a> which leads to my Linux
+PPC/RISC login screen especially
+designed for Linux/PPC users. If you would like to
+have the same login screen as I have, download and extract Login.app
+1.2.1 (downloadable from the source of your choice),
+change into the Login.app directory and apply the patch using <span
+ style="font-style: italic;">'zcat Login.app_1.2.1-ppc patch.gz | patch
+-p1'</span>. Build and install Login.app as
+described in the documentation. My patched version of <a
+ href="data/Login.app_1.2.1-ppcpatch.tar.bz2">Login.app_1.2.1-ppcpatch.tar.bz2
+[.gz, 1kb]</a> is downloadable from my repository.&nbsp; My X11
+loginscreen and my fvwm welcome screen looks then as follows:<br>
+<br>
+<table
+ style="width: 90%; text-align: left; margin-left: auto; margin-right: auto;"
+ border="0" cellspacing="2" cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: left;"><img
+ src="data/Login.app_ppc.png" alt="Login.app login screen"
+ style="border: 0px solid ; width: 462px; height: 260px;"></td>
+      <td style="vertical-align: top; text-align: right;"><a
+ href="data/fvwm_bernina.jpg"><img
+ style="border: 0px solid ; width: 444px; height: 252px;"
+ alt="fvwm welcome screen" title="fvwm welcome screen"
+ src="data/fvwm-welcome.png"></a><br>
+      <a href="data/fvwm-welcome.xcf.gz">fvwm-welcome.xcf.gz [.gz, 22kb]</a><br>
+      <a href="data/fvwm-welcome.xpm.gz">fvwm-welcome.xpm.gz [.gz, 11kb]</a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+The fvwm login screen can be configured by adding the following lines
+to your .fvwm2rc:<br>
+<span style="font-style: italic;"><big><br>
+</big></span>
+<div style="margin-left: 40px;"><span style="font-family: monospace;">"I"
+Module FvwmBanner /full/path/to/your/fvwm-welcome.xpm</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">*FvwmBanner: NoDecor</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">*FvwmBanner: timeout 5</span><br>
+</div>
+<br>
+<br>
+<b>Open items / unsolved issues</b><br>
+<ul>
+  <li>Airport extreme Support (currently a work in progress)<br>
+  </li>
+  <li>Macromedia Flash Plugin for PPC (flash is not W3C compliant, I'll
+never support proprietary technologies)</li>
+</ul>
+<b><br>
+</b><b>Miscellaneous</b><br>
+<br>
+Special thanks to Thanks to Benjamin Herrenschmidt and other PPC&nbsp;
+contributors. If you have any question, send my an <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">e-mail</a> or talk with me under
+#debianppc at irc.debian.org (nick marculix). For additional
+information about UNIX software on mobile systems, check
+also <a href="http://TuxMobil.org">http://tuxmobil.org</a><br>
+<br>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.32 2020/11/21 11:13:30 gloor Exp $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

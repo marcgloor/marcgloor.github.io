@@ -1,0 +1,199 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>patches &amp; contributions</title>
+</head>
+<body link="#0000ef" alink="#ff0000" bgcolor="#ffffff" text="#000000"
+ vlink="#51188e">
+<b><font size="+1">Some of my patches &amp; contributions</font></b><br>
+by Marc O. Gloor <br>
+<hr width="100%">
+<p><span style="font-weight: bold;">My unofficial/unsupported CFS 1.4.1
+branch for Linux (Update: 15. May 2011)</span><br>
+<br>
+CFS is an encrypting file system for Unix-like OSs. It uses NFS as its
+interface, and so is reasonably portable. The <a
+ href="http://www.crypto.com/software/">original work on CFS</a> dates
+back to 1992. Matt Blaze has updated it since then, with version 1.4.1
+appearing from around 1997, but CFS is not currently in active
+development, and Blaze warns at his Web site to consider the code
+unsupported. Nevertheless, the CFS solution worked well for many years
+for my purposes, and it may work for you also.<br>
+Today, there is a persistent maintenance problem with CFS. Most of the
+CFS packages out there are not supported officially or they are
+branched out or orphaned as nobody maintains a central repository
+anymore to merge back all the invididual forks (from distributions)
+back to a main repository. From my perspective, all attempts failed
+(e.g. cfsnfs project on sourceforge and some others). <br>
+However, I share my <a href="data/cfs-1.4.1-mgloor_branch.diff.gz">own
+modified branch of CFS 1.4.1</a> for Linux which is
+an incremental diff and the result of my permanent maintenance of CFS
+for Linux. This patch includes numerous back merged modifications which
+I fetched from various sources (SuSe, Redhat, Debian, scientific books,
+etc) during the past years. I was asked to share the code. Due to
+license reasons, I not provide here my fully modified CFS archive but
+you can easily apply my backpatch against <a
+ href="http://www.crypto.com/software/">original CFS 1.4.1 code</a> by
+following these instructions but note, that the patch comes without any
+warranty or support: <br>
+<br>
+1. Download original CFS 1.4.1 from Matt Blaze's website:&nbsp;wget <a
+ href="http://www.crypto.com/software/cfs-1.4.1.tar.gz">http://www.crypto.com/software/cfs-1.4.1.tar.gz</a><br>
+2. Download my CFS 1.4.1 Linux backpatch: wget <a
+ href="data/cfs-1.4.1-mgloor_branch.diff.gz">data/cfs-1.4.1-mgloor_branch.diff.gz</a><br>
+3. Untar the file:&nbsp;tar xzvf cfs-1.4.1.tar.gz<br>
+4. Move into the extracted CFS source dir:&nbsp;cd cfs-1.4.1<br>
+5. Apply the patch against original CFS 1.4.1:&nbsp;zcat <a
+ href="data/cfs-1.4.1-mgloor_branch.diff.gz">cfs-1.4.1-mgloor_branch.diff.gz</a>
+| patch -p1<br>
+<br>
+Update:&nbsp;May 15, 2011: <br>
+CFS 1.4.1 from original author Matt Blaze is broken since Linux kernel
+2.6.22: This was caused by an <a
+ href="http://marc.info/?l=linux-nfs&amp;m=118724649406144&amp;w=2">utimes/utimensat
+fix</a> which was committed against the <a
+ href="http://www.mail-archive.com/linux-nfs@vger.kernel.org/msg00865.html">NFS
+system of Linux kernel 2.6.22</a>, since then, CFS doesn't work anymore
+with recent Linux kernels. I assume that patching CFS might be a minor
+issue but I found no time to do it on my <a
+ href="http://www.linuxquestions.org/questions/debian-26/installing-cfs-in-squeeze-stable-863006/">own</a>.
+There is only one utime reference I found in the CFS code (cfs_fh.c)
+which might be patched to make CFS working again with the latest linux
+kernel generation. If someone else wanna have a look into it, feel
+free. Any feedback appreciated. <br>
+<br>
+</p>
+<p><b>Patch for official CFS release 1.4.0beta (7/12/1997) from Matt
+Blaze</b> </p>
+<p>Compiling <a href="http://www.cryptography.org">CFS 1.4.0beta</a>
+(Cryptografic System) for setting up a secure storage using strong
+cryptography on a Linux Box can be under some circumstances very
+painful if you prefer to build your own binaries from scratch. One way
+is to use a cfs package from your distribution. If there is a CFS
+version of your choice, lucky you! If not and if you like to know whats
+happen with your data in future, you'll prefer to build the code
+manually like I does it. To bypass a lot of errors, I collected all my
+CFS bugfixes, workarounds, changes and security patches to one single
+CFS&nbsp; <a href="data/cfs-1.4.0beta.linux.patch.gz">patch [.gz, 14kb]</a>
+for Rel.1.4.0beta which is well working for me. Parts of the diff based
+on the GNU/Linux bugtracking system, public website informations and
+Usenet postings (newsgroups). For installing the patch, you have to
+change to the CFS source tree location and applying the patch by using
+'zcat cfs-1.4.0beta.linux.patch.gz | patch -p1'.<br>
+<br>
+</p>
+<p><b>Patch for the "Stuttgart Neuronaler Netzwerk Simulator" (SNNS 4.2)</b>
+</p>
+<p>My <a href="data/snns-4.2.linux.patch.gz">patch</a> will fix two
+compiler errors which occured on my SUN and i386 workstation running
+GNU/Linux during the compilation process of <a
+ href="ftp://ftp.informatik.uni-tuebingen.de">SNNS 4.2</a>. The
+compiler breaks on the MAXFLOAT and strcpy_small problem. The SNNS
+(Stuttgart Neural Network Simulator) is a simulator for neural networks
+developed at the Institute for Parallel and Distributed High
+Performance Systems (Institut f&uuml;r Parallele und Verteilte
+H&ouml;chstleistungsrechner, IPVR) at the University of Stuttgart. The
+goal of the project is to create an efficient and flexible simulation
+environment for research on and application of neural networks
+(artificial intelligence, AI). For installing the <a
+ href="data/snns-4.2.linux.patch.gz">patch [.gz, 1kb]</a>, you have to
+change to the SNNS source tree location and applying the patch by using
+'zcat snns-4.2.linux.patch.gz | patch -p1' <br>
+&nbsp;</p>
+<p><b>Cutmp3 precompiled PPC binary package<br>
+<br>
+</b><a href="http://www.puchalla-online.de/cutmp3.html">Cutmp3</a> is
+my favourite mp3 cutter since a while, that's why I initially wrote its
+manpage (which is part of the official package) and the reason why I
+contributed with a PPC binary package
+available from the <a href="http://www.puchalla-online.de/cutmp3.html">cutmp3
+website</a>. Additionally, I wrote a small interactive shellscript
+wrapper, called <a href="data/mp3cut.sh">mp3cut.sh
+[.sh, 2.5kb]</a>.<br>
+<br>
+<b><br>
+SciTE binary package for Linux on SPARC<br>
+</b></p>
+<p>Years ago, I contributed <a
+ href="http://freshmeat.net/projects/scite">SciTE</a> version 1.25 as
+binary package for the SPARC architecture - but I couldn't find the
+package anymore...<br>
+<span style="font-weight: bold;"></span><br>
+<b><br>
+Patch against Login.app to provide you with a Linux PPC login feeling<br>
+</b></p>
+Because I don't like the default look-and-feel from the 'xdm' display
+login manager (XFree86) I patched <a
+ href="http://largo.windowmaker.org/files/Login.app/Login.app-1.2.1.tar.gz">Login.app-1.2.1.tar.gz</a>
+against my <a href="data/Linux.app_ppc_patch.gz">Linux/PPC Login.app
+patch</a> which leads to my desired <a href="data/Login.app_ppc.png">Login.app
+look-and-feel [.png, 18kb]</a> especially designed for Linux/PPC users.
+If you would like to have the same login screen as I have, download and
+extract Login.app, change into the Login.app directory and apply the
+patch using 'zcat Linux.app_ppc_patch.gz | patch -p1'. Build and
+install Login.app as described in the documentation. <br>
+<br>
+<b><br>
+CSV to XML parser/importer for MyLang</b><br>
+<br>
+<a href="http://mylang.berlios.de">MyLang</a> is a free vocabulary
+trainer which I often use. To import a new language database, I wrote a
+<a href="data/MyLang_libimport.tar.gz">parser package [.tar.gz, 8.4kb]</a>
+which is able to import a CSV based vocabulary and generate a <a
+ href="http://mylang.berlios.de">MyLang</a> compliant XML based
+database file.<br>
+<br>
+<br>
+<span style="font-weight: bold;">Radio 24 Livestream unter Linux
+(german)</span><br>
+&nbsp;
+<br>
+In der offiziellen Radio 24&nbsp; <a
+ href="http://www.radio24.ch/files/WebradioFAQ06.pdf">Livestreaming-FAQ</a>
+fehlt folgender Abschnitt:<br>
+<span style="font-style: italic;">FRAGE:</span>
+Kann ich Radio 24 via Livestreaming unter Linux h&ouml;ren?<br>
+<span style="font-style: italic;">ANTWORT:</span> Der Radio 24 Stream
+ist nicht als &uuml;blicher Shoutcast mp3-stream oder Realplayerstream
+verf&uuml;gbar. Du brauchst jedoch kein kommerzielles Betriebssystem
+wie Windows oder propriet&auml;re kostenpflichtige unfreie
+Player um
+den Radio 24 Livestream zu h&ouml;ren. Es gibt eine M&ouml;glichkeit
+Radio 24 unter Linux zu h&ouml;ren mit mplayer - dieser liegt als
+precompiled Package praktisch allen Distributionen bei (URL: <a
+ href="http://www.mplayerhq.hu">http://www.mplayerhq.hu</a>). Downloade
+den externen ASX stream Deiner Wahl von der Radio 24 Page (z.bsp. wget
+http://www.radio24.ch/webradio/stream_hi.asx)
+und &ouml;ffne die Datei in einem beliebigen Editor, dabei
+&uuml;bernimmst Du die unter href aufgef&uuml;hrte URL als
+Stream-adresse f&uuml;r mplayer (bsp.: mplayer
+http://dms-cl-011.skypro-media.net/radio24-hi).<span
+ style="color: rgb(255, 0, 0);"></span><span
+ style="color: rgb(255, 0, 0);"><span style="color: rgb(255, 0, 0);"><br>
+<br>
+</span></span><span style="color: rgb(255, 0, 0);"></span>
+<hr width="100%">
+<table nosave="" border="0" cellpadding="0" cellspacing="0" cols="2"
+ width="100%">
+  <tbody>
+    <tr nosave="">
+      <td nosave="" width="90%">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: patch.html,v 1.37 2023/12/25 15:27:29 gloor Exp $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td nosave="" valign="top">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
