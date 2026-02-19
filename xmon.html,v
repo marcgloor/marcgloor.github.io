@@ -1,9 +1,14 @@
-head	1.24;
+head	1.25;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.25
+date	2026.02.19.13.52.42;	author gloor;	state Exp;
+branches;
+next	1.24;
 
 1.24
 date	2026.02.19.13.48.29;	author gloor;	state Exp;
@@ -130,7 +135,7 @@ desc
 @@
 
 
-1.24
+1.25
 log
 @*** empty log message ***
 @
@@ -195,7 +200,7 @@ text
     install xmon.<br>
     <br>
     Precompiled binary package: <a
-href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-0.0.4b-x86-statbin.tar.gz">xmon-0.0.4b-x86-statbin.tar.gz</a><br>
+href="data/xmon-0.0.4b-x86-statbin.tar.gz">xmon-0.0.4b-x86-statbin.tar.gz</a><br>
     Download Linux x86-64 ELF (amd64) binary distribution that runs out
     of the box.<br>
     <br>
@@ -206,7 +211,7 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-0.0.4b-x8
     <br>
     <b>Screenshots</b>
     <p><img
-src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-anim.gif"
+src="data/xmon-anim.gif"
         title="xmon on amd64" alt="xmon on amd64" width="417"
         height="148">&nbsp;&nbsp;&nbsp; <img alt="xmon on i386"
         title="xmon on i386" src="data/xmon.jpg" nosave="" width="310"
@@ -215,7 +220,7 @@ src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-anim.gif"
       <img title="xmon on PPC" style="border: 0px solid ; width: 314px;
         height: 138px;" alt="xmon on PPC" src="data/xmon2.png">&nbsp;&nbsp;&nbsp;
       <img
-src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon3.png"
+src="data/xmon3.png"
         alt="xmon on i386" title="xmon on i386" width="310" height="141"
         border="0"> </p>
     <p> </p>
@@ -225,7 +230,7 @@ src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon3.png"
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.23 2026/02/19 13:05:56 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.24 2026/02/19 13:48:29 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -238,6 +243,26 @@ src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon3.png"
     </table>
   </body>
 </html>
+@
+
+
+1.24
+log
+@*** empty log message ***
+@
+text
+@d61 1
+a61 1
+href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-0.0.4b-x86-statbin.tar.gz">xmon-0.0.4b-x86-statbin.tar.gz</a><br>
+d72 1
+a72 1
+src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-anim.gif"
+d81 1
+a81 1
+src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon3.png"
+d91 1
+a91 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.23 2026/02/19 13:05:56 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
