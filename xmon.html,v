@@ -1,9 +1,14 @@
-head	1.21;
+head	1.22;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.22
+date	2026.02.19.07.01.57;	author gloor;	state Exp;
+branches;
+next	1.21;
 
 1.21
 date	2026.02.18.23.37.30;	author gloor;	state Exp;
@@ -115,7 +120,7 @@ desc
 @@
 
 
-1.21
+1.22
 log
 @*** empty log message ***
 @
@@ -150,21 +155,22 @@ text
       &nbsp; * System Load <b>[</b><b><font color="#00cccc">LOAD</font></b><b>]</b>:
       Standard Linux load average (load average)<br>
       <br>
-      As of Feb 2026 with release 0.0.3b, a major vibe code
-      modernization has been applied to work with any modern Linux
-      kernels and X11 environments, tested using most recent Debian SID
-      (Feb 26). All features are hardcoded, command-line options are not
-      supported. While the interface is designed to be self-explanatory,
-      obviating the need for a manpage, please note that active
-      development has concluded. Xmon was the result of a single-day
-      Xlib API deep dive in 1998 when I was a student, consequently, the
-      codebase is in a beta state, largely unoptimized, and may contain
-      bugs. A workaround for memory overflows has been included.</p>
+      As of Feb 2026 with release 0.0.4b, a minor vibe code
+      modernization has been applied in order to brush-up the code and
+      make it work with any modern Linux kernels and X11 environments,
+      tested using most recent Debian SID (Feb 26). All features were
+      hardcoded, command-line options are not supported. While the
+      interface is designed to be self-explanatory, obviating the need
+      for a manpage, please note that active development has concluded.
+      Xmon was the result of a single-day Xlib API deep dive in 1998
+      when I was a student, consequently, the codebase is in a beta
+      state, largely unoptimized, and may contain bugs. A workaround for
+      memory overflows has been included.</p>
     <p data-path-to-node="5">While not portable to other Unix
       derivatives like Solaris or AIX, it is compatible with any
       hardware (such as Sun or RS/6000) running a Linux environment. I
       am releasing the source code under the GNU GPL in the hope that
-      it's useful for the community.<br>
+      it's useful for your daily use.<br>
       <br>
     </p>
     <p>
@@ -174,13 +180,13 @@ text
     <b>Installation<br>
     </b><br>
     Download and unpack the source distribution of <a
-      href="data/xmon-0.0.3.tar.gz">xmon-0.0.3.tar.gz</a> and follow the
-    README instruction to compile and install xmon on your system. If
-    you prefer a precompiled Linux x86-64 ELF binary distribution that
-    runs out of the box, download <a
-      href="data/xmon-0.0.3-x86-statbin.tar.gz">xmon-0.0.3-x86-statbin.tar.gz</a>,
+      href="data/xmon-0.0.4b.tar.gz">xmon-0.0.4b.tar.gz</a> and follow
+    the README instruction to compile and install xmon on your system.
+    If you prefer a precompiled Linux x86-64 ELF binary distribution
+    that runs out of the box, download <a
+      href="data/xmon-0.0.4b-x86-statbin.tar.gz">xmon-0.0.4b-x86-statbin.tar.gz</a>,
     unpack and install the xmon binary into the bin directory of your
-    choice or just doubleclick it after unpacking.<br>
+    choice or just doubleclick xmon after unpacking.<br>
     <br>
     <p><b>Screenshots</b> </p>
     <p><img alt="xmon on i386" title="xmon on i386" src="data/xmon.jpg"
@@ -198,7 +204,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.20 2026/02/18 21:22:32 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.21 2026/02/18 23:37:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -211,6 +217,42 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.21
+log
+@*** empty log message ***
+@
+text
+@d31 11
+a41 10
+      As of Feb 2026 with release 0.0.3b, a major vibe code
+      modernization has been applied to work with any modern Linux
+      kernels and X11 environments, tested using most recent Debian SID
+      (Feb 26). All features are hardcoded, command-line options are not
+      supported. While the interface is designed to be self-explanatory,
+      obviating the need for a manpage, please note that active
+      development has concluded. Xmon was the result of a single-day
+      Xlib API deep dive in 1998 when I was a student, consequently, the
+      codebase is in a beta state, largely unoptimized, and may contain
+      bugs. A workaround for memory overflows has been included.</p>
+d46 1
+a46 1
+      it's useful for the community.<br>
+d56 5
+a60 5
+      href="data/xmon-0.0.3.tar.gz">xmon-0.0.3.tar.gz</a> and follow the
+    README instruction to compile and install xmon on your system. If
+    you prefer a precompiled Linux x86-64 ELF binary distribution that
+    runs out of the box, download <a
+      href="data/xmon-0.0.3-x86-statbin.tar.gz">xmon-0.0.3-x86-statbin.tar.gz</a>,
+d62 1
+a62 1
+    choice or just doubleclick it after unpacking.<br>
+d80 1
+a80 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.20 2026/02/18 21:22:32 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
