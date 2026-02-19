@@ -1,10 +1,14 @@
-head	1.23;
+head	1.24;
 access;
 symbols;
-locks
-	gloor:1.23; strict;
+locks; strict;
 comment	@# @;
 
+
+1.24
+date	2026.02.19.13.48.29;	author gloor;	state Exp;
+branches;
+next	1.23;
 
 1.23
 date	2026.02.19.13.05.56;	author gloor;	state Exp;
@@ -126,7 +130,7 @@ desc
 @@
 
 
-1.23
+1.24
 log
 @*** empty log message ***
 @
@@ -141,8 +145,8 @@ text
     <meta name="author" content="Marc Gloor">
     <title>xmon for Linux</title>
   </head>
-  <body vlink="#55188a" link="#0000ef" alink="#ff0000" bgcolor="#ffffff"
-    text="#000000">
+  <body link="#0000ef" vlink="#55188a" text="#000000" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">xmon - minimalistic lightweight system
         performance monitor</font></b> <br>
     by Marc O. Gloor <br>
@@ -201,14 +205,19 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-0.0.4b-x8
     <br>
     <br>
     <b>Screenshots</b>
-    <p><img alt="xmon on i386" title="xmon on i386" src="data/xmon.jpg"
-        nosave="" width="310" height="134" border="0"> &nbsp;&nbsp; <img
-        title="xmon on PPC" style="border: 0px solid ; width: 314px;
-        height: 138px;" alt="xmon on PPC" src="data/xmon2.png"><a
-        href="data/xmon2.png">&nbsp; &nbsp; </a><img
-        src="data/xmon3.png" alt="xmon on i386" title="xmon on i386"
-        width="310" height="141" border="0"><br>
-    </p>
+    <p><img
+src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-anim.gif"
+        title="xmon on amd64" alt="xmon on amd64" width="417"
+        height="148">&nbsp;&nbsp;&nbsp; <img alt="xmon on i386"
+        title="xmon on i386" src="data/xmon.jpg" nosave="" width="310"
+        height="134" border="0"> <br>
+      <br>
+      <img title="xmon on PPC" style="border: 0px solid ; width: 314px;
+        height: 138px;" alt="xmon on PPC" src="data/xmon2.png">&nbsp;&nbsp;&nbsp;
+      <img
+src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon3.png"
+        alt="xmon on i386" title="xmon on i386" width="310" height="141"
+        border="0"> </p>
     <p> </p>
     <hr width="100%">
     <table cols="2" nosave="" width="100%" cellspacing="0"
@@ -216,7 +225,7 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-0.0.4b-x8
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.22 2026/02/19 07:01:57 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.23 2026/02/19 13:05:56 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -229,6 +238,31 @@ href="file:///home/gloor/data/www/a_eigene/a_Website-current/data/xmon-0.0.4b-x8
     </table>
   </body>
 </html>
+@
+
+
+1.23
+log
+@*** empty log message ***
+@
+text
+@d11 2
+a12 2
+  <body vlink="#55188a" link="#0000ef" alink="#ff0000" bgcolor="#ffffff"
+    text="#000000">
+d71 13
+a83 8
+    <p><img alt="xmon on i386" title="xmon on i386" src="data/xmon.jpg"
+        nosave="" width="310" height="134" border="0"> &nbsp;&nbsp; <img
+        title="xmon on PPC" style="border: 0px solid ; width: 314px;
+        height: 138px;" alt="xmon on PPC" src="data/xmon2.png"><a
+        href="data/xmon2.png">&nbsp; &nbsp; </a><img
+        src="data/xmon3.png" alt="xmon on i386" title="xmon on i386"
+        width="310" height="141" border="0"><br>
+    </p>
+d91 1
+a91 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.22 2026/02/19 07:01:57 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
