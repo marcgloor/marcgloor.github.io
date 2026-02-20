@@ -1,9 +1,14 @@
-head	1.11;
+head	1.12;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.12
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.11;
 
 1.11
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -65,7 +70,7 @@ desc
 @@
 
 
-1.11
+1.12
 log
 @*** empty log message ***
 @
@@ -83,7 +88,7 @@ text
 <br>Mitteilung in ch.comp.os.linux vom 8. August 1999
 <br>
 <hr WIDTH="100%">
-<p><tt>From: mgloor@@acm.org (Marc O. Gloor)</tt>
+<p><tt>From: mgloor@@acm.org (Marc Gloor)</tt>
 <br><tt>Newsgroups: ch.comp.os.linux</tt>
 <br><tt>Subject: GNU/Linux Vertrieb aufgegeben</tt>
 <br><tt>Date: 8 Aug 1999 13:52:57 GMT</tt>
@@ -137,7 +142,7 @@ werde</tt>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuch.html,v 1.10 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre><br>
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuch.html,v 1.11 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre><br>
       <i> </i> <dt>
       </dt>
       </td>
@@ -150,6 +155,20 @@ werde</tt>
 
 </body>
 </html>
+@
+
+
+1.11
+log
+@*** empty log message ***
+@
+text
+@d14 1
+a14 1
+<p><tt>From: mgloor@@acm.org (Marc O. Gloor)</tt>
+d68 1
+a68 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuch.html,v 1.10 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre><br>
 @
 
 

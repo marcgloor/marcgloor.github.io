@@ -1,9 +1,14 @@
-head	1.17;
+head	1.18;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.18
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.17;
 
 1.17
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -95,7 +100,7 @@ desc
 @@
 
 
-1.17
+1.18
 log
 @*** empty log message ***
 @
@@ -114,7 +119,7 @@ text
  alink="#ff0000">
 <b><font size="+1">Precompiled XFCE Unix binaries for the RS/6000 and
 Sun SPARC Architecture</font></b> <br>
-by Marc O. Gloor <br>
+by Marc Gloor <br>
 <hr width="100%"><br>
 <b><font color="#000000">The XFCE window manager</font></b><br>
 <br>
@@ -194,7 +199,7 @@ under the General Public License.</font> <br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-everywhere.html,v 1.16 2005/11/10 20:02:43 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-everywhere.html,v 1.17 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -208,6 +213,20 @@ under the General Public License.</font> <br>
 </table>
 </body>
 </html>
+@
+
+
+1.17
+log
+@*** empty log message ***
+@
+text
+@d15 1
+a15 1
+by Marc O. Gloor <br>
+d95 1
+a95 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-everywhere.html,v 1.16 2005/11/10 20:02:43 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

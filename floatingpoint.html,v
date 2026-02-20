@@ -1,9 +1,14 @@
-head	1.14;
+head	1.15;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.15
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.14;
 
 1.14
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -80,7 +85,7 @@ desc
 @@
 
 
-1.14
+1.15
 log
 @*** empty log message ***
 @
@@ -102,9 +107,9 @@ text
 by Marc Gloor <br>
 <hr width="100%">
 <p>Copyright (C) 1992 Al Aburto &lt;aburto@@nosc.mil&gt;<br>
-Copyright (C) 2000 Marc O. Gloor &lt;marc_dot_gloor_at_u_dot_nus_dot_edu&gt;<br>
+Copyright (C) 2000 Marc Gloor &lt;marc_dot_gloor_at_u_dot_nus_dot_edu&gt;<br>
 <br>
-Benchmark modified for linux by Marc O. Gloor<br>
+Benchmark modified for linux by Marc Gloor<br>
 <br>
 <a href="data/flops-linux.tar.gz">Flops.c</a> is a 'c' program which
 attempts to estimate your systems floating-point 'MFLOPS' rating for
@@ -128,7 +133,7 @@ performance considerably on some systems.<br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.13 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.14 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -142,6 +147,23 @@ performance considerably on some systems.<br>
 </table>
 </body>
 </html>
+@
+
+
+1.14
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+Copyright (C) 2000 Marc O. Gloor &lt;marc_dot_gloor_at_u_dot_nus_dot_edu&gt;<br>
+d20 1
+a20 1
+Benchmark modified for linux by Marc O. Gloor<br>
+d44 1
+a44 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.13 2005/09/27 00:47:20 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

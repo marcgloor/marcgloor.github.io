@@ -1,9 +1,14 @@
-head	1.16;
+head	1.17;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.17
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.16;
 
 1.16
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -90,7 +95,7 @@ desc
 @@
 
 
-1.16
+1.17
 log
 @*** empty log message ***
 @
@@ -110,7 +115,7 @@ text
 <b><font size="+1">Blender load balancing
 workload manager</font></b>
 <br>
-by Marc O. Gloor
+by Marc Gloor
 <br>
 <hr width="100%">
 <p><b>Abstract</b>
@@ -263,7 +268,7 @@ and run this command using your blender scene.<br>
   </tbody><tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: mosix-blender.html,v 1.15 2006/03/07 19:32:56 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: mosix-blender.html,v 1.16 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -277,6 +282,20 @@ and run this command using your blender scene.<br>
 </table>
 </body>
 </html>
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d16 1
+a16 1
+by Marc O. Gloor
+d169 1
+a169 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: mosix-blender.html,v 1.15 2006/03/07 19:32:56 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

@@ -1,9 +1,14 @@
-head	1.32;
+head	1.33;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.33
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.32;
 
 1.32
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -170,7 +175,7 @@ desc
 @@
 
 
-1.32
+1.33
 log
 @*** empty log message ***
 @
@@ -189,7 +194,7 @@ text
  alink="#ff0000">
 <b><font size="+1">Debian GNU/Linux on the Apple PowerBook G4 15" 1GHz
 (Albook)</font></b><br>
-by Marc O. Gloor <br>
+by Marc Gloor <br>
 <hr width="100%"><b><br>
 </b>
 <table cellpadding="2" cellspacing="2" border="0"
@@ -448,7 +453,7 @@ also <a href="http://TuxMobil.org">http://tuxmobil.org</a><br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.31 2006/01/17 18:00:36 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.32 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -462,6 +467,20 @@ also <a href="http://TuxMobil.org">http://tuxmobil.org</a><br>
 </table>
 </body>
 </html>
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d15 1
+a15 1
+by Marc O. Gloor <br>
+d274 1
+a274 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: powerbook.html,v 1.31 2006/01/17 18:00:36 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

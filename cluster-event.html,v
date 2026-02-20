@@ -1,9 +1,14 @@
-head	1.16;
+head	1.17;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.17
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.16;
 
 1.16
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -90,7 +95,7 @@ desc
 @@
 
 
-1.16
+1.17
 log
 @*** empty log message ***
 @
@@ -112,7 +117,7 @@ baut Supercomputer mit Linux</font></b>
 <br>
 Bilder vom Compaq Supercomputer Event 2000
 <br>
-von Marc O. Gloor
+von Marc Gloor
 <hr width="100%">
 <p><b>Compaq ohne Innovationen?</b>
 </p>
@@ -169,7 +174,7 @@ Der Alpha-Cluster von vorne und die Steuerkonsole...
   </tbody><tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.15 2006/03/15 08:57:21 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.16 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -183,6 +188,20 @@ Der Alpha-Cluster von vorne und die Steuerkonsole...
 </table>
 </body>
 </html>
+@
+
+
+1.16
+log
+@*** empty log message ***
+@
+text
+@d18 1
+a18 1
+von Marc O. Gloor
+d75 1
+a75 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: cluster-event.html,v 1.15 2006/03/15 08:57:21 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

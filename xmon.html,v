@@ -1,9 +1,14 @@
-head	1.26;
+head	1.27;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.27
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.26;
 
 1.26
 date	2026.02.19.19.59.49;	author gloor;	state Exp;
@@ -140,7 +145,7 @@ desc
 @@
 
 
-1.26
+1.27
 log
 @*** empty log message ***
 @
@@ -159,14 +164,20 @@ text
     text="#000000">
     <b><font size="+1">xmon - minimalistic lightweight system
         performance monitor</font></b> <br>
-    by Marc O. Gloor <br>
+    by Marc Gloor <br>
     <hr width="100%">
     <p><b>Abstract</b> </p>
-    <p data-path-to-node="4">Xmon is a minimalistic lightweight system
-      performance monitor for Linux. It visualizes real-time system
-      load, memory usage, and CPU activity. The tool operates by reading
-      data directly from the Linux process filesystem (/proc), which
-      must be mounted for the application to function.<br>
+    <p data-path-to-node="4">Xmon is a very puristic, fast and
+      minimalistic lightweight system performance monitor for Linux,
+      purely written in C andonly linked against glibc and X11 xlib
+      libraries. No additional window manager bloat included, I kept it
+      lean.<br>
+      <br>
+      It visualizes real-time system
+      <b> load,</b> <b>memory</b> usage, and <b>CPU</b> activity. The
+      tool operates by reading data directly from the Linux process
+      filesystem (/proc), which must be mounted for the application to
+      function.<br>
       <br>
       &nbsp; * CPU Usage <b>[</b><font color="#ffcc00"><b>CPU</b></font><b>]</b>:
       Total processor utilization (central parallel unit usage)<br>
@@ -175,17 +186,20 @@ text
       &nbsp; * System Load <b>[</b><b><font color="#00cccc">LOAD</font></b><b>]</b>:
       Standard Linux load average (load average)<br>
       <br>
-      As of Feb 2026 with release 0.0.4b, a minor vibe code
-      modernization has been applied in order to brush-up the code and
-      make it work with any modern Linux kernels and X11 environments,
-      tested using most recent Debian SID (Feb 26). All features were
-      hardcoded, command-line options are not supported. While the
-      interface is designed to be self-explanatory, obviating the need
-      for a manpage, please note that active development has concluded.
-      Xmon was the result of a single-day Xlib API deep dive in 1998
+      Xmon was the result of a single-day Xlib API deep dive in <b>1998</b>
       when I was a student, consequently, the codebase is in a beta
       state, largely unoptimized, and may contain bugs. A workaround for
-      memory overflows has been included.</p>
+      memory overflows has been included.<br>
+      <br>
+      Early <b>2026</b> with release 0.0.2b, a major vibe code
+      modernization has been introduced in order to brush-up the code
+      and make it work with any modern Linux kernels and X11
+      environments, tested using most recent Debian SID (Feb 26). All
+      features were hardcoded, command-line options are not supported.
+      While the interface is designed to be self-explanatory, obviating
+      the need for a manpage, please note that active development has
+      concluded. <br>
+    </p>
     <p data-path-to-node="5">While not portable to other Unix
       derivatives like Solaris or AIX, it is compatible with any
       hardware (such as Sun or RS/6000) running a Linux environment. I
@@ -229,7 +243,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.25 2026/02/19 13:52:42 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.26 2026/02/19 19:59:49 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -242,6 +256,40 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.26
+log
+@*** empty log message ***
+@
+text
+@d15 1
+a15 1
+    by Marc O. Gloor <br>
+d18 11
+a28 5
+    <p data-path-to-node="4">Xmon is a minimalistic lightweight system
+      performance monitor for Linux. It visualizes real-time system
+      load, memory usage, and CPU activity. The tool operates by reading
+      data directly from the Linux process filesystem (/proc), which
+      must be mounted for the application to function.<br>
+d37 1
+a37 8
+      As of Feb 2026 with release 0.0.4b, a minor vibe code
+      modernization has been applied in order to brush-up the code and
+      make it work with any modern Linux kernels and X11 environments,
+      tested using most recent Debian SID (Feb 26). All features were
+      hardcoded, command-line options are not supported. While the
+      interface is designed to be self-explanatory, obviating the need
+      for a manpage, please note that active development has concluded.
+      Xmon was the result of a single-day Xlib API deep dive in 1998
+d40 11
+a50 1
+      memory overflows has been included.</p>
+d94 1
+a94 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.25 2026/02/19 13:52:42 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 

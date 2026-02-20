@@ -1,9 +1,14 @@
-head	1.40;
+head	1.41;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.41
+date	2026.02.20.23.31.03;	author gloor;	state Exp;
+branches;
+next	1.40;
 
 1.40
 date	2020.11.21.11.13.30;	author gloor;	state Exp;
@@ -211,7 +216,7 @@ desc
 @
 
 
-1.40
+1.41
 log
 @*** empty log message ***
 @
@@ -223,7 +228,7 @@ text
  content="text/html; charset=iso-8859-1">
   <meta name="GENERATOR"
  content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
-  <meta name="author" content="Marc O. Gloor">
+  <meta name="author" content="Marc Gloor">
   <title>screenie - terminal screen-session handler</title>
   <meta content="linux screen background frontend administration"
  name="description">
@@ -232,7 +237,7 @@ text
  alink="#ff0000">
 <b><font size="+1">screenie - terminal screen-session handler (POSIX
 compliant)</font></b><br>
-by Marc O. Gloor <br>
+by Marc Gloor <br>
 <hr width="100%">
 <p><b>Please note:</b><br>
 <br>
@@ -418,7 +423,7 @@ handling administering admin</span></span><span
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: screenie.html,v 1.39 2011/05/08 23:27:06 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: screenie.html,v 1.40 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -432,6 +437,23 @@ handling administering admin</span></span><span
 </table>
 </body>
 </html>
+@
+
+
+1.40
+log
+@*** empty log message ***
+@
+text
+@d8 1
+a8 1
+  <meta name="author" content="Marc O. Gloor">
+d17 1
+a17 1
+by Marc O. Gloor <br>
+d203 1
+a203 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: screenie.html,v 1.39 2011/05/08 23:27:06 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 
