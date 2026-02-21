@@ -1,0 +1,165 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="author" content="Marc Gloor">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <title>using the Casio Exilim model series under Linux</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Using the Casio Exilim digicam under Linux</font></b> <br>
+by Marc Gloor <br>
+<hr width="100%">
+<p><b>Instructions howto access the storage of the Casio Exilim digital
+cam</b> </p>
+<p>Are you owner of the Casio Exilim digital camera? You don't get any
+drivers for using the USB cam under Windows NT? You don't like to run
+Windows at all? Do you prefer running Linux kernel series 2.2. but the
+related patchlevel doesn't include a fully working USB stack? Don't
+worry, there are several ways accessing the storage of the Exilim
+depending the Linux kernel patchlevel. <br>
+&nbsp; </p>
+<p><img src="data/exilim.jpg" alt="my Casio Exilim EX-M2" nosave=""
+ height="163" width="293"> <br>
+&nbsp; </p>
+<p>There are several ways accessing your Casio Exilim: </p>
+<ul>
+  <li> using the mass storage driver on kernel 2.2. together with a <i>USB
+backport</i> and the Casio USB <i>nonconformance workaround</i></li>
+  <li> using the mass storage driver on kernel 2.4. (without <i>backpatches</i>
+and <i>workarounds</i>)</li>
+  <li> using the mass storage driver after booting a kernel 2.4. Linux
+distribution from CD-ROM (the easiest way)</li>
+  <li> using the mass storage driver on kernel 2.4. by temporary booting
+a kernel 2.4. image without distribution migration</li>
+  <li> using <i>libusb</i> and the <i>gphoto2</i> software on a well
+configured and fully working USB bus</li>
+  <li> accessing the cam without upgrading to kernel 2.4. using vmware
+and knoppix by using the mass storage driver (untested)</li>
+  <li> feel free to <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">report</a> other
+solutions</li>
+</ul>
+<p><br>
+<b>The kernel 2.2. marathon</b> </p>
+<p>If you are using a 2.2. kernel series, unfortunately you have to
+compile a new operating system using the <a
+ href="http://www.suse.cz/development/usb-backport/">USB backpatch</a>
+(v2.2 Linux USB drivers backport) from kernel series 2.4 which was
+backported to older kernels. The problem (in my opinion) is that the
+backport is not updated regularly which means that the newest USB code
+is missed inside the backpatch. The Casio Exilim series are not
+conformant to the USB storage specification - as a result of this,
+accessing the camera will fail. Harald Schreiber contributed a <a
+ href="http://www.harald-schreiber.de">patch</a> (Linux USB Support for
+Casio QV and Exilim Digital Still Cameras) to the kernel 2.4. version,
+this patch will workaround and handle the problem inside the USB stack
+(thanks to Harald for this important workaround). If you don't intend
+to upgrade to kernel major 2.4 for running the cam under Linux, the
+only way I see is to backport Harald's Casio <a
+ href="http://www.harald-schreiber.de">patches</a> to the <a
+ href="http://www.suse.cz/development/usb-backport/">USB backpatch</a>
+from major 2.2. kernel series USB backport and try to get it work. It
+seems to me that this needs a lot of knowledge about programming the
+USB stack as well as kernel hacking skills and a lot of time. <br>
+&nbsp; </p>
+<p><b>The kernel 2.4 solution</b> </p>
+<p>Believe me, if you really like to use your Exilim cam under Linux
+(because of the nonconformance of the Casio mass storage
+implementation), <u>you have to use</u> a majorseries 2.4. kernel (imho
+support beginning from 2.4.18), the reason is that the USB stack in
+2.4. was officially patched by Harald Schreibers Casio workarounds.
+Because I prefer to run Debian GNU/Linux, I don't like to migrate
+(upgrade) my systems just for using the digital cam regularly. If you
+are in the same situation, no worries. You don't have to migrate your
+whole environment to 2.4. straightly. There are several interim
+possibilities for having access to the memory of the Casio digicam: </p>
+<p>If you're using Debian GNU/Linux (like me), there is an additional
+way to get the Exilim digital cam work under Linux. Adrian Bunk offered
+some <a href="http://www.fs.tum.de/%7Ebunk/kernel-24.html">debian
+packages</a> ready for downloading and upgrading your Debian to major
+release 2.4 without replacing related packages manually. I didn't
+tested this yet, but it is a way to get a 2.4. system running. </p>
+<p>However, after successfully migrate or upgrade your distribution to
+kernel 2.4. you have to be sure that your kernel has enabled following
+feautures additionally to your convenient settings: </p>
+<ul>
+  <li> SCSI</li>
+  <li> SCSI hard disk</li>
+  <li> VFAT</li>
+  <li> USB</li>
+  <li> USB mass storage</li>
+</ul>
+If you don't use a monolithic kernel and if you are using modules, I
+strongly recommend to use the hotplug USB manager. For testing if the
+USB hub was recognized successfully, use the <tt>dmesg</tt> command and
+grep for lines containing <tt>usb</tt>. In addition, the output of <tt>/proc/bus/usb/devices</tt>
+should list the cam after the recognition was successfull. Next step is
+to create a mount point for the filesystem e.g. <tt>mkdir -p /mnt/cam</tt>.
+Then you should be able to mount the cam by using the command <tt>mount
+-t vfat /dev/sda1 /mnt/cam</tt> for accessing the images by going in
+this directory. Additionally, add following lines to your filesystem
+table <tt>/etc/fstab</tt>:
+<blockquote><tt>none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/proc/bus/usb&nbsp; usbdevfs&nbsp;&nbsp;
+defaults&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0&nbsp; 0</tt> <br>
+  <tt>/dev/sda1&nbsp; /mnt/cam&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+vfat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ro,noauto,user&nbsp;&nbsp;
+0&nbsp; 0</tt></blockquote>
+Another way accessing the data is the use of <a
+ href="http://www.gphoto.org"><i>libusb</i> and the <i>gphoto2</i>
+software</a> (on a well configured and fully working USB bus) instead of
+using the mass storage driver. Normally, If all works fine, using the
+mass storage driver is more user friendly. However, there are also
+additional frontends (imho written in Gtk+) available for having access
+to the cam through the library and the commandline utility. For more
+information about setting up the cam this way visit Christian Albers <a
+ href="http://www.physik.uni-freiburg.de/%7Ealbers/computer/ixus-linux.html">website</a>.<br>
+&nbsp;
+<p><b>The kernel 2.4. interim solution No.1 (quick-and-dirty)</b> </p>
+<p>If you don't like to upgrade your kernel to 2.4, the easiest way
+accessing the cam is by using the self booting <a
+ href="http://www.knoppix.de">knoppix Linux distribution</a> from
+CD-ROM. After booting from CD, the system is up in 2 minutes by running
+a <u>full featured 2.4. kernel</u> supporting all you need for having
+access to your Casio Exilim digital camera. For connecting knoppix to
+your network, the network configuration has been done quickly. Using a
+network, there are ways to export the pictures to a NFS server or just
+by sending the data via FTP to a destination server. After
+successfullly copying the images to a another location, a reboot
+without CD-ROM will startup your common Linux distribution. <br>
+&nbsp; </p>
+<p><b>The kernel 2.4. interim solution Nr.2 (my way)</b> </p>
+<p>Another way accessing the Exilim without migrating a Linux
+distribution up to 2.4. is to get a kernel 2.4.x image from a <a
+ href="http://mirrors.kernel.org/">kernel mirror</a>, configure and
+install the new system and mount the cam via mass storage driver from
+the USB stack. I currently use <a
+ href="ftp://sunsite.cnlab-switch.ch/mirror/linux/kernel/linux/kernel/v2.4/linux-2.4.9.tar.gz">kernel
+image 2.4.9</a> and it works fine as interim solution for dowloading the
+images from my cam. The only disadvantage is that the system must be
+rebootet before downloading the images to the local disk. </p>
+<p>If you need more detailed instructions or if you have any further
+questions or problems setting up your Casio Exilim digital camera, send
+me an <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">e-mail</a>. </p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: casio-exilim.html,v 1.10 2026/02/20 23:31:03 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre><br>
+      <i> </i> <dt>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
