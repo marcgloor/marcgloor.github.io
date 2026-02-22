@@ -1,9 +1,14 @@
-head	1.29;
+head	1.30;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.30
+date	2026.02.22.11.03.54;	author gloor;	state Exp;
+branches;
+next	1.29;
 
 1.29
 date	2026.02.22.07.22.12;	author gloor;	state Exp;
@@ -155,7 +160,7 @@ desc
 @@
 
 
-1.29
+1.30
 log
 @*** empty log message ***
 @
@@ -224,7 +229,7 @@ text
     install xmon.<br>
     <br>
     Precompiled binary package: <a
-      href="data/xmon-1.0.1-statbin.tar.gz">xmon-1.01-statbin.tar.gz</a><br>
+      href="data/xmon-1.0.1-statbin.tar.gz">xmon-1.0.1-statbin.tar.gz</a><br>
     Download Linux x86-64 ELF (amd64) binary distribution that <b>runs
       out of the box</b>.<br>
     <br>
@@ -251,7 +256,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.28 2026/02/21 19:26:16 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.29 2026/02/22 07:22:12 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -264,6 +269,20 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.29
+log
+@*** empty log message ***
+@
+text
+@d65 1
+a65 1
+      href="data/xmon-1.0.1-statbin.tar.gz">xmon-1.01-statbin.tar.gz</a><br>
+d92 1
+a92 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.28 2026/02/21 19:26:16 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
