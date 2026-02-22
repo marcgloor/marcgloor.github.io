@@ -1,0 +1,108 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (X11; I; Linux 2.2.17 i686) [Netscape]">
+  <meta name="author" content="Marc Gloor">
+  <title>Precompiled xfce binaries for the Sun SPARC Architecture</title>
+</head>
+<body text="#000000" bgcolor="#ffffff" link="#0000ef" vlink="#51188e"
+ alink="#ff0000">
+<b><font size="+1">Precompiled XFCE Unix binaries for the RS/6000 and
+Sun SPARC Architecture</font></b> <br>
+by Marc Gloor <br>
+<hr width="100%"><br>
+<b><font color="#000000">The XFCE window manager</font></b><br>
+<br>
+Click here to <a href="data/xfce-sun-sparc2.jpg">see XFCE in action
+on my Sun Sparcstation</a>. <font color="#000000">XFCE is a
+lightweight
+desktop environment (similar to CDE) for various Unix supercomputers,
+midframe- and desktop environments. After successfully installing xfce
+on several i586 Linux boxes and on my multinode mosix cluster, I
+installed xfce also on our RS/6000 (running AIX) and on my Sun SPARC 5
+(running linux) because I needed a simple, light and efficient desktop
+for my Unix Systems (both, at work and at home). There are precompiled
+binary distributions available from this website (see below).</font> <br>
+&nbsp;
+<p><b><font color="#000000">SPARC Note</font></b> </p>
+<p><font color="#000000">The Sparc binaries are linked against glibc2.0
+(not glibc2.1), glib, gtk and/or libxpm and/or libungif.</font> <br>
+&nbsp; </p>
+<p><b><font color="#000000">AIX Note:</font></b> </p>
+<p><font color="#000000">Compiling xfce on RS/6000 AIX was a bit tricky
+because of a Gtk+ bug in release 1.2.8 an earlier versions. After
+successfully compiling glib, gtk and xfce on my AIX 4.3.3, the xfce
+binaries produce a "sigsegv caught" panic (debuger output: 0xd1815e50
+in gdk_set_locale () at gdkim.c:101). I found a solution about this:
+AIX shared library support doesn't permit unresolved symbols in a
+shared library. The problem here is that libgtk depends on libgdk, but
+it doesn't have -lgdk when it's built. I'm not sure what the right fix
+is, since it looks like gtk/Makefile.am and configure.in will need to
+be altered to support this quirk. However, here's what I did to get
+gtk+-1.2.8 to work well with gcc-2.95.2 on AIX 4.3.3:</font> </p>
+<blockquote><tt><font color="#000000">./configure --with-locale=C</font></tt>
+  <br>
+  <tt><font color="#000000">make</font></tt> <br>
+  <tt><font color="#000000">rm -f gdk/libgdk.la gtk/libgtk.la</font></tt>
+  <br>
+  <tt><font color="#000000"># Next add "-lgdk " before "-lgmodule" in
+libgtk_la_LDFLAGS defined in gtk/Makefile</font></tt> <br>
+  <tt><font color="#000000">make install</font></tt></blockquote>
+<font color="#000000">So it's important you compile Gtk+ the same way
+on your System (workaround). It's a good idea to deactivate "Show
+subprocess diagnostic dialog" after installing xfce on your RS/6000.
+Please report bugs to <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a>.
+Happy hacking.</font> <br>
+&nbsp;
+<p><b><font color="#000000">Download</font></b> </p>
+<p>Precompiled binaries for... </p>
+<ul>
+  <li> <font color="#000000">...AIX on IBM RS/6000 (2.5Mb):
+xfce-3.5.0-aix.rs6000.bin.tar.gz [lost tarball]</font></li>
+  <li> <font color="#000000">...Linux on Sun SPARC (2.5Mb): <a
+ href="data/xfce-3.6.3-linux.sparc.bin.tar.gz">xfce-3.6.3-linux.sparc.bin.tar.gz
+[.tgz, 2525kb]</a></font></li>
+</ul>
+<p><br>
+<b><font color="#000000">Related links</font></b> </p>
+<ul>
+  <li> <font color="#000000"><a href="xfce-animations.html">XFCE
+animations</a></font></li>
+  <li> <font color="#000000"><a href="http://www.xfce.org">XFCE
+Project
+Website</a></font></li>
+  <li> <font color="#000000"><a href="http://www.ibm.com">IBM-RS/6000-Website</a></font></li>
+  <li> <font color="#000000"><a href="http://www.debian.org">Debian-Sparc-Website</a></font></li>
+</ul>
+<p><br>
+<b><font color="#000000">Licence</font></b> </p>
+<p><font color="#000000">Precompiled binary distributions are licensed
+under the General Public License.</font> <br>
+&nbsp; </p>
+<p><b><font color="#000000">Thanks</font></b> </p>
+<p><font color="#000000">To Olivier Fourdan and the xfce community.</font>
+</p>
+<p> </p>
+<hr width="100%">
+<table border="0" cellspacing="0" cellpadding="0" cols="2" width="100%"
+ nosave="">
+  <tbody>
+    <tr nosave="">
+      <td width="90%" nosave="">
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: xfce-everywhere.html,v 1.18 2026/02/20 23:31:03 gloor Exp $<br>Author:</i><i> <a
+ href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+      <br>
+      <i> </i> <dt> <br>
+      </dt>
+      </td>
+      <td valign="top" nosave="">
+      <div align="right"><i><a href="index.html">home</a></i></div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
