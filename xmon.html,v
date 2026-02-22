@@ -1,9 +1,14 @@
-head	1.30;
+head	1.31;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.31
+date	2026.02.22.13.49.38;	author gloor;	state Exp;
+branches;
+next	1.30;
 
 1.30
 date	2026.02.22.11.03.54;	author gloor;	state Exp;
@@ -160,7 +165,7 @@ desc
 @@
 
 
-1.30
+1.31
 log
 @*** empty log message ***
 @
@@ -175,8 +180,8 @@ text
     <meta name="author" content="Marc Gloor">
     <title>xmon for Linux</title>
   </head>
-  <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
-    text="#000000">
+  <body link="#0000ef" vlink="#55188a" text="#000000" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">xmon - Minimalistic Lightweight System
         Performance Monitor</font></b> <br>
     by Marc Gloor <br>
@@ -191,8 +196,9 @@ text
       It visualizes real-time system <b> load,</b> <b>memory</b>
       usage, and <b>CPU</b> activity. The tool operates by reading data
       directly from the Linux process filesystem (/proc), which must be
-      mounted for the application to function. Read the <b>manpage</b>
-      or the <b>README</b> to learn more about its full functionality.<br>
+      mounted for the application to function. Read the <a
+        href="data/xmon.txt">manpage</a> to learn more about its full
+      functionality. <br>
       <br>
       &nbsp; * CPU Usage <b>[</b><font color="#ffcc00"><b>CPU</b></font><b>]</b>:
       Total processor utilization (central parallel unit usage)<br>
@@ -237,6 +243,7 @@ text
       href="data/xmon_1.0.1_amd64.deb">xmon_1.0.1_amd64.deb</a><br>
     Download and install using your package manager e.g. dpkg or apt, <b>in
 
+
       runs out of the box.</b><br>
     <br>
     <br>
@@ -249,6 +256,7 @@ text
       title="xmon on PPC" style="border: 0px solid ; width: 314px;
       height: 138px;" alt="xmon on PPC" src="data/xmon2.png">&nbsp;&nbsp;&nbsp;&nbsp;
 
+
     <p> </p>
     <hr width="100%">
     <table cols="2" nosave="" width="100%" cellspacing="0"
@@ -256,7 +264,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.29 2026/02/22 07:22:12 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.30 2026/02/22 11:03:54 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -269,6 +277,27 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.30
+log
+@*** empty log message ***
+@
+text
+@d11 2
+a12 2
+  <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
+    text="#000000">
+d27 3
+a29 2
+      mounted for the application to function. Read the <b>manpage</b>
+      or the <b>README</b> to learn more about its full functionality.<br>
+d74 1
+d87 1
+d95 1
+a95 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.29 2026/02/22 07:22:12 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 

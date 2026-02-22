@@ -1,0 +1,72 @@
+XMON(1)                          User Commands                         XMON(1)
+
+NAME
+       xmon - Minimalistic Lightweight Linux System Performance Monitor
+
+SYNOPSIS
+       xmon [-s speed] [-p window position] [-w window size] [-h help]
+
+
+DESCRIPTION
+       xmon  is  a  minimalist graphical performance monitor for Linux. Origi-
+       nally developed in 1998 and modernized in 2026, it provides a real-time
+       visual scrolling display of CPU, Memory, and  System  Load  by  reading
+       data directly from the Linux /proc filesystem.
+
+
+OPTIONS
+       xmon supports command-line argument parsing.
+
+       -h show help
+              Displays a commandline options overview.
+
+       -s speed <speed>
+              Set refresh rate (speed) in ms (default: 50)
+
+       -p window placement <x,y>
+              Set initial window position (default: 100,100)
+
+       -w window size <WxH>
+              Set initial window size (default: 300x107)
+
+
+FEATURES
+       -      3-line Status Overlay: Integrated overlay with 10s liquid-smooth
+              Fade In/Out effects.
+
+       -      Label  Collision  Evasion:  Refined logic to prevent overlapping
+              labels and fixed string literal escaping.
+
+       -      Elastic  Mesh  Architecture:  Full  window  responsiveness  that
+              adapts to any aspect ratio.
+
+       -      Intelligent  Label  Parking:  Labels  migrate  to  an upper-left
+              "parking dock" when values drop below 10%.
+
+       -      Continuous Motion: Smooth graph movement  replaces  legacy  dis-
+              crete jumping.
+
+
+CONTROLS
+       + / -  Adjust rendering speed dynamically during execution.
+
+
+INSTALLATION
+       Follow the standard GNU Autotools build process:
+
+              $ autoreconf -fi
+              $ ./configure
+              $ make
+              $ sudo make install
+
+
+SOURCES
+       https://marcgloor.github.io/xmon.html
+
+
+COPYRIGHT
+       Copyright (c) 1998-2026 Marc Gloor <marc.gloor@u.nus.edu>
+
+       License: GNU General Public License (GPL v3).
+
+1.0.1                          22 February 2026                        XMON(1)
