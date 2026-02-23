@@ -1,9 +1,14 @@
-head	1.32;
+head	1.33;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.33
+date	2026.02.23.22.05.27;	author gloor;	state Exp;
+branches;
+next	1.32;
 
 1.32
 date	2026.02.23.21.36.22;	author gloor;	state Exp;
@@ -170,7 +175,7 @@ desc
 @@
 
 
-1.32
+1.33
 log
 @*** empty log message ***
 @
@@ -218,7 +223,7 @@ text
       version bugs have all been fixed, such as e.g. the memory
       overflows and necessary graph reset every x cycles.<br>
       <br>
-      Early <b>2026</b> ater release 1.0.0, a major code modernization
+      Early <b>2026</b> with release 1.0.0, a major code modernization
       and new features have been introduced in order to brush-up the
       code and make it work with any modern Linux kernels and X11
       environments, tested on a most recent Debian SID (Feb 26) system.
@@ -271,7 +276,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.31 2026/02/22 13:49:38 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.32 2026/02/23 21:36:22 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -284,6 +289,20 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.32
+log
+@*** empty log message ***
+@
+text
+@d44 1
+a44 1
+      Early <b>2026</b> ater release 1.0.0, a major code modernization
+d97 1
+a97 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.31 2026/02/22 13:49:38 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
