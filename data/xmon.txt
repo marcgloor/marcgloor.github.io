@@ -17,38 +17,56 @@ DESCRIPTION
 OPTIONS
        xmon supports command-line argument parsing.
 
-       -h show help
-              Displays a commandline options overview.
+       -b     Set borderless mode (default: win manager)
 
-       -s speed <speed>
-              Set refresh rate (speed) in ms (default: 50)
+       -c color <color>
+              Set mesh 'color name' or "#HEX" (default: DarkGreen)
+
+       -d timer <sec>
+              Set self-destruct timer (default: not set)
 
        -p window placement <x,y>
               Set initial window position (default: 100,100)
 
+       -s speed <ms>
+              Set refresh speed (default: 50ms)
+
        -w window size <WxH>
               Set initial window size (default: 300x107)
 
+       -h     Show this help message
+
+       You can find color codes usually by using the command 'showrgb' oder
+       manually under /usr/share/X11/rgb.txt or /etc/X11/rgb.txt
+
 
 FEATURES
-       -      3-line Status Overlay: Integrated overlay with 10s liquid-smooth
-              Fade In/Out effects.
+       -      Status  Overlay:  Integrated  overlay  with  liquid-smooth  Fade
+              In/Out effects.
 
-       -      Label  Collision  Evasion:  Refined logic to prevent overlapping
-              labels and fixed string literal escaping.
+       -      Label Collision Evasion: Logic to prevent overlapping labels and
+              fixed string literal escaping.
 
        -      Elastic  Mesh  Architecture:  Full  window  responsiveness  that
               adapts to any aspect ratio.
 
        -      Intelligent  Label  Parking:  Labels  migrate  to  an upper-left
-              "parking dock" when values drop below 10%.
+              'parking dock' when values drop below 10%.
 
        -      Continuous Motion: Smooth graph movement  replaces  legacy  dis-
-              crete jumping.
+              crete jumping and jittering.
 
 
 CONTROLS
        + / -  Adjust rendering speed dynamically during execution.
+
+       Any key
+              Displays  rendering  time  that shows the time it needs to cross
+              right-to-left border.
+              Cycle time shows the time interval between the start of two  up-
+              dates.
+              Speed represents the number of cycles that occur within one sec-
+              ond.
 
 
 INSTALLATION
@@ -69,4 +87,4 @@ COPYRIGHT
 
        License: GNU General Public License (GPL v3).
 
-1.0.1                          22 February 2026                        XMON(1)
+1.0.2                          22 February 2026                        XMON(1)
