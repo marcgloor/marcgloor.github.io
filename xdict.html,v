@@ -1,9 +1,14 @@
-head	1.20;
+head	1.21;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.21
+date	2026.02.24.08.51.14;	author gloor;	state Exp;
+branches;
+next	1.20;
 
 1.20
 date	2026.02.21.23.24.41;	author gloor;	state Exp;
@@ -110,7 +115,7 @@ desc
 @@
 
 
-1.20
+1.21
 log
 @*** empty log message ***
 @
@@ -135,7 +140,7 @@ text
       originally written by Marc Gloor and distributed under the GNU
       General Public License, Version 3 or later.<b><br>
         <font face="Courier New, Courier, monospace"> </font> </b> </p>
-    <p><b>The 1.0.8 release from February 2026 represents a major
+    <p><b>The 1.0.7 release dated February 2026 represents a major
         modernization</b> of the application, porting the interface to
       the from GTK 1.2 to GTK 4 API, refining the underlying search
       logic and make the program more universal and not only limited to
@@ -192,15 +197,15 @@ text
       <b>Download</b> </p>
     <p>Distributions were available for the PowerPC RISC Architecture
       (RS/6000, Macintosh), SUN Sparc Workstations and Intel/AMD
-      architecture running the Linux operating system.<br>
-      <b>The most recent version is version 1.0.8.</b><br>
+      architecture running the Linux operating system. <b>The most recent version is version 1.0.8.</b> 
+      </b><br>
     </p>
     <ul>
       <li><a href="data/xdict-1.0.8-x86_64.AppImage.tar.gz">xdict-1.0.8-x86_64.AppImage.tar.gz</a>
         <font color="#006600">(works out of the box)</font><a
           href="data/xdict-1.0.7-x86_64.AppImage.tar.gz"><br>
         </a></li>
-      <li><a href="data/xdict-1.0.8-src.tar.gz">xdict-1.0.8-src.tar.gz</a></li>
+      <li><a href="data/xdict-1.0.8-src.tar.gz">xdict-1.0.8-src.tar.gz</a> (Latest sources)</li>
       <li> <a href="data/xdict-1.0.6_src.tar.gz">xdict-1.0.6_src.tar.gz
           [.tgz, 1233kb]</a><font color="#ff0000"> (deprecated)</font><a
           href="data/xdict-1.0.4_sparc_elf_bin.tar.gz"><br>
@@ -241,7 +246,7 @@ text
       </tbody><tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.19 2026/02/20 23:31:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.20 2026/02/21 23:24:41 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -254,6 +259,27 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.20
+log
+@*** empty log message ***
+@
+text
+@d21 1
+a21 1
+    <p><b>The 1.0.8 release from February 2026 represents a major
+d78 2
+a79 2
+      architecture running the Linux operating system.<br>
+      <b>The most recent version is version 1.0.8.</b><br>
+d86 1
+a86 1
+      <li><a href="data/xdict-1.0.8-src.tar.gz">xdict-1.0.8-src.tar.gz</a></li>
+d127 1
+a127 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.19 2026/02/20 23:31:03 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
