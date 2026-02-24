@@ -8,8 +8,8 @@
     <meta name="author" content="Marc Gloor">
     <title>xmon for Linux</title>
   </head>
-  <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
-    text="#000000">
+  <body link="#0000ef" vlink="#55188a" text="#000000" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">xmon - Minimalistic Lightweight System
         Performance Monitor</font></b> <br>
     by Marc Gloor <br>
@@ -35,21 +35,33 @@
       &nbsp; * System Load <b>[</b><b><font color="#00cccc">LOAD</font></b><b>]</b>:
       Standard Linux load average (load average)<br>
       <br>
-      Xmon was the result of an educational rainy day learning hardcore
-      Xlib coding back in <b>1998</b> - consequently, the codebase is
-      in a beta state, largely unoptimized, and may contain bugs. Early
-      version bugs have all been fixed, such as e.g. the memory
-      overflows and necessary graph reset every x cycles.<br>
-      <br>
-      Early <b>2026</b> with release 1.0.0, a major code modernization
-      and new features have been introduced in order to brush-up the
-      code and make it work with any modern Linux kernels and X11
-      environments, tested on a most recent Debian SID (Feb 26) system.
-      While not natively portable to other Unix derivatives like Solaris
-      or AIX, it is compatible with any hardware (such as Sun SPARC or
-      IBM's RISC 6000 cpu's running a full fletched Linux environment. I
-      am releasing the source code under the GNU GPL v3 in the hope that
-      it's useful for you. In case you find bugs, let me know.<br>
+    </p>
+    <p data-start="64" data-end="462"><b>Xmon was originally developed
+        in 1998</b> as a rainy-day educational project to explore
+      low-level Xlib programming in depth.
+      <meta http-equiv="content-type" content="text/html;
+        charset=windows-1252">
+      As a result, the early codebase remained in a beta state for many
+      years, largely unoptimized and occasionally prone to bugs. Over
+      time, the most critical early issues were resolved, including
+      memory overflows and the need for periodic graph resets after a
+      fixed number of cycles.</p>
+    <p data-start="464" data-end="803"><b>With the release of version
+        1.0.0 in early 2026</b>, Xmon has undergone a major
+      modernization effort. The codebase has been significantly
+      refactored and enhanced with new features to ensure compatibility
+      with modern Linux kernels and contemporary X11 environments. It
+      has been successfully tested on a recent Debian SID system
+      (February 2026).</p>
+    <p data-start="805" data-end="1036">While Xmon is not natively
+      portable to other Unix derivatives such as Solaris or AIX, it is
+      designed to run on any hardware platform supported by a full Linux
+      environment—including architectures such as Sun SPARC and IBM RISC
+      6000.</p>
+    <p data-path-to-node="5">The source code is released under the GNU
+      General Public License v3 (GPLv3) in the hope that it proves
+      useful to others. If you encounter any bugs or issues, feedback is
+      welcome.<br>
       <br>
     </p>
     <p>
@@ -63,13 +75,14 @@
     install xmon.<br>
     <br>
     Precompiled binary package: <a
-      href="data/xmon-1.0.2-statbin.tar.gz">xmon-1.0.2-statbin.tar.gz</a><br>
+      href="data/xmon-1.0.2-x86_64-statbin.tar.gz">xmon-1.0.2-x86_64-statbin.tar.gz</a><br>
     Download Linux x86-64 ELF (amd64) binary distribution that <b>runs
       out of the box</b>.<br>
     <br>
     Debian binary package for amd64 architecture: <a
       href="data/xmon_1.0.2_amd64.deb">xmon_1.0.2_amd64.deb</a><br>
     Download and install using your package manager e.g. dpkg or apt, <b>in
+
 
 
 
@@ -87,6 +100,7 @@
 
 
 
+
     <p> </p>
     <hr width="100%">
     <table cols="2" nosave="" width="100%" cellspacing="0"
@@ -94,7 +108,7 @@
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.33 2026/02/23 22:05:27 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.34 2026/02/24 09:05:30 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
