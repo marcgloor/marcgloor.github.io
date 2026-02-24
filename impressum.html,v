@@ -1,9 +1,14 @@
-head	1.34;
+head	1.35;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.35
+date	2026.02.24.09.21.02;	author gloor;	state Exp;
+branches;
+next	1.34;
 
 1.34
 date	2024.01.27.05.50.29;	author gloor;	state Exp;
@@ -180,9 +185,9 @@ desc
 @@
 
 
-1.34
+1.35
 log
-@*** empty log message ***
+@info.cern.ch
 @
 text
 @<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -290,6 +295,7 @@ text
     1997-98: x8.net - customer account (CH)<br>
     1996-97: geocities.com - freehosting account (U.S.)<br>
     1995-96: compuserve.com - customer account (U.S.)<br>
+    1991: First website released by Tim Bernes-Lee (info.cern.ch)<br>
     <br>
     <br>
     <b>Contact me<br>
@@ -331,7 +337,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.33 2024/01/01 07:22:48 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.34 2024/01/27 05:50:29 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -344,6 +350,18 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.34
+log
+@*** empty log message ***
+@
+text
+@d106 1
+d148 1
+a148 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: impressum.html,v 1.33 2024/01/01 07:22:48 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
