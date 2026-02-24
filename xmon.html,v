@@ -1,9 +1,14 @@
-head	1.35;
+head	1.36;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.36
+date	2026.02.24.09.13.31;	author gloor;	state Exp;
+branches;
+next	1.35;
 
 1.35
 date	2026.02.24.09.09.16;	author gloor;	state Exp;
@@ -185,7 +190,7 @@ desc
 @@
 
 
-1.35
+1.36
 log
 @*** empty log message ***
 @
@@ -246,13 +251,13 @@ text
       (February 2026).</p>
     <p data-start="805" data-end="1036">While Xmon is not natively
       portable to other Unix derivatives such as Solaris or AIX, it is
-      designed to run on any hardware platform supported by a full Linux
-      environment—including architectures such as Sun SPARC and IBM RISC
-      6000.</p>
+      designed to run on any hardwar platform supported by a full Linux
+      environment, including architectures such as Sun SPARC and IBM
+      RISC 6000.</p>
     <p data-path-to-node="5">The source code is released under the GNU
-      General Public License v3 (GPLv3) in the hope that it proves
-      useful to others. If you encounter any bugs or issues, feedback is
-      welcome.<br>
+      General Public License v3 in the hope that it proves useful to
+      others. If you encounter any bugs or issues, feedback is welcome.
+      Feedback welcome.<br>
       <br>
     </p>
     <p>
@@ -278,6 +283,7 @@ text
 
 
 
+
       runs out of the box.</b><br>
     <br>
     <br>
@@ -294,6 +300,7 @@ text
 
 
 
+
     <p> </p>
     <hr width="100%">
     <table cols="2" nosave="" width="100%" cellspacing="0"
@@ -301,7 +308,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.34 2026/02/24 09:05:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.35 2026/02/24 09:09:16 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -314,6 +321,29 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.35
+log
+@*** empty log message ***
+@
+text
+@d57 3
+a59 3
+      designed to run on any hardware platform supported by a full Linux
+      environment—including architectures such as Sun SPARC and IBM RISC
+      6000.</p>
+d61 3
+a63 3
+      General Public License v3 (GPLv3) in the hope that it proves
+      useful to others. If you encounter any bugs or issues, feedback is
+      welcome.<br>
+d89 1
+d106 1
+d114 1
+a114 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.34 2026/02/24 09:05:30 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
