@@ -1,9 +1,14 @@
-head	1.4;
+head	1.5;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.5
+date	2026.02.27.07.30.06;	author gloor;	state Exp;
+branches;
+next	1.4;
 
 1.4
 date	2026.02.27.06.24.37;	author gloor;	state Exp;
@@ -30,7 +35,7 @@ desc
 @@
 
 
-1.4
+1.5
 log
 @*** empty log message ***
 @
@@ -69,7 +74,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       summaries. <br>
       <br>
       Turns out, feeding ten years of /var/log/ into an LLM is a massive
-      data-cleansing headache but the RAG results are incredible. I’ve
+      data-cleansing headache but the RAG results are incredible. I've
       essentially built a security advisor that has the 'memory' of my
       entire server history. It's time to conduct a regular <b>Linux
         Security Breach Audit using your LLM</b>. Here is how I did it.
@@ -186,7 +191,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.3 2026/02/27 06:02:36 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.4 2026/02/27 06:24:37 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -199,6 +204,20 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
     </table>
   </body>
 </html>
+@
+
+
+1.4
+log
+@*** empty log message ***
+@
+text
+@d35 1
+a35 1
+      data-cleansing headache but the RAG results are incredible. I’ve
+d152 1
+a152 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.3 2026/02/27 06:02:36 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
