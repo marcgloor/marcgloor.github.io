@@ -1,9 +1,14 @@
-head	1.2;
+head	1.3;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.3
+date	2026.02.27.06.02.36;	author gloor;	state Exp;
+branches;
+next	1.2;
 
 1.2
 date	2026.02.27.05.42.41;	author gloor;	state Exp;
@@ -20,7 +25,7 @@ desc
 @@
 
 
-1.2
+1.3
 log
 @*** empty log message ***
 @
@@ -33,7 +38,7 @@ text
     <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux
       2.2.17 i686) [Netscape]">
     <meta name="author" content="Marc Gloor">
-    <title>xmon for Linux</title>
+    <title>Linux Security Breach Audit using your LLM</title>
   </head>
   <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
     text="#000000">
@@ -173,7 +178,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.1 2026/02/27 05:32:52 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.2 2026/02/27 05:42:41 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -186,6 +191,20 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
     </table>
   </body>
 </html>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    <title>xmon for Linux</title>
+d149 1
+a149 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.1 2026/02/27 05:32:52 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
