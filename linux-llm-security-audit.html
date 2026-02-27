@@ -70,10 +70,10 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
     <pre><font size="+1">&nbsp;Remove redundant files&nbsp; : find . -name "*\([0-9]*" -exec rm -f {} \;</font></pre>
     <pre><font size="+1">&nbsp;Remove job control files: find . -name "nohup.out" -exec rm -f {} \;</font></pre>
     <pre><font size="+1">&nbsp;Unzip all .gz files&nbsp;&nbsp;&nbsp;&nbsp; : gunzip -f *.gz</font></pre>
-    <pre><font size="+1">&nbsp;show broken links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -xtype l</font></pre>
+    <pre><font size="+1">&nbsp;Show broken links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -xtype l</font></pre>
     <pre><font size="+1">&nbsp;rm broken links&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -xtype l -delete</font></pre>
     <pre><font size="+1">&nbsp;Generate ASCII journal&nbsp; : journalctl &gt; alljournal.txt</font></pre>
-    <pre><font size="+1">&nbsp;find binary data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -type f -exec file {} + | grep -v "text"</font></pre>
+    <pre><font size="+1">&nbsp;Find binary data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -type f -exec file {} + | grep -v "text"</font></pre>
     <pre><font size="+1">&nbsp;rm binary data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -type f -exec file {} + | grep -v "text" | cut -d: -f1 | xargs rm</font></pre>
     <pre><font size="+1">&nbsp;rm binary journal files : rm *.journal</font></pre>
     <pre><font size="+1">&nbsp;Add .txt extension&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : for f in *; do mv "$f" "$f.txt"; done</font></pre>
@@ -149,7 +149,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.5 2026/02/27 07:30:06 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.6 2026/02/27 07:59:06 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
