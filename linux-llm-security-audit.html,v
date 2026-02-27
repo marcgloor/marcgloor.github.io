@@ -1,9 +1,14 @@
-head	1.6;
+head	1.7;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.7
+date	2026.02.27.08.01.37;	author gloor;	state Exp;
+branches;
+next	1.6;
 
 1.6
 date	2026.02.27.07.59.06;	author gloor;	state Exp;
@@ -40,7 +45,7 @@ desc
 @@
 
 
-1.6
+1.7
 log
 @*** empty log message ***
 @
@@ -107,7 +112,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <b>Generate Security Staging Area of your /var/log for the LLM:<br>
       </b></p>
     <pre><font size="+1">&nbsp;Switch to admin (root)  : su -</font></pre>
-    <pre><font size="+1">&nbsp;Create staging area dir : DIR="$(date +%Y%m%d_%H%M)_security-audit" &amp;&amp; mkdir -p ~/$DIR &amp;&amp; cd ~/$DIR <br><br> Clone logs into stating : cp -r /var/log/* .</font></pre>
+    <pre><font size="+1">&nbsp;Create staging area dir : DIR="$(date +%Y%m%d_%H%M)_security-audit" &amp;&amp; mkdir -p ~/$DIR &amp;&amp; cd ~/$DIR <br><br> Clone logs into staging : cp -r /var/log/* .</font></pre>
     <pre><font size="+1">&nbsp;Pre-Check (count files) : find . -type f | wc -l</font></pre>
     <pre><font size="+1">&nbsp;Move files to root dir&nbsp; : find . -mindepth 2 -type f -exec mv --backup=numbered {} . \;</font></pre>
     <pre><font size="+1">&nbsp;Remove dotfiles&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : find . -mindepth 1 -name ".*" -exec rm -rf {} +</font></pre>
@@ -196,7 +201,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.5 2026/02/27 07:30:06 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.6 2026/02/27 07:59:06 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -209,6 +214,20 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
     </table>
   </body>
 </html>
+@
+
+
+1.6
+log
+@*** empty log message ***
+@
+text
+@d63 1
+a63 1
+    <pre><font size="+1">&nbsp;Create staging area dir : DIR="$(date +%Y%m%d_%H%M)_security-audit" &amp;&amp; mkdir -p ~/$DIR &amp;&amp; cd ~/$DIR <br><br> Clone logs into stating : cp -r /var/log/* .</font></pre>
+d152 1
+a152 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.5 2026/02/27 07:30:06 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
