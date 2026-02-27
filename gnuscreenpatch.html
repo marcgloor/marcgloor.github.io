@@ -1,0 +1,112 @@
+<!DOCTYPE doctype PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="author" content="Marc Gloor">
+    <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux
+      2.2.17 i686) [Netscape]">
+    <title>GNU Screen 4.99+ password deactivation patch</title>
+  </head>
+  <body link="#0000ef" alink="#ff0000" bgcolor="#ffffff" text="#000000"
+    vlink="#51188e">
+    <b><font size="+1">GNU Screen 4.99+ password deactivation patch</font></b>
+    <br>
+    by Marc Gloor <br>
+    <hr width="100%">
+    <p><b>The problem<br>
+      </b>When you detach a <a
+        href="https://savannah.gnu.org/git/?group=screen">GNU Screen</a>
+      session version 4.99 (C-a d), the only way to re-attach the
+      session (screen -r &lt;session&gt;) is by unlocking the session
+      using a password. There are situations where you don't like to be
+      forced to use passwords e.g. in a passwordless intranet or test
+      environment.<b><br>
+        <br>
+        My issue with current GNU screen versions shipped with most
+        linux distributions</b><br>
+      I had to use the most recent screen version from github due to the
+      fact that this was the only way that <a
+        href="https://github.com/aristocratos/bashtop">bashtop</a> was
+      displayed properly within a screen session. A rotating monitoring
+      script that I wrote autonomously switches between 4 detached
+      screen sessions in a 5 sec (re-attaching) interval. After
+      investigating a while, I couldn't figure out a way using the docs
+      to disable GNU screen's password prompt when re-attaching a
+      detached session. My rotation script's intention was spoiled with
+      this screen 'force password' feature so I decided to take action
+      against it to workaround my issue.<br>
+      <b><br>
+      </b><b>The issue with latest GNU Screen 4.99</b><br>
+      From ChatGPT I learnt, that in <a
+        href="https://savannah.gnu.org/git/?group=screen">GNU Screen</a>
+      4.99, the ability to disable passwords was removed, and there is
+      no straightforward configuration option to achieve this. Password
+      authentication is now enforced by default in GNU Screen 4.99 and
+      later versions. If you require a passwordless screen session, one
+      possible workaround is to downgrade to an earlier version of GNU
+      Screen that still supports disabling passwords. However, keep in
+      mind that downgrading software versions may have other
+      implications and could introduce potential security
+      vulnerabilities. Alternatively, you may consider exploring
+      alternative terminal multiplexer options that provide passwordless
+      session management, such as tmux.<br>
+    </p>
+    <p><b>Installation<br>
+      </b><code>mkdir /tmp/screen.d &amp;&amp; cd /tmp/screen.d</code><code><br>
+      </code><code>wget </code><code>https://marcgloor.github.io/data/<a
+          href="data/screen-git-nopasswd-patch.tar.gz">screen-git-nopasswd-patch.tar.gz<br>
+        </a></code><code>tar xzf screen-git-nopasswd-patch.tar.gz</code><code><br>
+      </code><code>git clone https://git.savannah.gnu.org/git/screen.git</code><code><br>
+      </code><code>cd screen/src</code><code><br>
+      </code><code>zcat
+        ../../screen-git-nopasswd-patch/screen-git-nopassword.patch.gz |
+        patch -p1 (file to patch: socket.c)</code><code><br>
+      </code><code>./autogen.sh</code><code><br>
+      </code><code>./configure</code><code><br>
+      </code><code>make</code><code><br>
+      </code><code>make install</code><code><br>
+      </code><code>eventually create a symlink: ln -s
+        /usr/local/bin/screen /bin/screen<br>
+        <br>
+      </code><b>Note<br>
+      </b>Not sure ChatGPT's proplem analysis was trustworthy. For me,
+      it was the only root-cause I could determine and foundation to the
+      problem resolution of my issue. This page provides you with an
+      unofficial <a href="https://savannah.gnu.org/git/?group=screen">GNU
+
+
+        Screen</a> <a href="data/screen-git-nopasswd-patch.tar.gz">
+        patch</a> that removes the forced password feature when
+      re-attaching sessions. Note, that the password functionality in
+      GNU screen <u>should</u> be generally available, so that screen
+      sessions can be locked when away from the screen for a while.
+      Entirely killing this security feature is <u>not</u> the correct
+      way to handle this. My patch is a temporary workaround. I
+      initially contacted the maintainers/developers on 24th of May 2023
+      about this and opened a <a
+        href="https://savannah.gnu.org/bugs/index.php?64254">bug report
+        #64254</a> in order to verify that this is intended behaviour. <font
+        color="#ff0000">Update follows.</font><br>
+      <br>
+    </p>
+    <p> </p>
+    <hr width="100%">
+    <table cols="2" nosave="" cellspacing="0" cellpadding="0" border="0"
+      width="100%">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" width="90%">
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.8 2023/05/26 02:11:48 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+          </td>
+          <td nosave="" valign="top">
+            <div align="right"><i><a href="index.html">home</a></i></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
