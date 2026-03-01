@@ -8,8 +8,8 @@
     <meta name="author" content="Marc Gloor">
     <title>Linux Security Breach Audit using your LLM</title>
   </head>
-  <body link="#0000ef" vlink="#55188a" text="#000000" alink="#ff0000"
-    bgcolor="#ffffff">
+  <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
+    text="#000000">
     <b><font size="+1">Linux Security Breach Audit using your LLM</font></b>
     <br>
     by Marc Gloor <br>
@@ -42,7 +42,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <b>Overview of Steps involved</b><br>
     </p>
     <ul>
-      <li>&nbsp;Pre requisite: Install and run a local LLM (e.g.
+      <li>&nbsp;Prerequisite: Install and run a local LLM (e.g.
         OpenWebUI and AnythingLLM)</li>
       <li>&nbsp;Create a workspace for the RAG ingestion</li>
       <li>&nbsp;Create LLM RAG Security Data Staging Area for data
@@ -86,7 +86,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       Model Parameters of the workspace to e.g. "Act as a system
       security advisor". Also set the other parameters such as e.g. the
       capabilities and features of the workspace. For example, get rid
-      of the image genertion and OCR capabilities in order to keep your
+      of the image generation and OCR capabilities in order to keep your
       model lean.<br>
       <br>
       <br>
@@ -141,6 +141,35 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
     integrity appears intact or compromised. Conclude with a 'Pass' or
     'Fail' assessment regarding current unauthorized access
     attempts."&nbsp;&nbsp; <br>
+    <br>
+    <br>
+    <b>Security Notes</b><br>
+    <br>
+    There is a security matter with /var/log that will not be solved by
+    using an LLM, it's called <b><i>log tampering</i></b>. Generally, a
+    paranoid admin must always assume the root account was hacked and
+    /var/log holds fake data to hide the intrusion, never trust your
+    /var/log input data as it might be already compromised by an
+    intruder that has control over your system.
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+    In best case, you offline hold a chronologically collected checksum
+    from /var/log since OS installation and manually reconcile the
+    integrity of /var/log or you use more sophisticated approaches such
+    as the Forward Secure Sealing (FSS) feature from systemd/journald or
+    WORM (Write Once, Read Many).<br>
+    <br>
+    <br>
+    <b>Download<br>
+      <br>
+    </b>You can <a href="data/gen_RAG-landing-from-varlog.sh.gz">download
+      the RAG ingestion script</a> that creates a staging area of your
+    /var/log. Never upload your staged data into a public LLM as it
+    contains sensitive data. The files in the staging area can be
+    imported into a workspace of your local secured LLM. Licensed under
+    the GPL. Don't use the script if you feel you don't have admin
+    skills. Use at your own risk and carefully assess which commands you
+    are using prior to execution.<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <p> </p>
     <hr width="100%">
@@ -149,7 +178,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOAAAAEmCAYAAADLMu9+AAAABHNCS
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.7 2026/02/27 08:01:37 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: linux-llm-security-audit.html,v 1.8 2026/03/01 10:03:40 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
