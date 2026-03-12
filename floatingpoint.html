@@ -10,8 +10,8 @@
   </head>
   <body link="#0000ef" vlink="#51188e" alink="#ff0000" bgcolor="#ffffff"
     text="#000000">
-    <b><font size="+1">Supercomputing Benchmark for Linux (FLOPS/GFLOPS)</font></b>
-    <br>
+    <b><font size="+1">Supercomputing Benchmark for CPU and GPU
+        (FLOPS/GFLOPS)</font></b> <br>
     by Marc Gloor <br>
     <hr width="100%">
     <p>Copyright (C) 1992 Al Aburto &lt;aburto@nosc.mil&gt;<br>
@@ -22,17 +22,16 @@
       Benchmark modified 2026 for Linux by Marc Gloor.<br>
       <br>
       My <a href="data/flops-linux-2026.tar.gz">FLOPS/GFLOPS benchmark
-        program</a> was modernized early 2026. It measures the raw
-      computational throughput of a processor (CPU) by executing a
-      high-intensity floating-point loop across all available CPU cores.
-      By utilizing Fused Multiply-Add (FMA) style operations, it
-      estimates the theoretical <b>raw Peak GFLOPS of the system</b>.
-      For measuring the GPU performance of your e.g. NVIDIA card, use
-      e.g. a good multi-GPU CUDA tool like <a
-        href="https://github.com/wilicc/gpu-burn">gpu-burn</a>.<br>
+        program</a> was modernized early 2026 for <b>benchmarking CPU
+        and GPU speed</b>. It measures the raw computational throughput
+      of a processor (CPU and GPU) by executing a high-intensity
+      floating-point loop across all available CPU cores. By utilizing
+      Fused Multiply-Add (FMA) style operations, it estimates the
+      theoretical <b>raw Peak GFLOPS of the system</b>. <br>
       <br>
       <a
 href="https://en.wikipedia.org/wiki/Floating_point_operations_per_second">Floating
+
 
         point operations per second</a> (FLOPS, flops or flop/s) is a
       measure of computer performance in computing, useful in fields of
@@ -50,8 +49,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA00AAADJCAIAAABwqE4oAAAACXBIW
       <br>
       <b>TECHNICAL SPECIFICATIONS<br>
       </b><br>
-      * CPU stresstest only. For GPU stresstest go for <a
-        href="https://github.com/wilicc/gpu-burn">gpu-burn</a>.<br>
+      * Two versions part of this package, a CPU and a GPU version<br>
       * Parallelization: OpenMP (Automatic thread scaling)<br>
       * Operation Type: Single-precision Floating Point (float)<br>
       * Arithmetic: a = a * b + c (10 ops per iteration)<br>
@@ -64,8 +62,11 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA00AAADJCAIAAABwqE4oAAAACXBIW
       </b><br>
       Use a compiler with OpenMP support (GCC/Clang recommended). <br>
       <br>
-      Command:<br>
-      &nbsp; gcc -O3 -fopenmp flops.c -o flops<br>
+      Build command (GNU Make), type 'make' at the console or use the
+      compilers manually:<br>
+      <br>
+      &nbsp; $ gcc -O3 -fopenmp flops.c -o flops-cpu<br>
+      &nbsp; $ nvcc -O3 flops.cu -o flops-gpu<br>
       <br>
       Note: -O3 is essential for the compiler to vectorize the
       arithmetic and pipelining correctly.<br>
@@ -73,13 +74,13 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA00AAADJCAIAAABwqE4oAAAACXBIW
       <br>
       <b>RUN THE BENCHMARK<br>
         <br>
-      </b>Ensure the <a href="xmon.html">system cpu load</a> is close
-      to 0 before running flops. Stop any interfering job, process,
-      network activity such as downloads, servers, clients.<br>
+      </b>Ensure the <a href="xmon.html">system cpu and gpu load</a> is
+      close to 0 before running flops. Stop any interfering job,
+      process, network activity such as downloads, servers, clients.<br>
       Run the binary in a terminal:&nbsp; ./flops<br>
       <br>
       The program will display:<br>
-      - Detected CPU Core count<br>
+      - Detected CPU/GPU Core count<br>
       - Total execution time<br>
       - Calculated MFLOPS/GFLOPS<br>
       <br>
@@ -92,8 +93,8 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdIAAAC0CAIAAACv2DqSAAAACXBIW
       <br>
       <b>CAUTION</b><br>
       <br>
-      This test generates significant heat as it pushes all CPU cores to
-      100% load. Ensure your cooling system is operational.<br>
+      This test generates significant heat as it pushes all CPU/GPU
+      cores to 100% load. Ensure your cooling system is operational.<br>
       <br>
     </p>
     <p> </p>
@@ -103,7 +104,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdIAAAC0CAIAAACv2DqSAAAACXBIW
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.18 2026/03/11 13:38:35 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.19 2026/03/12 13:30:21 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
