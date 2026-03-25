@@ -8,29 +8,37 @@
       2.2.17 i686) [Netscape]">
     <title>Floating Point Operations per Second</title>
   </head>
-  <body link="#0000ef" vlink="#51188e" alink="#ff0000" bgcolor="#ffffff"
-    text="#000000">
+  <body link="#0000ef" vlink="#51188e" text="#000000" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">Supercomputing Benchmark for CPU and GPU
         (FLOPS/GFLOPS)</font></b> <br>
     by Marc Gloor <br>
     <hr width="100%">
-    <p>Copyright (C) 1992 Al Aburto &lt;aburto@nosc.mil&gt;<br>
-      Copyright (C) 2000 Marc Gloor (K&amp;R modifications)<br>
-      Copyright (C) 2026 Marc Gloor (complete AI modernization)<br>
-    </p>
-    <p>Original K&amp;R C code 1992 by Al Aburto (Upstream).<br>
-      Benchmark modified 2026 for Linux by Marc Gloor.<br>
-      <br>
-      My <a href="data/flops-linux-2026.tar.gz">FLOPS/GFLOPS benchmark
-        program</a> was modernized early 2026 for <b>benchmarking CPU
-        and GPU speed</b>. It measures the raw computational throughput
-      of a processor (CPU and GPU) by executing a high-intensity
-      floating-point loop across all available CPU cores. By utilizing
-      Fused Multiply-Add (FMA) style operations, it estimates the
-      theoretical <b>raw Peak GFLOPS of the system</b>. <br>
+    <table width="1135" height="81" cellspacing="2" cellpadding="2"
+      border="0">
+      <tbody>
+        <tr>
+          <td valign="top">Copyright (C) 1992 Al Aburto &lt;aburto @
+            nosc.mil&gt;<br>
+            Copyright (C) 2000 Marc Gloor (K&amp;R modifications)<br>
+            Copyright (C) 2026 Marc Gloor (complete AI modernization)</td>
+          <td valign="top">Original K&amp;R C code 1992 by Al Aburto
+            (Upstream).<br>
+            Benchmark modified 2026 for Linux by Marc Gloor.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>My <a href="data/flops-linux-2026.tar.gz">FLOPS/GFLOPS benchmark
+        program</a> was vibe code modernized early 2026 for <b>benchmarking
+        CPU and GPU speed</b>. It measures the raw computational
+      throughput of a processor (CPU and GPU) by executing a
+      high-intensity floating-point loop across all available CPU cores.
+      By utilizing Fused Multiply-Add (FMA) style operations, it
+      estimates the theoretical <b>raw Peak GFLOPS of the system</b>. <br>
       <br>
       <a
 href="https://en.wikipedia.org/wiki/Floating_point_operations_per_second">Floating
+
 
 
         point operations per second</a> (FLOPS, flops or flop/s) is a
@@ -77,7 +85,9 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA00AAADJCAIAAABwqE4oAAAACXBIW
       </b>Ensure the <a href="xmon.html">system cpu and gpu load</a> is
       close to 0 before running flops. Stop any interfering job,
       process, network activity such as downloads, servers, clients.<br>
-      Run the binary in a terminal:&nbsp; ./flops<br>
+      <br>
+      Run the CPU benchmark in a terminal:&nbsp; ./flops-cpu <br>
+      Run the GPU benchmark in a terminal:&nbsp; ./flops-gpu <br>
       <br>
       The program will display:<br>
       - Detected CPU/GPU Core count<br>
@@ -94,7 +104,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdIAAAC0CAIAAACv2DqSAAAACXBIW
       <b>CAUTION</b><br>
       <br>
       This test generates significant heat as it pushes all CPU/GPU
-      cores to 100% load. Ensure your cooling system is operational.<br>
+      cores to 100% workload. Ensure your cooling system is operational.<br>
       <br>
     </p>
     <p> </p>
@@ -104,7 +114,7 @@ src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdIAAAC0CAIAAACv2DqSAAAACXBIW
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.19 2026/03/12 13:30:21 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: floatingpoint.html,v 1.20 2026/03/25 05:45:04 gloor Exp $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>

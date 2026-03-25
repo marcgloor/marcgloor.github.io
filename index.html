@@ -11,6 +11,7 @@
             --bg: #fdfdfd;
             --card-bg: #ffffff;
             --text: #1a1a1a;
+            --secondary-bg: #f0f0f0;
         }
 
         body {
@@ -20,6 +21,7 @@
             margin: 0;
             padding: 40px 10px;
             line-height: 1.5;
+            scroll-behavior: smooth;
         }
 
         header {
@@ -37,6 +39,22 @@
             color: #444;
             margin: 8px 0;
             font-weight: 500;
+        }
+
+        /* Category title reduced to 1.2rem */
+        .section-title {
+            max-width: 1350px;
+            margin: 60px auto 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem; 
+            border-left: 4px solid var(--primary);
+            background: var(--bg);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #333;
         }
 
         .grid-container {
@@ -83,6 +101,7 @@
             font-size: 10px;
             color: #aaa;
             border-radius: 4px;
+            object-fit: contain;
         }
 
         .card-title {
@@ -108,10 +127,6 @@
             border-top: 1px solid #eee;
         }
 
-        .footer-links {
-            margin-top: 15px;
-        }
-
         .footer-links a {
             color: var(--primary);
             text-decoration: none;
@@ -127,176 +142,182 @@
         <font size="+3">Welcome to Marc Gloor's Page</font>
         <p class="history-large">
             Hand-coded HTML markup from 1995<br>
-            Reborn as AI markdown in 2025<br>
+            Reborn as AI markdown in 2026<br>
         </p>
     </header>
 
+    <h2 id="software" class="section-title">Software Projects</h2>
     <div class="grid-container">
-        <a href="linux-llm-security-audit.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-linux-llm-security.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="linux-llm-security-audit.html" class="card">
+            <img src="data/front-linux-llm-security.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">LLM Linux Security Audit</div>
             <div class="card-desc">Security Audit your Linux Host</div>
         </a>
 
-        <a href="https://github.com/marcgloor/pulsechain" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-validator.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="https://github.com/marcgloor/pulsechain" class="card">
+            <img src="data/front-validator.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Pulsechain Validator</div>
             <div class="card-desc">GitHub repository</div>
         </a>
 
-        <a href="https://en.wikipedia.org/wiki/Draft:Pulsechain" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-pulsechain-wikipedia.png" alt="pDAI Wiki Icon" class="icon-placeholder">
-            <div class="card-title">Pulsechain Wikipedia</div>
-            <div class="card-desc">Wikipedia article draft</div>
-        </a>
-
-        <a href="https://en.wikipedia.org/wiki/Draft:Pdai_(cryptocurrency)" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-pdai-wikipedia.png" alt="pDAI Wiki Icon" class="icon-placeholder">
-            <div class="card-title">pDAI Wikipedia</div>
-            <div class="card-desc">Wikipedia article draft</div>
-        </a>
-
-        <a href="data/Open-Access-Memo.pdf" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-openaccess-memo.png" alt="pDAI Wiki Icon" class="icon-placeholder">
-            <div class="card-title">Open Access Memo</div>
-            <div class="card-desc">Tech Guideline</div>
-        </a>
-
-        <a href="xmon.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-xmon.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="xmon.html" class="card">
+            <img src="data/front-xmon.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">xmon for Linux</div>
             <div class="card-desc">Lightweight System Monitor</div>
         </a>
 
-        <a href="bsengine.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-bsengine.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="bsengine.html" class="card">
+            <img src="data/front-bsengine.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Bsengine for Linux</div>
             <div class="card-desc">Derivatives Pricing Backend</div>
         </a>
 
-        <a href="hourmeter.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-hourmeter.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="hourmeter.html" class="card">
+            <img src="data/front-hourmeter.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Hourmeter for Linux</div>
             <div class="card-desc">Operations Lifecycle Tracking</div>
         </a>
 
-        <a href="screenie.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-screenie.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="screenie.html" class="card">
+            <img src="data/front-screenie.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">screenie for Linux</div>
             <div class="card-desc">GNU Screen session handler</div>
         </a>
 
-        <a href="buddy.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-buddy.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="buddy.html" class="card">
+            <img src="data/front-buddy.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">buddy for Linux</div>
             <div class="card-desc">Debian package manager</div>
         </a>
 
-        <a href="xdict.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-xdict.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="xdict.html" class="card">
+            <img src="data/front-xdict.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">xdict for Linux</div>
             <div class="card-desc">Universal Fuzzy Logic Lookup</div>
         </a>
 
-        <a href="gnuscreenpatch.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-gnuscreen.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="gnuscreenpatch.html" class="card">
+            <img src="data/front-gnuscreen.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">GNU Screen Patch</div>
             <div class="card-desc">Password deactivation</div>
         </a>
 
-        <a href="floatingpoint.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-flops.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="floatingpoint.html" class="card">
+            <img src="data/front-flops.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">flops for Linux</div>
             <div class="card-desc">FLOPS/GFLOPS benchmark</div>
         </a>
 
-        <a href="patch.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-patches.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="patch.html" class="card">
+            <img src="data/front-patches.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Tech Contributions</div>
             <div class="card-desc">Contributions &amp; fixes</div>
         </a>
 
-        <a href="xfce-everywhere.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-xfce.png" alt="pDAI Wiki Icon" class="icon-placeholder">
-            <div class="card-title">XFCE Binaries</div>
-            <div class="card-desc">RS/6000 &amp; Sun workstations</div>
-        </a>
-
-        <a href="animations.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-blender-animations.gif" alt="pDAI Wiki Icon" class="icon-placeholder">
-            <div class="card-title">Misc Animations</div>
-            <div class="card-desc">Animated in Blender</div>
-        </a>
-
-        <a href="xfce-animations.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-xfce-animations.gif" alt="pDAI Wiki Icon" class="icon-placeholder">
-            <div class="card-title">Animated XFCE Logos</div>
-            <div class="card-desc">Animated in Blender</div>
-        </a>
-
-        <a href="newton.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-ti89-software.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="newton.html" class="card">
+            <img src="data/front-ti89-software.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Newton Iteration</div>
             <div class="card-desc">TI-89 calculator script</div>
         </a>
 
-        <a href="mosix-blender.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-blender.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="mosix-blender.html" class="card">
+            <img src="data/front-blender.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Blender Workload Manager</div>
             <div class="card-desc">Cluster Load balancing</div>
         </a>
+    </div>
+
+    <h2 id="guides" class="section-title">Guides</h2>
+    <div class="grid-container">
+        <a href="https://en.wikipedia.org/wiki/Draft:Pulsechain" class="card">
+            <img src="data/front-pulsechain-wikipedia.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Pulsechain Wikipedia</div>
+            <div class="card-desc">Wikipedia article draft</div>
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Draft:Pdai_(cryptocurrency)" class="card">
+            <img src="data/front-pdai-wikipedia.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">pDAI Wikipedia</div>
+            <div class="card-desc">Wikipedia article draft</div>
+        </a>
+
+        <a href="data/Open-Access-Memo.pdf" class="card">
+            <img src="data/front-openaccess-memo.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Open Access Memo</div>
+            <div class="card-desc">Tech Guideline</div>
+        </a>
+
+        <a href="xfce-everywhere.html" class="card">
+            <img src="data/front-xfce.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">XFCE Binaries</div>
+            <div class="card-desc">RS/6000 &amp; Sun workstations</div>
+        </a>
+
+        <a href="animations.html" class="card">
+            <img src="data/front-blender-animations.gif" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Misc Animations</div>
+            <div class="card-desc">Animated in Blender</div>
+        </a>
+
+        <a href="xfce-animations.html" class="card">
+            <img src="data/front-xfce-animations.gif" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Animated XFCE Logos</div>
+            <div class="card-desc">Animated in Blender</div>
+        </a>
         
-        <a href="casio-exilim.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-casio-exilim.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="casio-exilim.html" class="card">
+            <img src="data/front-casio-exilim.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Casio Exilim</div>
             <div class="card-desc">Linux camera support</div>
         </a>
 
-        <a href="powerbook.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-powerbook-g4.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="powerbook.html" class="card">
+            <img src="data/front-powerbook-g4.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Debian on PowerBook</div>
             <div class="card-desc">Installation Instructions</div>
         </a>
 
-        <a href="armada.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-compaq-armada.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="armada.html" class="card">
+            <img src="data/front-compaq-armada.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Linux &amp; Compaq</div>
             <div class="card-desc">Installation Instructions</div>
         </a>
 
-        <a href="travan.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-hp-travan.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="travan.html" class="card">
+            <img src="data/front-hp-travan.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Linux &amp; HP-Colorado</div>
             <div class="card-desc">Travan streamer (German)</div>
         </a>
 
-        <a href="cluster-event.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-supercomputing-event.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="cluster-event.html" class="card">
+            <img src="data/front-supercomputing-event.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Supercomputing Event</div>
-            <div class="card-desc">Turich Event photos 2000</div>
+            <div class="card-desc">Zurich Event photos 2000</div>
         </a>
 
-        <a href="linuxtag_2003.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-linuxtag-karlsruhe.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="linuxtag_2003.html" class="card">
+            <img src="data/front-linuxtag-karlsruhe.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Linuxday 2003</div>
             <div class="card-desc">Karlsruhe</div>
         </a>
 
-        <a href="dist-pfaffikersee.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-pfaeffikersee.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="dist-pfaffikersee.html" class="card">
+            <img src="data/front-pfaeffikersee.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Pfäffikersee Zürich</div>
             <div class="card-desc">Exakte Distanz Wanderweg</div>
         </a>
 
-        <a href="gnuch.html" class="card" target="_blank" rel="noopener noreferrer">
-            <img src="data/front-debian-usenet.png" alt="pDAI Wiki Icon" class="icon-placeholder">
+        <a href="gnuch.html" class="card">
+            <img src="data/front-debian-usenet.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Debian Switzerland</div>
             <div class="card-desc">Usenet Post from late 1999</div>
         </a>
     </div>
 
     <footer>
-        <a href="index.html">home</a> | <a href="impressum.html">disclaimer</a>
+        <div class="footer-links">
+            <a href="index.html">home</a> | <a href="impressum.html">disclaimer</a>
+        </div>
     </footer>
 
 </body>
