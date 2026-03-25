@@ -1,9 +1,14 @@
-head	1.150;
+head	1.151;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.151
+date	2026.03.25.07.09.36;	author gloor;	state Exp;
+branches;
+next	1.150;
 
 1.150
 date	2026.03.25.05.45.25;	author gloor;	state Exp;
@@ -760,9 +765,9 @@ desc
 @@
 
 
-1.150
+1.151
 log
-@categories introduced
+@*** empty log message ***
 @
 text
 @<!DOCTYPE html>
@@ -992,6 +997,18 @@ text
             <div class="card-title">Blender Workload Manager</div>
             <div class="card-desc">Cluster Load balancing</div>
         </a>
+        
+         <a href="data/DIN_6935.ods.gz" class="card">
+            <img src="data/din6935.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">DIN 6935 Spreadsheet</div>
+            <div class="card-desc">Cold bending of flat rolled steel</div>
+        </a>
+        
+         <a href="MyLang-libimport.hmtl" class="card">
+            <img src="data/mylang.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">MyLang XML converter</div>
+            <div class="card-desc">Interactive import utility</div>
+        </a>
     </div>
 
     <h2 id="guides" class="section-title">Guides</h2>
@@ -1089,6 +1106,15 @@ text
 
 </body>
 </html>
+@
+
+
+1.150
+log
+@categories introduced
+@
+text
+@d228 12
 @
 
 
