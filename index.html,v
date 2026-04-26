@@ -1,9 +1,14 @@
-head	1.154;
+head	1.155;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.155
+date	2026.04.26.10.29.12;	author gloor;	state Exp;
+branches;
+next	1.154;
 
 1.154
 date	2026.04.26.09.26.08;	author gloor;	state Exp;
@@ -780,7 +785,7 @@ desc
 @@
 
 
-1.154
+1.155
 log
 @*** empty log message ***
 @
@@ -856,7 +861,7 @@ text
         .card {
             background: var(--card-bg);
             border-radius: 12px;
-            padding: 18px 15px;
+            padding: 12px 12px 14px;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
             transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -866,8 +871,7 @@ text
             flex-direction: column;
             align-items: center;
             border: 1px solid #f0f0f0;
-            aspect-ratio: 1.5 / 1;
-            justify-content: center;
+            justify-content: flex-start;
         }
 
         .card:hover {
@@ -877,8 +881,8 @@ text
         }
 
         .icon-placeholder {
-            width: 20mm;
-            height: 15mm;
+            width: 100%;
+            aspect-ratio: 4 / 3;
             margin-bottom: 12px;
             background: #f0f0f0;
             border: 1px solid #ddd;
@@ -887,7 +891,7 @@ text
             justify-content: center;
             font-size: 10px;
             color: #aaa;
-            border-radius: 4px;
+            border-radius: 6px;
             object-fit: contain;
         }
 
@@ -901,7 +905,7 @@ text
         .card-desc {
             font-size: 0.8rem;
             color: #555;
-            max-width: 210px;
+            max-width: 100%;
         }
 
         footer {
@@ -1143,6 +1147,31 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
 
 </body>
 </html>
+@
+
+
+1.154
+log
+@*** empty log message ***
+@
+text
+@d72 1
+a72 1
+            padding: 18px 15px;
+d82 1
+a82 2
+            aspect-ratio: 1.5 / 1;
+            justify-content: center;
+d92 2
+a93 2
+            width: 20mm;
+            height: 15mm;
+d102 1
+a102 1
+            border-radius: 4px;
+d116 1
+a116 1
+            max-width: 210px;
 @
 
 
