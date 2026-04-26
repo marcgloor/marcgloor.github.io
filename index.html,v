@@ -1,9 +1,15 @@
-head	1.155;
+head	1.156;
 access;
 symbols;
-locks; strict;
+locks
+	gloor:1.156; strict;
 comment	@# @;
 
+
+1.156
+date	2026.04.26.15.43.59;	author gloor;	state Exp;
+branches;
+next	1.155;
 
 1.155
 date	2026.04.26.10.29.12;	author gloor;	state Exp;
@@ -785,7 +791,7 @@ desc
 @@
 
 
-1.155
+1.156
 log
 @*** empty log message ***
 @
@@ -1050,6 +1056,12 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
             <div class="card-title">MyLang XML converter</div>
             <div class="card-desc">Interactive import utility</div>
         </a>
+        
+         <a href="clearly.html" class="card">
+            <img src="data/clearly-250_linux.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Clearly Markdown for Linux</div>
+            <div class="card-desc">Markdown Editor</div>
+        </a>
     </div>
 
     <h2 id="guides" class="section-title">Guides</h2>
@@ -1147,6 +1159,15 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
 
 </body>
 </html>
+@
+
+
+1.155
+log
+@*** empty log message ***
+@
+text
+@d261 6
 @
 
 
