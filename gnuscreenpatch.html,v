@@ -1,9 +1,14 @@
-head	1.8;
+head	1.9;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.9
+date	2026.04.26.09.26.08;	author gloor;	state Exp;
+branches;
+next	1.8;
 
 1.8
 date	2023.05.26.02.11.48;	author gloor;	state Exp;
@@ -51,7 +56,7 @@ desc
 @
 
 
-1.8
+1.9
 log
 @*** empty log message ***
 @
@@ -65,7 +70,29 @@ text
     <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux
       2.2.17 i686) [Netscape]">
     <title>GNU Screen 4.99+ password deactivation patch</title>
-  </head>
+  
+<!-- Variant styling: Warm Paper. Generated from a_Website-current; original untouched. -->
+<style id="site-variant-style">
+:root{--primary:#b45309;--bg:#f7efe2;--card-bg:#fffaf0;--text:#31251b;--secondary-bg:#fffaf0;}
+html{scroll-behavior:smooth;}
+body{background:#f7efe2!important;color:#31251b!important;font-family:Georgia, "Times New Roman", serif!important;margin:0;line-height:1.58;}
+body:not(:has(.grid-container)){max-width:1120px;margin:0 auto!important;padding:34px 24px!important;}
+header{border-radius:10px;padding:34px 22px!important;margin-top:18px!important;background:#fffaf0;border:1px solid color-mix(in srgb,#b45309 28%,transparent)!important;}
+a{color:#b45309!important;text-decoration-thickness:2px;text-underline-offset:3px;}
+a:hover{color:#7c2d12!important;}
+hr{border:0!important;border-top:2px solid #b45309!important;margin:24px 0;}
+.section-title{background:#fffaf0!important;color:#31251b!important;border-color:#b45309!important;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);}
+.grid-container{gap:28px!important;}
+.card{background:#fffaf0!important;color:#31251b!important;border-radius:10px!important;border:1px solid color-mix(in srgb,#b45309 24%,transparent)!important;box-shadow:0 12px 30px rgba(0,0,0,.12)!important;}
+.card-title{color:#b45309!important;}
+.card-desc{color:color-mix(in srgb,#31251b 72%,transparent)!important;}
+.icon-placeholder,img{border-radius:calc(10px / 1.8);}
+table,td,pre,p,li,dt,dd,b,font{color:#31251b!important;}
+pre,code{background:color-mix(in srgb,#fffaf0 88%,#b45309);padding:.2em .35em;border-radius:6px;white-space:pre-wrap;}
+footer{background:#fffaf0!important;color:#31251b!important;border-radius:10px 10px 0 0;border-top:2px solid #b45309!important;}
+body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);background-size:18px 18px;} .card{border-style:dashed!important}
+</style>
+</head>
   <body link="#0000ef" alink="#ff0000" bgcolor="#ffffff" text="#000000"
     vlink="#51188e">
     <b><font size="+1">GNU Screen 4.99+ password deactivation patch</font></b>
@@ -155,7 +182,7 @@ text
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.7 2023/05/26 01:53:02 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.8 2023/05/26 02:11:48 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -168,6 +195,20 @@ text
     </table>
   </body>
 </html>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d10 23
+a32 1
+  </head>
+d122 1
+a122 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuscreenpatch.html,v 1.7 2023/05/26 01:53:02 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 

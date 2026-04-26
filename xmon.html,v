@@ -1,9 +1,14 @@
-head	1.36;
+head	1.37;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.37
+date	2026.04.26.09.26.08;	author gloor;	state Exp;
+branches;
+next	1.36;
 
 1.36
 date	2026.02.24.09.13.31;	author gloor;	state Exp;
@@ -190,7 +195,7 @@ desc
 @@
 
 
-1.36
+1.37
 log
 @*** empty log message ***
 @
@@ -204,14 +209,54 @@ text
       2.2.17 i686) [Netscape]">
     <meta name="author" content="Marc Gloor">
     <title>xmon for Linux</title>
+    <!-- Variant styling: Warm Paper. Generated from a_Website-current; original untouched. -->
+    <style id="site-variant-style">
+:root{--primary:#b45309;--bg:#f7efe2;--card-bg:#fffaf0;--text:#31251b;--secondary-bg:#fffaf0;}
+html{scroll-behavior:smooth;}
+body{background:#f7efe2!important;color:#31251b!important;font-family:Georgia, "Times New Roman", serif!important;margin:0;line-height:1.58;}
+body:not(:has(.grid-container)){max-width:1120px;margin:0 auto!important;padding:34px 24px!important;}
+header{border-radius:10px;padding:34px 22px!important;margin-top:18px!important;background:#fffaf0;border:1px solid color-mix(in srgb,#b45309 28%,transparent)!important;}
+a{color:#b45309!important;text-decoration-thickness:2px;text-underline-offset:3px;}
+a:hover{color:#7c2d12!important;}
+hr{border:0!important;border-top:2px solid #b45309!important;margin:24px 0;}
+.section-title{background:#fffaf0!important;color:#31251b!important;border-color:#b45309!important;border-radius:10px;box-shadow:0 10px 25px rgba(0,0,0,.08);}
+.grid-container{gap:28px!important;}
+.card{background:#fffaf0!important;color:#31251b!important;border-radius:10px!important;border:1px solid color-mix(in srgb,#b45309 24%,transparent)!important;box-shadow:0 12px 30px rgba(0,0,0,.12)!important;}
+.card-title{color:#b45309!important;}
+.card-desc{color:color-mix(in srgb,#31251b 72%,transparent)!important;}
+.icon-placeholder,img{border-radius:calc(10px / 1.8);}
+table,td,pre,p,li,dt,dd,b,font{color:#31251b!important;}
+pre,code{background:color-mix(in srgb,#fffaf0 88%,#b45309);padding:.2em .35em;border-radius:6px;white-space:pre-wrap;}
+footer{background:#fffaf0!important;color:#31251b!important;border-radius:10px 10px 0 0;border-top:2px solid #b45309!important;}
+body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);background-size:18px 18px;} .card{border-style:dashed!important}
+</style>
   </head>
-  <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
-    text="#000000">
+  <body link="#0000ef" vlink="#55188a" text="#000000" alink="#ff0000"
+    bgcolor="#ffffff">
     <b><font size="+1">xmon - Minimalistic Lightweight System
         Performance Monitor</font></b> <br>
     by Marc Gloor <br>
     <hr width="100%">
-    <p><b>Abstract</b> </p>
+    <p><b><b><img
+src="file:///home/gloor/data/www/a_eigene/d_warm_paper/data/xmon-anim.gif"
+            title="xmon in action" alt="xmon in action" height="142"
+            width="310"></b>&nbsp;&nbsp;&nbsp; <img alt="xmon on i386"
+          title="xmon on i386"
+          src="file:///home/gloor/data/www/a_eigene/d_warm_paper/data/xmon.jpg"
+          nosave="" height="134" width="310" border="0"> &nbsp;&nbsp; <img
+          title="xmon on PPC" style="border: 0px solid ; width: 314px;
+          height: 138px;" alt="xmon on PPC"
+          src="file:///home/gloor/data/www/a_eigene/d_warm_paper/data/xmon2.png">&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+
+
+
+
+        <br>
+        <br>
+        Abstract</b> </p>
     <p data-start="64" data-end="462">Xmon is a very puristic, fast and
       minimalistic lightweight system performance monitor for Linux,
       purely written in C and linked only against glibc and X11/Xlib. No
@@ -284,6 +329,46 @@ text
 
 
 
+
+      runs out of the box.</b><b><br>
+    </b>
+    <p> </p>
+    <hr width="100%">
+    <table cols="2" nosave="" width="100%" cellspacing="0"
+      cellpadding="0" border="0">
+      <tbody>
+        <tr nosave="">
+          <td nosave="" width="90%">
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.36 2026/02/24 09:13:31 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <br>
+            <i> </i> <dt> <br>
+            </dt>
+          </td>
+          <td nosave="" valign="top">
+            <div align="right"><i><a href="index.html">home</a></i></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+@
+
+
+1.36
+log
+@*** empty log message ***
+@
+text
+@d10 21
+d32 2
+a33 2
+  <body link="#0000ef" vlink="#55188a" alink="#ff0000" bgcolor="#ffffff"
+    text="#000000">
+d38 20
+a57 1
+    <p><b>Abstract</b> </p>
+a129 16
       runs out of the box.</b><br>
     <br>
     <br>
@@ -300,27 +385,10 @@ text
 
 
 
-
-    <p> </p>
-    <hr width="100%">
-    <table cols="2" nosave="" width="100%" cellspacing="0"
-      cellpadding="0" border="0">
-      <tbody>
-        <tr nosave="">
-          <td nosave="" width="90%">
+d131 2
+d140 1
+a140 1
             <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.35 2026/02/24 09:09:16 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
-            <br>
-            <i> </i> <dt> <br>
-            </dt>
-          </td>
-          <td nosave="" valign="top">
-            <div align="right"><i><a href="index.html">home</a></i></div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
 @
 
 
