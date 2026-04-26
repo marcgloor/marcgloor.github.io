@@ -1,9 +1,14 @@
-head	1.5;
+head	1.6;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.6
+date	2026.04.26.16.08.26;	author gloor;	state Exp;
+branches;
+next	1.5;
 
 1.5
 date	2026.04.26.16.03.23;	author gloor;	state Exp;
@@ -36,7 +41,7 @@ desc
 @
 
 
-1.5
+1.6
 log
 @*** empty log message ***
 @
@@ -93,7 +98,7 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
             Linux port of <a href="https://clearly.md">Clearly</a>
             originally written by Josh Pigford. Tracks upstream <a
               href="https://github.com/Shpigford/clearly">github code
-              v1.1.2</a> (the latest macOS release v2.5.0 as of this
+              v2.5.0</a> (the latest macOS release as of this
             build).<br>
             <br>
             The original is Swift + AppKit + SwiftUI (macOS-only). This
@@ -194,7 +199,7 @@ clearly README.md       # open a file</pre>
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: clearly.html,v 1.4 2026/04/26 15:59:04 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: clearly.html,v 1.5 2026/04/26 16:03:23 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -207,6 +212,20 @@ clearly README.md       # open a file</pre>
     </table>
   </body>
 </html>
+@
+
+
+1.5
+log
+@*** empty log message ***
+@
+text
+@d53 1
+a53 1
+              v1.1.2</a> (the latest macOS release v2.5.0 as of this
+d154 1
+a154 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: clearly.html,v 1.4 2026/04/26 15:59:04 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
