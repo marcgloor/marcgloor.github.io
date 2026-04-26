@@ -1,9 +1,14 @@
-head	1.38;
+head	1.39;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.39
+date	2026.04.26.16.23.44;	author gloor;	state Exp;
+branches;
+next	1.38;
 
 1.38
 date	2026.04.26.09.30.45;	author gloor;	state Exp;
@@ -200,7 +205,7 @@ desc
 @@
 
 
-1.38
+1.39
 log
 @*** empty log message ***
 @
@@ -327,7 +332,7 @@ src="data/xmon-anim.gif"
     <br>
     Debian binary package for amd64 architecture: <a
       href="data/xmon_1.0.2_amd64.deb">xmon_1.0.2_amd64.deb</a><br>
-    Download and install using your package manager e.g. dpkg or apt, <b>in
+    Download and install using your package manager e.g. dpkg or apt, <b>it
 
 
 
@@ -344,7 +349,7 @@ src="data/xmon-anim.gif"
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.37 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.38 2026/04/26 09:30:45 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -357,6 +362,20 @@ src="data/xmon-anim.gif"
     </table>
   </body>
 </html>
+@
+
+
+1.38
+log
+@*** empty log message ***
+@
+text
+@d123 1
+a123 1
+    Download and install using your package manager e.g. dpkg or apt, <b>in
+d140 1
+a140 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xmon.html,v 1.37 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
