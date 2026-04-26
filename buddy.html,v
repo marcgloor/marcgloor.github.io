@@ -1,9 +1,14 @@
-head	1.12;
+head	1.13;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.13
+date	2026.04.26.09.53.42;	author gloor;	state Exp;
+branches;
+next	1.12;
 
 1.12
 date	2026.04.26.09.26.08;	author gloor;	state Exp;
@@ -70,7 +75,7 @@ desc
 @@
 
 
-1.12
+1.13
 log
 @*** empty log message ***
 @
@@ -161,7 +166,7 @@ packagelist loading at startup</li>
       <td style="vertical-align: top; text-align: center;"> <a
  href="data/buddy-anim.gif"><img
  style="border: 0px solid ; width: 611px; height: 376px;"
- src="data/bud.jpg" title="buddy screenshot" alt="loading..."></a><br>
+ src="data/bud.png" title="buddy screenshot" alt="loading..."></a><br>
       </td>
     </tr>
   </tbody>
@@ -215,7 +220,7 @@ debian package: &lt;not yet released&gt;<br>
   </tbody><tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.11 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.12 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <dt> <br>
       </dt>
@@ -228,6 +233,20 @@ debian package: &lt;not yet released&gt;<br>
 </table>
 </body>
 </html>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d87 1
+a87 1
+ src="data/bud.jpg" title="buddy screenshot" alt="loading..."></a><br>
+d141 1
+a141 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: buddy.html,v 1.11 2020/11/21 11:13:30 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

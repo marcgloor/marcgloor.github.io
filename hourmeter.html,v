@@ -1,9 +1,14 @@
-head	1.12;
+head	1.13;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.13
+date	2026.04.26.09.53.42;	author gloor;	state Exp;
+branches;
+next	1.12;
 
 1.12
 date	2026.04.26.09.26.08;	author gloor;	state Exp;
@@ -70,7 +75,7 @@ desc
 @@
 
 
-1.12
+1.13
 log
 @*** empty log message ***
 @
@@ -166,7 +171,7 @@ first INSTALLATION.</td>
             <br>
             <img title="hm output in xterm"
  style="border: 0px solid ; width: 244px; height: 140px;"
- alt="hm output in xterm" src="data/hm1.jpg"><br>
+ alt="hm output in xterm" src="data/hm1.png"><br>
             </td>
             <td style="vertical-align: top;">'hm' output under X11:<br>
             <br>
@@ -206,7 +211,7 @@ linux </span><br>
   <tbody>
     <tr nosave="">
       <td width="90%" nosave="">
-      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.11 2026/02/20 23:31:03 gloor Exp gloor $<br>Author:</i><i> <a
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.12 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a
  href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
       <br>
       <i> </i> <dt> <br>
@@ -220,6 +225,20 @@ linux </span><br>
 </table>
 </body>
 </html>
+@
+
+
+1.12
+log
+@*** empty log message ***
+@
+text
+@d92 1
+a92 1
+ alt="hm output in xterm" src="data/hm1.jpg"><br>
+d132 1
+a132 1
+      <pre style="font-family: times new roman,times,serif;"><i>$Id: hourmeter.html,v 1.11 2026/02/20 23:31:03 gloor Exp gloor $<br>Author:</i><i> <a
 @
 
 

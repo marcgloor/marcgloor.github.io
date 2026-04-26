@@ -1,9 +1,14 @@
-head	1.22;
+head	1.23;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.23
+date	2026.04.26.09.53.42;	author gloor;	state Exp;
+branches;
+next	1.22;
 
 1.22
 date	2026.04.26.09.26.08;	author gloor;	state Exp;
@@ -120,7 +125,7 @@ desc
 @@
 
 
-1.22
+1.23
 log
 @*** empty log message ***
 @
@@ -219,7 +224,7 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
 
 
     <img style="width: 534px; height: 475px;" alt="loading..."
-      title="xdict screenshot" src="data/xdict.jpg">
+      title="xdict screenshot" src="data/xdict.png">
     <p><br>
       <b>Download</b> </p>
     <p>Distributions were available for the PowerPC RISC Architecture
@@ -273,7 +278,7 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
       </tbody><tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.21 2026/02/24 08:51:14 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.22 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -286,6 +291,20 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
     </table>
   </body>
 </html>
+@
+
+
+1.22
+log
+@*** empty log message ***
+@
+text
+@d95 1
+a95 1
+      title="xdict screenshot" src="data/xdict.jpg">
+d149 1
+a149 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: xdict.html,v 1.21 2026/02/24 08:51:14 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
