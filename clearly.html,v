@@ -1,9 +1,14 @@
-head	1.8;
+head	1.9;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.9
+date	2026.04.27.09.34.15;	author gloor;	state Exp;
+branches;
+next	1.8;
 
 1.8
 date	2026.04.26.16.17.51;	author gloor;	state Exp;
@@ -51,7 +56,7 @@ desc
 @
 
 
-1.8
+1.9
 log
 @*** empty log message ***
 @
@@ -64,7 +69,7 @@ text
     <meta name="author" content="Marc Gloor">
     <meta name="GENERATOR" content="Mozilla/4.73 [en] (X11; I; Linux
       2.2.17 i686) [Netscape]">
-    <title>bsengine - Black-Scholes derivative option pricing engine</title>
+    <title>Clearly- A markdown editor for Linux</title>
     <!-- Variant styling: Warm Paper. Generated from a_Website-current; original untouched. -->
     <style id="site-variant-style">
 :root{--primary:#b45309;--bg:#f7efe2;--card-bg:#fffaf0;--text:#31251b;--secondary-bg:#fffaf0;}
@@ -207,7 +212,7 @@ clearly README.md       # open a file</pre>
       <tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: clearly.html,v 1.7 2026/04/26 16:13:25 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: clearly.html,v 1.8 2026/04/26 16:17:51 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -220,6 +225,20 @@ clearly README.md       # open a file</pre>
     </table>
   </body>
 </html>
+@
+
+
+1.8
+log
+@*** empty log message ***
+@
+text
+@d9 1
+a9 1
+    <title>bsengine - Black-Scholes derivative option pricing engine</title>
+d152 1
+a152 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: clearly.html,v 1.7 2026/04/26 16:13:25 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 
