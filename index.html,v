@@ -1,9 +1,14 @@
-head	1.156;
+head	1.157;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.157
+date	2026.05.02.15.22.43;	author gloor;	state Exp;
+branches;
+next	1.156;
 
 1.156
 date	2026.04.26.15.43.59;	author gloor;	state Exp;
@@ -790,7 +795,7 @@ desc
 @@
 
 
-1.156
+1.157
 log
 @*** empty log message ***
 @
@@ -1065,6 +1070,12 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
 
     <h2 id="guides" class="section-title">Guides</h2>
     <div class="grid-container">
+        <a href="vibe-code-soft.html" class="card">
+            <img src="data/vibe-soft.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Build Software Guide</div>
+            <div class="card-desc">LLM Software Build Guideline</div>
+        </a>
+
         <a href="https://en.wikipedia.org/wiki/Draft:Pulsechain" class="card">
             <img src="data/front-pulsechain-wikipedia.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Pulsechain Wikipedia</div>
@@ -1158,6 +1169,15 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
 
 </body>
 </html>
+@
+
+
+1.156
+log
+@*** empty log message ***
+@
+text
+@d271 6
 @
 
 
