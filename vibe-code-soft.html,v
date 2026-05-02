@@ -1,9 +1,19 @@
-head	1.1;
+head	1.3;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.3
+date	2026.05.02.15.26.25;	author gloor;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2026.05.02.15.24.43;	author gloor;	state Exp;
+branches;
+next	1.1;
 
 1.1
 date	2026.05.02.15.22.43;	author gloor;	state Exp;
@@ -15,9 +25,9 @@ desc
 @@
 
 
-1.1
+1.3
 log
-@Initial revision
+@*** empty log message ***
 @
 text
 @<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
@@ -60,7 +70,7 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
     <p>
       <meta http-equiv="content-type" content="text/html;
         charset=windows-1252">
-      <span style="font-weight: bold;">The Prompt Briefing — A Field
+      <span style="font-weight: bold;">The Prompt Briefing - A Field
         Guide for Software Builders (April 2026)</span><br>
     </p>
     <table width="70%" cellspacing="2" cellpadding="2" border="0">
@@ -72,7 +82,7 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
                 height="355" width="331" border="0"></a></td>
           <td valign="top"><a
               href="data/LLMs_to_build_software_guide_English.pdf"><img
-src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/vibe-soft2.png"
+src="data/vibe-soft2.png"
                 alt="Vibe Software" height="343" width="399" border="0"></a></td>
         </tr>
       </tbody>
@@ -82,8 +92,8 @@ src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/vibe-soft2.png"
       in <b>prompt engineering</b> for code generation into nine
       essentials and a reusable eight-block prompt template. Drawing on
       peer-reviewed research and practitioner guides, it argues against
-      one-line requirement prompts and shows how progressive prompting —
-      refine requirements, derive design, write tests, write code —
+      one-line requirement prompts and shows how progressive prompting 
+      refine requirements, derive design, write tests, write code 
       surfaces roughly seven times more consequential corrections than a
       single-shot request.<br>
     </p>
@@ -113,7 +123,7 @@ src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/vibe-soft2.png"
       </tbody><tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuch.html,v 1.13 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: vibe-code-soft.html,v 1.2 2026/05/02 15:24:43 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -126,4 +136,36 @@ src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/vibe-soft2.png"
     </table>
   </body>
 </html>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d41 1
+a41 1
+      <span style="font-weight: bold;">The Prompt Briefing — A Field
+d63 2
+a64 2
+      one-line requirement prompts and shows how progressive prompting —
+      refine requirements, derive design, write tests, write code —
+d94 1
+a94 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: vibe-code-soft.html,v 1.1 2026/05/02 15:22:43 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d53 1
+a53 1
+src="file:///home/gloor/data/www/a_eigene/a_Website-current/data/vibe-soft2.png"
+d94 1
+a94 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: gnuch.html,v 1.13 2026/04/26 09:26:08 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
