@@ -1,9 +1,14 @@
-head	1.3;
+head	1.4;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.4
+date	2026.05.09.08.16.24;	author gloor;	state Exp;
+branches;
+next	1.3;
 
 1.3
 date	2026.05.02.15.26.25;	author gloor;	state Exp;
@@ -25,7 +30,7 @@ desc
 @@
 
 
-1.3
+1.4
 log
 @*** empty log message ***
 @
@@ -79,11 +84,11 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
           <td valign="top"><a
               href="data/LLMs_to_build_software_guide_English.pdf"><img
                 src="data/vibe-soft.png" alt="Vibe Code Software"
-                height="355" width="331" border="0"></a></td>
+                width="331" height="355" border="0"></a></td>
           <td valign="top"><a
               href="data/LLMs_to_build_software_guide_English.pdf"><img
-src="data/vibe-soft2.png"
-                alt="Vibe Software" height="343" width="399" border="0"></a></td>
+                src="data/vibe-soft2.png" alt="Vibe Software"
+                width="399" height="343" border="0"></a></td>
         </tr>
       </tbody>
     </table>
@@ -92,8 +97,8 @@ src="data/vibe-soft2.png"
       in <b>prompt engineering</b> for code generation into nine
       essentials and a reusable eight-block prompt template. Drawing on
       peer-reviewed research and practitioner guides, it argues against
-      one-line requirement prompts and shows how progressive prompting 
-      refine requirements, derive design, write tests, write code 
+      one-line requirement prompts and shows how progressive prompting
+      refine requirements, derive design, write tests, write code
       surfaces roughly seven times more consequential corrections than a
       single-shot request.<br>
     </p>
@@ -103,14 +108,15 @@ src="data/vibe-soft2.png"
       <br>
       <b>Download<br>
       </b><br>
-      Software Prompt Engineering Guide <br>
-      [<a href="data/LLMs_to_build_software_guide_English.pdf">English</a>]
-      [<a href="data/LLMs_to_build_software_guide_German.pdf">German</a>]
-      [<a href="data/LLMs_to_build_software_guide_French.pdf">French</a>]
-      [<a href="data/LLMs_to_build_software_guide_Italian.pdf">Italian</a>]
-      [<a href="data/LLMs_to_build_software_guide_Spanish.pdf">Spanish</a>]
-      [<a href="data/LLMs_to_build_software_guide_Swedish.pdf">Swedish</a>]
-      [<a href="data/LLMs_to_build_software_guide_Chinese.pdf">Chinese</a>]<br>
+      Software Prompt Engineering Guide (PDF): <br>
+      English [<a href="data/LLMs_to_build_software_guide_English.pdf">pdf</a>],
+      German&nbsp;[<a
+        href="data/LLMs_to_build_software_guide_German.pdf">pdf</a>],
+      French [<a href="data/LLMs_to_build_software_guide_French.pdf">pdf</a>],
+      Italian [<a href="data/LLMs_to_build_software_guide_Italian.pdf">pdf</a>],
+      Spanish [<a href="data/LLMs_to_build_software_guide_Spanish.pdf">pdf</a>],
+      Swedish [<a href="data/LLMs_to_build_software_guide_Swedish.pdf">pdf</a>],
+      Chinese [<a href="data/LLMs_to_build_software_guide_Chinese.pdf">pdf</a>]<br>
       <br>
     </p>
     <p> </p>
@@ -123,7 +129,7 @@ src="data/vibe-soft2.png"
       </tbody><tbody>
         <tr nosave="">
           <td nosave="" width="90%">
-            <pre style="font-family: times new roman,times,serif;"><i>$Id: vibe-code-soft.html,v 1.2 2026/05/02 15:24:43 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: vibe-code-soft.html,v 1.3 2026/05/02 15:26:25 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
             <br>
             <i> </i> <dt> <br>
             </dt>
@@ -136,6 +142,38 @@ src="data/vibe-soft2.png"
     </table>
   </body>
 </html>
+@
+
+
+1.3
+log
+@*** empty log message ***
+@
+text
+@d50 1
+a50 1
+                height="355" width="331" border="0"></a></td>
+d53 2
+a54 2
+src="data/vibe-soft2.png"
+                alt="Vibe Software" height="343" width="399" border="0"></a></td>
+d63 2
+a64 2
+      one-line requirement prompts and shows how progressive prompting 
+      refine requirements, derive design, write tests, write code 
+d74 9
+a82 8
+      Software Prompt Engineering Guide <br>
+      [<a href="data/LLMs_to_build_software_guide_English.pdf">English</a>]
+      [<a href="data/LLMs_to_build_software_guide_German.pdf">German</a>]
+      [<a href="data/LLMs_to_build_software_guide_French.pdf">French</a>]
+      [<a href="data/LLMs_to_build_software_guide_Italian.pdf">Italian</a>]
+      [<a href="data/LLMs_to_build_software_guide_Spanish.pdf">Spanish</a>]
+      [<a href="data/LLMs_to_build_software_guide_Swedish.pdf">Swedish</a>]
+      [<a href="data/LLMs_to_build_software_guide_Chinese.pdf">Chinese</a>]<br>
+d95 1
+a95 1
+            <pre style="font-family: times new roman,times,serif;"><i>$Id: vibe-code-soft.html,v 1.2 2026/05/02 15:24:43 gloor Exp gloor $<br>Author:</i><i> <a href="mailto:marc_dot_gloor_at_u_dot_nus_dot_edu">marc_dot_gloor_at_u_dot_nus_dot_edu</a></i></pre>
 @
 
 

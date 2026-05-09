@@ -1,9 +1,14 @@
-head	1.157;
+head	1.158;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.158
+date	2026.05.09.08.16.24;	author gloor;	state Exp;
+branches;
+next	1.157;
 
 1.157
 date	2026.05.02.15.22.43;	author gloor;	state Exp;
@@ -795,7 +800,7 @@ desc
 @@
 
 
-1.157
+1.158
 log
 @*** empty log message ***
 @
@@ -828,40 +833,29 @@ text
 
         header {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 24px;
             border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
+            padding-bottom: 5px;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
         }
 
         .history-large {
-            font-size: 1.15rem;
+            font-size: 0.95rem;
             color: #444;
-            margin: 8px 0;
+            margin: 4px 0;
             font-weight: 500;
         }
 
         /* Category title reduced to 1.2rem */
         .section-title {
-            max-width: 1350px;
-            margin: 60px auto 30px;
-            padding: 10px 20px;
-            font-size: 1.2rem; 
-            border-left: 4px solid var(--primary);
-            background: var(--bg);
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #333;
+            display: none;
         }
 
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(6, minmax(180px, 1fr));
             gap: 25px;
             max-width: 1350px;
             margin: 0 auto;
@@ -969,12 +963,18 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
         </p>
     </header>
 
-    <h2 id="software" class="section-title">Software Projects</h2>
     <div class="grid-container">
+
+        <a href="vibe-code-soft.html" class="card">
+            <img src="data/vibe-soft.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Build Software Guide</div>
+            <div class="card-desc">LLM Software Build Guideline</div>
+        </a>
+
         <a href="linux-llm-security-audit.html" class="card">
             <img src="data/front-linux-llm-security.png" alt="Icon" class="icon-placeholder">
-            <div class="card-title">LLM Linux Security Audit</div>
-            <div class="card-desc">Security Audit your Linux Host</div>
+            <div class="card-title">Host Security Audit</div>
+            <div class="card-desc">AI Security Audit your Linux Host</div>
         </a>
 
         <a href="https://github.com/marcgloor/pulsechain" class="card">
@@ -1066,15 +1066,6 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
             <div class="card-title">Clearly Markdown for Linux</div>
             <div class="card-desc">Markdown Editor</div>
         </a>
-    </div>
-
-    <h2 id="guides" class="section-title">Guides</h2>
-    <div class="grid-container">
-        <a href="vibe-code-soft.html" class="card">
-            <img src="data/vibe-soft.png" alt="Icon" class="icon-placeholder">
-            <div class="card-title">Build Software Guide</div>
-            <div class="card-desc">LLM Software Build Guideline</div>
-        </a>
 
         <a href="https://en.wikipedia.org/wiki/Draft:Pulsechain" class="card">
             <img src="data/front-pulsechain-wikipedia.png" alt="Icon" class="icon-placeholder">
@@ -1121,13 +1112,13 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
         <a href="powerbook.html" class="card">
             <img src="data/front-powerbook-g4.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Debian on PowerBook</div>
-            <div class="card-desc">Installation Instructions</div>
+            <div class="card-desc">Installation Guide</div>
         </a>
 
         <a href="armada.html" class="card">
             <img src="data/front-compaq-armada.png" alt="Icon" class="icon-placeholder">
             <div class="card-title">Linux &amp; Compaq</div>
-            <div class="card-desc">Installation Instructions</div>
+            <div class="card-desc">Installation Guide</div>
         </a>
 
         <a href="travan.html" class="card">
@@ -1169,6 +1160,66 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
 
 </body>
 </html>
+@
+
+
+1.157
+log
+@*** empty log message ***
+@
+text
+@d29 1
+a29 1
+            margin-bottom: 50px;
+d31 1
+a31 1
+            padding-bottom: 20px;
+d38 1
+a38 1
+            font-size: 1.15rem;
+d40 1
+a40 1
+            margin: 8px 0;
+d46 1
+a46 12
+            max-width: 1350px;
+            margin: 60px auto 30px;
+            padding: 10px 20px;
+            font-size: 1.2rem; 
+            border-left: 4px solid var(--primary);
+            background: var(--bg);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #333;
+d51 1
+a51 1
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+a158 1
+    <h2 id="software" class="section-title">Software Projects</h2>
+d160 7
+d169 2
+a170 2
+            <div class="card-title">LLM Linux Security Audit</div>
+            <div class="card-desc">Security Audit your Linux Host</div>
+a261 9
+    </div>
+
+    <h2 id="guides" class="section-title">Guides</h2>
+    <div class="grid-container">
+        <a href="vibe-code-soft.html" class="card">
+            <img src="data/vibe-soft.png" alt="Icon" class="icon-placeholder">
+            <div class="card-title">Build Software Guide</div>
+            <div class="card-desc">LLM Software Build Guideline</div>
+        </a>
+d308 1
+a308 1
+            <div class="card-desc">Installation Instructions</div>
+d314 1
+a314 1
+            <div class="card-desc">Installation Instructions</div>
 @
 
 
