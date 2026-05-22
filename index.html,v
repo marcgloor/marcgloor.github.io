@@ -1,9 +1,14 @@
-head	1.160;
+head	1.161;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.161
+date	2026.05.22.20.28.01;	author gloor;	state Exp;
+branches;
+next	1.160;
 
 1.160
 date	2026.05.22.15.47.24;	author gloor;	state Exp;
@@ -810,7 +815,7 @@ desc
 @@
 
 
-1.160
+1.161
 log
 @*** empty log message ***
 @
@@ -986,7 +991,7 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
         <div class="card-title">Pulsechain Validator</div>
         <div class="card-desc">GitHub repository</div>
       </a> <a href="pdai-man-game.html" class="card"> <img
-          src="data/pdai-man-game.png" alt="Icon" class="icon-placeholder">
+          src="data/pdai-man-front.png" alt="Icon" class="icon-placeholder">
         <div class="card-title">pDAI MAN</div>
         <div class="card-desc">PulseChain Game</div>
       </a> <a href="xmon.html" class="card"> <img
@@ -1130,6 +1135,17 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
     </footer>
   </body>
 </html>
+@
+
+
+1.160
+log
+@*** empty log message ***
+@
+text
+@d172 1
+a172 1
+          src="data/pdai-man-game.png" alt="Icon" class="icon-placeholder">
 @
 
 
