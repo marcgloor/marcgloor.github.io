@@ -1,9 +1,14 @@
-head	1.2;
+head	1.3;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.3
+date	2026.05.22.20.10.19;	author gloor;	state Exp;
+branches;
+next	1.2;
 
 1.2
 date	2026.05.22.18.35.29;	author gloor;	state Exp;
@@ -20,7 +25,7 @@ desc
 @@
 
 
-1.2
+1.3
 log
 @*** empty log message ***
 @
@@ -334,7 +339,7 @@ let frightenedTimer = 0;       // frames remaining of power mode
 let animFrame = 0;             // global animation counter
 let rafId = null;
 let paused = false;            // space-bar pause
-let speedMul = 4.0;            // global speed multiplier (+/- to adjust)
+let speedMul = 2.5;            // global speed multiplier (+/- to adjust)
 const SPEED_MIN = 0.5, SPEED_MAX = 8.0, SPEED_STEP = 0.5;
 let dying = false;             // true during the death animation
 let dyingTimer = 0;            // frames elapsed in the death animation
@@ -1368,6 +1373,17 @@ document.getElementById('legPow').innerHTML =
 </script>
 </body>
 </html>
+@
+
+
+1.2
+log
+@*** empty log message ***
+@
+text
+@d310 1
+a310 1
+let speedMul = 4.0;            // global speed multiplier (+/- to adjust)
 @
 
 
