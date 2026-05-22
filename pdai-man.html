@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pDAI-MAN · PulseChain Crypto Muncher</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Press+Start+2P&display=swap');
+
+  :root{
+    --bg:#05050f;
+    --maze:#1730ff;
+    --maze-glow:#3b6bff;
+    --pink:#ff1f6b;
+    --magenta:#c022ff;
+    --blue:#1f9bff;
+    --text:#eef0ff;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+
+  html,body{
+    height:100%;
+    background:
+      radial-gradient(circle at 20% 10%, rgba(192,34,255,.18), transparent 45%),
+      radial-gradient(circle at 80% 90%, rgba(255,31,107,.18), transparent 45%),
+      radial-gradient(circle at 50% 50%, rgba(31,155,255,.10), transparent 60%),
+      var(--bg);
+    color:var(--text);
+    font-family:'Orbitron',sans-serif;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+  }
+
+  /* subtle moving grain / scanline atmosphere */
+  body::after{
+    content:"";
+    position:fixed;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(0deg, rgba(255,255,255,.02) 0 1px, transparent 1px 3px);
+    mix-blend-mode:overlay;
+    z-index:50;
+  }
+
+  .stage{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    padding:18px;
+  }
+
+  header{
+    text-align:center;
+    line-height:1;
+  }
+  .brand{
+    font-family:'Press Start 2P',monospace;
+    font-size:13px;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+    color:#fff;
+    filter:drop-shadow(0 0 10px rgba(31,155,255,.7));
+  }
+  .title{
+    font-family:'Press Start 2P',monospace;
+    font-size:26px;
+    letter-spacing:1px;
+    background:linear-gradient(90deg,var(--blue),var(--magenta),var(--pink));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 0 12px rgba(192,34,255,.55));
+  }
+  .subtitle{
+    margin-top:8px;
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    opacity:.7;
+  }
+
+  .hud{
+    display:flex;
+    gap:26px;
+    align-items:center;
+    justify-content:center;
+    font-family:'Press Start 2P',monospace;
+    font-size:11px;
+    flex-wrap:wrap;
+  }
+  .hud .chip{
+    display:flex;align-items:center;gap:8px;
+    padding:7px 12px;
+    border:1px solid rgba(120,140,255,.35);
+    border-radius:10px;
+    background:rgba(20,24,60,.5);
+    box-shadow:0 0 14px rgba(40,70,255,.15) inset;
+  }
+  .hud .val{color:#ffd84d;}
+  .hud .lives{display:flex;gap:5px;align-items:center;}
+
+  .board-wrap{
+    position:relative;
+    border-radius:14px;
+    padding:10px;
+    background:linear-gradient(160deg, rgba(20,24,60,.65), rgba(8,8,24,.65));
+    box-shadow:
+      0 0 0 1px rgba(120,140,255,.25),
+      0 0 40px rgba(40,70,255,.25),
+      0 0 90px rgba(192,34,255,.12);
+  }
+  canvas{
+    display:block;
+    border-radius:8px;
+    background:#080816;
+    image-rendering:auto;
+    max-width:100%;
+    max-height:78vh;
+    height:auto;
+  }
+
+  /* legend of tokens */
+  .legend{
+    display:flex;gap:18px;flex-wrap:wrap;justify-content:center;
+    font-size:11px;letter-spacing:1px;opacity:.85;
+  }
+  .legend .item{display:flex;align-items:center;gap:7px;}
+  .legend svg{width:20px;height:20px;}
+
+  .overlay{
+    position:absolute;inset:10px;
+    border-radius:8px;
+    background:rgba(5,5,15,.86);
+    backdrop-filter:blur(3px);
+    display:flex;flex-direction:column;
+    align-items:center;justify-content:center;
+    gap:18px;text-align:center;
+    z-index:20;
+  }
+  .overlay h2{
+    font-family:'Press Start 2P',monospace;
+    font-size:22px;
+    background:linear-gradient(90deg,var(--blue),var(--magenta),var(--pink));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .overlay p{font-size:13px;opacity:.85;max-width:360px;line-height:1.7;letter-spacing:1px;}
+  .overlay .keys{font-size:11px;opacity:.6;letter-spacing:1px;}
+  .btn{
+    cursor:pointer;
+    font-family:'Press Start 2P',monospace;
+    font-size:12px;
+    padding:14px 22px;
+    border:none;border-radius:10px;
+    color:#fff;
+    background:linear-gradient(90deg,var(--blue),var(--magenta),var(--pink));
+    box-shadow:0 6px 24px rgba(192,34,255,.4);
+    transition:transform .12s ease, box-shadow .12s ease;
+    letter-spacing:1px;
+  }
+  .btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 10px 32px rgba(255,31,107,.5);}
+  .btn:active{transform:translateY(0) scale(.98);}
+  .hidden{display:none!important;}
+
+  .pdai-spin{width:64px;height:64px;animation:spin 6s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  .tagline{
+    margin:-4px 0 14px;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    background:linear-gradient(90deg,var(--blue),var(--magenta),var(--pink));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    filter:drop-shadow(0 0 8px rgba(192,34,255,.4));
+  }
+  .credit{
+    margin-top:16px;
+    font-size:11px;
+    letter-spacing:2px;
+    opacity:.65;
+    font-style:italic;
+  }
+
+  footer{font-size:10px;letter-spacing:2px;opacity:.4;margin-top:2px;}
+
+  @media (max-width:560px){
+    .title{font-size:18px;}
+    .hud{font-size:9px;gap:14px;}
+  }
+</style>
+</head>
+<body>
+<div class="stage">
+  <header>
+    <div class="brand">PulseChain</div>
+    <div class="title">pDAI&nbsp;-&nbsp;MAN</div>
+    <div class="subtitle">Munch the markets · crypto &amp; fiat</div>
+  </header>
+
+  <div class="hud">
+    <div class="chip">SCORE <span class="val" id="score">0</span></div>
+    <div class="chip">HIGH <span class="val" id="high">0</span></div>
+    <div class="chip lives">LIVES <span class="val" id="livesIcons"></span></div>
+    <div class="chip">SPEED <span class="val" id="speedVal">7.0x</span></div>
+  </div>
+
+  <div class="board-wrap">
+    <canvas id="game" width="672" height="744"></canvas>
+
+    <div class="overlay" id="startScreen">
+      <!-- animated PDAI coin -->
+      <svg class="pdai-spin" viewBox="0 0 100 100" id="coinPreview"></svg>
+      <h2>pDAI-MAN</h2>
+      <div class="tagline">Decentralized • Unconfiscatable • Legal clarity</div>
+      <p>You are the pDAI coin. Chomp every token in the maze — crypto (ADA, SOL, DOT) and world currencies (USD, CHF, CNY, EUR, TRY, MXN, ITL). Dodge the ghosts. Grab a glowing power-coin to turn the tables.</p>
+      <div class="keys">◄ ▲ ▼ ► or W A S D to move &nbsp;·&nbsp; + / − speed &nbsp;·&nbsp; SPACE pause</div>
+      <button class="btn" id="startBtn">INSERT COIN ▸</button>
+      <div class="credit">Brought to you by Marculix</div>
+    </div>
+
+    <div class="overlay hidden" id="endScreen">
+      <h2 id="endTitle">GAME OVER</h2>
+      <p id="endMsg"></p>
+      <button class="btn" id="restartBtn">PLAY AGAIN ▸</button>
+    </div>
+  </div>
+
+  <div class="legend">
+    <div class="item"><span id="legAda"></span> Cardano</div>
+    <div class="item"><span id="legSol"></span> Solana</div>
+    <div class="item"><span id="legDot"></span> Polkadot</div>
+    <span id="legFiat"></span>
+    <div class="item"><span id="legPow"></span> Power coin</div>
+  </div>
+
+  <footer>MOVE: WASD / ARROWS &nbsp;·&nbsp; SPEED: + / − &nbsp;·&nbsp; PAUSE: SPACE &nbsp;·&nbsp; A FAN-MADE CRYPTO TRIBUTE</footer>
+</div>
+
+<script>
+/* =========================================================================
+   PDAI-MAN  —  a Pac-Man style game
+   Player = animated PDAI coin (gradient circle + white "D" mark, chomping mouth)
+   Pellets = Ethereum / Solana / Polkadot token glyphs
+   ========================================================================= */
+
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+
+// ---- Maze layout -------------------------------------------------------
+// Tile codes:
+// 1 = wall, 0 = empty path, 2 = pellet (token), 3 = power coin,
+// 9 = ghost house door, 8 = no-pellet path (tunnels/house interior)
+const TILE = 24;
+const MAP = [
+"1111111111111111111111111111",
+"1222222222222112222222222221",
+"1211112111112112111112111121",
+"1311112111112112111112111131",
+"1211112111112112111112111121",
+"1222222222222222222222222221",
+"1211112112111111112112111121",
+"1211112112111111112112111121",
+"1222222112222112222112222221",
+"1111112111110110111112111111",
+"8888812111110110111112188888",
+"8888812118888888888112188888",
+"8888812118111991118112188888",
+"1111112118100000018112111111",
+"8000002008100000018002000008",
+"1111112118100000018112111111",
+"8888812118111111118112188888",
+"8888812118888888888112188888",
+"8888812118111111118112188888",
+"1111112112111111112112111111",
+"1222222222222112222222222221",
+"1211112111112112111112111121",
+"1311222112222002222112221131",
+"1112112112111111112112112111",
+"1112112112111111112112112111",
+"1222222112222112222112222221",
+"1211111111112112111111111121",
+"1211111111112112111111111121",
+"1222222222222222222222222221",
+"1111111111111111111111111111",
+];
+
+const ROWS = MAP.length;       // 30
+const COLS = MAP[0].length;    // 28
+// canvas is 672 x 744 -> 28*24 x 31*24 (one extra row of breathing room)
+const OFFSET_Y = 12;            // small vertical centering pad
+
+// build a mutable grid of pellets
+let grid = [];
+function buildGrid(){
+  grid = MAP.map(row => row.split('').map(Number));
+}
+
+// ---- Game state --------------------------------------------------------
+let score = 0;
+let high = Number(localStorage.getItem('pdaiHigh') || 0);
+let lives = 3;
+let pelletsLeft = 0;
+let running = false;
+let frightenedTimer = 0;       // frames remaining of power mode
+let animFrame = 0;             // global animation counter
+let rafId = null;
+let paused = false;            // space-bar pause
+let speedMul = 4.0;            // global speed multiplier (+/- to adjust)
+const SPEED_MIN = 0.5, SPEED_MAX = 8.0, SPEED_STEP = 0.5;
+let dying = false;             // true during the death animation
+let dyingTimer = 0;            // frames elapsed in the death animation
+const DEATH_FRAMES = 75;       // ~1.25s death animation before respawn / game over
+
+document.getElementById('high').textContent = high;
+
+function updateSpeedHUD(){
+  const el = document.getElementById('speedVal');
+  if(el) el.textContent = speedMul.toFixed(1) + 'x';
+}
+
+// ---- Helpers -----------------------------------------------------------
+// `passDoor` = true lets ghosts pass through the ghost-house door (tile 9).
+function isWall(c, r, passDoor){
+  if (r < 0 || r >= ROWS) return false;
+  // horizontal wrap handled by tunnel logic, treat OOB cols as open
+  if (c < 0 || c >= COLS) return false;
+  const v = grid[r][c];
+  if (v === 1) return true;
+  if (v === 9) return !passDoor;   // door is solid to the player, open to ghosts
+  return false;
+}
+function tileCenter(c, r){
+  return { x: c*TILE + TILE/2, y: r*TILE + TILE/2 + OFFSET_Y };
+}
+
+// ====================================================================
+//  PLAYER : the PDAI coin
+// ====================================================================
+const player = {
+  c: 14, r: 22,                 // start tile (on the open row near bottom)
+  x: 0, y: 0,
+  dir: {x:-1,y:0},              // current direction
+  next:{x:-1,y:0},              // queued direction
+  speed: 2.4,
+  radius: TILE*0.62,
+  mouth: 0,                     // 0..1 chomp openness
+  mouthDir: 1,
+};
+function resetPlayer(){
+  player.c = 14; player.r = 22;
+  const ctr = tileCenter(player.c, player.r);
+  player.x = ctr.x; player.y = ctr.y;
+  player.dir = {x:-1,y:0};
+  player.next = {x:-1,y:0};
+}
+
+// ====================================================================
+//  GHOSTS  (the "chains" hunting you back — themed coins)
+// ====================================================================
+const GHOST_COLORS = [
+  {body:'#ff1f6b', name:'pink'},     // PDAI pink
+  {body:'#1f9bff', name:'blue'},     // PDAI blue
+  {body:'#c022ff', name:'magenta'},  // PDAI magenta
+  {body:'#27e0b0', name:'teal'},
+];
+let ghosts = [];
+function makeGhosts(){
+  // Spawn inside the ghost house, in the two door-aligned columns (13,14)
+  // so a straight upward move carries them through the door (row 12).
+  const spawns = [
+    {c:13,r:14},{c:14,r:14},{c:13,r:15},{c:14,r:15}
+  ];
+  ghosts = spawns.map((s,i)=>{
+    const ctr = tileCenter(s.c,s.r);
+    return {
+      x:ctr.x, y:ctr.y,
+      dir:{x:0,y:-1},          // head up toward the door
+      speed:1.9 + i*0.1,
+      color:GHOST_COLORS[i],
+      eaten:false,             // eyes-only, heading home
+      releaseAt:i*40,          // staggered exit (frames)
+      released:false,
+      exiting:true,            // true until the ghost has left the house
+    };
+  });
+}
+
+// Tile rows/cols that define "still inside or at the house mouth".
+function insideHouse(c,r){
+  return r>=12 && r<=16 && c>=11 && c<=16;
+}
+
+// ====================================================================
+//  TOKEN GLYPH DRAWING  (crypto: ETH/SOL/DOT  +  fiat currency coins)
+// ====================================================================
+// Token type registry. 0-2 are the crypto vector glyphs; 3+ are fiat
+// "currency coins" drawn as a colored disc with a white currency symbol.
+const FIAT = [
+  // symbol, label, coin color
+  {sym:'$',   label:'US Dollar',     color:'#2e8b57'},  // USD  – greenback
+  {sym:'Fr',  label:'Swiss Franc',   color:'#d52b1e'},  // CHF  – Swiss red
+  {sym:'¥',   label:'Chinese Yuan',  color:'#de2910'},  // CNY  – red
+  {sym:'€',   label:'Euro',          color:'#0b3d91'},  // EUR  – euro blue
+  {sym:'₺',   label:'Turkish Lira',  color:'#e30a17'},  // TRY  – Turkish red
+  {sym:'Mex$', label:'Mexican Peso',  color:'#9c2aa0'},  // MXN  – distinct purple
+  {sym:'₤',   label:'Italian Lira',  color:'#008c45'},  // ITL  – Italian green
+];
+const FIAT_BASE = 3;                       // type index where fiat begins
+const NUM_TYPES = FIAT_BASE + FIAT.length; // 3 crypto + 7 fiat = 10
+
+// Each pellet tile gets a deterministic token type so the maze has variety.
+function tokenTypeFor(c,r){
+  return (c*3 + r*7) % NUM_TYPES;
+}
+
+function drawCardano(x,y,s){
+  // Cardano (ADA): a central dot ringed by clusters of smaller dots,
+  // in Cardano's signature blue. Evokes the orbital "constellation" mark.
+  ctx.save();
+  ctx.translate(x,y);
+  const blue = '#0033ad';
+  const lite = '#3468d1';
+  const R = s*0.95;
+
+  // central node
+  ctx.fillStyle = lite;
+  ctx.beginPath(); ctx.arc(0,0,R*0.28,0,7); ctx.fill();
+
+  // inner ring: 6 medium dots
+  ctx.fillStyle = blue;
+  for(let i=0;i<6;i++){
+    const a = i*Math.PI/3 + Math.PI/6;
+    ctx.beginPath();
+    ctx.arc(Math.cos(a)*R*0.62, Math.sin(a)*R*0.62, R*0.17, 0, 7);
+    ctx.fill();
+  }
+  // outer ring: 6 smaller dots, offset
+  ctx.fillStyle = lite;
+  for(let i=0;i<6;i++){
+    const a = i*Math.PI/3;
+    ctx.beginPath();
+    ctx.arc(Math.cos(a)*R*1.02, Math.sin(a)*R*1.02, R*0.12, 0, 7);
+    ctx.fill();
+  }
+  ctx.restore();
+}
+
+function drawSolana(x,y,s){
+  // three slanted bars (Solana mark)
+  ctx.save();
+  ctx.translate(x,y);
+  const w=s*1.5, h=s*0.34, gap=s*0.46, sk=s*0.34;
+  const grad=ctx.createLinearGradient(-w/2,0,w/2,0);
+  grad.addColorStop(0,'#9945ff'); grad.addColorStop(1,'#14f195');
+  ctx.fillStyle=grad;
+  for(let i=-1;i<=1;i++){
+    const yy=i*gap;
+    const dir = i; // top slants right, bottom slants left
+    ctx.beginPath();
+    ctx.moveTo(-w/2 + (dir>0?sk:0), yy-h/2);
+    ctx.lineTo( w/2 + (dir>0?0:(dir<0?-sk:0))+(dir>0?0:0), yy-h/2);
+    ctx.lineTo( w/2 - (dir<0?sk:0), yy+h/2);
+    ctx.lineTo(-w/2 - (dir<0?0:0)+(dir<0?0:0), yy+h/2);
+    ctx.closePath();
+    ctx.fill();
+  }
+  ctx.restore();
+}
+
+function drawPolkadot(x,y,s){
+  // central dot + 6 satellite dots
+  ctx.save();
+  ctx.translate(x,y);
+  ctx.fillStyle='#e6007a';
+  const R=s*0.9, dot=s*0.26;
+  ctx.beginPath();ctx.arc(0,-R*0.55,dot,0,7);ctx.fill();
+  ctx.beginPath();ctx.arc(0, R*0.55,dot,0,7);ctx.fill();
+  ctx.beginPath();ctx.arc(-R*0.5,-R*0.28,dot,0,7);ctx.fill();
+  ctx.beginPath();ctx.arc( R*0.5,-R*0.28,dot,0,7);ctx.fill();
+  ctx.beginPath();ctx.arc(-R*0.5, R*0.28,dot,0,7);ctx.fill();
+  ctx.beginPath();ctx.arc( R*0.5, R*0.28,dot,0,7);ctx.fill();
+  ctx.restore();
+}
+
+function drawCurrencyCoin(x,y,s,sym,color){
+  // a small minted coin: colored disc, glossy rim, white currency symbol
+  ctx.save();
+  ctx.translate(x,y);
+  const r = s*1.05;
+
+  // disc with subtle radial shading
+  const g = ctx.createRadialGradient(-r*0.3,-r*0.3,r*0.1, 0,0,r);
+  g.addColorStop(0, lighten(color,40));
+  g.addColorStop(0.6, color);
+  g.addColorStop(1, darken(color,25));
+  ctx.beginPath(); ctx.arc(0,0,r,0,Math.PI*2);
+  ctx.fillStyle = g; ctx.fill();
+
+  // rim
+  ctx.lineWidth = Math.max(1, r*0.12);
+  ctx.strokeStyle = 'rgba(255,255,255,.55)';
+  ctx.stroke();
+
+  // currency symbol
+  ctx.fillStyle = '#ffffff';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  const fs = sym.length>1 ? r*1.05 : r*1.35;
+  ctx.font = `700 ${fs}px Orbitron, system-ui, sans-serif`;
+  ctx.shadowColor = 'rgba(0,0,0,.35)'; ctx.shadowBlur = 2;
+  ctx.fillText(sym, 0, r*0.06);
+  ctx.restore();
+}
+
+// tiny color helpers (hex -> lighter / darker hex)
+function _clamp(v){return Math.max(0,Math.min(255,Math.round(v)));}
+function lighten(hex,amt){return _shift(hex,amt);}
+function darken(hex,amt){return _shift(hex,-amt);}
+function _shift(hex,amt){
+  const h=hex.replace('#','');
+  const r=parseInt(h.slice(0,2),16), g=parseInt(h.slice(2,4),16), b=parseInt(h.slice(4,6),16);
+  return '#'+[r,g,b].map(v=>_clamp(v+amt).toString(16).padStart(2,'0')).join('');
+}
+
+function drawToken(type,x,y,scale){
+  const pulse = 1 + Math.sin(animFrame*0.12 + x*0.05)*0.06;
+  const s = (TILE*0.30) * scale * pulse;
+  if(type===0) drawCardano(x,y,s*1.0);
+  else if(type===1) drawSolana(x,y,s*0.95);
+  else if(type===2) drawPolkadot(x,y,s*1.0);
+  else {
+    const f = FIAT[type - FIAT_BASE];
+    drawCurrencyCoin(x,y,s*0.92,f.sym,f.color);
+  }
+}
+
+function drawPowerCoin(x,y){
+  const pulse = 1 + Math.sin(animFrame*0.2)*0.18;
+  const r = TILE*0.42*pulse;
+  const g=ctx.createRadialGradient(x,y,1,x,y,r);
+  g.addColorStop(0,'#fff');
+  g.addColorStop(0.35,'#ffd84d');
+  g.addColorStop(1,'#ff8a00');
+  ctx.beginPath();ctx.arc(x,y,r,0,7);
+  ctx.fillStyle=g;ctx.fill();
+  ctx.beginPath();ctx.arc(x,y,r*1.7,0,7);
+  ctx.fillStyle='rgba(255,200,60,'+(0.12+0.08*Math.sin(animFrame*0.2))+')';
+  ctx.fill();
+}
+
+// ====================================================================
+//  DRAW THE pDAI MONSTER (player)
+//  A living coin-beast: gradient body + "D" mark, a toothy chomping maw,
+//  googly eyes perched on top that glance toward travel, a flickering
+//  energy-flame trail, and a breathing aura. Signature unchanged.
+// ====================================================================
+function drawPDAI(x,y,radius,dir,mouthOpen){
+  const t = (typeof animFrame === 'number') ? animFrame : 0;
+  const ang = Math.atan2(dir.y, dir.x);
+  const R = radius;
+
+  // ---------- 1) Breathing aura (behind everything) ----------
+  ctx.save();
+  ctx.translate(x,y);
+  const auraPulse = 1 + Math.sin(t*0.18)*0.12;
+  const aura = ctx.createRadialGradient(0,0,R*0.6, 0,0,R*1.9*auraPulse);
+  aura.addColorStop(0,'rgba(192,34,255,0.26)');
+  aura.addColorStop(0.6,'rgba(120,60,255,0.09)');
+  aura.addColorStop(1,'rgba(31,155,255,0)');
+  ctx.beginPath(); ctx.arc(0,0,R*1.9*auraPulse,0,Math.PI*2);
+  ctx.fillStyle = aura; ctx.fill();
+  ctx.restore();
+
+  // ---------- 2) Energy-flame trail (behind, opposite travel) ----------
+  ctx.save();
+  ctx.translate(x,y);
+  ctx.rotate(ang);
+  const flameCount = 5;
+  for(let i=0;i<flameCount;i++){
+    const off = (i-(flameCount-1)/2);
+    const flick = 0.5 + 0.5*Math.sin(t*0.5 + i*1.3);
+    const len = R*(0.8 + flick*0.85);
+    const baseY = off * R*0.30;
+    const tipY = off * R*0.48;
+    const fg = ctx.createLinearGradient(-R, baseY, -R-len, tipY);
+    fg.addColorStop(0,'rgba(255,90,160,0.85)');
+    fg.addColorStop(0.5,'rgba(192,34,255,0.55)');
+    fg.addColorStop(1,'rgba(31,155,255,0)');
+    ctx.beginPath();
+    ctx.moveTo(-R*0.7, baseY - R*0.15);
+    ctx.quadraticCurveTo(-R-len*0.6, tipY - R*0.05, -R-len, tipY);
+    ctx.quadraticCurveTo(-R-len*0.6, tipY + R*0.05, -R*0.7, baseY + R*0.15);
+    ctx.closePath();
+    ctx.fillStyle = fg; ctx.fill();
+  }
+  ctx.restore();
+
+  // ---------- 3) Eyes on top of the head (drawn BEHIND body so they
+  //              peek up over the rim, like a creature's eyes) ----------
+  // They sit toward screen-up, nudged slightly in the travel direction.
+  ctx.save();
+  ctx.translate(x,y);
+  const glanceX = Math.cos(ang), glanceY = Math.sin(ang);
+  const eyeR = R*0.30;
+  const eyeBaseY = -R*0.78;            // up above the body
+  const eyeSpread = R*0.52;
+  const blink = (t % 150) < 6;         // brief blink roughly every 2.5s
+  for(const side of [-1,1]){
+    const ex = side*eyeSpread + glanceX*R*0.10;
+    const ey = eyeBaseY + glanceY*R*0.06;
+    // white
+    ctx.beginPath(); ctx.arc(ex, ey, eyeR, 0, Math.PI*2);
+    ctx.fillStyle='#fff'; ctx.fill();
+    ctx.lineWidth=R*0.05; ctx.strokeStyle='#10122a'; ctx.stroke();
+    if(!blink){
+      const px = ex + glanceX*eyeR*0.42;
+      const py = ey + glanceY*eyeR*0.42;
+      ctx.beginPath(); ctx.arc(px,py,eyeR*0.48,0,Math.PI*2);
+      ctx.fillStyle='#10122a'; ctx.fill();
+      ctx.beginPath(); ctx.arc(px-2,py-2,eyeR*0.16,0,Math.PI*2);
+      ctx.fillStyle='rgba(255,255,255,.95)'; ctx.fill();
+    } else {
+      ctx.strokeStyle='#10122a'; ctx.lineWidth=R*0.07; ctx.lineCap='round';
+      ctx.beginPath(); ctx.moveTo(ex-eyeR*0.7,ey); ctx.lineTo(ex+eyeR*0.7,ey); ctx.stroke();
+    }
+    // angry brow over each eye, tilted inward toward the center
+    ctx.save();
+    ctx.translate(ex, ey-eyeR*0.65);
+    ctx.rotate(side*0.42);
+    ctx.fillStyle='#10122a';
+    roundRect(-eyeR*0.95, -eyeR*0.20, eyeR*1.7, eyeR*0.32, eyeR*0.15); ctx.fill();
+    ctx.restore();
+  }
+  ctx.restore();
+
+  // ---------- 4) Body (gradient wedge / pac shape) ----------
+  ctx.save();
+  ctx.translate(x,y);
+  ctx.rotate(ang);
+  const mouth = mouthOpen * Math.PI * 0.30;
+
+  const grad = ctx.createLinearGradient(-R,-R,R,R);
+  grad.addColorStop(0,   '#1f9bff');
+  grad.addColorStop(0.45,'#6a2bff');
+  grad.addColorStop(0.7, '#c022ff');
+  grad.addColorStop(1,   '#ff1f6b');
+
+  ctx.beginPath();
+  ctx.moveTo(0,0);
+  ctx.arc(0,0,R, mouth, Math.PI*2 - mouth);
+  ctx.closePath();
+  ctx.fillStyle = grad;
+  ctx.shadowColor='rgba(192,34,255,.65)';
+  ctx.shadowBlur=14;
+  ctx.fill();
+  ctx.shadowBlur=0;
+
+  // ---------- 5) Toothy maw ----------
+  if(mouth > 0.03){
+    // dark throat filling the open wedge
+    ctx.beginPath();
+    ctx.moveTo(0,0);
+    ctx.lineTo(Math.cos(mouth)*R, Math.sin(mouth)*R);
+    ctx.arc(0,0,R, mouth, -mouth, true);
+    ctx.closePath();
+    ctx.fillStyle='rgba(35,5,26,0.92)';
+    ctx.fill();
+
+    // teeth: white triangles along the upper and lower mouth edges
+    const teeth=4;
+    ctx.fillStyle='#fff';
+    for(const sgn of [1,-1]){           // +mouth edge and -mouth edge
+      const a = sgn*mouth;
+      const ex = Math.cos(a), ey = Math.sin(a);          // outward along edge
+      const inx = -Math.sin(a)*(-sgn), iny = Math.cos(a)*(-sgn); // points into the gap
+      for(let i=0;i<teeth;i++){
+        const r0=R*(0.34+i*0.16), r1=R*(0.34+(i+1)*0.16);
+        const bx0=ex*r0, by0=ey*r0, bx1=ex*r1, by1=ey*r1;
+        const midR=(r0+r1)/2;
+        const tx=ex*midR + inx*R*0.10, ty=ey*midR + iny*R*0.10;
+        ctx.beginPath(); ctx.moveTo(bx0,by0); ctx.lineTo(bx1,by1); ctx.lineTo(tx,ty); ctx.closePath(); ctx.fill();
+      }
+    }
+  }
+
+  // glossy rim
+  ctx.beginPath();
+  ctx.arc(0,0,R, mouth, Math.PI*2 - mouth);
+  ctx.strokeStyle='rgba(255,255,255,.28)';
+  ctx.lineWidth=2; ctx.stroke();
+  ctx.restore();
+
+  // ---------- 6) "D" mark (upright, centered, drawn correctly) ----------
+  ctx.save();
+  ctx.translate(x,y);
+  ctx.globalAlpha=0.95;
+  ctx.fillStyle='#fff'; ctx.strokeStyle='#fff';
+  ctx.lineWidth=R*0.15; ctx.lineCap='round'; ctx.lineJoin='round';
+  // nudge the mark slightly away from the mouth so teeth stay clear
+  ctx.translate(-Math.cos(ang)*R*0.12, -Math.sin(ang)*R*0.12);
+  // two cross-bars
+  const barW=R*0.78, barH=R*0.13;
+  roundRect(-barW*0.55, -R*0.22, barW, barH, barH/2); ctx.fill();
+  roundRect(-barW*0.55,  R*0.10, barW, barH, barH/2); ctx.fill();
+  // the D: vertical stem on the left + a bowl curving to the right
+  const top=-R*0.46, bot=R*0.46, left=-R*0.30;
+  ctx.beginPath();
+  ctx.moveTo(left, top);
+  ctx.lineTo(left, bot);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(left, top);
+  ctx.lineTo(R*0.02, top);
+  ctx.quadraticCurveTo(R*0.46, top, R*0.46, 0);
+  ctx.quadraticCurveTo(R*0.46, bot, R*0.02, bot);
+  ctx.lineTo(left, bot);
+  ctx.stroke();
+  ctx.globalAlpha=1;
+  ctx.restore();
+}
+
+function roundRect(x,y,w,h,r){
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
+
+// ====================================================================
+//  GHOST DRAWING
+// ====================================================================
+function drawGhost(g){
+  const x=g.x,y=g.y,r=TILE*0.62;
+  ctx.save();
+  ctx.translate(x,y);
+
+  if(!g.eaten){
+    let body = g.color.body;
+    if(frightenedTimer>0){
+      // flash white near the end
+      const flash = frightenedTimer<120 && Math.floor(animFrame/8)%2===0;
+      body = flash ? '#ffffff' : '#2438c8';
+    }
+    ctx.fillStyle=body;
+    ctx.shadowColor=body; ctx.shadowBlur=10;
+    ctx.beginPath();
+    ctx.arc(0,-r*0.1,r,Math.PI,0);
+    ctx.lineTo(r,r*0.7);
+    // wavy skirt
+    const waves=4;
+    for(let i=0;i<waves;i++){
+      const wx = r - (2*r/waves)*(i);
+      ctx.lineTo(wx - r/waves, r*0.45);
+      ctx.lineTo(wx - 2*r/waves, r*0.7);
+    }
+    ctx.closePath();
+    ctx.fill();
+    ctx.shadowBlur=0;
+  }
+
+  // eyes (always, even when eaten -> floating eyes)
+  const lookx = g.dir.x*2.2, looky=g.dir.y*2.2;
+  for(const ex of [-r*0.38, r*0.38]){
+    ctx.fillStyle='#fff';
+    ctx.beginPath();ctx.ellipse(ex,-r*0.15,r*0.26,r*0.32,0,0,7);ctx.fill();
+    ctx.fillStyle = frightenedTimer>0 && !g.eaten ? '#ff1f6b' : '#1422aa';
+    ctx.beginPath();ctx.arc(ex+lookx,-r*0.15+looky,r*0.13,0,7);ctx.fill();
+  }
+  ctx.restore();
+}
+
+// ====================================================================
+//  MAZE RENDERING
+// ====================================================================
+function drawMaze(){
+  ctx.lineWidth=2.5;
+  for(let r=0;r<ROWS;r++){
+    for(let c=0;c<COLS;c++){
+      const v = grid[r][c];
+      const px=c*TILE, py=r*TILE+OFFSET_Y;
+      if(v===1){
+        // glowing neon wall block with rounded feel
+        const g=ctx.createLinearGradient(px,py,px+TILE,py+TILE);
+        g.addColorStop(0,'#142b9e');
+        g.addColorStop(1,'#1d49ff');
+        ctx.fillStyle=g;
+        ctx.shadowColor='rgba(59,107,255,.55)';
+        ctx.shadowBlur=6;
+        roundRect(px+1.5,py+1.5,TILE-3,TILE-3,4);
+        ctx.fill();
+        ctx.shadowBlur=0;
+        ctx.strokeStyle='rgba(120,160,255,.6)';
+        ctx.lineWidth=1;
+        roundRect(px+1.5,py+1.5,TILE-3,TILE-3,4);
+        ctx.stroke();
+      } else if(v===9){
+        // ghost door
+        ctx.fillStyle='rgba(255,255,255,.65)';
+        ctx.fillRect(px+1,py+TILE*0.42,TILE-2,TILE*0.16);
+      }
+    }
+  }
+}
+
+function drawPellets(){
+  for(let r=0;r<ROWS;r++){
+    for(let c=0;c<COLS;c++){
+      const v=grid[r][c];
+      const {x,y}=tileCenter(c,r);
+      if(v===2) drawToken(tokenTypeFor(c,r),x,y,1);
+      else if(v===3) drawPowerCoin(x,y);
+    }
+  }
+}
+
+// ====================================================================
+//  MOVEMENT LOGIC  (collision-safe at any speed)
+// ====================================================================
+
+// Which tile is an entity currently centered-ish in
+function tileOf(x,y){
+  return {
+    c: Math.floor(x/TILE),
+    r: Math.floor((y-OFFSET_Y)/TILE)
+  };
+}
+
+// Is the tile in direction `dir` from tile (c,r) walkable?
+function dirOpen(c,r,dir,passDoor){
+  return !isWall(c+dir.x, r+dir.y, passDoor);
+}
+
+// Distance from current position to the center of the current tile
+function distToCenter(x,y){
+  const c = Math.floor(x/TILE);
+  const r = Math.floor((y-OFFSET_Y)/TILE);
+  const cx = c*TILE + TILE/2;
+  const cy = r*TILE + TILE/2 + OFFSET_Y;
+  return { dx: cx - x, dy: cy - y, cx, cy };
+}
+
+const EPS = 0.001;
+
+// Move an entity along the grid, NEVER crossing into a wall, at ANY speed.
+//
+// We advance in sub-steps no larger than a quarter tile. Each sub-step, if it
+// would carry the entity ACROSS the next tile center, we instead land exactly
+// on that center and resolve turns / wall-stops there before continuing. This
+// guarantees we evaluate every center we pass, so a wall can never be crossed.
+function stepEntity(ent, step, wantDir, passDoor){
+  const MAXSUB = TILE * 0.25;
+  let remaining = step;
+  let blocked = false;
+  let guard = 0;
+  const hardCap = Math.ceil(step / MAXSUB) + 8;
+
+  // Resolve turn / wall at a center the entity is currently exactly on.
+  function resolveCenter(){
+    const { c, r } = tileOf(ent.x, ent.y);
+    if(wantDir && (wantDir.x!==ent.dir.x || wantDir.y!==ent.dir.y) && dirOpen(c,r,wantDir,passDoor)){
+      ent.dir = { ...wantDir };
+    }
+    if(!dirOpen(c,r,ent.dir,passDoor)){
+      blocked = true;
+      return false; // cannot continue
+    }
+    return true;
+  }
+
+  // If we begin exactly on a center, resolve it first.
+  {
+    const { dx, dy } = distToCenter(ent.x, ent.y);
+    if(Math.abs(dx) < EPS && Math.abs(dy) < EPS){
+      if(!resolveCenter()) return blocked;
+    }
+  }
+
+  while(remaining > EPS && guard++ < hardCap){
+    const sub = Math.min(remaining, MAXSUB);
+    const { dx, dy, cx, cy } = distToCenter(ent.x, ent.y);
+
+    // distance to the next center along the axis of travel (signed -> positive ahead)
+    let ahead = Infinity;
+    if(ent.dir.x > 0 && dx > EPS) ahead = dx;
+    else if(ent.dir.x < 0 && dx < -EPS) ahead = -dx;
+    else if(ent.dir.y > 0 && dy > EPS) ahead = dy;
+    else if(ent.dir.y < 0 && dy < -EPS) ahead = -dy;
+
+    if(sub >= ahead - EPS && ahead < Infinity){
+      // land exactly on the upcoming center, then resolve and continue
+      ent.x = cx; ent.y = cy;
+      remaining -= ahead;
+      if(!resolveCenter()) break;
+    } else {
+      // free travel within the tile
+      ent.x += ent.dir.x * sub;
+      ent.y += ent.dir.y * sub;
+      remaining -= sub;
+    }
+  }
+
+  return blocked;
+}
+
+function wrapTunnel(ent){
+  // horizontal wrap on the tunnel rows
+  if(ent.x < -TILE/2) ent.x = COLS*TILE + TILE/2;
+  else if(ent.x > COLS*TILE + TILE/2) ent.x = -TILE/2;
+}
+
+function updatePlayer(){
+  const pspeed = player.speed * speedMul;
+
+  // --- Responsive steering -------------------------------------------
+  // (1) Instant reversal: turning 180° is always safe (we just came from
+  //     there), so apply it immediately rather than waiting for a center.
+  const want = player.next;
+  if(want && (want.x === -player.dir.x && want.y === -player.dir.y)
+          && (want.x !== 0 || want.y !== 0)){
+    player.dir = { ...want };
+  } else if(want && (want.x !== player.dir.x || want.y !== player.dir.y)){
+    // (2) Cornering: if we're close to the next center AND the desired
+    //     perpendicular turn is open, snap to the center now and turn,
+    //     so the turn registers without a perceptible delay.
+    const { dx, dy } = distToCenter(player.x, player.y);
+    const distC = Math.hypot(dx, dy);
+    const tol = Math.min(TILE*0.5, pspeed + TILE*0.18); // small look-ahead window
+    if(distC <= tol){
+      const c = Math.floor((player.x + dx) / TILE);
+      const r = Math.floor((player.y + dy - OFFSET_Y) / TILE);
+      if(dirOpen(c, r, want, false)){
+        // snap onto the center so the turn axis is clean, then face the turn
+        player.x += dx;
+        player.y += dy;
+        player.dir = { ...want };
+      }
+    }
+  }
+
+  const blocked = stepEntity(player, pspeed, player.next, false);
+  player.blocked = blocked;
+  wrapTunnel(player);
+
+  // eat pellet at current tile
+  const c=Math.floor(player.x/TILE);
+  const r=Math.floor((player.y-OFFSET_Y)/TILE);
+  if(r>=0&&r<ROWS&&c>=0&&c<COLS){
+    if(grid[r][c]===2){
+      grid[r][c]=0; score+=10; pelletsLeft--; updateHUD();
+    } else if(grid[r][c]===3){
+      grid[r][c]=0; score+=50; pelletsLeft--; updateHUD();
+      frightenedTimer = 5*60; // ~5s power mode
+    }
+  }
+
+  // chomp animation tied to motion
+  if(!player.blocked){
+    player.mouth += player.mouthDir*0.12;
+    if(player.mouth>1){player.mouth=1;player.mouthDir=-1;}
+    if(player.mouth<0.05){player.mouth=0.05;player.mouthDir=1;}
+  }
+
+  if(pelletsLeft<=0) winLevel();
+}
+
+function chooseGhostDir(g){
+  // Called when the ghost is at a tile center: pick a direction.
+  const { c, r } = tileOf(g.x, g.y);
+
+  // Candidate directions that are open and not an immediate reversal.
+  const all = [{x:1,y:0},{x:-1,y:0},{x:0,y:1},{x:0,y:-1}];
+  let options = all.filter(d=>{
+    if(d.x===-g.dir.x && d.y===-g.dir.y) return false; // no reversing
+    return dirOpen(c,r,d,true);
+  });
+  // Dead-end: allow reversing.
+  if(options.length===0) options = [{x:-g.dir.x,y:-g.dir.y}];
+
+  // Target selection.
+  let tx, ty;
+  if(g.exiting){
+    // Steer to the door mouth, then up out of the house.
+    const door = tileCenter(13, 11); // just above the door
+    tx = door.x; ty = door.y;
+  } else if(g.eaten){
+    const h=tileCenter(13,13); tx=h.x; ty=h.y;   // return into the house
+  } else if(frightenedTimer>0){
+    tx = player.x>canvas.width/2?0:canvas.width;
+    ty = player.y>canvas.height/2?0:canvas.height;
+  } else {
+    tx=player.x; ty=player.y;                     // chase
+  }
+
+  // Pick the option whose resulting tile is closest to the target.
+  let best=options[0], bestD=Infinity;
+  for(const d of options){
+    const nx=g.x+d.x*TILE, ny=g.y+d.y*TILE;
+    const dist=(nx-tx)**2+(ny-ty)**2;
+    if(dist<bestD){ bestD=dist; best=d; }
+  }
+  return best;
+}
+
+function updateGhost(g){
+  if(!g.released){
+    if(animFrame >= g.releaseAt){
+      g.released=true;
+    } else {
+      // bob gently inside the house (no wall crossing — purely cosmetic)
+      g.bob = (g.bob||0) + 0.12;
+      return;
+    }
+  }
+
+  const spd = (g.eaten ? 3.4 : (frightenedTimer>0 ? g.speed*0.6 : g.speed)) * speedMul;
+
+  // If currently at a tile center, decide a new desired direction.
+  const { dx, dy } = distToCenter(g.x, g.y);
+  let wantDir = g.dir;
+  if(Math.abs(dx) < EPS && Math.abs(dy) < EPS){
+    wantDir = chooseGhostDir(g);
+  }
+
+  stepEntity(g, spd, wantDir, true);
+  wrapTunnel(g);
+
+  const { c, r } = tileOf(g.x, g.y);
+
+  // Once a ghost climbs above the house, it's out — start chasing.
+  if(g.exiting && r <= 10){
+    g.exiting = false;
+  }
+
+  // Revive when an eaten ghost reaches home, then send it back out.
+  if(g.eaten && insideHouse(c,r)){
+    g.eaten = false;
+    g.exiting = true;
+  }
+}
+
+function checkGhostCollisions(){
+  for(const g of ghosts){
+    const d=Math.hypot(g.x-player.x, g.y-player.y);
+    if(d < TILE*0.7){
+      if(g.eaten) continue;
+      if(frightenedTimer>0){
+        g.eaten=true; score+=200; updateHUD();
+      } else {
+        loseLife();
+        return;
+      }
+    }
+  }
+}
+
+// ====================================================================
+//  GAME FLOW
+// ====================================================================
+function countPellets(){
+  let n=0;
+  for(let r=0;r<ROWS;r++)for(let c=0;c<COLS;c++) if(grid[r][c]===2||grid[r][c]===3) n++;
+  return n;
+}
+
+function updateHUD(){
+  document.getElementById('score').textContent=score;
+  if(score>high){high=score;localStorage.setItem('pdaiHigh',high);
+    document.getElementById('high').textContent=high;}
+  renderLives();
+}
+function renderLives(){
+  const el=document.getElementById('livesIcons');
+  el.innerHTML='';
+  for(let i=0;i<lives;i++){
+    el.innerHTML += miniCoinSVG('lc'+i);
+  }
+}
+function miniCoinSVG(id){
+  return `<svg width="16" height="16" viewBox="0 0 100 100" style="vertical-align:middle">
+    <defs><linearGradient id="${id}" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f9bff"/><stop offset="0.6" stop-color="#c022ff"/><stop offset="1" stop-color="#ff1f6b"/>
+    </linearGradient></defs>
+    <circle cx="50" cy="50" r="46" fill="url(#${id})"/>
+    <g fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round">
+      <line x1="22" y1="40" x2="74" y2="40"/><line x1="22" y1="60" x2="74" y2="60"/>
+      <path d="M30 24 V76 H50 Q74 76 74 50 Q74 24 50 24 Z"/>
+    </g></svg>`;
+}
+
+function loseLife(){
+  lives--;
+  updateHUD();
+  // Enter a short "dying" state so the death is visible, then either
+  // respawn or show the game-over screen. We freeze updates during this
+  // window but keep the render loop alive so the death frame is drawn.
+  dying = true;
+  dyingTimer = 0;
+  player.dead = true;
+}
+
+function finishDeath(){
+  player.dead = false;
+  dying = false;
+  if(lives<=0){
+    gameOver(false);
+    return;
+  }
+  // respawn for the next life
+  resetPlayer();
+  makeGhosts();
+  frightenedTimer=0;
+}
+
+function winLevel(){
+  gameOver(true);
+}
+
+function gameOver(win){
+  running=false;
+  dying=false;
+  if(rafId){ cancelAnimationFrame(rafId); rafId=null; }
+  const end=document.getElementById('endScreen');
+  document.getElementById('endTitle').textContent = win? 'YOU CLEARED THE CHAIN!' : 'You are a loser! Try again!';
+  document.getElementById('endMsg').innerHTML =
+    `Final score <b style="color:#ffd84d">${score}</b> · High <b style="color:#ffd84d">${high}</b><br>`
+    + (win? 'Every token munched. The pDAI coin reigns supreme.' : 'The ghosts caught the coin.');
+  end.classList.remove('hidden');
+}
+
+// ====================================================================
+//  MAIN LOOP
+// ====================================================================
+function loop(){
+  if(!running){ rafId=null; return; }
+
+  // clear + draw the static field every frame (so overlays sit on top)
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  drawMaze();
+  drawPellets();
+
+  if(dying){
+    // Death animation: freeze ghosts/player movement, shrink+fade the coin.
+    dyingTimer++;
+    drawDeathAnim();
+    for(const g of ghosts) drawGhost(g);
+    if(dyingTimer >= DEATH_FRAMES){
+      finishDeath();
+      // finishDeath may set running=false (game over) and cancel the loop.
+    }
+    if(running) rafId=requestAnimationFrame(loop);
+    return;
+  }
+
+  if(!paused){
+    animFrame++;
+    if(frightenedTimer>0) frightenedTimer--;
+    updatePlayer();
+  }
+  drawPDAI(player.x,player.y,player.radius,player.dir,player.mouth);
+
+  if(!paused){
+    for(const g of ghosts) updateGhost(g);
+  }
+  for(const g of ghosts) drawGhost(g);
+
+  if(!paused){
+    checkGhostCollisions();
+  } else {
+    drawPauseOverlay();
+  }
+
+  // checkGhostCollisions() may have started the dying state or ended the game.
+  if(running) rafId=requestAnimationFrame(loop);
+  else rafId=null;
+}
+
+// The PDAI coin getting "munched": mouth opens wide, coin shrinks and fades,
+// with a short "GULP!" pop so the death reads clearly on screen.
+function drawDeathAnim(){
+  const t = dyingTimer / DEATH_FRAMES;          // 0 -> 1
+  const radius = player.radius * (1 - t);        // shrink away
+  const mouth = Math.min(1, 0.2 + t*1.6);        // mouth opens wide
+  ctx.save();
+  ctx.globalAlpha = Math.max(0, 1 - t);
+  drawPDAI(player.x, player.y, Math.max(0.1, radius), player.dir, mouth);
+  ctx.restore();
+
+  // "GULP!" caption near the coin for the first ~half of the animation
+  if(t < 0.6){
+    ctx.save();
+    ctx.globalAlpha = 1 - (t/0.6);
+    ctx.fillStyle = '#ff1f6b';
+    ctx.font = '900 26px Orbitron, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.shadowColor = 'rgba(0,0,0,.5)'; ctx.shadowBlur = 4;
+    ctx.fillText('GULP!', player.x, player.y - player.radius - 6);
+    ctx.restore();
+  }
+}
+
+function drawPauseOverlay(){
+  ctx.save();
+  ctx.fillStyle='rgba(5,5,15,.55)';
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+  ctx.fillStyle='#eef0ff';
+  ctx.textAlign='center';
+  ctx.font='900 44px Orbitron, sans-serif';
+  ctx.shadowColor='rgba(192,34,255,.7)'; ctx.shadowBlur=18;
+  ctx.fillText('PAUSED', canvas.width/2, canvas.height/2 - 6);
+  ctx.shadowBlur=0;
+  ctx.font='600 16px Orbitron, sans-serif';
+  ctx.fillStyle='rgba(238,240,255,.75)';
+  ctx.fillText('press SPACE to resume', canvas.width/2, canvas.height/2 + 30);
+  ctx.restore();
+}
+
+// ====================================================================
+//  INPUT
+// ====================================================================
+const DIRS={
+  ArrowLeft:{x:-1,y:0},ArrowRight:{x:1,y:0},ArrowUp:{x:0,y:-1},ArrowDown:{x:0,y:1},
+  a:{x:-1,y:0},d:{x:1,y:0},w:{x:0,y:-1},s:{x:0,y:1},
+  A:{x:-1,y:0},D:{x:1,y:0},W:{x:0,y:-1},S:{x:0,y:1},
+};
+window.addEventListener('keydown',e=>{
+  if(DIRS[e.key]){ player.next=DIRS[e.key]; e.preventDefault(); return; }
+
+  // speed up: + / = (and numpad +)
+  if(e.key==='+' || e.key==='=' || e.key==='Add'){
+    speedMul = Math.min(SPEED_MAX, +(speedMul + SPEED_STEP).toFixed(2));
+    updateSpeedHUD(); e.preventDefault(); return;
+  }
+  // slow down: - / _ (and numpad -)
+  if(e.key==='-' || e.key==='_' || e.key==='Subtract'){
+    speedMul = Math.max(SPEED_MIN, +(speedMul - SPEED_STEP).toFixed(2));
+    updateSpeedHUD(); e.preventDefault(); return;
+  }
+  // pause: space (only while a game is running and not during death anim)
+  if(e.key===' ' || e.code==='Space'){
+    if(running && !dying){ paused = !paused; }
+    e.preventDefault(); return;
+  }
+});
+
+// touch / tap controls (swipe)
+let tStart=null;
+canvas.addEventListener('touchstart',e=>{tStart=e.touches[0];},{passive:true});
+canvas.addEventListener('touchend',e=>{
+  if(!tStart)return;
+  const t=e.changedTouches[0];
+  const dx=t.clientX-tStart.clientX, dy=t.clientY-tStart.clientY;
+  if(Math.abs(dx)>Math.abs(dy)) player.next = dx>0?{x:1,y:0}:{x:-1,y:0};
+  else player.next = dy>0?{x:0,y:1}:{x:0,y:-1};
+  tStart=null;
+},{passive:true});
+
+// ====================================================================
+//  START / RESTART
+// ====================================================================
+function startGame(){
+  buildGrid();
+  pelletsLeft=countPellets();
+  score=0; lives=3; frightenedTimer=0; animFrame=0;
+  paused=false;
+  dying=false; dyingTimer=0;
+  resetPlayer();
+  player.dead=false;
+  makeGhosts();
+  updateHUD();
+  updateSpeedHUD();
+  document.getElementById('startScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.add('hidden');
+  running=true;
+  if(rafId){ cancelAnimationFrame(rafId); }
+  rafId=null;
+  loop();
+}
+document.getElementById('startBtn').onclick=startGame;
+document.getElementById('restartBtn').onclick=startGame;
+
+// ====================================================================
+//  PREVIEW + LEGEND SVGs (static)
+// ====================================================================
+document.getElementById('coinPreview').innerHTML = `
+  <defs>
+    <linearGradient id="coinG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f9bff"/>
+      <stop offset="0.45" stop-color="#6a2bff"/>
+      <stop offset="0.7" stop-color="#c022ff"/>
+      <stop offset="1" stop-color="#ff1f6b"/>
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="46" fill="url(#coinG)"/>
+  <g fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round">
+    <line x1="22" y1="40" x2="74" y2="40"/>
+    <line x1="22" y1="60" x2="74" y2="60"/>
+    <path d="M30 26 V74 H50 Q72 74 72 50 Q72 26 50 26 Z"/>
+  </g>`;
+
+// legend token swatches: small inline SVGs
+document.getElementById('legAda').innerHTML =
+ `<svg viewBox="0 0 24 24" width="20" height="20"><g><circle cx="12" cy="12" r="2.6" fill="#3468d1"/><g fill="#0033ad"><circle cx="12" cy="5.4" r="1.7"/><circle cx="17.7" cy="8.7" r="1.7"/><circle cx="17.7" cy="15.3" r="1.7"/><circle cx="12" cy="18.6" r="1.7"/><circle cx="6.3" cy="15.3" r="1.7"/><circle cx="6.3" cy="8.7" r="1.7"/></g><g fill="#3468d1"><circle cx="12" cy="2.4" r="1.1"/><circle cx="20.3" cy="7.2" r="1.1"/><circle cx="20.3" cy="16.8" r="1.1"/><circle cx="12" cy="21.6" r="1.1"/><circle cx="3.7" cy="16.8" r="1.1"/><circle cx="3.7" cy="7.2" r="1.1"/></g></g></svg>`;
+document.getElementById('legSol').innerHTML =
+ `<svg viewBox="0 0 24 24" width="20" height="20"><defs><linearGradient id="sg" x1="0" x2="1"><stop offset="0" stop-color="#9945ff"/><stop offset="1" stop-color="#14f195"/></linearGradient></defs>
+ <g fill="url(#sg)"><path d="M6 6 L20 6 L18 9 L4 9 Z"/><path d="M4 11 L18 11 L20 14 L6 14 Z"/><path d="M6 16 L20 16 L18 19 L4 19 Z"/></g></svg>`;
+document.getElementById('legDot').innerHTML =
+ `<svg viewBox="0 0 24 24" width="20" height="20"><g fill="#e6007a"><circle cx="12" cy="5" r="2.4"/><circle cx="12" cy="19" r="2.4"/><circle cx="5.5" cy="8.5" r="2.4"/><circle cx="18.5" cy="8.5" r="2.4"/><circle cx="5.5" cy="15.5" r="2.4"/><circle cx="18.5" cy="15.5" r="2.4"/></g></svg>`;
+document.getElementById('legPow').innerHTML =
+ `<svg viewBox="0 0 24 24" width="20" height="20"><defs><radialGradient id="pw"><stop offset="0" stop-color="#fff"/><stop offset="0.4" stop-color="#ffd84d"/><stop offset="1" stop-color="#ff8a00"/></radialGradient></defs><circle cx="12" cy="12" r="8" fill="url(#pw)"/></svg>`;
+
+// fiat currency legend entries (generated from the FIAT registry so they
+// always match the coins drawn in the maze)
+(function buildFiatLegend(){
+  const host = document.getElementById('legFiat');
+  if(!host) return;
+  let html = '';
+  FIAT.forEach((f, i)=>{
+    const gid = 'lg'+i;
+    const fs = f.sym.length>1 ? 10 : 13;
+    html += `<span class="item">
+      <svg viewBox="0 0 24 24" width="20" height="20">
+        <defs><radialGradient id="${gid}" cx="38%" cy="38%">
+          <stop offset="0" stop-color="${lighten(f.color,40)}"/>
+          <stop offset="0.6" stop-color="${f.color}"/>
+          <stop offset="1" stop-color="${darken(f.color,25)}"/>
+        </radialGradient></defs>
+        <circle cx="12" cy="12" r="10" fill="url(#${gid})" stroke="rgba(255,255,255,.55)" stroke-width="1.4"/>
+        <text x="12" y="12.5" text-anchor="middle" dominant-baseline="central"
+          font-family="Orbitron, system-ui, sans-serif" font-weight="700"
+          font-size="${fs}" fill="#fff">${f.sym}</text>
+      </svg> ${f.label}</span>`;
+  });
+  host.outerHTML = html; // replace the placeholder span with the generated items
+})();
+
+</script>
+</body>
+</html>
