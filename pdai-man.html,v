@@ -1,9 +1,14 @@
-head	1.1;
+head	1.2;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.2
+date	2026.05.22.18.35.29;	author gloor;	state Exp;
+branches;
+next	1.1;
 
 1.1
 date	2026.05.22.15.47.24;	author gloor;	state Exp;
@@ -15,9 +20,9 @@ desc
 @@
 
 
-1.1
+1.2
 log
-@Initial revision
+@*** empty log message ***
 @
 text
 @<!DOCTYPE html>
@@ -225,7 +230,7 @@ text
     <div class="chip">SCORE <span class="val" id="score">0</span></div>
     <div class="chip">HIGH <span class="val" id="high">0</span></div>
     <div class="chip lives">LIVES <span class="val" id="livesIcons"></span></div>
-    <div class="chip">SPEED <span class="val" id="speedVal">7.0x</span></div>
+    <div class="chip">SPEED <span class="val" id="speedVal">2.5x</span></div>
   </div>
 
   <div class="board-wrap">
@@ -1363,4 +1368,15 @@ document.getElementById('legPow').innerHTML =
 </script>
 </body>
 </html>
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d206 1
+a206 1
+    <div class="chip">SPEED <span class="val" id="speedVal">7.0x</span></div>
 @
