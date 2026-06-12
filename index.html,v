@@ -1,9 +1,19 @@
-head	1.161;
+head	1.163;
 access;
 symbols;
 locks; strict;
 comment	@# @;
 
+
+1.163
+date	2026.06.12.20.09.28;	author gloor;	state Exp;
+branches;
+next	1.162;
+
+1.162
+date	2026.06.12.19.54.30;	author gloor;	state Exp;
+branches;
+next	1.161;
 
 1.161
 date	2026.05.22.20.28.01;	author gloor;	state Exp;
@@ -815,7 +825,7 @@ desc
 @@
 
 
-1.161
+1.163
 log
 @*** empty log message ***
 @
@@ -980,6 +990,11 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
           Software Guide</div>
         <div class="card-desc">In 7 languages<br>
         </div>
+      </a> <a href="hermes-job-pipeline.html" class="card"> <img
+          src="data/hermes-job-pipeline.png" alt="Icon"
+          class="icon-placeholder">
+        <div class="card-title">Semi Automatic Job Application Engine</div>
+        <div class="card-desc">Hermes Agent</div>
       </a> <a href="linux-llm-security-audit.html" class="card"> <img
           src="data/front-linux-llm-security.png" alt="Icon"
           class="icon-placeholder">
@@ -1135,6 +1150,26 @@ body{background-image:radial-gradient(rgba(124,45,18,.08) 1px,transparent 1px);b
     </footer>
   </body>
 </html>
+@
+
+
+1.162
+log
+@*** empty log message ***
+@
+text
+@d162 1
+a162 1
+          src="data/hermes-job-pipeline.gif" alt="Icon"
+@
+
+
+1.161
+log
+@*** empty log message ***
+@
+text
+@d161 5
 @
 
 
